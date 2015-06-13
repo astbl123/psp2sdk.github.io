@@ -85,18 +85,18 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00023"></a>00023 <span class="preprocessor"></span>
 <a name="l00024"></a>00024 <span class="preprocessor">#include &lt;<a class="code" href="types_8h.html" title="Header file which defines unique variable types.">psp2/types.h</a>&gt;</span>
 <a name="l00025"></a>00025 
-<a name="l00026"></a>00026 <span class="keyword">enum</span> AudioInErrorCodes {
-<a name="l00027"></a>00027     SCE_AUDIO_IN_ERROR_FATAL    = 0x80260100,
-<a name="l00028"></a>00028     SCE_AUDIO_IN_ERROR_INVALID_PORT = 0x80260101,
-<a name="l00029"></a>00029     SCE_AUDIO_IN_ERROR_INVALID_SIZE = 0x80260102,
-<a name="l00030"></a>00030     SCE_AUDIO_IN_ERROR_INVALID_SAMPLE_FREQ  = 0x80260103,
-<a name="l00031"></a>00031     SCE_AUDIO_IN_ERROR_INVALID_PORT_TYPE    = 0x80260104,
-<a name="l00032"></a>00032     SCE_AUDIO_IN_ERROR_INVALID_POINTER  = 0x80260105,
-<a name="l00033"></a>00033     SCE_AUDIO_IN_ERROR_INVALID_PORT_PARAM   = 0x80260106,
-<a name="l00034"></a>00034     SCE_AUDIO_IN_ERROR_PORT_FULL    = 0x80260107,
-<a name="l00035"></a>00035     SCE_AUDIO_IN_ERROR_OUT_OF_MEMORY    = 0x80260108,
-<a name="l00036"></a>00036     SCE_AUDIO_IN_ERROR_NOT_OPENED   = 0x80260109,
-<a name="l00037"></a>00037     SCE_AUDIO_IN_ERROR_BUSY = 0x8026010A
+<a name="l00026"></a><a class="code" href="audioin_8h.html#a0de70f8400a63c8c4e05e65026b00680">00026</a> <span class="keyword">enum</span> <a class="code" href="audioin_8h.html#a0de70f8400a63c8c4e05e65026b00680">AudioInErrorCodes</a> {
+<a name="l00027"></a><a class="code" href="audioin_8h.html#a0de70f8400a63c8c4e05e65026b00680a74b0f071efb8647de3441a15a0b96f1a">00027</a>     <a class="code" href="audioin_8h.html#a0de70f8400a63c8c4e05e65026b00680a74b0f071efb8647de3441a15a0b96f1a" title="Undefined error.">SCE_AUDIO_IN_ERROR_FATAL</a>    = 0x80260100, 
+<a name="l00028"></a><a class="code" href="audioin_8h.html#a0de70f8400a63c8c4e05e65026b00680a0bd19f43d7f1bdfc42e26ca75f35c54f">00028</a>     <a class="code" href="audioin_8h.html#a0de70f8400a63c8c4e05e65026b00680a0bd19f43d7f1bdfc42e26ca75f35c54f" title="Bad value of port number.">SCE_AUDIO_IN_ERROR_INVALID_PORT</a> = 0x80260101, 
+<a name="l00029"></a><a class="code" href="audioin_8h.html#a0de70f8400a63c8c4e05e65026b00680a35bdf669ddfbf4d998046fbf6de95238">00029</a>     <a class="code" href="audioin_8h.html#a0de70f8400a63c8c4e05e65026b00680a35bdf669ddfbf4d998046fbf6de95238" title="Invalid sample length.">SCE_AUDIO_IN_ERROR_INVALID_SIZE</a> = 0x80260102, 
+<a name="l00030"></a><a class="code" href="audioin_8h.html#a0de70f8400a63c8c4e05e65026b00680a304714f75da98e79d1dcca568c93aa68">00030</a>     <a class="code" href="audioin_8h.html#a0de70f8400a63c8c4e05e65026b00680a304714f75da98e79d1dcca568c93aa68" title="Invalid sample frequency.">SCE_AUDIO_IN_ERROR_INVALID_SAMPLE_FREQ</a>  = 0x80260103, 
+<a name="l00031"></a><a class="code" href="audioin_8h.html#a0de70f8400a63c8c4e05e65026b00680a3c576051078ad8374a033b1a081d8c54">00031</a>     <a class="code" href="audioin_8h.html#a0de70f8400a63c8c4e05e65026b00680a3c576051078ad8374a033b1a081d8c54" title="Invalid port type.">SCE_AUDIO_IN_ERROR_INVALID_PORT_TYPE</a>    = 0x80260104, 
+<a name="l00032"></a><a class="code" href="audioin_8h.html#a0de70f8400a63c8c4e05e65026b00680a5bf1f3890489da0880e376c3def5f3b9">00032</a>     <a class="code" href="audioin_8h.html#a0de70f8400a63c8c4e05e65026b00680a5bf1f3890489da0880e376c3def5f3b9" title="Invalid pointer value.">SCE_AUDIO_IN_ERROR_INVALID_POINTER</a>  = 0x80260105, 
+<a name="l00033"></a><a class="code" href="audioin_8h.html#a0de70f8400a63c8c4e05e65026b00680a331c76dcdf481f0fde08d4fb3fe11910">00033</a>     <a class="code" href="audioin_8h.html#a0de70f8400a63c8c4e05e65026b00680a331c76dcdf481f0fde08d4fb3fe11910" title="Invalid port param.">SCE_AUDIO_IN_ERROR_INVALID_PORT_PARAM</a>   = 0x80260106, 
+<a name="l00034"></a><a class="code" href="audioin_8h.html#a0de70f8400a63c8c4e05e65026b00680a124621b1ade9c8d226e0966077a0876c">00034</a>     <a class="code" href="audioin_8h.html#a0de70f8400a63c8c4e05e65026b00680a124621b1ade9c8d226e0966077a0876c" title="Cannot open no ports.">SCE_AUDIO_IN_ERROR_PORT_FULL</a>    = 0x80260107, 
+<a name="l00035"></a><a class="code" href="audioin_8h.html#a0de70f8400a63c8c4e05e65026b00680ae74ee704b2c1df5cf7d6aa883e5d7d94">00035</a>     <a class="code" href="audioin_8h.html#a0de70f8400a63c8c4e05e65026b00680ae74ee704b2c1df5cf7d6aa883e5d7d94" title="Not enough memory.">SCE_AUDIO_IN_ERROR_OUT_OF_MEMORY</a>    = 0x80260108, 
+<a name="l00036"></a><a class="code" href="audioin_8h.html#a0de70f8400a63c8c4e05e65026b00680a82a478e6fe50da6cf1a9a29e0b9f1594">00036</a>     <a class="code" href="audioin_8h.html#a0de70f8400a63c8c4e05e65026b00680a82a478e6fe50da6cf1a9a29e0b9f1594" title="Port is not opened.">SCE_AUDIO_IN_ERROR_NOT_OPENED</a>   = 0x80260109, 
+<a name="l00037"></a><a class="code" href="audioin_8h.html#a0de70f8400a63c8c4e05e65026b00680aaf35bb52dc924ad77e10a8c0fc7f4885">00037</a>     <a class="code" href="audioin_8h.html#a0de70f8400a63c8c4e05e65026b00680aaf35bb52dc924ad77e10a8c0fc7f4885" title="Tried to input while busy.">SCE_AUDIO_IN_ERROR_BUSY</a> = 0x8026010A  
 <a name="l00038"></a>00038 };
 <a name="l00039"></a>00039 
 <a name="l00040"></a>00040 <span class="keyword">enum</span> AudioInPortType {
@@ -109,17 +109,16 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00047"></a>00047     PSP2_AUDIO_IN_GETSTATUS_MUTE    = 1
 <a name="l00048"></a>00048 };
 <a name="l00049"></a>00049 
-<a name="l00050"></a>00050 <span class="comment">/* open and close ports */</span>
-<a name="l00051"></a>00051 <span class="keywordtype">int</span> sceAudioInOpenPort(<span class="keywordtype">int</span> portType, <span class="keywordtype">int</span> grain, <span class="keywordtype">int</span> freq, <span class="keywordtype">int</span> param);
-<a name="l00052"></a>00052 <span class="keywordtype">int</span> sceAudioInReleasePort(<span class="keywordtype">int</span> port);
-<a name="l00053"></a>00053 
-<a name="l00054"></a>00054 <span class="keywordtype">int</span> sceAudioInInput(<span class="keywordtype">int</span> port, <span class="keywordtype">void</span> *destPtr);
-<a name="l00055"></a>00055 
-<a name="l00056"></a>00056 <span class="comment">/* get status */</span>
-<a name="l00057"></a>00057 <span class="keywordtype">int</span> sceAudioInGetAdopt(<span class="keywordtype">int</span> portType);
-<a name="l00058"></a>00058 <span class="keywordtype">int</span> sceAudioInGetStatus(<span class="keywordtype">int</span> select);
-<a name="l00059"></a>00059 
-<a name="l00060"></a>00060 <span class="preprocessor">#endif</span>
+<a name="l00050"></a>00050 <span class="keywordtype">int</span> <a class="code" href="audioin_8h.html#a5c8fe16d67c100a072e30d7b247ff3d4" title="Open port.">sceAudioInOpenPort</a>(<span class="keywordtype">int</span> portType, <span class="keywordtype">int</span> grain, <span class="keywordtype">int</span> freq, <span class="keywordtype">int</span> param); 
+<a name="l00051"></a>00051 <span class="keywordtype">int</span> <a class="code" href="audioin_8h.html#a1c14f220a4c636c0c69960dc6b5aa9df" title="Close port.">sceAudioInReleasePort</a>(<span class="keywordtype">int</span> port);  
+<a name="l00052"></a>00052 
+<a name="l00053"></a>00053 <span class="keywordtype">int</span> sceAudioInInput(<span class="keywordtype">int</span> port, <span class="keywordtype">void</span> *destPtr);
+<a name="l00054"></a>00054 
+<a name="l00055"></a>00055 <span class="comment">/* get status */</span>
+<a name="l00056"></a>00056 <span class="keywordtype">int</span> sceAudioInGetAdopt(<span class="keywordtype">int</span> portType);
+<a name="l00057"></a>00057 <span class="keywordtype">int</span> sceAudioInGetStatus(<span class="keywordtype">int</span> select);
+<a name="l00058"></a>00058 
+<a name="l00059"></a>00059 <span class="preprocessor">#endif </span><span class="comment">/* _PSP2AUDIOIN_H */</span>
 </pre></div></div><!-- contents -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
@@ -138,7 +137,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jun 13 2015 17:18:37 for PSP2SDK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jun 13 2015 18:08:59 for PSP2SDK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

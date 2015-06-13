@@ -1,6 +1,11 @@
 var searchData=
 [
+  ['sceappmgracquirebgmport',['sceAppMgrAcquireBgmPort',['../appmgr_8h.html#a4128e9d22cadd7263e8bd9364e01f846',1,'appmgr.h']]],
+  ['sceappmgrreleasebgmport',['sceAppMgrReleaseBgmPort',['../appmgr_8h.html#a57e55396a9cc33ab9dc5f2a5bf566315',1,'appmgr.h']]],
+  ['sceappmgrsetinfobarstate',['sceAppMgrSetInfobarState',['../appmgr_8h.html#a703fd52e350cf06140a391cb9ac66a10',1,'appmgr.h']]],
   ['sceappmgtrecievesystemevent',['sceAppMgtRecieveSystemEvent',['../appmgr_8h.html#a9162997e2da255ec01d9d3ce8811c3e2',1,'appmgr.h']]],
+  ['sceaudioinopenport',['sceAudioInOpenPort',['../audioin_8h.html#a5c8fe16d67c100a072e30d7b247ff3d4',1,'audioin.h']]],
+  ['sceaudioinreleaseport',['sceAudioInReleasePort',['../audioin_8h.html#a1c14f220a4c636c0c69960dc6b5aa9df',1,'audioin.h']]],
   ['scectrlclearrapidfire',['sceCtrlClearRapidFire',['../ctrl_8h.html#ad1b02db560f2bad4191d70d3f4c5f0b9',1,'ctrl.h']]],
   ['scectrlgetsamplingmode',['sceCtrlGetSamplingMode',['../ctrl_8h.html#ad1e27223cc8d9b2d2dc3ce6230b78714',1,'ctrl.h']]],
   ['scectrlpeekbuffernegative',['sceCtrlPeekBufferNegative',['../ctrl_8h.html#afccfa461eceb1c73ab603b455e816f1c',1,'ctrl.h']]],
