@@ -19,5 +19,15 @@ var searchData=
   ['scedisplaywaitvblankstart',['sceDisplayWaitVblankStart',['../display_8h.html#ab921d38b61c45b0472ac0f45660747c9',1,'display.h']]],
   ['scedisplaywaitvblankstartcb',['sceDisplayWaitVblankStartCB',['../display_8h.html#a5ad5f1293ec8b6af9ec3a4096ce85af6',1,'display.h']]],
   ['scedisplaywaitvblankstartmulti',['sceDisplayWaitVblankStartMulti',['../display_8h.html#ab0dbd41679e2aab2325ceac6a41cc052',1,'display.h']]],
-  ['scedisplaywaitvblankstartmulticb',['sceDisplayWaitVblankStartMultiCB',['../display_8h.html#ac2d3e00c3473b0cbd10f33e02100d77d',1,'display.h']]]
+  ['scedisplaywaitvblankstartmulticb',['sceDisplayWaitVblankStartMultiCB',['../display_8h.html#ac2d3e00c3473b0cbd10f33e02100d77d',1,'display.h']]],
+  ['scescreenshotdisable',['sceScreenshotDisable',['../screenshot_8h.html#a0237c8cfaaacdb869c9cb048c70bf388',1,'screenshot.h']]],
+  ['scescreenshotenable',['sceScreenshotEnable',['../screenshot_8h.html#a50b0b82394ce9bb6dd039fdc65aafe67',1,'screenshot.h']]],
+  ['scescreenshotoverlayimage',['sceScreenshotOverlayImage',['../screenshot_8h.html#aa70b42e17e77e121f0af8dfe59c59023',1,'screenshot.h']]],
+  ['scescreenshotsetparam',['sceScreenshotSetParam',['../screenshot_8h.html#a6f8d456f0c7ff5fcfa7f0c097860c8f3',1,'screenshot.h']]],
+  ['scetouchdisabletouchforce',['sceTouchDisableTouchForce',['../touch_8h.html#a1908ddde473626795f79de5313a11849',1,'touch.h']]],
+  ['scetouchenabletouchforce',['sceTouchEnableTouchForce',['../touch_8h.html#a36378e02af2ef2356a73059b04efac7b',1,'touch.h']]],
+  ['scetouchgetpanelinfo',['sceTouchGetPanelInfo',['../touch_8h.html#ad8177f01cab08dc6176dfbb9aa7df7a1',1,'touch.h']]],
+  ['scetouchgetsamplingstate',['sceTouchGetSamplingState',['../touch_8h.html#a80accb418f43f29fc6dd71536a0ddc15',1,'touch.h']]],
+  ['scetouchread',['sceTouchRead',['../touch_8h.html#ab2cd708b774b3d92d56f14e2c8916c5f',1,'touch.h']]],
+  ['scetouchsetsamplingstate',['sceTouchSetSamplingState',['../touch_8h.html#a44db9589fab77bf506e2fa1f9b45afd1',1,'touch.h']]]
 ];
