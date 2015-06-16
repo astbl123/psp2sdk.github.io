@@ -1,16 +1,5 @@
 var searchData=
 [
-  ['sce_5faudioenc_5fcelp_5fbit_5frate_5f3850bps',['SCE_AUDIOENC_CELP_BIT_RATE_3850BPS',['../audioenc_8h.html#ab374b02c5f5b6506e9c42af0d24347d1',1,'audioenc.h']]],
-  ['sce_5faudioenc_5fcelp_5fbit_5frate_5f4650bps',['SCE_AUDIOENC_CELP_BIT_RATE_4650BPS',['../audioenc_8h.html#a3c887d8f1a4dae2ac5f33bc60376f17a',1,'audioenc.h']]],
-  ['sce_5faudioenc_5fcelp_5fbit_5frate_5f5700bps',['SCE_AUDIOENC_CELP_BIT_RATE_5700BPS',['../audioenc_8h.html#a7c3825604e9f274efa82bd27a7e42976',1,'audioenc.h']]],
-  ['sce_5faudioenc_5fcelp_5fbit_5frate_5f7300bps',['SCE_AUDIOENC_CELP_BIT_RATE_7300BPS',['../audioenc_8h.html#aab99e736ff3e96446fd05d0d1e6e90f3',1,'audioenc.h']]],
-  ['sce_5faudioenc_5fcelp_5fmax_5fes_5fsize',['SCE_AUDIOENC_CELP_MAX_ES_SIZE',['../audioenc_8h.html#a8f43ee8a32e48bd728df53065e84edba',1,'audioenc.h']]],
-  ['sce_5faudioenc_5fcelp_5fmax_5fsamples',['SCE_AUDIOENC_CELP_MAX_SAMPLES',['../audioenc_8h.html#a3a2251b317f2f14049a477415bccf722',1,'audioenc.h']]],
-  ['sce_5faudioenc_5fcelp_5fmax_5fstreams',['SCE_AUDIOENC_CELP_MAX_STREAMS',['../audioenc_8h.html#ae52560aa93159eebd8001535dd0e8baa',1,'audioenc.h']]],
-  ['sce_5faudioenc_5fcelp_5fmpe',['SCE_AUDIOENC_CELP_MPE',['../audioenc_8h.html#aeb6b1e0a2bc315c05ec9b67f54bc39c3',1,'audioenc.h']]],
-  ['sce_5faudioenc_5fcelp_5fsampling_5frate_5f8khz',['SCE_AUDIOENC_CELP_SAMPLING_RATE_8KHZ',['../audioenc_8h.html#a15b7d618d89f2fe7ef8a8a577a61794c',1,'audioenc.h']]],
-  ['sce_5faudioenc_5ftype_5fcelp',['SCE_AUDIOENC_TYPE_CELP',['../audioenc_8h.html#ac9c959f81cf8434c0501b9be7569b590',1,'audioenc.h']]],
-  ['sce_5faudioenc_5fword_5flength_5f16bits',['SCE_AUDIOENC_WORD_LENGTH_16BITS',['../audioenc_8h.html#ad4bb28b9aedbcb04d3b7d6eeb8af824d',1,'audioenc.h']]],
   ['system_5fparam_5fdate_5fformat_5fddmmyyyy',['SYSTEM_PARAM_DATE_FORMAT_DDMMYYYY',['../system__param_8h.html#a256526e46953af2fc42807eb0dcd49dc',1,'system_param.h']]],
   ['system_5fparam_5fdate_5fformat_5fmmddyyyy',['SYSTEM_PARAM_DATE_FORMAT_MMDDYYYY',['../system__param_8h.html#a5e19ecf37df1c680818cda6646dfc0c4',1,'system_param.h']]],
   ['system_5fparam_5fdate_5fformat_5fyyyymmdd',['SYSTEM_PARAM_DATE_FORMAT_YYYYMMDD',['../system__param_8h.html#ad4ea00878dd8962e9171112dea2a737b',1,'system_param.h']]],

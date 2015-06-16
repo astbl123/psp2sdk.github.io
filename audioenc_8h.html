@@ -28,7 +28,7 @@
   
   <td style="padding-left: 0.5em;">
    <div id="projectname">PSP2SDK
-   &#160;<span id="projectnumber">dirty-8790daa</span>
+   &#160;<span id="projectnumber">dirty-ee70edd</span>
    </div>
    <div id="projectbrief">An open-sourced SDK for PSP2</div>
   </td>
@@ -85,7 +85,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
-<p>Header file which defines output audio related variables and functions.  
+<p>Header file which defines encoding audio library related variables and functions.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;<a class="el" href="types_8h_source.html">psp2/types.h</a>&gt;</code><br/>
 </div><div class="textblock"><div class="dynheader">
@@ -109,39 +109,27 @@ Classes</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSceAudioencCtrl.html">SceAudioencCtrl</a></td></tr>
 <tr><td colspan="2"><h2><a name="define-members"></a>
 Defines</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad4bb28b9aedbcb04d3b7d6eeb8af824d"></a><!-- doxytag: member="audioenc.h::SCE_AUDIOENC_WORD_LENGTH_16BITS" ref="ad4bb28b9aedbcb04d3b7d6eeb8af824d" args="" -->
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="audioenc_8h.html#ad4bb28b9aedbcb04d3b7d6eeb8af824d">SCE_AUDIOENC_WORD_LENGTH_16BITS</a>&#160;&#160;&#160;(16)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a96811185e3e8e2bbabd81903dfd68876"></a><!-- doxytag: member="audioenc.h::PSP2_AUDIOENC_WORD_LENGTH_16BITS" ref="a96811185e3e8e2bbabd81903dfd68876" args="" -->
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="audioenc_8h.html#a96811185e3e8e2bbabd81903dfd68876">PSP2_AUDIOENC_WORD_LENGTH_16BITS</a>&#160;&#160;&#160;16</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Definition of wordlength. <br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac9c959f81cf8434c0501b9be7569b590"></a><!-- doxytag: member="audioenc.h::SCE_AUDIOENC_TYPE_CELP" ref="ac9c959f81cf8434c0501b9be7569b590" args="" -->
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="audioenc_8h.html#ac9c959f81cf8434c0501b9be7569b590">SCE_AUDIOENC_TYPE_CELP</a>&#160;&#160;&#160;(0x2006U)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acee783d68dedab117fde4577480eac82"></a><!-- doxytag: member="audioenc.h::PSP2_AUDIOENC_TYPE_CELP" ref="acee783d68dedab117fde4577480eac82" args="" -->
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="audioenc_8h.html#acee783d68dedab117fde4577480eac82">PSP2_AUDIOENC_TYPE_CELP</a>&#160;&#160;&#160;0x2006U</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Audio encoder type. <br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae52560aa93159eebd8001535dd0e8baa"></a><!-- doxytag: member="audioenc.h::SCE_AUDIOENC_CELP_MAX_STREAMS" ref="ae52560aa93159eebd8001535dd0e8baa" args="" -->
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="audioenc_8h.html#ae52560aa93159eebd8001535dd0e8baa">SCE_AUDIOENC_CELP_MAX_STREAMS</a>&#160;&#160;&#160;(1)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a032d8cc043849131e7407545308f2b65"></a><!-- doxytag: member="audioenc.h::PSP2_AUDIOENC_CELP_MAX_STREAMS" ref="a032d8cc043849131e7407545308f2b65" args="" -->
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="audioenc_8h.html#a032d8cc043849131e7407545308f2b65">PSP2_AUDIOENC_CELP_MAX_STREAMS</a>&#160;&#160;&#160;1</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Max number of streams. <br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3a2251b317f2f14049a477415bccf722"></a><!-- doxytag: member="audioenc.h::SCE_AUDIOENC_CELP_MAX_SAMPLES" ref="a3a2251b317f2f14049a477415bccf722" args="" -->
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="audioenc_8h.html#a3a2251b317f2f14049a477415bccf722">SCE_AUDIOENC_CELP_MAX_SAMPLES</a>&#160;&#160;&#160;(320)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9657fa5656901bc97473beff054b8907"></a><!-- doxytag: member="audioenc.h::PSP2_AUDIOENC_CELP_MAX_SAMPLES" ref="a9657fa5656901bc97473beff054b8907" args="" -->
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="audioenc_8h.html#a9657fa5656901bc97473beff054b8907">PSP2_AUDIOENC_CELP_MAX_SAMPLES</a>&#160;&#160;&#160;320</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Max number of samples. <br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8f43ee8a32e48bd728df53065e84edba"></a><!-- doxytag: member="audioenc.h::SCE_AUDIOENC_CELP_MAX_ES_SIZE" ref="a8f43ee8a32e48bd728df53065e84edba" args="" -->
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="audioenc_8h.html#a8f43ee8a32e48bd728df53065e84edba">SCE_AUDIOENC_CELP_MAX_ES_SIZE</a>&#160;&#160;&#160;(24)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab5e2de0d1357efa498440e14aefa10e3"></a><!-- doxytag: member="audioenc.h::PSP2_AUDIOENC_CELP_MAX_ES_SIZE" ref="ab5e2de0d1357efa498440e14aefa10e3" args="" -->
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="audioenc_8h.html#ab5e2de0d1357efa498440e14aefa10e3">PSP2_AUDIOENC_CELP_MAX_ES_SIZE</a>&#160;&#160;&#160;24</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Max elementary stream size. <br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aeb6b1e0a2bc315c05ec9b67f54bc39c3"></a><!-- doxytag: member="audioenc.h::SCE_AUDIOENC_CELP_MPE" ref="aeb6b1e0a2bc315c05ec9b67f54bc39c3" args="" -->
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="audioenc_8h.html#aeb6b1e0a2bc315c05ec9b67f54bc39c3">SCE_AUDIOENC_CELP_MPE</a>&#160;&#160;&#160;(0)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa7675e33e1d6d2847186e3e0b87495a7"></a><!-- doxytag: member="audioenc.h::PSP2_AUDIOENC_CELP_MPE" ref="aa7675e33e1d6d2847186e3e0b87495a7" args="" -->
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="audioenc_8h.html#aa7675e33e1d6d2847186e3e0b87495a7">PSP2_AUDIOENC_CELP_MPE</a>&#160;&#160;&#160;(0)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">CELP encoder default excitation mode. <br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a15b7d618d89f2fe7ef8a8a577a61794c"></a><!-- doxytag: member="audioenc.h::SCE_AUDIOENC_CELP_SAMPLING_RATE_8KHZ" ref="a15b7d618d89f2fe7ef8a8a577a61794c" args="" -->
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="audioenc_8h.html#a15b7d618d89f2fe7ef8a8a577a61794c">SCE_AUDIOENC_CELP_SAMPLING_RATE_8KHZ</a>&#160;&#160;&#160;(8000)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afbc6e98c4ff8139f2e55dbe689c7a0fe"></a><!-- doxytag: member="audioenc.h::PSP2_AUDIOENC_CELP_SAMPLING_RATE_8KHZ" ref="afbc6e98c4ff8139f2e55dbe689c7a0fe" args="" -->
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="audioenc_8h.html#afbc6e98c4ff8139f2e55dbe689c7a0fe">PSP2_AUDIOENC_CELP_SAMPLING_RATE_8KHZ</a>&#160;&#160;&#160;(8000)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">CELP encoder default sampling rate. <br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab374b02c5f5b6506e9c42af0d24347d1"></a><!-- doxytag: member="audioenc.h::SCE_AUDIOENC_CELP_BIT_RATE_3850BPS" ref="ab374b02c5f5b6506e9c42af0d24347d1" args="" -->
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="audioenc_8h.html#ab374b02c5f5b6506e9c42af0d24347d1">SCE_AUDIOENC_CELP_BIT_RATE_3850BPS</a>&#160;&#160;&#160;(3850)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">3850 bps <br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3c887d8f1a4dae2ac5f33bc60376f17a"></a><!-- doxytag: member="audioenc.h::SCE_AUDIOENC_CELP_BIT_RATE_4650BPS" ref="a3c887d8f1a4dae2ac5f33bc60376f17a" args="" -->
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="audioenc_8h.html#a3c887d8f1a4dae2ac5f33bc60376f17a">SCE_AUDIOENC_CELP_BIT_RATE_4650BPS</a>&#160;&#160;&#160;(4650)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">4650 bps <br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7c3825604e9f274efa82bd27a7e42976"></a><!-- doxytag: member="audioenc.h::SCE_AUDIOENC_CELP_BIT_RATE_5700BPS" ref="a7c3825604e9f274efa82bd27a7e42976" args="" -->
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="audioenc_8h.html#a7c3825604e9f274efa82bd27a7e42976">SCE_AUDIOENC_CELP_BIT_RATE_5700BPS</a>&#160;&#160;&#160;(5700)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">5700 bps <br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aab99e736ff3e96446fd05d0d1e6e90f3"></a><!-- doxytag: member="audioenc.h::SCE_AUDIOENC_CELP_BIT_RATE_7300BPS" ref="aab99e736ff3e96446fd05d0d1e6e90f3" args="" -->
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="audioenc_8h.html#aab99e736ff3e96446fd05d0d1e6e90f3">SCE_AUDIOENC_CELP_BIT_RATE_7300BPS</a>&#160;&#160;&#160;(7300)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">7300 bps <br/></td></tr>
 <tr><td colspan="2"><h2><a name="enum-members"></a>
 Enumerations</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><b>AudioencErrorCodes</b> { <br/>
@@ -167,27 +155,32 @@ Enumerations</h2></td></tr>
  }</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><b>AudioencCelpErrorCodes</b> { <b>SCE_AUDIOENC_CELP_ERROR_INVALID_CONFIG</b> =  0x80861001
  }</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><b>AudioEncCelpBitRates</b> { <b>PSP2_AUDIOENC_CELP_BIT_RATE_3850BPS</b> =  3850, 
+<b>PSP2_AUDIOENC_CELP_BIT_RATE_4650BPS</b> =  4650, 
+<b>PSP2_AUDIOENC_CELP_BIT_RATE_5700BPS</b> =  5700, 
+<b>PSP2_AUDIOENC_CELP_BIT_RATE_7300BPS</b> =  7300
+ }</td></tr>
 <tr><td colspan="2"><h2><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a10790bc33c4f56e1e0ad8f75bb455de5"></a><!-- doxytag: member="audioenc.h::sceAudioencInitLibrary" ref="a10790bc33c4f56e1e0ad8f75bb455de5" args="(int codecType, SceAudioencInitParam *pInitParam)" -->
-int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>sceAudioencInitLibrary</b> (int codecType, <a class="el" href="unionSceAudioencInitParam.html">SceAudioencInitParam</a> *pInitParam)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4ecf945585d8fd0dd31690a70362dfc1"></a><!-- doxytag: member="audioenc.h::sceAudioencTermLibrary" ref="a4ecf945585d8fd0dd31690a70362dfc1" args="(SceUInt32 codecType)" -->
-int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>sceAudioencTermLibrary</b> (SceUInt32 codecType)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9bb78083b13fc08959991d13df2e39b8"></a><!-- doxytag: member="audioenc.h::sceAudioencCreateEncoder" ref="a9bb78083b13fc08959991d13df2e39b8" args="(SceAudioencCtrl *pCtrl, int codecType)" -->
-int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>sceAudioencCreateEncoder</b> (<a class="el" href="structSceAudioencCtrl.html">SceAudioencCtrl</a> *pCtrl, int codecType)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad60cb81702c437096303cca7d65e7a42"></a><!-- doxytag: member="audioenc.h::sceAudioencDeleteEncoder" ref="ad60cb81702c437096303cca7d65e7a42" args="(SceAudioencCtrl *pCtrl)" -->
-int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>sceAudioencDeleteEncoder</b> (<a class="el" href="structSceAudioencCtrl.html">SceAudioencCtrl</a> *pCtrl)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8c23e36091c1cc67370e932b3968932e"></a><!-- doxytag: member="audioenc.h::sceAudioencEncode" ref="a8c23e36091c1cc67370e932b3968932e" args="(SceAudioencCtrl *pCtrl)" -->
-int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>sceAudioencEncode</b> (<a class="el" href="structSceAudioencCtrl.html">SceAudioencCtrl</a> *pCtrl)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acc7ebd1cb2970f1ccddeacaf47853c78"></a><!-- doxytag: member="audioenc.h::sceAudioencClearContext" ref="acc7ebd1cb2970f1ccddeacaf47853c78" args="(SceAudioencCtrl *pCtrl)" -->
-int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>sceAudioencClearContext</b> (<a class="el" href="structSceAudioencCtrl.html">SceAudioencCtrl</a> *pCtrl)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a96cbf0ac0f6c17cf9ad2331fb46e11dc"></a><!-- doxytag: member="audioenc.h::sceAudioencGetOptInfo" ref="a96cbf0ac0f6c17cf9ad2331fb46e11dc" args="(SceAudioencCtrl *pCtrl)" -->
-int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>sceAudioencGetOptInfo</b> (<a class="el" href="structSceAudioencCtrl.html">SceAudioencCtrl</a> *pCtrl)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af43d592abc34c7a643d1da8bf320b65a"></a><!-- doxytag: member="audioenc.h::sceAudioencGetInternalError" ref="af43d592abc34c7a643d1da8bf320b65a" args="(SceAudioencCtrl *pCtrl, int *pInternalError)" -->
-int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>sceAudioencGetInternalError</b> (<a class="el" href="structSceAudioencCtrl.html">SceAudioencCtrl</a> *pCtrl, int *pInternalError)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2e06d6d0acec949280fa6c3e9d845eee"></a><!-- doxytag: member="audioenc.h::sceAudioencInitLibrary" ref="a2e06d6d0acec949280fa6c3e9d845eee" args="(int codecType, SceAudioencInitParam *pInitParam)" -->
+int&#160;</td><td class="memItemRight" valign="bottom"><b>sceAudioencInitLibrary</b> (int codecType, <a class="el" href="unionSceAudioencInitParam.html">SceAudioencInitParam</a> *pInitParam)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4898d7199f0ffde3ed31806c188ef511"></a><!-- doxytag: member="audioenc.h::sceAudioencTermLibrary" ref="a4898d7199f0ffde3ed31806c188ef511" args="(SceUInt32 codecType)" -->
+int&#160;</td><td class="memItemRight" valign="bottom"><b>sceAudioencTermLibrary</b> (SceUInt32 codecType)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acbb09589c976e8564876a664cec1cf3f"></a><!-- doxytag: member="audioenc.h::sceAudioencCreateEncoder" ref="acbb09589c976e8564876a664cec1cf3f" args="(SceAudioencCtrl *pCtrl, int codecType)" -->
+int&#160;</td><td class="memItemRight" valign="bottom"><b>sceAudioencCreateEncoder</b> (<a class="el" href="structSceAudioencCtrl.html">SceAudioencCtrl</a> *pCtrl, int codecType)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a20bd8ea7e7c2d4c034f888a7490bed2b"></a><!-- doxytag: member="audioenc.h::sceAudioencDeleteEncoder" ref="a20bd8ea7e7c2d4c034f888a7490bed2b" args="(SceAudioencCtrl *pCtrl)" -->
+int&#160;</td><td class="memItemRight" valign="bottom"><b>sceAudioencDeleteEncoder</b> (<a class="el" href="structSceAudioencCtrl.html">SceAudioencCtrl</a> *pCtrl)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4ae57e0c26174cdca9f94f8b8bfbfcee"></a><!-- doxytag: member="audioenc.h::sceAudioencEncode" ref="a4ae57e0c26174cdca9f94f8b8bfbfcee" args="(SceAudioencCtrl *pCtrl)" -->
+int&#160;</td><td class="memItemRight" valign="bottom"><b>sceAudioencEncode</b> (<a class="el" href="structSceAudioencCtrl.html">SceAudioencCtrl</a> *pCtrl)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a90c2b47daa35ee1e01765e9e77d4ffac"></a><!-- doxytag: member="audioenc.h::sceAudioencClearContext" ref="a90c2b47daa35ee1e01765e9e77d4ffac" args="(SceAudioencCtrl *pCtrl)" -->
+int&#160;</td><td class="memItemRight" valign="bottom"><b>sceAudioencClearContext</b> (<a class="el" href="structSceAudioencCtrl.html">SceAudioencCtrl</a> *pCtrl)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8c6351f3e69ff388c54b52fdd60fc6dc"></a><!-- doxytag: member="audioenc.h::sceAudioencGetOptInfo" ref="a8c6351f3e69ff388c54b52fdd60fc6dc" args="(SceAudioencCtrl *pCtrl)" -->
+int&#160;</td><td class="memItemRight" valign="bottom"><b>sceAudioencGetOptInfo</b> (<a class="el" href="structSceAudioencCtrl.html">SceAudioencCtrl</a> *pCtrl)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2a71fdd0c43fea0f976b5fba6fa4429c"></a><!-- doxytag: member="audioenc.h::sceAudioencGetInternalError" ref="a2a71fdd0c43fea0f976b5fba6fa4429c" args="(SceAudioencCtrl *pCtrl, int *pInternalError)" -->
+int&#160;</td><td class="memItemRight" valign="bottom"><b>sceAudioencGetInternalError</b> (<a class="el" href="structSceAudioencCtrl.html">SceAudioencCtrl</a> *pCtrl, int *pInternalError)</td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
-<div class="textblock"><p>Header file which defines output audio related variables and functions. </p>
+<div class="textblock"><p>Header file which defines encoding audio library related variables and functions. </p>
 <p>Copyright (C) 2015 PSP2SDK Project</p>
 <p>This library is free software: you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.</p>
 <p>This library is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License for more details.</p>
@@ -210,7 +203,7 @@ int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>sceAudioencGetInte
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jun 16 2015 15:19:49 for PSP2SDK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jun 16 2015 16:00:04 for PSP2SDK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>
