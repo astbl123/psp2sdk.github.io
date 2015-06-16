@@ -1,8 +1,12 @@
 var searchData=
 [
-  ['phototitle',['photoTitle',['../structScreenshotParam.html#a592602ead5810252a33392e7988f64d4',1,'ScreenshotParam']]],
+  ['phototitle',['photoTitle',['../structScreenshotParam.html#a90b64ebba7c7a28fb41dcd8275ce79ee',1,'ScreenshotParam']]],
+  ['pinfo',['pInfo',['../structSceAudioencCtrl.html#a2543c1de30788261b42ece3d232ac00b',1,'SceAudioencCtrl']]],
+  ['pinputpcm',['pInputPcm',['../structSceAudioencCtrl.html#a581158e1d6bb0a854e21e243ab270b38',1,'SceAudioencCtrl']]],
   ['pitch',['pitch',['../structSceDisplayFrameBuf.html#a44160853361a441b8e43578d0a2941b9',1,'SceDisplayFrameBuf']]],
   ['pixelformat',['pixelformat',['../structSceDisplayFrameBuf.html#a00b8ff65e24a20a98cbced5ea7925089',1,'SceDisplayFrameBuf']]],
+  ['poptinfo',['pOptInfo',['../structSceAudioencCtrl.html#a74532d956576d8a2fe81c64e37c63f60',1,'SceAudioencCtrl']]],
+  ['poutputes',['pOutputEs',['../structSceAudioencCtrl.html#ac352baa6d5587fc7223769e46e147df2',1,'SceAudioencCtrl']]],
   ['processmgr_2eh',['processmgr.h',['../processmgr_8h.html',1,'']]],
   ['psp2_5faudio_5fmax_5flen',['PSP2_AUDIO_MAX_LEN',['../audioout_8h.html#a93d4a564f168a1926fc92ff7a8924965',1,'audioout.h']]],
   ['psp2_5faudio_5fmin_5flen',['PSP2_AUDIO_MIN_LEN',['../audioout_8h.html#ad5fe3860751d9c7f2ec196675c929385',1,'audioout.h']]],

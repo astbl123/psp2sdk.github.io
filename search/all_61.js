@@ -2,7 +2,9 @@ var searchData=
 [
   ['appmgr_2eh',['appmgr.h',['../appmgr_8h.html',1,'']]],
   ['appmgrerrorcodes',['AppMgrErrorCodes',['../appmgr_8h.html#a80b0ffa610d0cd12b727ef18c8fea87b',1,'appmgr.h']]],
+  ['apputil_2eh',['apputil.h',['../apputil_8h.html',1,'']]],
   ['attr',['attr',['../struct__sceModuleInfo.html#a7bbe300d7b6bfed431d593e5716f3a8f',1,'_sceModuleInfo']]],
+  ['audioenc_2eh',['audioenc.h',['../audioenc_8h.html',1,'']]],
   ['audioin_2eh',['audioin.h',['../audioin_8h.html',1,'']]],
   ['audioinerrorcodes',['AudioInErrorCodes',['../audioin_8h.html#a0de70f8400a63c8c4e05e65026b00680',1,'audioin.h']]],
   ['audioout_2eh',['audioout.h',['../audioout_8h.html',1,'']]],
