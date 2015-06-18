@@ -2,8 +2,8 @@ var searchData=
 [
   ['appmgr_2eh',['appmgr.h',['../appmgr_8h.html',1,'']]],
   ['appmgrerrorcodes',['AppMgrErrorCodes',['../appmgr_8h.html#a80b0ffa610d0cd12b727ef18c8fea87b',1,'appmgr.h']]],
-  ['appversion',['appVersion',['../structSceAppUtilBootParam.html#a5f8a0a441e75fe21947c5652e4e8796d',1,'SceAppUtilBootParam']]],
-  ['attr',['attr',['../structSceAppUtilBootParam.html#a6f93c4a690c966beafb57a474198cc03',1,'SceAppUtilBootParam::attr()'],['../struct__sceModuleInfo.html#a7bbe300d7b6bfed431d593e5716f3a8f',1,'_sceModuleInfo::attr()']]],
+  ['apputil_2eh',['apputil.h',['../apputil_8h.html',1,'']]],
+  ['attr',['attr',['../struct__sceModuleInfo.html#a7bbe300d7b6bfed431d593e5716f3a8f',1,'_sceModuleInfo']]],
   ['audioenc_2eh',['audioenc.h',['../audioenc_8h.html',1,'']]],
   ['audioin_2eh',['audioin.h',['../audioin_8h.html',1,'']]],
   ['audioinerrorcodes',['AudioInErrorCodes',['../audioin_8h.html#a0de70f8400a63c8c4e05e65026b00680',1,'audioin.h']]],

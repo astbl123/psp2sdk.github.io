@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['emptyparam',['emptyParam',['../structSceAppUtilSaveDataSlot.html#a579eae0cbdf9beb992506f24d78858ef',1,'SceAppUtilSaveDataSlot']]],
   ['encoderversion',['encoderVersion',['../structSceAudioencOptInfoCelp.html#a7f277f8050909f474a7cb14729b0af89',1,'SceAudioencOptInfoCelp']]],
   ['error_2eh',['error.h',['../error_8h.html',1,'']]],
   ['excitationmode',['excitationMode',['../structSceAudioencInfoCelp.html#a8765d5240cb8e5664f385a3ebea81013',1,'SceAudioencInfoCelp']]],

@@ -28,7 +28,7 @@
   
   <td style="padding-left: 0.5em;">
    <div id="projectname">PSP2SDK
-   &#160;<span id="projectnumber">dirty-b486161</span>
+   &#160;<span id="projectnumber">dirty-49ace70</span>
    </div>
    <div id="projectbrief">An open-sourced SDK for PSP2</div>
   </td>
@@ -79,171 +79,123 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">include/psp2/apputil.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 
-<a name="l00018"></a>00018 <span class="preprocessor">#ifndef _PSP2_APPUTL_H_</span>
-<a name="l00019"></a>00019 <span class="preprocessor"></span><span class="preprocessor">#define _PSP2_APPUTL_H_</span>
-<a name="l00020"></a>00020 <span class="preprocessor"></span>
-<a name="l00021"></a>00021 <span class="preprocessor">#include &lt;<a class="code" href="types_8h.html" title="Header file which defines unique variable types.">psp2/types.h</a>&gt;</span>
-<a name="l00022"></a>00022 
-<a name="l00023"></a>00023 <span class="keyword">enum</span> SceAppUtilErrorCodes {
-<a name="l00024"></a>00024     SCE_APPUTIL_ERROR_PARAMETER = 0x80100600,
-<a name="l00025"></a>00025     SCE_APPUTIL_ERROR_NOT_INITIALIZED   = 0x80100601,
-<a name="l00026"></a>00026     SCE_APPUTIL_ERROR_NO_MEMORY = 0x80100602,
-<a name="l00027"></a>00027     SCE_APPUTIL_ERROR_BUSY  = 0x80100603,
-<a name="l00028"></a>00028     SCE_APPUTIL_ERROR_NOT_MOUNTED   = 0x80100604,
-<a name="l00029"></a>00029     SCE_APPUTIL_ERROR_NO_PERMISSION = 0x80100605,
-<a name="l00030"></a>00030     SCE_APPUTIL_ERROR_APPEVENT_PARSE_INVALID_DATA   = 0x80100620,
-<a name="l00031"></a>00031     SCE_APPUTIL_ERROR_SAVEDATA_SLOT_EXISTS  = 0x80100640,
-<a name="l00032"></a>00032     SCE_APPUTIL_ERROR_SAVEDATA_SLOT_NOT_FOUND   = 0x80100641,
-<a name="l00033"></a>00033     SCE_APPUTIL_ERROR_SAVEDATA_NO_SPACE_QUOTA   = 0x80100642,
-<a name="l00034"></a>00034     SCE_APPUTIL_ERROR_SAVEDATA_NO_SPACE_FS  = 0x80100643,
-<a name="l00035"></a>00035     SCE_APPUTIL_ERROR_PHOTO_DEVICE_NOT_FOUND    = 0x80100680,
-<a name="l00036"></a>00036 };
+<a href="apputil_8h.html">Go to the documentation of this file.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 
+<a name="l00021"></a>00021 <span class="preprocessor">#ifndef _PSP2_APPUTL_H_</span>
+<a name="l00022"></a>00022 <span class="preprocessor"></span><span class="preprocessor">#define _PSP2_APPUTL_H_</span>
+<a name="l00023"></a>00023 <span class="preprocessor"></span>
+<a name="l00024"></a>00024 <span class="preprocessor">#include &lt;<a class="code" href="types_8h.html" title="Header file which defines unique variable types.">psp2/types.h</a>&gt;</span>
+<a name="l00025"></a>00025 
+<a name="l00026"></a>00026 <span class="keyword">enum</span> AppUtilErrorCodes {
+<a name="l00027"></a>00027     SCE_APPUTIL_ERROR_PARAMETER = 0x80100600,
+<a name="l00028"></a>00028     SCE_APPUTIL_ERROR_NOT_INITIALIZED   = 0x80100601,
+<a name="l00029"></a>00029     SCE_APPUTIL_ERROR_NO_MEMORY = 0x80100602,
+<a name="l00030"></a>00030     SCE_APPUTIL_ERROR_BUSY  = 0x80100603,
+<a name="l00031"></a>00031     SCE_APPUTIL_ERROR_NOT_MOUNTED   = 0x80100604,
+<a name="l00032"></a>00032     SCE_APPUTIL_ERROR_SAVEDATA_SLOT_EXISTS  = 0x80100640,
+<a name="l00033"></a>00033     SCE_APPUTIL_ERROR_SAVEDATA_SLOT_NOT_FOUND   = 0x80100641,
+<a name="l00034"></a>00034     SCE_APPUTIL_ERROR_SAVEDATA_NO_SPACE = 0x80100642
+<a name="l00035"></a>00035 };
+<a name="l00036"></a>00036 
 <a name="l00037"></a>00037 
-<a name="l00038"></a>00038 <span class="keyword">typedef</span> uint32_t SceAppUtilBootAttribute;
-<a name="l00039"></a>00039 <span class="keyword">typedef</span> uint32_t SceAppUtilEventType;
-<a name="l00040"></a>00040 <span class="keyword">typedef</span> uint32_t SceAppUtilSavedataSlotId;
-<a name="l00041"></a>00041 <span class="keyword">typedef</span> uint32_t SceAppUtilSavedataSlotStatus;
-<a name="l00042"></a>00042 <span class="keyword">typedef</span> uint32_t SceAppUtilSavedataSaveMode;
-<a name="l00043"></a>00043 <span class="keyword">typedef</span> uint32_t SceAppUtilSavedataRemoveMode;
-<a name="l00044"></a>00044 <span class="keyword">typedef</span> uint32_t SceAppUtilParamId;
-<a name="l00045"></a>00045 <span class="keyword">typedef</span> uint32_t SceAppUtilBgdlStatusType;
-<a name="l00046"></a>00046 
-<a name="l00047"></a><a class="code" href="structSceAppUtilInitParam.html">00047</a> <span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structSceAppUtilInitParam.html">SceAppUtilInitParam</a> {
-<a name="l00048"></a><a class="code" href="structSceAppUtilInitParam.html#a014587ee04fa22b77112585bd6928d40">00048</a>     uint32_t <a class="code" href="structSceAppUtilInitParam.html#a014587ee04fa22b77112585bd6928d40" title="Buffer size.">workBufSize</a>; 
-<a name="l00049"></a><a class="code" href="structSceAppUtilInitParam.html#a932a732a1eb80d249d4efd476a2a9445">00049</a>     uint8_t <a class="code" href="structSceAppUtilInitParam.html#a932a732a1eb80d249d4efd476a2a9445" title="Reserved range.">reserved</a>[60]; 
-<a name="l00050"></a>00050 };
-<a name="l00051"></a>00051 
-<a name="l00052"></a><a class="code" href="structSceAppUtilBootParam.html">00052</a> <span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structSceAppUtilBootParam.html">SceAppUtilBootParam</a> {
-<a name="l00053"></a><a class="code" href="structSceAppUtilBootParam.html#a6f93c4a690c966beafb57a474198cc03">00053</a>     uint32_t <a class="code" href="structSceAppUtilBootParam.html#a6f93c4a690c966beafb57a474198cc03" title="Boot attribute.">attr</a>; 
-<a name="l00054"></a><a class="code" href="structSceAppUtilBootParam.html#a5f8a0a441e75fe21947c5652e4e8796d">00054</a>     uint32_t <a class="code" href="structSceAppUtilBootParam.html#a5f8a0a441e75fe21947c5652e4e8796d" title="App version.">appVersion</a>; 
-<a name="l00055"></a><a class="code" href="structSceAppUtilBootParam.html#a9046d1d0ae8a73d71789cf7411aa20da">00055</a>     uint8_t <a class="code" href="structSceAppUtilBootParam.html#a9046d1d0ae8a73d71789cf7411aa20da" title="Reserved range.">reserved</a>[32]; 
-<a name="l00056"></a>00056 };
-<a name="l00057"></a>00057 
-<a name="l00058"></a><a class="code" href="structSceAppUtilSaveDataMountPoint.html">00058</a> <span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structSceAppUtilSaveDataMountPoint.html">SceAppUtilSaveDataMountPoint</a> {
-<a name="l00059"></a>00059     uint8_t data[16];
-<a name="l00060"></a>00060 };
-<a name="l00061"></a>00061 
-<a name="l00062"></a><a class="code" href="structSceAppUtilAppEventParam.html">00062</a> <span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structSceAppUtilAppEventParam.html">SceAppUtilAppEventParam</a> {
-<a name="l00063"></a><a class="code" href="structSceAppUtilAppEventParam.html#a56a7c0dd8b61dce4417861baaaef1913">00063</a>     SceAppUtilAppEventType <a class="code" href="structSceAppUtilAppEventParam.html#a56a7c0dd8b61dce4417861baaaef1913" title="Event type.">type</a>; 
-<a name="l00064"></a>00064     uint8_t dat[1024] 
-<a name="l00065"></a>00065 };
-<a name="l00066"></a>00066 
-<a name="l00067"></a><a class="code" href="structSceAppUtilMountPoint.html">00067</a> <span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structSceAppUtilMountPoint.html">SceAppUtilMountPoint</a> {
-<a name="l00068"></a>00068     int8_t data[16] 
-<a name="l00069"></a>00069 };
-<a name="l00070"></a>00070 
-<a name="l00071"></a><a class="code" href="structSceAppUtilSaveDataSlot.html">00071</a> <span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structSceAppUtilSaveDataSlot.html">SceAppUtilSaveDataSlot</a> {
-<a name="l00072"></a><a class="code" href="structSceAppUtilSaveDataSlot.html#a92e24cd99ba6f964e964755712107094">00072</a>     uint32_t <a class="code" href="structSceAppUtilSaveDataSlot.html#a92e24cd99ba6f964e964755712107094" title="Slot id.">id</a>; 
-<a name="l00073"></a><a class="code" href="structSceAppUtilSaveDataSlot.html#a2293330c47a0f353b04dd14111e690ae">00073</a>     uint32_t <a class="code" href="structSceAppUtilSaveDataSlot.html#a2293330c47a0f353b04dd14111e690ae" title="Slot status.">status</a>; 
-<a name="l00074"></a><a class="code" href="structSceAppUtilSaveDataSlot.html#a37840412d9c6df7a5b3ed566039348a0">00074</a>     int32_t <a class="code" href="structSceAppUtilSaveDataSlot.html#a37840412d9c6df7a5b3ed566039348a0" title="Param for free usage.">userParam</a>; 
-<a name="l00075"></a><a class="code" href="structSceAppUtilSaveDataSlot.html#a579eae0cbdf9beb992506f24d78858ef">00075</a>     <a class="code" href="structSceAppUtilSaveDataSlotEmptyParam.html">SceAppUtilSaveDataSlotEmptyParam</a> *<a class="code" href="structSceAppUtilSaveDataSlot.html#a579eae0cbdf9beb992506f24d78858ef" title="Settings for empty slot.">emptyParam</a>; 
+<a name="l00038"></a><a class="code" href="structSceAppUtilInitParam.html">00038</a> <span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structSceAppUtilInitParam.html">SceAppUtilInitParam</a>
+<a name="l00039"></a>00039 {
+<a name="l00040"></a>00040     uint32_t workBufSize;
+<a name="l00041"></a>00041     uint8_t reserved[60];
+<a name="l00042"></a>00042 };
+<a name="l00043"></a>00043 
+<a name="l00044"></a><a class="code" href="structSceAppUtilBootParam.html">00044</a> <span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structSceAppUtilBootParam.html">SceAppUtilBootParam</a>
+<a name="l00045"></a>00045 {
+<a name="l00046"></a>00046     uint32_t attr;
+<a name="l00047"></a>00047     uint32_t appVersion;
+<a name="l00048"></a>00048     uint8_t reserved[32];
+<a name="l00049"></a>00049 };
+<a name="l00050"></a>00050 
+<a name="l00051"></a><a class="code" href="structSceAppUtilSaveDataMountPoint.html">00051</a> <span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structSceAppUtilSaveDataMountPoint.html">SceAppUtilSaveDataMountPoint</a>
+<a name="l00052"></a>00052 {
+<a name="l00053"></a>00053     uint8_t data[16];
+<a name="l00054"></a>00054 };
+<a name="l00055"></a>00055 
+<a name="l00056"></a><a class="code" href="structSceAppUtilSaveDataSlotParam.html">00056</a> <span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structSceAppUtilSaveDataSlotParam.html">SceAppUtilSaveDataSlotParam</a>
+<a name="l00057"></a>00057 {
+<a name="l00058"></a>00058     uint32_t status;
+<a name="l00059"></a>00059     uint8_t title[64];
+<a name="l00060"></a>00060     uint8_t subTitle[128];
+<a name="l00061"></a>00061     uint8_t detail[512];
+<a name="l00062"></a>00062     uint8_t iconPath[64];
+<a name="l00063"></a>00063     int32_t userParam;
+<a name="l00064"></a>00064     uint32_t sizeKB;
+<a name="l00065"></a>00065     <a class="code" href="structSceDateTime.html">SceDateTime</a> modifiedTime;
+<a name="l00066"></a>00066     uint8_t reserved[48];
+<a name="l00067"></a>00067 };
+<a name="l00068"></a>00068 
+<a name="l00069"></a><a class="code" href="structSceAppUtilSaveDataSlotEmptyParam.html">00069</a> <span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structSceAppUtilSaveDataSlotEmptyParam.html">SceAppUtilSaveDataSlotEmptyParam</a>
+<a name="l00070"></a>00070 {
+<a name="l00071"></a>00071     int8_t *title;
+<a name="l00072"></a>00072     int8_t *iconPath;
+<a name="l00073"></a>00073     <span class="keywordtype">void</span> *iconBuf;
+<a name="l00074"></a>00074     uint32_t iconBufSize;
+<a name="l00075"></a>00075     uint8_t reserved[32];
 <a name="l00076"></a>00076 };
 <a name="l00077"></a>00077 
-<a name="l00078"></a><a class="code" href="structSceAppUtilSaveDataSlotParam.html">00078</a> <span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structSceAppUtilSaveDataSlotParam.html">SceAppUtilSaveDataSlotParam</a> {
-<a name="l00079"></a><a class="code" href="structSceAppUtilSaveDataSlotParam.html#a1372bd32b8bdedd6f8bdc9b3abd7992a">00079</a>     uint32_t <a class="code" href="structSceAppUtilSaveDataSlotParam.html#a1372bd32b8bdedd6f8bdc9b3abd7992a" title="Status.">status</a>; 
-<a name="l00080"></a><a class="code" href="structSceAppUtilSaveDataSlotParam.html#a5896211b2f43ce1f2c2dada46433c0ef">00080</a>     uint8_t <a class="code" href="structSceAppUtilSaveDataSlotParam.html#a5896211b2f43ce1f2c2dada46433c0ef" title="Title name.">title</a>[64]; 
-<a name="l00081"></a><a class="code" href="structSceAppUtilSaveDataSlotParam.html#a7cb82790b7c80c06706e5440aae63bfb">00081</a>     uint8_t <a class="code" href="structSceAppUtilSaveDataSlotParam.html#a7cb82790b7c80c06706e5440aae63bfb" title="Subtitle.">subTitle</a>[128]; 
-<a name="l00082"></a><a class="code" href="structSceAppUtilSaveDataSlotParam.html#a4a478aa8c5b6d013f19927df2c4b6d73">00082</a>     uint8_t <a class="code" href="structSceAppUtilSaveDataSlotParam.html#a4a478aa8c5b6d013f19927df2c4b6d73" title="Detail info.">detail</a>[512]; 
-<a name="l00083"></a><a class="code" href="structSceAppUtilSaveDataSlotParam.html#af8d9ed10a233af95a6775f67d8707d3d">00083</a>     uint8_t <a class="code" href="structSceAppUtilSaveDataSlotParam.html#af8d9ed10a233af95a6775f67d8707d3d" title="Icon path.">iconPath</a>[64]; 
-<a name="l00084"></a><a class="code" href="structSceAppUtilSaveDataSlotParam.html#af879e6579b09024be54ba70aef8cf124">00084</a>     int32_t <a class="code" href="structSceAppUtilSaveDataSlotParam.html#af879e6579b09024be54ba70aef8cf124" title="User param.">userParam</a>; 
-<a name="l00085"></a><a class="code" href="structSceAppUtilSaveDataSlotParam.html#a0b832684e948503df3468f72e3baeac1">00085</a>     uint32_t <a class="code" href="structSceAppUtilSaveDataSlotParam.html#a0b832684e948503df3468f72e3baeac1" title="Data size (In KB)">sizeKB</a>; 
-<a name="l00086"></a><a class="code" href="structSceAppUtilSaveDataSlotParam.html#a3cb25df5c4e0fcbffd280ce960f9adc4">00086</a>     <a class="code" href="structSceDateTime.html">SceDateTime</a> <a class="code" href="structSceAppUtilSaveDataSlotParam.html#a3cb25df5c4e0fcbffd280ce960f9adc4" title="Last modified time.">modifiedTime</a>; 
-<a name="l00087"></a><a class="code" href="structSceAppUtilSaveDataSlotParam.html#a44a6fd391e5843c13a394e3a52a69cb4">00087</a>     uint8_t <a class="code" href="structSceAppUtilSaveDataSlotParam.html#a44a6fd391e5843c13a394e3a52a69cb4" title="Reserved range.">reserved</a>[48]; 
-<a name="l00088"></a>00088 };
-<a name="l00089"></a>00089 
-<a name="l00090"></a><a class="code" href="structSceAppUtilSavedataSaveItem.html">00090</a> <span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structSceAppUtilSavedataSaveItem.html">SceAppUtilSavedataSaveItem</a> {
-<a name="l00091"></a><a class="code" href="structSceAppUtilSavedataSaveItem.html#aa5aaf814e6d03e287a0026200d0473a2">00091</a>     <span class="keyword">const</span> int8_t *<a class="code" href="structSceAppUtilSavedataSaveItem.html#aa5aaf814e6d03e287a0026200d0473a2" title="Path to savedata.">dataPath</a>; 
-<a name="l00092"></a><a class="code" href="structSceAppUtilSavedataSaveItem.html#a34a38a0956b69d3078895d0a25145e26">00092</a>     <span class="keyword">const</span> <span class="keywordtype">void</span> *<a class="code" href="structSceAppUtilSavedataSaveItem.html#a34a38a0956b69d3078895d0a25145e26" title="Buffer of savedata file.">buf</a>; 
-<a name="l00093"></a><a class="code" href="structSceAppUtilSavedataSaveItem.html#ae7a7300517f693018d07edb471b19ace">00093</a>     int8_t <a class="code" href="structSceAppUtilSavedataSaveItem.html#ae7a7300517f693018d07edb471b19ace" title="Padding.">padding</a>[4]; 
-<a name="l00094"></a><a class="code" href="structSceAppUtilSavedataSaveItem.html#abea4f3cc43dd16944ca34ef31d484da9">00094</a>     <a class="code" href="types_8h.html#ac20a0c334ac3c41e9a7b295e31f6b111" title="Offset type.">SceOff</a> <a class="code" href="structSceAppUtilSavedataSaveItem.html#abea4f3cc43dd16944ca34ef31d484da9" title="Offset of savedata file.">offset</a>; 
-<a name="l00095"></a><a class="code" href="structSceAppUtilSavedataSaveItem.html#aef5d20d98131befada8e17d243c86d5c">00095</a>     SceAppUtilSavedataSaveMode <a class="code" href="structSceAppUtilSavedataSaveItem.html#aef5d20d98131befada8e17d243c86d5c" title="Savedata save mode.">mode</a>; 
-<a name="l00096"></a><a class="code" href="structSceAppUtilSavedataSaveItem.html#ae762910fe7c0607d58ba4c35f8458a99">00096</a>     int8_t <a class="code" href="structSceAppUtilSavedataSaveItem.html#ae762910fe7c0607d58ba4c35f8458a99" title="Reserved range.">reserved</a>[36]; 
-<a name="l00097"></a>00097 };
-<a name="l00098"></a>00098 
-<a name="l00099"></a><a class="code" href="structSceAppUtilSaveDataSlotEmptyParam.html">00099</a> <span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structSceAppUtilSaveDataSlotEmptyParam.html">SceAppUtilSaveDataSlotEmptyParam</a> {
-<a name="l00100"></a><a class="code" href="structSceAppUtilSaveDataSlotEmptyParam.html#a1b8d4bddd28c82fc5a812c59f571e628">00100</a>     int8_t *<a class="code" href="structSceAppUtilSaveDataSlotEmptyParam.html#a1b8d4bddd28c82fc5a812c59f571e628" title="Title string.">title</a>; 
-<a name="l00101"></a><a class="code" href="structSceAppUtilSaveDataSlotEmptyParam.html#a6be99a4103f7b3a79c9e1718dd679486">00101</a>     int8_t *<a class="code" href="structSceAppUtilSaveDataSlotEmptyParam.html#a6be99a4103f7b3a79c9e1718dd679486" title="Path to icon.">iconPath</a>; 
-<a name="l00102"></a><a class="code" href="structSceAppUtilSaveDataSlotEmptyParam.html#ae03e076ab91c2a61b360ce21f1c80621">00102</a>     <span class="keywordtype">void</span> *<a class="code" href="structSceAppUtilSaveDataSlotEmptyParam.html#ae03e076ab91c2a61b360ce21f1c80621" title="Icon buffer.">iconBuf</a>; 
-<a name="l00103"></a><a class="code" href="structSceAppUtilSaveDataSlotEmptyParam.html#a9fa696e595b922437f184b1dc13d52cd">00103</a>     uint32_t <a class="code" href="structSceAppUtilSaveDataSlotEmptyParam.html#a9fa696e595b922437f184b1dc13d52cd" title="Icon buffer size.">iconBufSize</a>; 
-<a name="l00104"></a><a class="code" href="structSceAppUtilSaveDataSlotEmptyParam.html#a012ca7917ac44aa1e62b096ba57d4b7e">00104</a>     uint8_t <a class="code" href="structSceAppUtilSaveDataSlotEmptyParam.html#a012ca7917ac44aa1e62b096ba57d4b7e" title="Reserved range.">reserved</a>[32]; 
-<a name="l00105"></a>00105 };
-<a name="l00106"></a>00106 
-<a name="l00107"></a><a class="code" href="structSceAppUtilSaveDataFile.html">00107</a> <span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structSceAppUtilSaveDataFile.html">SceAppUtilSaveDataFile</a> {
-<a name="l00108"></a>00108     <span class="keyword">const</span> int8_t* filePath;
-<a name="l00109"></a>00109     <span class="keywordtype">void</span>* buf;
-<a name="l00110"></a>00110     uint32_t bufSize;
-<a name="l00111"></a>00111     int64_t offset;
-<a name="l00112"></a>00112     uint32_t mode;
-<a name="l00113"></a>00113     uint32_t progDelta;
-<a name="l00114"></a>00114     uint8_t reserved[32];
-<a name="l00115"></a>00115 };
-<a name="l00116"></a>00116 
-<a name="l00117"></a><a class="code" href="structSceAppUtilSaveDataFileSlot.html">00117</a> <span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structSceAppUtilSaveDataFileSlot.html">SceAppUtilSaveDataFileSlot</a> {
-<a name="l00118"></a>00118     uint32_t id;
-<a name="l00119"></a>00119     <a class="code" href="structSceAppUtilSaveDataSlotParam.html">SceAppUtilSaveDataSlotParam</a> *slotParam;
-<a name="l00120"></a>00120     uint8_t reserved[32];
-<a name="l00121"></a>00121 };
+<a name="l00078"></a><a class="code" href="structSceAppUtilSaveDataSlot.html">00078</a> <span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structSceAppUtilSaveDataSlot.html">SceAppUtilSaveDataSlot</a>
+<a name="l00079"></a>00079 {
+<a name="l00080"></a>00080     uint32_t id;
+<a name="l00081"></a>00081     uint32_t status;
+<a name="l00082"></a>00082     int32_t userParam;
+<a name="l00083"></a>00083     <a class="code" href="structSceAppUtilSaveDataSlotEmptyParam.html">SceAppUtilSaveDataSlotEmptyParam</a> *emptyParam;
+<a name="l00084"></a>00084 };
+<a name="l00085"></a>00085 
+<a name="l00086"></a><a class="code" href="structSceAppUtilSaveDataFile.html">00086</a> <span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structSceAppUtilSaveDataFile.html">SceAppUtilSaveDataFile</a>
+<a name="l00087"></a>00087 {
+<a name="l00088"></a>00088     <span class="keyword">const</span> int8_t* filePath;
+<a name="l00089"></a>00089     <span class="keywordtype">void</span>* buf;
+<a name="l00090"></a>00090     uint32_t bufSize;
+<a name="l00091"></a>00091     int64_t offset;
+<a name="l00092"></a>00092     uint32_t mode;
+<a name="l00093"></a>00093     uint32_t progDelta;
+<a name="l00094"></a>00094     uint8_t reserved[32];
+<a name="l00095"></a>00095 };
+<a name="l00096"></a>00096 
+<a name="l00097"></a><a class="code" href="structSceAppUtilSaveDataFileSlot.html">00097</a> <span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structSceAppUtilSaveDataFileSlot.html">SceAppUtilSaveDataFileSlot</a>
+<a name="l00098"></a>00098 {
+<a name="l00099"></a>00099     uint32_t id;
+<a name="l00100"></a>00100     <a class="code" href="structSceAppUtilSaveDataSlotParam.html">SceAppUtilSaveDataSlotParam</a> *slotParam;
+<a name="l00101"></a>00101     uint8_t reserved[32];
+<a name="l00102"></a>00102 };
+<a name="l00103"></a>00103 
+<a name="l00104"></a>00104 int32_t sceAppUtilInit(<a class="code" href="structSceAppUtilInitParam.html">SceAppUtilInitParam</a> *initParam, <a class="code" href="structSceAppUtilBootParam.html">SceAppUtilBootParam</a> *bootParam);
+<a name="l00105"></a>00105 
+<a name="l00106"></a>00106 int32_t sceAppUtilShutdown();
+<a name="l00107"></a>00107 
+<a name="l00108"></a>00108 int32_t sceAppUtilSaveDataSlotCreate(uint32_t slotId,<a class="code" href="structSceAppUtilSaveDataSlotParam.html">SceAppUtilSaveDataSlotParam</a> *param, <a class="code" href="structSceAppUtilSaveDataMountPoint.html">SceAppUtilSaveDataMountPoint</a> *mountPoint);
+<a name="l00109"></a>00109 
+<a name="l00110"></a>00110 int32_t sceAppUtilSaveDataSlotDelete(uint32_t slotId, <a class="code" href="structSceAppUtilSaveDataMountPoint.html">SceAppUtilSaveDataMountPoint</a> *mountPoint);
+<a name="l00111"></a>00111 
+<a name="l00112"></a>00112 int32_t sceAppUtilSaveDataSlotSetParam(uint32_t slotId, <a class="code" href="structSceAppUtilSaveDataSlotParam.html">SceAppUtilSaveDataSlotParam</a> *param, <a class="code" href="structSceAppUtilSaveDataMountPoint.html">SceAppUtilSaveDataMountPoint</a> *mountPoint);
+<a name="l00113"></a>00113 
+<a name="l00114"></a>00114 int32_t sceAppUtilSaveDataSlotGetParam(uint32_t slotId, <a class="code" href="structSceAppUtilSaveDataSlotParam.html">SceAppUtilSaveDataSlotParam</a> *param, <a class="code" href="structSceAppUtilSaveDataMountPoint.html">SceAppUtilSaveDataMountPoint</a> *mountPoint);
+<a name="l00115"></a>00115 
+<a name="l00116"></a>00116 <span class="comment">//sceAppUtilSaveDataFileSave ???</span>
+<a name="l00117"></a>00117 int32_t sceAppUtilSaveDataDataSave(<a class="code" href="structSceAppUtilSaveDataFileSlot.html">SceAppUtilSaveDataFileSlot</a> *slot, <a class="code" href="structSceAppUtilSaveDataFile.html">SceAppUtilSaveDataFile</a> *files, uint32_t fileNum, <a class="code" href="structSceAppUtilSaveDataMountPoint.html">SceAppUtilSaveDataMountPoint</a> *mountPoint, uint32_t *requiredSizeKB);
+<a name="l00118"></a>00118 
+<a name="l00119"></a>00119 int32_t sceAppUtilMusicMount();
+<a name="l00120"></a>00120 
+<a name="l00121"></a>00121 int32_t sceAppUtilMusicUmount();
 <a name="l00122"></a>00122 
-<a name="l00123"></a><a class="code" href="structSceAppUtilSavedataRemoveItem.html">00123</a> <span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structSceAppUtilSavedataRemoveItem.html">SceAppUtilSavedataRemoveItem</a> {
-<a name="l00124"></a><a class="code" href="structSceAppUtilSavedataRemoveItem.html#aafa5a3431694d9fd19e2d5ce6c0716c1">00124</a>     <span class="keyword">const</span> int8_t *<a class="code" href="structSceAppUtilSavedataRemoveItem.html#aafa5a3431694d9fd19e2d5ce6c0716c1" title="Path to savedata data.">dataPath</a>; 
-<a name="l00125"></a><a class="code" href="structSceAppUtilSavedataRemoveItem.html#aa3cfaadd6b45541d51237a9382feb5e4">00125</a>     SceAppUtilSavedataRemoveMode <a class="code" href="structSceAppUtilSavedataRemoveItem.html#aa3cfaadd6b45541d51237a9382feb5e4" title="Savedata remove mode.">mode</a>; 
-<a name="l00126"></a><a class="code" href="structSceAppUtilSavedataRemoveItem.html#a263dd89cb786723b5c98ecaf18025c0f">00126</a>     int8_t <a class="code" href="structSceAppUtilSavedataRemoveItem.html#a263dd89cb786723b5c98ecaf18025c0f" title="Reserved range.">reserved</a>[36]; 
-<a name="l00127"></a>00127 };
+<a name="l00123"></a>00123 int32_t sceAppUtilPhotoMount();
+<a name="l00124"></a>00124 
+<a name="l00125"></a>00125 int32_t sceAppUtilPhotoUmount();
+<a name="l00126"></a>00126 
+<a name="l00127"></a>00127 int32_t sceAppUtilSystemParamGetInt(uint32_t paramId, int32_t *value);
 <a name="l00128"></a>00128 
-<a name="l00129"></a><a class="code" href="structSceAppUtilStoreBrowseParam.html">00129</a> <span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structSceAppUtilStoreBrowseParam.html">SceAppUtilStoreBrowseParam</a> {
-<a name="l00130"></a><a class="code" href="structSceAppUtilStoreBrowseParam.html#ad2a2e8f8642159314d103c8bbb0898d4">00130</a>     uint32_t <a class="code" href="structSceAppUtilStoreBrowseParam.html#ad2a2e8f8642159314d103c8bbb0898d4" title="Store browse type.">type</a>; 
-<a name="l00131"></a><a class="code" href="structSceAppUtilStoreBrowseParam.html#aca095e9446d4bf9d271e4577a0605c89">00131</a>     <span class="keyword">const</span> int8_t *<a class="code" href="structSceAppUtilStoreBrowseParam.html#aca095e9446d4bf9d271e4577a0605c89" title="Target id.">id</a>; 
-<a name="l00132"></a>00132 };
-<a name="l00133"></a>00133 
-<a name="l00134"></a><a class="code" href="structSceAppUtilWebBrowserParam.html">00134</a> <span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structSceAppUtilWebBrowserParam.html">SceAppUtilWebBrowserParam</a> {
-<a name="l00135"></a><a class="code" href="structSceAppUtilWebBrowserParam.html#a9e1c13d017c3e13b9c28702c0a9c4d8c">00135</a>     <span class="keyword">const</span> int8_t <a class="code" href="structSceAppUtilWebBrowserParam.html#a9e1c13d017c3e13b9c28702c0a9c4d8c" title="String that&#39;s passed to command specified by launchMode.">str</a>; 
-<a name="l00136"></a><a class="code" href="structSceAppUtilWebBrowserParam.html#a1a6bba9738fd83754c52f5c70432a5c7">00136</a>     uint32_t <a class="code" href="structSceAppUtilWebBrowserParam.html#a1a6bba9738fd83754c52f5c70432a5c7" title="Length of str.">strlen</a>; 
-<a name="l00137"></a><a class="code" href="structSceAppUtilWebBrowserParam.html#a0cfd25b4906e098e13c8042bf58022c9">00137</a>     uint32_t <a class="code" href="structSceAppUtilWebBrowserParam.html#a0cfd25b4906e098e13c8042bf58022c9" title="Browser mode.">launchMode</a>; 
-<a name="l00138"></a><a class="code" href="structSceAppUtilWebBrowserParam.html#ae8bf26ca4091c5a85d0f83d35b483924">00138</a>     uint32_t <a class="code" href="structSceAppUtilWebBrowserParam.html#ae8bf26ca4091c5a85d0f83d35b483924" title="Reserved area.">reserved0</a>; 
-<a name="l00139"></a>00139 };
-<a name="l00140"></a>00140 
-<a name="l00141"></a>00141 int32_t SceAppUtilInit(<a class="code" href="structSceAppUtilInitParam.html">SceAppUtilInitParam</a> *initParam, <a class="code" href="structSceAppUtilBootParam.html">SceAppUtilBootParam</a> *bootParam); 
-<a name="l00142"></a>00142 
-<a name="l00143"></a>00143 int32_t SceAppUtilShutdown(); 
-<a name="l00144"></a>00144 
-<a name="l00145"></a>00145 int32_t SceAppUtilRecieveAppEvent(<a class="code" href="structSceAppUtilAppEventParam.html">SceAppUtilAppEventParam</a> *eventParam);  
-<a name="l00146"></a>00146 
-<a name="l00147"></a>00147 int32_t SceAppUtilSaveDataSlotCreate(uint32_t slotId,<a class="code" href="structSceAppUtilSaveDataSlotParam.html">SceAppUtilSaveDataSlotParam</a> *param, <a class="code" href="structSceAppUtilSaveDataMountPoint.html">SceAppUtilSaveDataMountPoint</a> *mountPoint); 
-<a name="l00148"></a>00148 
-<a name="l00149"></a>00149 int32_t SceAppUtilSaveDataSlotDelete(uint32_t slotId, <a class="code" href="structSceAppUtilSaveDataMountPoint.html">SceAppUtilSaveDataMountPoint</a> *mountPoint); 
-<a name="l00150"></a>00150 
-<a name="l00151"></a>00151 int32_t SceAppUtilSaveDataSlotSetParam(uint32_t slotId, <a class="code" href="structSceAppUtilSaveDataSlotParam.html">SceAppUtilSaveDataSlotParam</a> *param, <a class="code" href="structSceAppUtilSaveDataMountPoint.html">SceAppUtilSaveDataMountPoint</a> *mountPoint); 
-<a name="l00152"></a>00152 
-<a name="l00153"></a>00153 int32_t SceAppUtilSaveDataSlotGetParam(uint32_t slotId, <a class="code" href="structSceAppUtilSaveDataSlotParam.html">SceAppUtilSaveDataSlotParam</a> *param, <a class="code" href="structSceAppUtilSaveDataMountPoint.html">SceAppUtilSaveDataMountPoint</a> *mountPoint); 
-<a name="l00154"></a>00154 
-<a name="l00155"></a>00155 int32_t SceAppUtilSaveDataDataSave(<a class="code" href="structSceAppUtilSaveDataFileSlot.html">SceAppUtilSaveDataFileSlot</a> *slot, <a class="code" href="structSceAppUtilSaveDataFile.html">SceAppUtilSaveDataFile</a> *files, uint32_t fileNum, <a class="code" href="structSceAppUtilSaveDataMountPoint.html">SceAppUtilSaveDataMountPoint</a> *mountPoint, uint32_t *requiredSizeKB); 
-<a name="l00156"></a>00156 
-<a name="l00157"></a>00157 int32_t SceAppUtilMusicMount(); 
-<a name="l00158"></a>00158 
-<a name="l00159"></a>00159 int32_t SceAppUtilMusicUmount(); 
-<a name="l00160"></a>00160 
-<a name="l00161"></a>00161 int32_t SceAppUtilPhotoMount(); 
-<a name="l00162"></a>00162 
-<a name="l00163"></a>00163 int32_t SceAppUtilPhotoUmount(); 
-<a name="l00164"></a>00164 
-<a name="l00165"></a>00165 int32_t SceAppUtilSystemParamGetInt(uint32_t paramId, int32_t *value); 
-<a name="l00166"></a>00166 
-<a name="l00167"></a>00167 int32_t SceAppUtilSystemParamGetString(uint32_t paramId, int8_t *buf, uint32_t bufSize); 
-<a name="l00168"></a>00168 
-<a name="l00169"></a>00169 int32_t SceAppUtilParamGetInt(SceAppUtilAppParamId paramId, int32_t *value); 
-<a name="l00170"></a>00170 
-<a name="l00171"></a>00171 int32_t SceAppUtilSaveSafeMemory(<span class="keywordtype">void</span> *buf, uint32_t bufSize, int64_t offset); 
-<a name="l00172"></a>00172 
-<a name="l00173"></a>00173 int32_t SceAppUtilLoadSafeMemory(<span class="keywordtype">void</span> *buf, uint32_t bufSize, int64_t offset); 
-<a name="l00174"></a>00174 
-<a name="l00175"></a>00175 int32_t SceAppUtilStoreBrowse(<a class="code" href="structSceAppUtilStoreBrowseParam.html">SceAppUtilStoreBrowseParam</a> *param); 
-<a name="l00176"></a>00176 
-<a name="l00177"></a>00177 int32_t SceAppUtilBgdlGetStatus(SceAppUtilBgdlStatus *stat); 
-<a name="l00178"></a>00178 
-<a name="l00179"></a>00179 int32_t SceAppUtilLaunchWebBrowser(<a class="code" href="structSceAppUtilWebBrowserParam.html">SceAppUtilWebBrowserParam</a> *param); 
-<a name="l00180"></a>00180 
-<a name="l00181"></a>00181 <span class="preprocessor">#endif</span>
+<a name="l00129"></a>00129 int32_t sceAppUtilSystemParamGetString(uint32_t paramId, int8_t *buf, uint32_t bufSize);
+<a name="l00130"></a>00130 
+<a name="l00131"></a>00131 int32_t sceAppUtilSaveSafeMemory(<span class="keywordtype">void</span> *buf, uint32_t bufSize, int64_t offset);
+<a name="l00132"></a>00132 
+<a name="l00133"></a>00133 int32_t sceAppUtilLoadSafeMemory(<span class="keywordtype">void</span> *buf, uint32_t bufSize, int64_t offset);
+<a name="l00134"></a>00134 
+<a name="l00135"></a>00135 
+<a name="l00167"></a>00167 <span class="preprocessor">#endif</span>
 </pre></div></div><!-- contents -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
@@ -262,7 +214,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jun 18 2015 02:19:35 for PSP2SDK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jun 18 2015 02:24:00 for PSP2SDK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>
