@@ -12,6 +12,6 @@ var searchData=
   ['mindispx',['minDispX',['../structSceTouchPanelInfo.html#a4f93cf4aa93c1d4480fa3f0458162bd4',1,'SceTouchPanelInfo']]],
   ['mindispy',['minDispY',['../structSceTouchPanelInfo.html#ab91a0c9d8666dbecd9380f5f4dd04595',1,'SceTouchPanelInfo']]],
   ['minforce',['minForce',['../structSceTouchPanelInfo.html#a33cc25a965ad7868300969788cd7abce',1,'SceTouchPanelInfo']]],
-  ['mode',['mode',['../structSceAppUtilSavedataSaveItem.html#aef5d20d98131befada8e17d243c86d5c',1,'SceAppUtilSavedataSaveItem::mode()'],['../structSceAppUtilSavedataRemoveItem.html#aa3cfaadd6b45541d51237a9382feb5e4',1,'SceAppUtilSavedataRemoveItem::mode()']]],
+  ['mode',['mode',['../structSceAppUtilSaveDataSaveItem.html#acbe6ffd3d233e53771f93f86af4cd250',1,'SceAppUtilSaveDataSaveItem::mode()'],['../structSceAppUtilSaveDataRemoveItem.html#a9a98b5d4d950a670992311f8657649b9',1,'SceAppUtilSaveDataRemoveItem::mode()']]],
   ['modifiedtime',['modifiedTime',['../structSceAppUtilSaveDataSlotParam.html#a3cb25df5c4e0fcbffd280ce960f9adc4',1,'SceAppUtilSaveDataSlotParam']]]
 ];
