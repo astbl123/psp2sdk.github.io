@@ -1,6 +1,6 @@
 <map id="G" name="G">
 <area shape="rect" id="node3" href="$appmgr_8h.html" title="Header file which defines control related variables and functions." alt="" coords="5,83,157,112"/>
-<area shape="rect" id="node5" href="$apputil_8h.html" title="Header file which defines control related variables and functions." alt="" coords="181,83,328,112"/>
+<area shape="rect" id="node5" href="$apputil_8h_source.html" title="include/psp2/apputil.h" alt="" coords="181,83,328,112"/>
 <area shape="rect" id="node7" href="$audioenc_8h.html" title="Header file which defines encoding audio library related variables and functions." alt="" coords="352,83,515,112"/>
 <area shape="rect" id="node9" href="$audioin_8h.html" title="Header file which defines control related variables and functions." alt="" coords="539,83,688,112"/>
 <area shape="rect" id="node11" href="$audioout_8h.html" title="Header file which defines output audio related variables and functions." alt="" coords="712,83,869,112"/>

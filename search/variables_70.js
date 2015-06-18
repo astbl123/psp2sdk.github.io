@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['padding',['padding',['../structSceAppUtilSavedataSaveItem.html#ae7a7300517f693018d07edb471b19ace',1,'SceAppUtilSavedataSaveItem']]],
   ['phototitle',['photoTitle',['../structScreenshotParam.html#a90b64ebba7c7a28fb41dcd8275ce79ee',1,'ScreenshotParam']]],
   ['pinfo',['pInfo',['../structSceAudioencCtrl.html#a2543c1de30788261b42ece3d232ac00b',1,'SceAudioencCtrl']]],
   ['pinputpcm',['pInputPcm',['../structSceAudioencCtrl.html#a581158e1d6bb0a854e21e243ab270b38',1,'SceAudioencCtrl']]],
