@@ -28,7 +28,7 @@
   
   <td style="padding-left: 0.5em;">
    <div id="projectname">PSP2SDK
-   &#160;<span id="projectnumber">dirty-e4c9ed5</span>
+   &#160;<span id="projectnumber">dirty-17c10a1</span>
    </div>
    <div id="projectbrief">An open-sourced SDK for PSP2</div>
   </td>
@@ -150,31 +150,25 @@ typedef const <a class="el" href="struct__sceModuleInfo.html">_sceModuleInfo</a>
 </div>
 <div class="memdoc">
 <b>Value:</b><div class="fragment"><pre class="fragment">__asm__ (<span class="stringliteral">&quot;.section .sceLib.stub, \&quot;a\&quot;, %progbits;&quot;</span>);   \
-    extern <span class="keywordtype">char</span> export_top[], export_btm[]; \
-    extern <span class="keywordtype">char</span> import_top[];   \
-    int module_start(SceSize argc, <span class="keywordtype">void</span> *argp); \
-    int module_stop(SceSize argc, <span class="keywordtype">void</span> *argp);  \
-    extern <span class="keywordtype">char</span> exidx_top[], exidx_btm[];   \
-    extern <span class="keywordtype">char</span> extab_top[], extab_btm[];   \
     SceModuleInfo module_info   \
-        __attribute__((section(<span class="stringliteral">&quot;.sceModuleInfo.rodata&quot;</span>), aligned(16)))  \
+        __attribute__((section(<span class="stringliteral">&quot;.sceModuleInfo.rodata&quot;</span>)))   \
             = { \
         .attr = attribute,  \
         .ver = version, \
         .name = module_name,    \
         .type = 0,  \
         .gp = NULL, \
-        .expTop = export_top,   \
-        .expBtm = export_btm,   \
-        .impTop = import_top,   \
-        .impBtm = import_top,   \
+        .expTop = 0,    \
+        .expBtm = 0,    \
+        .impTop = 0,    \
+        .impBtm = 0,    \
         .nid = 0,   \
-        .start = module_start,  \
-        .stop = module_stop,    \
-        .exidxTop = exidx_top,  \
-        .exidxBtm = exidx_btm,  \
-        .extabTop = extab_top,  \
-        .extabBtm = extab_btm   \
+        .start = 0, \
+        .stop = 0,  \
+        .exidxTop = 0,  \
+        .exidxBtm = 0,  \
+        .extabTop = 0,  \
+        .extabBtm = 0   \
     };
 </pre></div><p>Define module information</p>
 <dl class="params"><dt><b>Parameters:</b></dt><dd>
@@ -206,7 +200,7 @@ typedef const <a class="el" href="struct__sceModuleInfo.html">_sceModuleInfo</a>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jun 18 2015 23:05:35 for PSP2SDK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jun 19 2015 03:45:59 for PSP2SDK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

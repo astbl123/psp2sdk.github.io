@@ -28,7 +28,7 @@
   
   <td style="padding-left: 0.5em;">
    <div id="projectname">PSP2SDK
-   &#160;<span id="projectnumber">dirty-e4c9ed5</span>
+   &#160;<span id="projectnumber">dirty-17c10a1</span>
    </div>
    <div id="projectbrief">An open-sourced SDK for PSP2</div>
   </td>
@@ -93,55 +93,47 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00032"></a><a class="code" href="struct__sceModuleInfo.html#ae6b5ea4990138bb4c41f67c1f9210809">00032</a>     <span class="keywordtype">char</span> name[27];  
 <a name="l00033"></a><a class="code" href="struct__sceModuleInfo.html#ad8f1493456810ad183d4167f8075a990">00033</a>     uint8_t <a class="code" href="struct__sceModuleInfo.html#ad8f1493456810ad183d4167f8075a990" title="Type.">type</a>;   
 <a name="l00034"></a><a class="code" href="struct__sceModuleInfo.html#a23b5d55def34c414f64db18b82bfcec4">00034</a>     <span class="keywordtype">void</span> *<a class="code" href="struct__sceModuleInfo.html#a23b5d55def34c414f64db18b82bfcec4" title="Global Pointer.">gp</a>;   
-<a name="l00035"></a><a class="code" href="struct__sceModuleInfo.html#a461c81591a24ab35f218d0f6a3fc2e58">00035</a>     <span class="keywordtype">void</span> *<a class="code" href="struct__sceModuleInfo.html#a461c81591a24ab35f218d0f6a3fc2e58" title="Pointer to the top of export table.">expTop</a>;   
-<a name="l00036"></a><a class="code" href="struct__sceModuleInfo.html#a839d0a331de7e3340d4ef5256520ee50">00036</a>     <span class="keywordtype">void</span> *<a class="code" href="struct__sceModuleInfo.html#a839d0a331de7e3340d4ef5256520ee50" title="Pointer to the bottom of export table.">expBtm</a>;   
-<a name="l00037"></a><a class="code" href="struct__sceModuleInfo.html#aa4adf972e5bb93d61b640583191a8325">00037</a>     <span class="keywordtype">void</span> *<a class="code" href="struct__sceModuleInfo.html#aa4adf972e5bb93d61b640583191a8325" title="Pointer to the top of import table.">impTop</a>;   
-<a name="l00038"></a><a class="code" href="struct__sceModuleInfo.html#a75c6c7caa84e6e3bf44892674f6867b9">00038</a>     <span class="keywordtype">void</span> *<a class="code" href="struct__sceModuleInfo.html#a75c6c7caa84e6e3bf44892674f6867b9" title="Pointer to the bottom of import table.">impBtm</a>;   
+<a name="l00035"></a><a class="code" href="struct__sceModuleInfo.html#a0cee53e9b144e78ad7ac6666de94ebc3">00035</a>     uint32_t <a class="code" href="struct__sceModuleInfo.html#a0cee53e9b144e78ad7ac6666de94ebc3" title="Offset of the top of export table.">expTop</a>;    
+<a name="l00036"></a><a class="code" href="struct__sceModuleInfo.html#a81937fc0de6230d0f97110c585bdd2a6">00036</a>     uint32_t <a class="code" href="struct__sceModuleInfo.html#a81937fc0de6230d0f97110c585bdd2a6" title="Offset of the bottom of export table.">expBtm</a>;    
+<a name="l00037"></a><a class="code" href="struct__sceModuleInfo.html#ab4ccad698bea49f9de85c43e0d1fa99a">00037</a>     uint32_t <a class="code" href="struct__sceModuleInfo.html#ab4ccad698bea49f9de85c43e0d1fa99a" title="Offset of the top of import table.">impTop</a>;    
+<a name="l00038"></a><a class="code" href="struct__sceModuleInfo.html#a72f4bcc5cd4b0355d63981e5c862aef8">00038</a>     uint32_t <a class="code" href="struct__sceModuleInfo.html#a72f4bcc5cd4b0355d63981e5c862aef8" title="Offset of the bottom of import table.">impBtm</a>;    
 <a name="l00039"></a><a class="code" href="struct__sceModuleInfo.html#aae8dc2b37203dd3d11598a8cd9f42836">00039</a>     uint32_t <a class="code" href="struct__sceModuleInfo.html#aae8dc2b37203dd3d11598a8cd9f42836" title="NID.">nid</a>;   
-<a name="l00040"></a><a class="code" href="struct__sceModuleInfo.html#a6f1c1d50b0eef002d3df17b5c4509812">00040</a>     uint32_t <a class="code" href="struct__sceModuleInfo.html#a6f1c1d50b0eef002d3df17b5c4509812" title="Unknown.">unk38</a>; 
-<a name="l00041"></a><a class="code" href="struct__sceModuleInfo.html#a1944335de971253a37162ab1b42e3252">00041</a>     uint32_t <a class="code" href="struct__sceModuleInfo.html#a1944335de971253a37162ab1b42e3252" title="Unknown.">unk3C</a>; 
-<a name="l00042"></a><a class="code" href="struct__sceModuleInfo.html#af967fdd55740abb4406736be25e7beba">00042</a>     uint32_t <a class="code" href="struct__sceModuleInfo.html#af967fdd55740abb4406736be25e7beba" title="Unknown.">unk40</a>; 
-<a name="l00043"></a><a class="code" href="struct__sceModuleInfo.html#a92a4d555eeef534c877eee804a902d7b">00043</a>     <span class="keywordtype">void</span> *<a class="code" href="struct__sceModuleInfo.html#a92a4d555eeef534c877eee804a902d7b" title="Pointer to module_start function.">start</a>;    
-<a name="l00044"></a><a class="code" href="struct__sceModuleInfo.html#a8c9450dad7865318f582fa67311ba615">00044</a>     <span class="keywordtype">void</span> *<a class="code" href="struct__sceModuleInfo.html#a8c9450dad7865318f582fa67311ba615" title="Pointer to module_stop function.">stop</a>; 
-<a name="l00045"></a><a class="code" href="struct__sceModuleInfo.html#af698aa0fef88ec8bc37e80cb67760a12">00045</a>     <span class="keywordtype">void</span> *<a class="code" href="struct__sceModuleInfo.html#af698aa0fef88ec8bc37e80cb67760a12" title="Pointer to the top of exidx section.">exidxTop</a>; 
-<a name="l00046"></a><a class="code" href="struct__sceModuleInfo.html#a2e43bddf03d430582f9ac7f85ec0e67c">00046</a>     <span class="keywordtype">void</span> *<a class="code" href="struct__sceModuleInfo.html#a2e43bddf03d430582f9ac7f85ec0e67c" title="Pointer to the bottom of exidx section.">exidxBtm</a>; 
-<a name="l00047"></a><a class="code" href="struct__sceModuleInfo.html#ac259601d5c9fa7c0137587b60f2dcb86">00047</a>     <span class="keywordtype">void</span> *<a class="code" href="struct__sceModuleInfo.html#ac259601d5c9fa7c0137587b60f2dcb86" title="Pointer to the top of extab section.">extabTop</a>; 
-<a name="l00048"></a><a class="code" href="struct__sceModuleInfo.html#afc2f0a5e8278f3744dcf77fbe467c4b3">00048</a>     <span class="keywordtype">void</span> *<a class="code" href="struct__sceModuleInfo.html#afc2f0a5e8278f3744dcf77fbe467c4b3" title="Pointer to the bottom of extab section.">extabBtm</a>; 
-<a name="l00049"></a>00049 } <a class="code" href="struct__sceModuleInfo.html" title="Module Information.">_sceModuleInfo</a>;
-<a name="l00050"></a>00050 
-<a name="l00052"></a><a class="code" href="moduleinfo_8h.html#a9840abf23267247218416627467db239">00052</a> <span class="keyword">typedef</span> <span class="keyword">const</span> <a class="code" href="struct__sceModuleInfo.html" title="Module Information.">_sceModuleInfo</a> <a class="code" href="moduleinfo_8h.html#a9840abf23267247218416627467db239" title="The type of structure stored in .sceModuleInfo.rodata section.">SceModuleInfo</a>;
-<a name="l00053"></a>00053 
-<a name="l00054"></a>00054 <span class="comment">// It doesn&#39;t refer to import_btm because it is not defined yet.</span>
-<a name="l00062"></a><a class="code" href="moduleinfo_8h.html#ae6ba384c7cae9475fabd23a327b3c27a">00062</a> <span class="comment"></span><span class="preprocessor">#define PSP2_MODULE_INFO(attribute, version, module_name)   \</span>
-<a name="l00063"></a>00063 <span class="preprocessor">    __asm__ (&quot;.section .sceLib.stub, \&quot;a\&quot;, %progbits;&quot;);   \</span>
-<a name="l00064"></a>00064 <span class="preprocessor">    extern char export_top[], export_btm[]; \</span>
-<a name="l00065"></a>00065 <span class="preprocessor">    extern char import_top[];   \</span>
-<a name="l00066"></a>00066 <span class="preprocessor">    int module_start(SceSize argc, void *argp); \</span>
-<a name="l00067"></a>00067 <span class="preprocessor">    int module_stop(SceSize argc, void *argp);  \</span>
-<a name="l00068"></a>00068 <span class="preprocessor">    extern char exidx_top[], exidx_btm[];   \</span>
-<a name="l00069"></a>00069 <span class="preprocessor">    extern char extab_top[], extab_btm[];   \</span>
-<a name="l00070"></a>00070 <span class="preprocessor">    SceModuleInfo module_info   \</span>
-<a name="l00071"></a>00071 <span class="preprocessor">        __attribute__((section(&quot;.sceModuleInfo.rodata&quot;), aligned(16)))  \</span>
-<a name="l00072"></a>00072 <span class="preprocessor">            = { \</span>
-<a name="l00073"></a>00073 <span class="preprocessor">        .attr = attribute,  \</span>
-<a name="l00074"></a>00074 <span class="preprocessor">        .ver = version, \</span>
-<a name="l00075"></a>00075 <span class="preprocessor">        .name = module_name,    \</span>
-<a name="l00076"></a>00076 <span class="preprocessor">        .type = 0,  \</span>
-<a name="l00077"></a>00077 <span class="preprocessor">        .gp = NULL, \</span>
-<a name="l00078"></a>00078 <span class="preprocessor">        .expTop = export_top,   \</span>
-<a name="l00079"></a>00079 <span class="preprocessor">        .expBtm = export_btm,   \</span>
-<a name="l00080"></a>00080 <span class="preprocessor">        .impTop = import_top,   \</span>
-<a name="l00081"></a>00081 <span class="preprocessor">        .impBtm = import_top,   \</span>
-<a name="l00082"></a>00082 <span class="preprocessor">        .nid = 0,   \</span>
-<a name="l00083"></a>00083 <span class="preprocessor">        .start = module_start,  \</span>
-<a name="l00084"></a>00084 <span class="preprocessor">        .stop = module_stop,    \</span>
-<a name="l00085"></a>00085 <span class="preprocessor">        .exidxTop = exidx_top,  \</span>
-<a name="l00086"></a>00086 <span class="preprocessor">        .exidxBtm = exidx_btm,  \</span>
-<a name="l00087"></a>00087 <span class="preprocessor">        .extabTop = extab_top,  \</span>
-<a name="l00088"></a>00088 <span class="preprocessor">        .extabBtm = extab_btm   \</span>
-<a name="l00089"></a>00089 <span class="preprocessor">    };</span>
-<a name="l00090"></a>00090 <span class="preprocessor"></span>
-<a name="l00091"></a>00091 <span class="preprocessor">#endif</span>
+<a name="l00040"></a><a class="code" href="struct__sceModuleInfo.html#ac4972b14db48696c874ef30fe18f5a20">00040</a>     uint32_t unk[3];    
+<a name="l00041"></a><a class="code" href="struct__sceModuleInfo.html#ad563e95dd5e6a1e9ae55a4826a0da7cc">00041</a>     uint32_t <a class="code" href="struct__sceModuleInfo.html#ad563e95dd5e6a1e9ae55a4826a0da7cc" title="Offset of module_start function.">start</a>; 
+<a name="l00042"></a><a class="code" href="struct__sceModuleInfo.html#a78d2e5867e20fd952f4a27041348b407">00042</a>     uint32_t <a class="code" href="struct__sceModuleInfo.html#a78d2e5867e20fd952f4a27041348b407" title="Offset of module_stop function.">stop</a>;  
+<a name="l00043"></a><a class="code" href="struct__sceModuleInfo.html#a4d8bd020395e16003bf18d2d73d468a7">00043</a>     uint32_t <a class="code" href="struct__sceModuleInfo.html#a4d8bd020395e16003bf18d2d73d468a7" title="Offset of the top of exidx section.">exidxTop</a>;  
+<a name="l00044"></a><a class="code" href="struct__sceModuleInfo.html#afe44bf0d43904bdaada295984057947b">00044</a>     uint32_t <a class="code" href="struct__sceModuleInfo.html#afe44bf0d43904bdaada295984057947b" title="Offset of the bottom of exidx section.">exidxBtm</a>;  
+<a name="l00045"></a><a class="code" href="struct__sceModuleInfo.html#a56f9e8e4b931f0717f6975c2bba6f07b">00045</a>     uint32_t <a class="code" href="struct__sceModuleInfo.html#a56f9e8e4b931f0717f6975c2bba6f07b" title="Offset of the top of extab section.">extabTop</a>;  
+<a name="l00046"></a><a class="code" href="struct__sceModuleInfo.html#aa07e89ee17af41aef16fd492179d70e4">00046</a>     uint32_t <a class="code" href="struct__sceModuleInfo.html#aa07e89ee17af41aef16fd492179d70e4" title="Offset of the bottom of extab section.">extabBtm</a>;  
+<a name="l00047"></a>00047 } <a class="code" href="struct__sceModuleInfo.html" title="Module Information.">_sceModuleInfo</a>;
+<a name="l00048"></a>00048 
+<a name="l00050"></a><a class="code" href="moduleinfo_8h.html#a9840abf23267247218416627467db239">00050</a> <span class="keyword">typedef</span> <span class="keyword">const</span> <a class="code" href="struct__sceModuleInfo.html" title="Module Information.">_sceModuleInfo</a> <a class="code" href="moduleinfo_8h.html#a9840abf23267247218416627467db239" title="The type of structure stored in .sceModuleInfo.rodata section.">SceModuleInfo</a>;
+<a name="l00051"></a>00051 
+<a name="l00052"></a>00052 <span class="comment">// It doesn&#39;t refer to import_btm because it is not defined yet.</span>
+<a name="l00060"></a><a class="code" href="moduleinfo_8h.html#ae6ba384c7cae9475fabd23a327b3c27a">00060</a> <span class="comment"></span><span class="preprocessor">#define PSP2_MODULE_INFO(attribute, version, module_name)   \</span>
+<a name="l00061"></a>00061 <span class="preprocessor">    __asm__ (&quot;.section .sceLib.stub, \&quot;a\&quot;, %progbits;&quot;);   \</span>
+<a name="l00062"></a>00062 <span class="preprocessor">    SceModuleInfo module_info   \</span>
+<a name="l00063"></a>00063 <span class="preprocessor">        __attribute__((section(&quot;.sceModuleInfo.rodata&quot;)))   \</span>
+<a name="l00064"></a>00064 <span class="preprocessor">            = { \</span>
+<a name="l00065"></a>00065 <span class="preprocessor">        .attr = attribute,  \</span>
+<a name="l00066"></a>00066 <span class="preprocessor">        .ver = version, \</span>
+<a name="l00067"></a>00067 <span class="preprocessor">        .name = module_name,    \</span>
+<a name="l00068"></a>00068 <span class="preprocessor">        .type = 0,  \</span>
+<a name="l00069"></a>00069 <span class="preprocessor">        .gp = NULL, \</span>
+<a name="l00070"></a>00070 <span class="preprocessor">        .expTop = 0,    \</span>
+<a name="l00071"></a>00071 <span class="preprocessor">        .expBtm = 0,    \</span>
+<a name="l00072"></a>00072 <span class="preprocessor">        .impTop = 0,    \</span>
+<a name="l00073"></a>00073 <span class="preprocessor">        .impBtm = 0,    \</span>
+<a name="l00074"></a>00074 <span class="preprocessor">        .nid = 0,   \</span>
+<a name="l00075"></a>00075 <span class="preprocessor">        .start = 0, \</span>
+<a name="l00076"></a>00076 <span class="preprocessor">        .stop = 0,  \</span>
+<a name="l00077"></a>00077 <span class="preprocessor">        .exidxTop = 0,  \</span>
+<a name="l00078"></a>00078 <span class="preprocessor">        .exidxBtm = 0,  \</span>
+<a name="l00079"></a>00079 <span class="preprocessor">        .extabTop = 0,  \</span>
+<a name="l00080"></a>00080 <span class="preprocessor">        .extabBtm = 0   \</span>
+<a name="l00081"></a>00081 <span class="preprocessor">    };</span>
+<a name="l00082"></a>00082 <span class="preprocessor"></span>
+<a name="l00083"></a>00083 <span class="preprocessor">#endif</span>
 </pre></div></div><!-- contents -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
@@ -160,7 +152,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jun 18 2015 23:05:35 for PSP2SDK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jun 19 2015 03:45:59 for PSP2SDK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>
