@@ -6,6 +6,7 @@ var searchData=
   ['reserved0',['reserved0',['../structSceAppUtilWebBrowserParam.html#ae8bf26ca4091c5a85d0f83d35b483924',1,'SceAppUtilWebBrowserParam']]],
   ['rsrv',['Rsrv',['../structSceCtrlData.html#ac340291f37904638ed9342e4566767f0',1,'SceCtrlData']]],
   ['rsv',['rsv',['../structSceTouchPanelInfo.html#ae5fc76c13a09caacd0321aca99f78ab7',1,'SceTouchPanelInfo::rsv()'],['../structSceTouchReport.html#ab3b57be68520c629166524b0c482bed3',1,'SceTouchReport::rsv()']]],
+  ['rtc_2eh',['rtc.h',['../rtc_8h.html',1,'']]],
   ['rx',['Rx',['../structSceCtrlData.html#ab10a8ea532c79cd2a6c62d048e629204',1,'SceCtrlData']]],
   ['ry',['Ry',['../structSceCtrlData.html#a7353d106bdf8c22ed9ed215064639887',1,'SceCtrlData']]]
 ];

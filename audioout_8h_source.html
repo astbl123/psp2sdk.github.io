@@ -28,7 +28,7 @@
   
   <td style="padding-left: 0.5em;">
    <div id="projectname">PSP2SDK
-   &#160;<span id="projectnumber">dirty-bc58214</span>
+   &#160;<span id="projectnumber">dirty-2f33d01</span>
    </div>
    <div id="projectbrief">An open-sourced SDK for PSP2</div>
   </td>
@@ -116,40 +116,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00054"></a><a class="code" href="audioout_8h.html#ad5fe3860751d9c7f2ec196675c929385">00054</a> <span class="preprocessor">#define PSP2_AUDIO_MIN_LEN 64       //!&lt; Minimum granularity</span>
 <a name="l00055"></a><a class="code" href="audioout_8h.html#a93d4a564f168a1926fc92ff7a8924965">00055</a> <span class="preprocessor"></span><span class="preprocessor">#define PSP2_AUDIO_MAX_LEN 65472    //!&lt; Maximum granularity</span>
 <a name="l00056"></a>00056 <span class="preprocessor"></span>
-<a name="l00057"></a>00057 <span class="comment">/***</span>
-<a name="l00058"></a>00058 <span class="comment"> * Initialize audio port</span>
-<a name="l00059"></a>00059 <span class="comment"> *</span>
-<a name="l00060"></a>00060 <span class="comment"> * @param[in] type - One of ::AudioOutPortType</span>
-<a name="l00061"></a>00061 <span class="comment"> * @param[in] len - Number of samples, between ::PSP2_AUDIO_MIN_LEN and ::PSP2_AUDIO_MAX_LEN (multiple of 64)</span>
-<a name="l00062"></a>00062 <span class="comment"> * @param[in] freq - Samping frequency (in Hz), one of the followings :</span>
-<a name="l00063"></a>00063 <span class="comment"> * 8000, 11025, 12000, 16000, 22050, 24000, 32000, 44100, 48000</span>
-<a name="l00064"></a>00064 <span class="comment"> * @param[in] mode - One of ::AudioOutMode</span>
-<a name="l00065"></a>00065 <span class="comment"> *</span>
-<a name="l00066"></a>00066 <span class="comment"> * @return port number, &lt; 0 on error.</span>
-<a name="l00067"></a>00067 <span class="comment"> * @note - The volume is initially set to its max value (::PSP2_AUDIO_OUT_MAX_VOL)</span>
-<a name="l00068"></a>00068 <span class="comment">*/</span>
-<a name="l00069"></a>00069 <span class="keywordtype">int</span> sceAudioOutOpenPort(<span class="keywordtype">int</span> type, <span class="keywordtype">int</span> len, <span class="keywordtype">int</span> freq, <span class="keywordtype">int</span> mode);
+<a name="l00069"></a>00069 <span class="keywordtype">int</span> <a class="code" href="audioout_8h.html#a53b405a0e1de388ecef50562a214afb0">sceAudioOutOpenPort</a>(<span class="keywordtype">int</span> type, <span class="keywordtype">int</span> len, <span class="keywordtype">int</span> freq, <span class="keywordtype">int</span> mode);
 <a name="l00070"></a>00070 
-<a name="l00071"></a>00071 <span class="comment">/***</span>
-<a name="l00072"></a>00072 <span class="comment"> * Release an audio port</span>
-<a name="l00073"></a>00073 <span class="comment"> *</span>
-<a name="l00074"></a>00074 <span class="comment"> * @param[in] type - Port number returned by ::sceAudioOutOpenPort</span>
-<a name="l00075"></a>00075 <span class="comment"> *</span>
-<a name="l00076"></a>00076 <span class="comment"> * @return 0 on success, &lt; 0 on error.</span>
-<a name="l00077"></a>00077 <span class="comment">*/</span>
-<a name="l00078"></a>00078 <span class="keywordtype">int</span> sceAudioOutReleasePort(<span class="keywordtype">int</span> port);
+<a name="l00078"></a>00078 <span class="keywordtype">int</span> <a class="code" href="audioout_8h.html#a174204e79d6fa8cfbf34def88bfe2183">sceAudioOutReleasePort</a>(<span class="keywordtype">int</span> port);
 <a name="l00079"></a>00079 
-<a name="l00080"></a>00080 <span class="comment">/***</span>
-<a name="l00081"></a>00081 <span class="comment"> * Output audio (blocking function)</span>
-<a name="l00082"></a>00082 <span class="comment"> *</span>
-<a name="l00083"></a>00083 <span class="comment"> * @param[in] port - Port number returned by ::sceAudioOutOpenPort</span>
-<a name="l00084"></a>00084 <span class="comment"> * @param[in] *buf : Pointer to audio data buffer</span>
-<a name="l00085"></a>00085 <span class="comment"> *</span>
-<a name="l00086"></a>00086 <span class="comment"> * @return 0 on success, &lt; 0 on error.</span>
-<a name="l00087"></a>00087 <span class="comment"> * @note - if NULL is specified for *buf, the function will not return until the last</span>
-<a name="l00088"></a>00088 <span class="comment"> * output audio data has been output.</span>
-<a name="l00089"></a>00089 <span class="comment"> */</span>
-<a name="l00090"></a>00090 <span class="keywordtype">int</span> sceAudioOutOutput(<span class="keywordtype">int</span> port, <span class="keyword">const</span> <span class="keywordtype">void</span> *buf);
+<a name="l00090"></a>00090 <span class="keywordtype">int</span> <a class="code" href="audioout_8h.html#a37a23b4e2640209777eda91c17930114">sceAudioOutOutput</a>(<span class="keywordtype">int</span> port, <span class="keyword">const</span> <span class="keywordtype">void</span> *buf);
 <a name="l00091"></a>00091 
 <a name="l00092"></a><a class="code" href="audioout_8h.html#ac7b82676b0a00d9bcdd91f1096a25286">00092</a> <span class="preprocessor">#define PSP2_AUDIO_OUT_MAX_VOL 32768                    //!&lt; Maximum output port volume</span>
 <a name="l00093"></a><a class="code" href="audioout_8h.html#ac80e70fd21237a0df9e1220d0477e89d">00093</a> <span class="preprocessor"></span><span class="preprocessor">#define PSP2_AUDIO_VOLUME_0DB  PSP2_AUDIO_OUT_MAX_VOL   //!&lt; Maximum output port volume</span>
@@ -159,29 +130,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00098"></a><a class="code" href="audioout_8h.html#a6cfb04fabf67ff79e651026c80db0e43aa2a3830b31815a579165f128dcef2061">00098</a>     <a class="code" href="audioout_8h.html#a6cfb04fabf67ff79e651026c80db0e43aa2a3830b31815a579165f128dcef2061" title="Right Channel.">PSP2_AUDIO_VOLUME_FLAG_R_CH</a> = 0x2  
 <a name="l00099"></a>00099 };
 <a name="l00100"></a>00100 
-<a name="l00101"></a>00101 <span class="comment">/***</span>
-<a name="l00102"></a>00102 <span class="comment"> * Set volume of specified output audio port</span>
-<a name="l00103"></a>00103 <span class="comment"> *</span>
-<a name="l00104"></a>00104 <span class="comment"> * @param[in] port - Port number returned by ::sceAudioOutOpenPort</span>
-<a name="l00105"></a>00105 <span class="comment"> * @param[in] ch - Channel numbers as flags (see ::AudioOutChannelFlag)</span>
-<a name="l00106"></a>00106 <span class="comment"> * @param[in] *vol - Array to int specifying volume for each channel (Left channel first for stereo)</span>
-<a name="l00107"></a>00107 <span class="comment"> *</span>
-<a name="l00108"></a>00108 <span class="comment"> * @return 0 on success, &lt; 0 on error.</span>
-<a name="l00109"></a>00109 <span class="comment"> */</span>
-<a name="l00110"></a>00110 <span class="keywordtype">int</span> sceAudioOutSetVolume(<span class="keywordtype">int</span> port, <span class="keywordtype">int</span> ch, <span class="keywordtype">int</span> *vol);
+<a name="l00110"></a>00110 <span class="keywordtype">int</span> <a class="code" href="audioout_8h.html#aa35507b8129a7e4a0cd784f77ea5ee55">sceAudioOutSetVolume</a>(<span class="keywordtype">int</span> port, <span class="keywordtype">int</span> ch, <span class="keywordtype">int</span> *vol);
 <a name="l00111"></a>00111 
-<a name="l00112"></a>00112 <span class="comment">/***</span>
-<a name="l00113"></a>00113 <span class="comment"> * Change configuration of specified output port</span>
-<a name="l00114"></a>00114 <span class="comment"> *</span>
-<a name="l00115"></a>00115 <span class="comment"> * @param[in] port - Port number returned by ::sceAudioOutOpenPort</span>
-<a name="l00116"></a>00116 <span class="comment"> * @param[in] len - see ::sceAudioOutOpenPort()</span>
-<a name="l00117"></a>00117 <span class="comment"> * @param[in] freq - see ::sceAudioOutOpenPort()</span>
-<a name="l00118"></a>00118 <span class="comment"> * @param[in] mode - see ::sceAudioOutOpenPort()</span>
-<a name="l00119"></a>00119 <span class="comment"> *</span>
-<a name="l00120"></a>00120 <span class="comment"> * @return 0 on success, &lt; 0 on error.</span>
-<a name="l00121"></a>00121 <span class="comment"> * @note - If (-1) is specified for any argument (excepted for port), current configuration is used instead.</span>
-<a name="l00122"></a>00122 <span class="comment"> */</span>
-<a name="l00123"></a>00123 <span class="keywordtype">int</span> sceAudioOutSetConfig(<span class="keywordtype">int</span> port, <span class="keywordtype">int</span> len, <span class="keywordtype">int</span> freq, <span class="keywordtype">int</span> mode);
+<a name="l00123"></a>00123 <span class="keywordtype">int</span> <a class="code" href="audioout_8h.html#a8c32314eac76eb665a083d7fb61e9dd8">sceAudioOutSetConfig</a>(<span class="keywordtype">int</span> port, <span class="keywordtype">int</span> len, <span class="keywordtype">int</span> freq, <span class="keywordtype">int</span> mode);
 <a name="l00124"></a>00124 
 <a name="l00126"></a><a class="code" href="audioout_8h.html#ac13fdeecc61b40dfe91463d912d6cd01">00126</a> <span class="keyword">enum</span> <a class="code" href="audioout_8h.html#ac13fdeecc61b40dfe91463d912d6cd01">AudioOutConfigType</a> {
 <a name="l00127"></a>00127     PSP2_AUDIO_OUT_CONFIG_TYPE_LEN  = 0,
@@ -189,15 +140,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00129"></a>00129     PSP2_AUDIO_OUT_CONFIG_TYPE_MODE = 2
 <a name="l00130"></a>00130 };
 <a name="l00131"></a>00131 
-<a name="l00132"></a>00132 <span class="comment">/***</span>
-<a name="l00133"></a>00133 <span class="comment"> * Get a parameter value of specified output port</span>
-<a name="l00134"></a>00134 <span class="comment"> *</span>
-<a name="l00135"></a>00135 <span class="comment"> * @param[in] port - Port number returned by ::sceAudioOutOpenPort</span>
-<a name="l00136"></a>00136 <span class="comment"> * @param[in] type - One of ::AudioOutConfigType</span>
-<a name="l00137"></a>00137 <span class="comment"> *</span>
-<a name="l00138"></a>00138 <span class="comment"> * @return 0 on success, &lt; 0 on error.</span>
-<a name="l00139"></a>00139 <span class="comment"> */</span>
-<a name="l00140"></a>00140 <span class="keywordtype">int</span> sceAudioOutGetConfig(<span class="keywordtype">int</span> port, <span class="keywordtype">int</span> type);
+<a name="l00140"></a>00140 <span class="keywordtype">int</span> <a class="code" href="audioout_8h.html#a8b2751372de9ae92951edb253d144fe3">sceAudioOutGetConfig</a>(<span class="keywordtype">int</span> port, <span class="keywordtype">int</span> type);
 <a name="l00141"></a>00141 
 <a name="l00143"></a><a class="code" href="audioout_8h.html#a3672618240deea8062b41cf32ce1dd1b">00143</a> <span class="keyword">enum</span> <a class="code" href="audioout_8h.html#a3672618240deea8062b41cf32ce1dd1b">AudioOutAlcMode</a> {
 <a name="l00144"></a>00144     PSP2_AUDIO_ALC_OFF      = 0,
@@ -205,34 +148,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00146"></a>00146     PSP2_AUDIO_ALC_MODE_MAX = 2
 <a name="l00147"></a>00147 };
 <a name="l00148"></a>00148 
-<a name="l00149"></a>00149 <span class="comment">/***</span>
-<a name="l00150"></a>00150 <span class="comment"> * Set &#39;Automatic Level Control&#39; mode on the BGM port</span>
-<a name="l00151"></a>00151 <span class="comment"> * ALC is also known as &#39;Dynamic Normalizer&#39;</span>
-<a name="l00152"></a>00152 <span class="comment"> *</span>
-<a name="l00153"></a>00153 <span class="comment"> * @param[in] mode - One of </span>
-<a name="l00154"></a>00154 <span class="comment"> *</span>
-<a name="l00155"></a>00155 <span class="comment"> * @return 0 on success, &lt; 0 on error.</span>
-<a name="l00156"></a>00156 <span class="comment"> */</span>
-<a name="l00157"></a>00157 <span class="keywordtype">int</span> sceAudioOutSetAlcMode(<span class="keywordtype">int</span> mode);
+<a name="l00157"></a>00157 <span class="keywordtype">int</span> <a class="code" href="audioout_8h.html#a1b314a7ffd85758df00963dcda043ff0">sceAudioOutSetAlcMode</a>(<span class="keywordtype">int</span> mode);
 <a name="l00158"></a>00158 
-<a name="l00159"></a>00159 <span class="comment">/***</span>
-<a name="l00160"></a>00160 <span class="comment"> * Get the number of remaining samples to be output on the specified port</span>
-<a name="l00161"></a>00161 <span class="comment"> *</span>
-<a name="l00162"></a>00162 <span class="comment"> * @param[in] port - Port number returned by ::sceAudioOutOpenPort</span>
-<a name="l00163"></a>00163 <span class="comment"> *</span>
-<a name="l00164"></a>00164 <span class="comment"> * @return Number of samples on success, &lt; 0 on error.</span>
-<a name="l00165"></a>00165 <span class="comment"> */</span>
-<a name="l00166"></a>00166 <span class="keywordtype">int</span> sceAudioOutGetRestSample(<span class="keywordtype">int</span> port);
+<a name="l00166"></a>00166 <span class="keywordtype">int</span> <a class="code" href="audioout_8h.html#add2a5a9a2138b5e430726f7f20c7a82e">sceAudioOutGetRestSample</a>(<span class="keywordtype">int</span> port);
 <a name="l00167"></a>00167 
-<a name="l00168"></a>00168 <span class="comment">/***</span>
-<a name="l00169"></a>00169 <span class="comment"> * Get status of port type</span>
-<a name="l00170"></a>00170 <span class="comment"> * Return different value on whether the port type is used for sound generation or not.</span>
-<a name="l00171"></a>00171 <span class="comment"> *</span>
-<a name="l00172"></a>00172 <span class="comment"> * @param[in] type - One of ::AudioOutPortType</span>
-<a name="l00173"></a>00173 <span class="comment"> *</span>
-<a name="l00174"></a>00174 <span class="comment"> * @return (1) if port is in use, (0) otherwise. &lt; 0 on error.</span>
-<a name="l00175"></a>00175 <span class="comment"> */</span>
-<a name="l00176"></a>00176 <span class="keywordtype">int</span> sceAudioOutGetAdopt(<span class="keywordtype">int</span> type);
+<a name="l00176"></a>00176 <span class="keywordtype">int</span> <a class="code" href="audioout_8h.html#a3d36db862416db2c2f762d79ebd4e914">sceAudioOutGetAdopt</a>(<span class="keywordtype">int</span> type);
 <a name="l00177"></a>00177 
 <a name="l00178"></a>00178 <span class="preprocessor">#endif </span><span class="comment">/* _PSP2AUDIOOUT_H_ */</span>
 </pre></div></div><!-- contents -->
@@ -253,7 +173,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jun 19 2015 20:35:47 for PSP2SDK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jun 19 2015 22:50:50 for PSP2SDK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>
