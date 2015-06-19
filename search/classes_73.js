@@ -65,6 +65,8 @@ var searchData=
   ['sceivector3',['SceIVector3',['../structSceIVector3.html',1,'']]],
   ['sceivector4',['SceIVector4',['../structSceIVector4.html',1,'']]],
   ['scelibraryentrytable',['SceLibraryEntryTable',['../structSceLibraryEntryTable.html',1,'']]],
+  ['scemotionsensorstate',['SceMotionSensorState',['../structSceMotionSensorState.html',1,'']]],
+  ['scemotionstate',['SceMotionState',['../structSceMotionState.html',1,'']]],
   ['scenetctladhocpeerinfo',['SceNetCtlAdhocPeerInfo',['../structSceNetCtlAdhocPeerInfo.html',1,'']]],
   ['scenetctlinfo',['SceNetCtlInfo',['../unionSceNetCtlInfo.html',1,'']]],
   ['scenetctlnatinfo',['SceNetCtlNatInfo',['../structSceNetCtlNatInfo.html',1,'']]],
@@ -98,8 +100,10 @@ var searchData=
   ['scetouchdata',['SceTouchData',['../structSceTouchData.html',1,'']]],
   ['scetouchpanelinfo',['SceTouchPanelInfo',['../structSceTouchPanelInfo.html',1,'']]],
   ['scetouchreport',['SceTouchReport',['../structSceTouchReport.html',1,'']]],
+  ['sceumatrix4',['SceUMatrix4',['../structSceUMatrix4.html',1,'']]],
   ['sceunion128',['SceUnion128',['../unionSceUnion128.html',1,'']]],
   ['sceunion32',['SceUnion32',['../unionSceUnion32.html',1,'']]],
   ['sceunion64',['SceUnion64',['../unionSceUnion64.html',1,'']]],
+  ['sceuvector4',['SceUVector4',['../structSceUVector4.html',1,'']]],
   ['screenshotparam',['ScreenshotParam',['../structScreenshotParam.html',1,'']]]
 ];

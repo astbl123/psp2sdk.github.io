@@ -14,5 +14,6 @@ var searchData=
   ['minforce',['minForce',['../structSceTouchPanelInfo.html#a33cc25a965ad7868300969788cd7abce',1,'SceTouchPanelInfo']]],
   ['mode',['mode',['../structSceAppUtilSaveDataSaveItem.html#acbe6ffd3d233e53771f93f86af4cd250',1,'SceAppUtilSaveDataSaveItem::mode()'],['../structSceAppUtilSaveDataRemoveItem.html#a9a98b5d4d950a670992311f8657649b9',1,'SceAppUtilSaveDataRemoveItem::mode()']]],
   ['modifiedtime',['modifiedTime',['../structSceAppUtilSaveDataSlotParam.html#a3cb25df5c4e0fcbffd280ce960f9adc4',1,'SceAppUtilSaveDataSlotParam']]],
-  ['moduleinfo_2eh',['moduleinfo.h',['../moduleinfo_8h.html',1,'']]]
+  ['moduleinfo_2eh',['moduleinfo.h',['../moduleinfo_8h.html',1,'']]],
+  ['motion_2eh',['motion.h',['../motion_8h.html',1,'']]]
 ];
