@@ -5,7 +5,6 @@ var searchData=
   ['sce_5fappmgr_5ferror_5finvalid_5fself_5fpath',['SCE_APPMGR_ERROR_INVALID_SELF_PATH',['../appmgr_8h.html#a80b0ffa610d0cd12b727ef18c8fea87baf867515f2ab516d22bed1df741e1a290',1,'appmgr.h']]],
   ['sce_5fappmgr_5ferror_5fnull_5fpointer',['SCE_APPMGR_ERROR_NULL_POINTER',['../appmgr_8h.html#a80b0ffa610d0cd12b727ef18c8fea87ba3e88f785f699bd45efd239ed2b4f4e38',1,'appmgr.h']]],
   ['sce_5fappmgr_5ferror_5fstate',['SCE_APPMGR_ERROR_STATE',['../appmgr_8h.html#a80b0ffa610d0cd12b727ef18c8fea87bafc6444441584cd3bb221c6dbd58b353d',1,'appmgr.h']]],
-  ['sce_5fappmgr_5ferror_5ftoo_5flong_5fargv',['SCE_APPMGR_ERROR_TOO_LONG_ARGV',['../appmgr_8h.html#a80b0ffa610d0cd12b727ef18c8fea87ba07d5ef0473adea81fbdb3ba957b685f5',1,'appmgr.h']]],
   ['sce_5faudio_5fin_5ferror_5fbusy',['SCE_AUDIO_IN_ERROR_BUSY',['../audioin_8h.html#a0de70f8400a63c8c4e05e65026b00680aaf35bb52dc924ad77e10a8c0fc7f4885',1,'audioin.h']]],
   ['sce_5faudio_5fin_5ferror_5ffatal',['SCE_AUDIO_IN_ERROR_FATAL',['../audioin_8h.html#a0de70f8400a63c8c4e05e65026b00680a74b0f071efb8647de3441a15a0b96f1a',1,'audioin.h']]],
   ['sce_5faudio_5fin_5ferror_5finvalid_5fpointer',['SCE_AUDIO_IN_ERROR_INVALID_POINTER',['../audioin_8h.html#a0de70f8400a63c8c4e05e65026b00680a5bf1f3890489da0880e376c3def5f3b9',1,'audioin.h']]],

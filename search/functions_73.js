@@ -1,9 +1,9 @@
 var searchData=
 [
-  ['sceappmgracquirebgmport',['sceAppMgrAcquireBgmPort',['../appmgr_8h.html#a46532d590d3cd2f5a181a281e2a6ba5c',1,'appmgr.h']]],
-  ['sceappmgrrecievesystemevent',['sceAppMgrRecieveSystemEvent',['../appmgr_8h.html#a336441231e0b1b38724107100c924f1f',1,'appmgr.h']]],
-  ['sceappmgrreleasebgmport',['sceAppMgrReleaseBgmPort',['../appmgr_8h.html#ae79b7b8c2bdabf336c130bfb4c062909',1,'appmgr.h']]],
-  ['sceappmgrsetinfobarstate',['sceAppMgrSetInfobarState',['../appmgr_8h.html#a78716c3cb6ed349bc757b537b18e974c',1,'appmgr.h']]],
+  ['sceappmgracquirebgmport',['sceAppMgrAcquireBgmPort',['../appmgr_8h.html#a4128e9d22cadd7263e8bd9364e01f846',1,'appmgr.h']]],
+  ['sceappmgrrecievesystemevent',['sceAppMgrRecieveSystemEvent',['../appmgr_8h.html#a617d75eda9590b8b2666acadd58b6fa1',1,'appmgr.h']]],
+  ['sceappmgrreleasebgmport',['sceAppMgrReleaseBgmPort',['../appmgr_8h.html#a57e55396a9cc33ab9dc5f2a5bf566315',1,'appmgr.h']]],
+  ['sceappmgrsetinfobarstate',['sceAppMgrSetInfobarState',['../appmgr_8h.html#a703fd52e350cf06140a391cb9ac66a10',1,'appmgr.h']]],
   ['sceaudioinopenport',['sceAudioInOpenPort',['../audioin_8h.html#a5c8fe16d67c100a072e30d7b247ff3d4',1,'audioin.h']]],
   ['sceaudioinreleaseport',['sceAudioInReleasePort',['../audioin_8h.html#a1c14f220a4c636c0c69960dc6b5aa9df',1,'audioin.h']]],
   ['scectrlclearrapidfire',['sceCtrlClearRapidFire',['../ctrl_8h.html#ad1b02db560f2bad4191d70d3f4c5f0b9',1,'ctrl.h']]],

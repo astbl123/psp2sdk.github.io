@@ -28,7 +28,7 @@
   
   <td style="padding-left: 0.5em;">
    <div id="projectname">PSP2SDK
-   &#160;<span id="projectnumber">dirty-3a3d2d7</span>
+   &#160;<span id="projectnumber">dirty-01f41be</span>
    </div>
    <div id="projectbrief">An open-sourced SDK for PSP2</div>
   </td>
@@ -110,7 +110,7 @@ Enumerations</h2></td></tr>
 <a class="el" href="appmgr_8h.html#a80b0ffa610d0cd12b727ef18c8fea87bac704cf756ac0c7fc05aa0d20bf5d7082">SCE_APPMGR_ERROR_INVALID</a> =  0x8080201a, 
 <br/>
 &#160;&#160;<a class="el" href="appmgr_8h.html#a80b0ffa610d0cd12b727ef18c8fea87baf867515f2ab516d22bed1df741e1a290">SCE_APPMGR_ERROR_INVALID_SELF_PATH</a> =  0x8080201e, 
-<a class="el" href="appmgr_8h.html#a80b0ffa610d0cd12b727ef18c8fea87ba07d5ef0473adea81fbdb3ba957b685f5">SCE_APPMGR_ERROR_TOO_LONG_ARGV</a> =  0x8080201d
+<b>SCE_APPMGR_ERROR_TOO_LONG_ARGV</b> =  0x8080201d
 <br/>
  }</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><b>AppMgrMaxAppNameLength</b> { <b>SCE_APPMGR_MAX_APP_NAME_LENGTH</b> =  31
@@ -131,17 +131,17 @@ Enumerations</h2></td></tr>
  }</td></tr>
 <tr><td colspan="2"><h2><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5631e1b0aa599eca786794f1c75ae5a8"></a><!-- doxytag: member="appmgr.h::_sceAppMgrGetAppState" ref="a5631e1b0aa599eca786794f1c75ae5a8" args="(SceAppMgrAppState *appState, uint32_t len, uint32_t version)" -->
-int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>_sceAppMgrGetAppState</b> (SceAppMgrAppState *appState, uint32_t len, uint32_t version)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="appmgr_8h.html#a336441231e0b1b38724107100c924f1f">sceAppMgrRecieveSystemEvent</a> (<a class="el" href="structSceAppMgrSystemEvent.html">SceAppMgrSystemEvent</a> *systemEvent)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a46532d590d3cd2f5a181a281e2a6ba5c"></a><!-- doxytag: member="appmgr.h::sceAppMgrAcquireBgmPort" ref="a46532d590d3cd2f5a181a281e2a6ba5c" args="(void)" -->
-int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="appmgr_8h.html#a46532d590d3cd2f5a181a281e2a6ba5c">sceAppMgrAcquireBgmPort</a> (void)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7234b0f71099e86cc4dde971a7888bb7"></a><!-- doxytag: member="appmgr.h::_sceAppMgrGetAppState" ref="a7234b0f71099e86cc4dde971a7888bb7" args="(SceAppMgrAppState *appState, uint32_t len, uint32_t version)" -->
+int&#160;</td><td class="memItemRight" valign="bottom"><b>_sceAppMgrGetAppState</b> (SceAppMgrAppState *appState, uint32_t len, uint32_t version)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="appmgr_8h.html#a617d75eda9590b8b2666acadd58b6fa1">sceAppMgrRecieveSystemEvent</a> (<a class="el" href="structSceAppMgrSystemEvent.html">SceAppMgrSystemEvent</a> *systemEvent)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4128e9d22cadd7263e8bd9364e01f846"></a><!-- doxytag: member="appmgr.h::sceAppMgrAcquireBgmPort" ref="a4128e9d22cadd7263e8bd9364e01f846" args="(void)" -->
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="appmgr_8h.html#a4128e9d22cadd7263e8bd9364e01f846">sceAppMgrAcquireBgmPort</a> (void)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtains the BGM port, even when it is not in front. <br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae79b7b8c2bdabf336c130bfb4c062909"></a><!-- doxytag: member="appmgr.h::sceAppMgrReleaseBgmPort" ref="ae79b7b8c2bdabf336c130bfb4c062909" args="(void)" -->
-int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="appmgr_8h.html#ae79b7b8c2bdabf336c130bfb4c062909">sceAppMgrReleaseBgmPort</a> (void)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a57e55396a9cc33ab9dc5f2a5bf566315"></a><!-- doxytag: member="appmgr.h::sceAppMgrReleaseBgmPort" ref="a57e55396a9cc33ab9dc5f2a5bf566315" args="(void)" -->
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="appmgr_8h.html#a57e55396a9cc33ab9dc5f2a5bf566315">sceAppMgrReleaseBgmPort</a> (void)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Release acquired BGM port. <br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a78716c3cb6ed349bc757b537b18e974c"></a><!-- doxytag: member="appmgr.h::sceAppMgrSetInfobarState" ref="a78716c3cb6ed349bc757b537b18e974c" args="(int visibility, int color, int transparency)" -->
-int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="appmgr_8h.html#a78716c3cb6ed349bc757b537b18e974c">sceAppMgrSetInfobarState</a> (int visibility, int color, int transparency)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a703fd52e350cf06140a391cb9ac66a10"></a><!-- doxytag: member="appmgr.h::sceAppMgrSetInfobarState" ref="a703fd52e350cf06140a391cb9ac66a10" args="(int visibility, int color, int transparency)" -->
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="appmgr_8h.html#a703fd52e350cf06140a391cb9ac66a10">sceAppMgrSetInfobarState</a> (int visibility, int color, int transparency)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Set infobar state. <br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6d1f55f68294a3d243c61d418d14c587"></a><!-- doxytag: member="appmgr.h::sceAppMgrLoadExec" ref="a6d1f55f68294a3d243c61d418d14c587" args="(const char *appPath, char *const argv[], const SceAppMgrExecOptParam *optParam)" -->
 int&#160;</td><td class="memItemRight" valign="bottom"><b>sceAppMgrLoadExec</b> (const char *appPath, char *const argv[], const SceAppMgrExecOptParam *optParam)</td></tr>
@@ -172,14 +172,12 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>sceAppMgrLoadExec</b> 
 </td></tr>
 <tr><td valign="top"><em><a class="anchor" id="a80b0ffa610d0cd12b727ef18c8fea87ba3e88f785f699bd45efd239ed2b4f4e38"></a><!-- doxytag: member="SCE_APPMGR_ERROR_NULL_POINTER" ref="a80b0ffa610d0cd12b727ef18c8fea87ba3e88f785f699bd45efd239ed2b4f4e38" args="" -->SCE_APPMGR_ERROR_NULL_POINTER</em>&nbsp;</td><td>
 <p>NULL pointer. </p>
+<p>Invalid param </p>
 </td></tr>
 <tr><td valign="top"><em><a class="anchor" id="a80b0ffa610d0cd12b727ef18c8fea87bac704cf756ac0c7fc05aa0d20bf5d7082"></a><!-- doxytag: member="SCE_APPMGR_ERROR_INVALID" ref="a80b0ffa610d0cd12b727ef18c8fea87bac704cf756ac0c7fc05aa0d20bf5d7082" args="" -->SCE_APPMGR_ERROR_INVALID</em>&nbsp;</td><td>
-<p>Invalid param. </p>
-</td></tr>
-<tr><td valign="top"><em><a class="anchor" id="a80b0ffa610d0cd12b727ef18c8fea87baf867515f2ab516d22bed1df741e1a290"></a><!-- doxytag: member="SCE_APPMGR_ERROR_INVALID_SELF_PATH" ref="a80b0ffa610d0cd12b727ef18c8fea87baf867515f2ab516d22bed1df741e1a290" args="" -->SCE_APPMGR_ERROR_INVALID_SELF_PATH</em>&nbsp;</td><td>
 <p>Invalid self path. </p>
 </td></tr>
-<tr><td valign="top"><em><a class="anchor" id="a80b0ffa610d0cd12b727ef18c8fea87ba07d5ef0473adea81fbdb3ba957b685f5"></a><!-- doxytag: member="SCE_APPMGR_ERROR_TOO_LONG_ARGV" ref="a80b0ffa610d0cd12b727ef18c8fea87ba07d5ef0473adea81fbdb3ba957b685f5" args="" -->SCE_APPMGR_ERROR_TOO_LONG_ARGV</em>&nbsp;</td><td>
+<tr><td valign="top"><em><a class="anchor" id="a80b0ffa610d0cd12b727ef18c8fea87baf867515f2ab516d22bed1df741e1a290"></a><!-- doxytag: member="SCE_APPMGR_ERROR_INVALID_SELF_PATH" ref="a80b0ffa610d0cd12b727ef18c8fea87baf867515f2ab516d22bed1df741e1a290" args="" -->SCE_APPMGR_ERROR_INVALID_SELF_PATH</em>&nbsp;</td><td>
 <p>argv is too long </p>
 </td></tr>
 </table>
@@ -189,12 +187,12 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>sceAppMgrLoadExec</b> 
 </div>
 </div>
 <hr/><h2>Function Documentation</h2>
-<a class="anchor" id="a336441231e0b1b38724107100c924f1f"></a><!-- doxytag: member="appmgr.h::sceAppMgrRecieveSystemEvent" ref="a336441231e0b1b38724107100c924f1f" args="(SceAppMgrSystemEvent *systemEvent)" -->
+<a class="anchor" id="a617d75eda9590b8b2666acadd58b6fa1"></a><!-- doxytag: member="appmgr.h::sceAppMgrRecieveSystemEvent" ref="a617d75eda9590b8b2666acadd58b6fa1" args="(SceAppMgrSystemEvent *systemEvent)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int32_t <a class="el" href="appmgr_8h.html#a336441231e0b1b38724107100c924f1f">sceAppMgrRecieveSystemEvent</a> </td>
+          <td class="memname">int <a class="el" href="appmgr_8h.html#a617d75eda9590b8b2666acadd58b6fa1">sceAppMgrRecieveSystemEvent</a> </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structSceAppMgrSystemEvent.html">SceAppMgrSystemEvent</a> *&#160;</td>
           <td class="paramname"><em>systemEvent</em></td><td>)</td>
@@ -225,7 +223,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>sceAppMgrLoadExec</b> 
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jun 19 2015 13:26:19 for PSP2SDK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jun 19 2015 13:51:12 for PSP2SDK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>
