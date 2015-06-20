@@ -28,7 +28,7 @@
   
   <td style="padding-left: 0.5em;">
    <div id="projectname">PSP2SDK
-   &#160;<span id="projectnumber">dirty-96aba4e</span>
+   &#160;<span id="projectnumber">dirty-0ec2bae</span>
    </div>
    <div id="projectbrief">An open-sourced SDK for PSP2</div>
   </td>
@@ -78,7 +78,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#define-members">Defines</a> &#124;
-<a href="#typedef-members">Typedefs</a>  </div>
+<a href="#typedef-members">Typedefs</a> &#124;
+<a href="#enum-members">Enumerations</a>  </div>
   <div class="headertitle">
 <div class="title">include/psp2/types.h File Reference</div>  </div>
 </div><!--header-->
@@ -130,10 +131,6 @@ Classes</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSceDateTime.html">SceDateTime</a></td></tr>
 <tr><td colspan="2"><h2><a name="define-members"></a>
 Defines</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aff41483a7b817a2f9b9e91fba526ed34"></a><!-- doxytag: member="types.h::PSP2_TRUE" ref="aff41483a7b817a2f9b9e91fba526ed34" args="" -->
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>PSP2_TRUE</b>&#160;&#160;&#160;(1)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a289d0d98b5cc3c0711d28e8b79da3ff2"></a><!-- doxytag: member="types.h::PSP2_FALSE" ref="a289d0d98b5cc3c0711d28e8b79da3ff2" args="" -->
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>PSP2_FALSE</b>&#160;&#160;&#160;(0)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abe2774c2df129b620776af325b05a261"></a><!-- doxytag: member="types.h::PSP2_KERNEL_PROCESS_ID_SELF" ref="abe2774c2df129b620776af325b05a261" args="" -->
 #define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#abe2774c2df129b620776af325b05a261">PSP2_KERNEL_PROCESS_ID_SELF</a>&#160;&#160;&#160;0</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Current running process ID is always 0. <br/></td></tr>
@@ -196,10 +193,10 @@ typedef signed char&#160;</td><td class="memItemRight" valign="bottom"><b>SceSBy
 typedef unsigned char&#160;</td><td class="memItemRight" valign="bottom"><b>SceByte</b></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab6014319532558d0e2109e6f3dfdfa79"></a><!-- doxytag: member="types.h::SceByte8" ref="ab6014319532558d0e2109e6f3dfdfa79" args="" -->
 typedef unsigned char&#160;</td><td class="memItemRight" valign="bottom"><b>SceByte8</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac67a58a498e8938c490b9ce043bf29e6"></a><!-- doxytag: member="types.h::SceWChar16" ref="ac67a58a498e8938c490b9ce043bf29e6" args="" -->
-typedef short unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>SceWChar16</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afb0bc24b44c27b9b0ae8200b1467c9bb"></a><!-- doxytag: member="types.h::SceWChar32" ref="afb0bc24b44c27b9b0ae8200b1467c9bb" args="" -->
-typedef unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>SceWChar32</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aca550defc27d041b849d9ef72e040595"></a><!-- doxytag: member="types.h::SceWChar16" ref="aca550defc27d041b849d9ef72e040595" args="" -->
+typedef uint16_t&#160;</td><td class="memItemRight" valign="bottom"><b>SceWChar16</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abaf29f46fe41a7ce15cb04bd0d15b063"></a><!-- doxytag: member="types.h::SceWChar32" ref="abaf29f46fe41a7ce15cb04bd0d15b063" args="" -->
+typedef uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>SceWChar32</b></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3c8a0746fb1e68de4a180ba16ab4c134"></a><!-- doxytag: member="types.h::SceVoid" ref="a3c8a0746fb1e68de4a180ba16ab4c134" args="" -->
 typedef void&#160;</td><td class="memItemRight" valign="bottom"><b>SceVoid</b></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a86de71e2e740ac5ec08a007e9e2726f5"></a><!-- doxytag: member="types.h::ScePVoid" ref="a86de71e2e740ac5ec08a007e9e2726f5" args="" -->
@@ -267,6 +264,11 @@ typedef int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a024ba7ccff867a062790a9d0d3d4effe"></a><!-- doxytag: member="types.h::SceName" ref="a024ba7ccff867a062790a9d0d3d4effe" args="" -->
 typedef char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#a024ba7ccff867a062790a9d0d3d4effe">SceName</a></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Names are used to describe object names. <br/></td></tr>
+<tr><td colspan="2"><h2><a name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <b>PSP2_FALSE</b>, 
+<b>PSP2_TRUE</b>
+ }</td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
 <div class="textblock"><p>Header file which defines unique variable types. </p>
@@ -292,7 +294,7 @@ typedef char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" 
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jun 20 2015 03:13:21 for PSP2SDK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jun 20 2015 03:27:27 for PSP2SDK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

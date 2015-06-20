@@ -23,6 +23,6 @@ var searchData=
   ['sce_5fscreenshot_5fmax_5fgame_5ftitle_5fsize',['SCE_SCREENSHOT_MAX_GAME_TITLE_SIZE',['../screenshot_8h.html#ac848b03e3025232a2ba79febd1437de9a763ee2c5803f533fcab590b3cec7e40e',1,'screenshot.h']]],
   ['sce_5fscreenshot_5fmax_5fphoto_5ftitle_5flen',['SCE_SCREENSHOT_MAX_PHOTO_TITLE_LEN',['../screenshot_8h.html#ac848b03e3025232a2ba79febd1437de9ab511e5470152d2813beaedaf0f08ebd9',1,'screenshot.h']]],
   ['sce_5fscreenshot_5fmax_5fphoto_5ftitle_5fsize',['SCE_SCREENSHOT_MAX_PHOTO_TITLE_SIZE',['../screenshot_8h.html#ac848b03e3025232a2ba79febd1437de9a00892a6b890a4adc559069771e4f9f7a',1,'screenshot.h']]],
-  ['system_5fparam_5ftime_5fformat_5f12hr',['SYSTEM_PARAM_TIME_FORMAT_12HR',['../system__param_8h.html#abc5c98fcc1211af2b80116dd6e0a035da3227b9831d0718c363fd01a157b15079',1,'system_param.h']]],
-  ['system_5fparam_5ftime_5fformat_5f24hr',['SYSTEM_PARAM_TIME_FORMAT_24HR',['../system__param_8h.html#abc5c98fcc1211af2b80116dd6e0a035da32e61897f9445faa46d48f1024b477e9',1,'system_param.h']]]
+  ['system_5fparam_5ftime_5fformat_5f12hr',['SYSTEM_PARAM_TIME_FORMAT_12HR',['../system__param_8h.html#aba01db17f4a2bfbc3db60dc172972a25a3227b9831d0718c363fd01a157b15079',1,'system_param.h']]],
+  ['system_5fparam_5ftime_5fformat_5f24hr',['SYSTEM_PARAM_TIME_FORMAT_24HR',['../system__param_8h.html#aba01db17f4a2bfbc3db60dc172972a25a32e61897f9445faa46d48f1024b477e9',1,'system_param.h']]]
 ];
