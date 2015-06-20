@@ -26,5 +26,17 @@ var searchData=
   ['psp2_5fkernel_5fpower_5ftick_5fdefault',['PSP2_KERNEL_POWER_TICK_DEFAULT',['../processmgr_8h.html#a9df8908800f86a2c899f5cb1e690c0f0ac7da191e06edfffda1003a27aad1b2c9',1,'processmgr.h']]],
   ['psp2_5fkernel_5fpower_5ftick_5fdisable_5fauto_5fsuspend',['PSP2_KERNEL_POWER_TICK_DISABLE_AUTO_SUSPEND',['../processmgr_8h.html#a9df8908800f86a2c899f5cb1e690c0f0a3b5475a995f09ca3f6bfa9d61369d66c',1,'processmgr.h']]],
   ['psp2_5fkernel_5fpower_5ftick_5fdisable_5foled_5fdimming',['PSP2_KERNEL_POWER_TICK_DISABLE_OLED_DIMMING',['../processmgr_8h.html#a9df8908800f86a2c899f5cb1e690c0f0a93d93c4245c9784f7768d2cb23f06d2c',1,'processmgr.h']]],
-  ['psp2_5fkernel_5fpower_5ftick_5fdisable_5foled_5foff',['PSP2_KERNEL_POWER_TICK_DISABLE_OLED_OFF',['../processmgr_8h.html#a9df8908800f86a2c899f5cb1e690c0f0a613c466a3f81b09e3a457524dfda4e44',1,'processmgr.h']]]
+  ['psp2_5fkernel_5fpower_5ftick_5fdisable_5foled_5foff',['PSP2_KERNEL_POWER_TICK_DISABLE_OLED_OFF',['../processmgr_8h.html#a9df8908800f86a2c899f5cb1e690c0f0a613c466a3f81b09e3a457524dfda4e44',1,'processmgr.h']]],
+  ['psp2_5fsystem_5fparam_5fdate_5fformat_5fddmmyyyy',['PSP2_SYSTEM_PARAM_DATE_FORMAT_DDMMYYYY',['../system__param_8h.html#a385c44f6fb256e5716a2302a5b940388a8e2dadeb745866b4102194ab39dea99d',1,'system_param.h']]],
+  ['psp2_5fsystem_5fparam_5fdate_5fformat_5fmmddyyyy',['PSP2_SYSTEM_PARAM_DATE_FORMAT_MMDDYYYY',['../system__param_8h.html#a385c44f6fb256e5716a2302a5b940388a3fc63106868343b8f3b246ab4bacd620',1,'system_param.h']]],
+  ['psp2_5fsystem_5fparam_5fdate_5fformat_5fyyyymmdd',['PSP2_SYSTEM_PARAM_DATE_FORMAT_YYYYMMDD',['../system__param_8h.html#a385c44f6fb256e5716a2302a5b940388aa0b36255de619ba5c450d1ca8b641b23',1,'system_param.h']]],
+  ['psp2_5fsystem_5fparam_5fid_5fdate_5fformat',['PSP2_SYSTEM_PARAM_ID_DATE_FORMAT',['../system__param_8h.html#a0411cd49bb5b71852cecd93bcbf0ca2da242bac82bec224c7841feb703e42fded',1,'system_param.h']]],
+  ['psp2_5fsystem_5fparam_5fid_5fenter_5fbutton',['PSP2_SYSTEM_PARAM_ID_ENTER_BUTTON',['../system__param_8h.html#a0411cd49bb5b71852cecd93bcbf0ca2da2eca0bc4958facb2dcc1910348256a5e',1,'system_param.h']]],
+  ['psp2_5fsystem_5fparam_5fid_5flang',['PSP2_SYSTEM_PARAM_ID_LANG',['../system__param_8h.html#a0411cd49bb5b71852cecd93bcbf0ca2da3551ca3866ebdffd4702b7dd9a0fcb3e',1,'system_param.h']]],
+  ['psp2_5fsystem_5fparam_5fid_5ftime_5fformat',['PSP2_SYSTEM_PARAM_ID_TIME_FORMAT',['../system__param_8h.html#a0411cd49bb5b71852cecd93bcbf0ca2da247dbfe072d810fb3ededf11cae5e833',1,'system_param.h']]],
+  ['psp2_5fsystem_5fparam_5fid_5ftime_5fzone',['PSP2_SYSTEM_PARAM_ID_TIME_ZONE',['../system__param_8h.html#a0411cd49bb5b71852cecd93bcbf0ca2da18d55ac9a716a30a7c03e2ef2b0f6ae2',1,'system_param.h']]],
+  ['psp2_5fsystem_5fparam_5fid_5fusername',['PSP2_SYSTEM_PARAM_ID_USERNAME',['../system__param_8h.html#a0411cd49bb5b71852cecd93bcbf0ca2da163aaba199d9e6ec2a4d26e1e239da1b',1,'system_param.h']]],
+  ['psp2_5fsystem_5fparam_5flang_5fchinese_5fs',['PSP2_SYSTEM_PARAM_LANG_CHINESE_S',['../system__param_8h.html#abed82baf7f470b522273a3e37c24c600a577486277acfc993a02aa32b5aa59927',1,'system_param.h']]],
+  ['psp2_5fsystem_5fparam_5flang_5fchinese_5ft',['PSP2_SYSTEM_PARAM_LANG_CHINESE_T',['../system__param_8h.html#abed82baf7f470b522273a3e37c24c600a9bec03d1014a8068efebdd5fea553b59',1,'system_param.h']]],
+  ['psp2_5fsystem_5fparam_5flang_5fpolish_5fbr',['PSP2_SYSTEM_PARAM_LANG_POLISH_BR',['../system__param_8h.html#abed82baf7f470b522273a3e37c24c600ac6a268519ca99113418075143339beed',1,'system_param.h']]]
 ];
