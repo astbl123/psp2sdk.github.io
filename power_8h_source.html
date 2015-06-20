@@ -28,7 +28,7 @@
   
   <td style="padding-left: 0.5em;">
    <div id="projectname">PSP2SDK
-   &#160;<span id="projectnumber">dirty-1425557</span>
+   &#160;<span id="projectnumber">dirty-b9938a4</span>
    </div>
    <div id="projectbrief">An open-sourced SDK for PSP2</div>
   </td>
@@ -80,27 +80,29 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 <a href="power_8h.html">Go to the documentation of this file.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 
-<a name="l00021"></a>00021 <span class="preprocessor">#ifndef _PSP2_POWER_</span>
-<a name="l00022"></a>00022 <span class="preprocessor"></span><span class="preprocessor">#define _PSP2_POWER_</span>
+<a name="l00021"></a>00021 <span class="preprocessor">#ifndef _PSP2_POWER_H_</span>
+<a name="l00022"></a>00022 <span class="preprocessor"></span><span class="preprocessor">#define _PSP2_POWER_H_</span>
 <a name="l00023"></a>00023 <span class="preprocessor"></span>
-<a name="l00024"></a>00024 <span class="comment">/* callback */</span>
-<a name="l00025"></a>00025 <span class="keyword">typedef</span> void (*ScePowerCallback)(<span class="keywordtype">int</span> unknown, <span class="keywordtype">int</span> powerInfo);
-<a name="l00026"></a>00026 
-<a name="l00027"></a>00027 <span class="comment">/* prototypes */</span>
-<a name="l00028"></a>00028 <span class="keywordtype">int</span> scePowerRegisterCallback(<span class="keywordtype">int</span> slot, <a class="code" href="types_8h.html#a9c036549fd8cfd554ba3aa26a397b663" title="UIDs are used to describe many different kernel objects.">SceUID</a> cbid);
-<a name="l00029"></a>00029 <span class="keywordtype">int</span> scePowerIsBatteryCharging();
-<a name="l00030"></a>00030 <span class="keywordtype">int</span> scePowerGetBatteryLifePercent();
-<a name="l00031"></a>00031 <span class="keywordtype">int</span> scePowerSetConfigurationMode(<span class="keywordtype">int</span> mode); <span class="comment">//?</span>
-<a name="l00032"></a>00032 SceBool scePowerIsSuspendRequired(); <span class="comment">//?</span>
-<a name="l00033"></a>00033 <span class="keywordtype">int</span> scePowerIsPowerOnline();
-<a name="l00034"></a>00034 <span class="keywordtype">int</span> scePowerGetBatteryLifeTime();
-<a name="l00035"></a>00035 <span class="keywordtype">int</span> scePowerGetBatteryRemainCapacity(); <span class="comment">//?</span>
-<a name="l00036"></a>00036 <span class="keywordtype">int</span> scePowerIsLowBattery();
-<a name="l00037"></a>00037 <span class="keywordtype">int</span> scePowerUnregisterCallback(<span class="keywordtype">int</span> slot);
-<a name="l00038"></a>00038 <span class="keywordtype">int</span>  scePowerGetBatteryFullCapacity(); <span class="comment">//?</span>
-<a name="l00039"></a>00039 
-<a name="l00040"></a>00040 
-<a name="l00041"></a>00041 <span class="preprocessor">#endif</span>
+<a name="l00024"></a>00024 <span class="preprocessor">#include &lt;<a class="code" href="types_8h.html" title="Header file which defines unique variable types.">psp2/types.h</a>&gt;</span>
+<a name="l00025"></a>00025 
+<a name="l00026"></a>00026 <span class="comment">/* callback */</span>
+<a name="l00027"></a>00027 <span class="keyword">typedef</span> void (*ScePowerCallback)(<span class="keywordtype">int</span> unknown, <span class="keywordtype">int</span> powerInfo);
+<a name="l00028"></a>00028 
+<a name="l00029"></a>00029 <span class="comment">/* prototypes */</span>
+<a name="l00030"></a>00030 <span class="keywordtype">int</span> scePowerRegisterCallback(<span class="keywordtype">int</span> slot, <a class="code" href="types_8h.html#a9c036549fd8cfd554ba3aa26a397b663" title="UIDs are used to describe many different kernel objects.">SceUID</a> cbid);
+<a name="l00031"></a>00031 <span class="keywordtype">int</span> scePowerIsBatteryCharging();
+<a name="l00032"></a>00032 <span class="keywordtype">int</span> scePowerGetBatteryLifePercent();
+<a name="l00033"></a>00033 <span class="keywordtype">int</span> scePowerSetConfigurationMode(<span class="keywordtype">int</span> mode); <span class="comment">//?</span>
+<a name="l00034"></a>00034 SceBool scePowerIsSuspendRequired(); <span class="comment">//?</span>
+<a name="l00035"></a>00035 <span class="keywordtype">int</span> scePowerIsPowerOnline();
+<a name="l00036"></a>00036 <span class="keywordtype">int</span> scePowerGetBatteryLifeTime();
+<a name="l00037"></a>00037 <span class="keywordtype">int</span> scePowerGetBatteryRemainCapacity(); <span class="comment">//?</span>
+<a name="l00038"></a>00038 <span class="keywordtype">int</span> scePowerIsLowBattery();
+<a name="l00039"></a>00039 <span class="keywordtype">int</span> scePowerUnregisterCallback(<span class="keywordtype">int</span> slot);
+<a name="l00040"></a>00040 <span class="keywordtype">int</span>  scePowerGetBatteryFullCapacity(); <span class="comment">//?</span>
+<a name="l00041"></a>00041 
+<a name="l00042"></a>00042 
+<a name="l00043"></a>00043 <span class="preprocessor">#endif</span>
 </pre></div></div><!-- contents -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
@@ -119,7 +121,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jun 20 2015 02:41:24 for PSP2SDK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jun 20 2015 02:51:07 for PSP2SDK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

@@ -2,7 +2,7 @@ var searchData=
 [
   ['pad',['pad',['../structSceAppUtilSaveDataSaveItem.html#ae7c50031574e2c5201022ffe38620b31',1,'SceAppUtilSaveDataSaveItem']]],
   ['pgf_2eh',['pgf.h',['../pgf_8h.html',1,'']]],
-  ['phototitle',['photoTitle',['../structScreenshotParam.html#a90b64ebba7c7a28fb41dcd8275ce79ee',1,'ScreenshotParam']]],
+  ['phototitle',['photoTitle',['../structScreenshotParam.html#ae15f7e1d9f31e5a63b156199e9a2bc29',1,'ScreenshotParam']]],
   ['pinfo',['pInfo',['../structSceAudioencCtrl.html#a2543c1de30788261b42ece3d232ac00b',1,'SceAudioencCtrl']]],
   ['pinputpcm',['pInputPcm',['../structSceAudioencCtrl.html#a136ce6a1b5a71d438b2c8dc6125af1be',1,'SceAudioencCtrl']]],
   ['pitch',['pitch',['../structSceDisplayFrameBuf.html#a44160853361a441b8e43578d0a2941b9',1,'SceDisplayFrameBuf']]],

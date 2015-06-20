@@ -28,7 +28,7 @@
   
   <td style="padding-left: 0.5em;">
    <div id="projectname">PSP2SDK
-   &#160;<span id="projectnumber">dirty-1425557</span>
+   &#160;<span id="projectnumber">dirty-b9938a4</span>
    </div>
    <div id="projectbrief">An open-sourced SDK for PSP2</div>
   </td>
@@ -95,31 +95,38 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00033"></a>00033 };
 <a name="l00034"></a>00034 
 <a name="l00035"></a><a class="code" href="screenshot_8h.html#ac848b03e3025232a2ba79febd1437de9">00035</a> <span class="keyword">enum</span> <a class="code" href="screenshot_8h.html#ac848b03e3025232a2ba79febd1437de9">ScreenshotMaxLen</a> {
-<a name="l00036"></a><a class="code" href="screenshot_8h.html#ac848b03e3025232a2ba79febd1437de9a64e039c2b4d9a00a7133c67b0fae04f8">00036</a>     <a class="code" href="screenshot_8h.html#ac848b03e3025232a2ba79febd1437de9a64e039c2b4d9a00a7133c67b0fae04f8" title="Max size of path strings (includes device name and NULL terminator)">SCE_SCREENSHOT_MAX_FS_PATH</a>  = 1024, 
-<a name="l00037"></a><a class="code" href="screenshot_8h.html#ac848b03e3025232a2ba79febd1437de9ab511e5470152d2813beaedaf0f08ebd9">00037</a>     <a class="code" href="screenshot_8h.html#ac848b03e3025232a2ba79febd1437de9ab511e5470152d2813beaedaf0f08ebd9" title="Max length of photo title.">SCE_SCREENSHOT_MAX_PHOTO_TITLE_LEN</a>  = 64, 
-<a name="l00038"></a><a class="code" href="screenshot_8h.html#ac848b03e3025232a2ba79febd1437de9a00892a6b890a4adc559069771e4f9f7a">00038</a>     <a class="code" href="screenshot_8h.html#ac848b03e3025232a2ba79febd1437de9a00892a6b890a4adc559069771e4f9f7a" title="Max size of photo title (includes NULL terminater)">SCE_SCREENSHOT_MAX_PHOTO_TITLE_SIZE</a> = (<a class="code" href="screenshot_8h.html#ac848b03e3025232a2ba79febd1437de9ab511e5470152d2813beaedaf0f08ebd9" title="Max length of photo title.">SCE_SCREENSHOT_MAX_PHOTO_TITLE_LEN</a>*4), 
-<a name="l00039"></a><a class="code" href="screenshot_8h.html#ac848b03e3025232a2ba79febd1437de9a7df34ea74699b5b217dcfebb1856eccf">00039</a>     <a class="code" href="screenshot_8h.html#ac848b03e3025232a2ba79febd1437de9a7df34ea74699b5b217dcfebb1856eccf" title="Max length of game title.">SCE_SCREENSHOT_MAX_GAME_TITLE_LEN</a>   = 64, 
-<a name="l00040"></a><a class="code" href="screenshot_8h.html#ac848b03e3025232a2ba79febd1437de9a763ee2c5803f533fcab590b3cec7e40e">00040</a>     <a class="code" href="screenshot_8h.html#ac848b03e3025232a2ba79febd1437de9a763ee2c5803f533fcab590b3cec7e40e" title="Max size of game title (includes NULL terminator)">SCE_SCREENSHOT_MAX_GAME_TITLE_SIZE</a>  = (<a class="code" href="screenshot_8h.html#ac848b03e3025232a2ba79febd1437de9a7df34ea74699b5b217dcfebb1856eccf" title="Max length of game title.">SCE_SCREENSHOT_MAX_GAME_TITLE_LEN</a>*4), 
-<a name="l00041"></a><a class="code" href="screenshot_8h.html#ac848b03e3025232a2ba79febd1437de9a3a61bd44c60e7728d0c9b91c7ff7de60">00041</a>     <a class="code" href="screenshot_8h.html#ac848b03e3025232a2ba79febd1437de9a3a61bd44c60e7728d0c9b91c7ff7de60" title="Max length of comment (description)">SCE_SCREENSHOT_MAX_GAME_COMMENT_LEN</a> = 128, 
-<a name="l00042"></a><a class="code" href="screenshot_8h.html#ac848b03e3025232a2ba79febd1437de9ac8c059d8fa8ec1d6237391c5f91ae617">00042</a>     <a class="code" href="screenshot_8h.html#ac848b03e3025232a2ba79febd1437de9ac8c059d8fa8ec1d6237391c5f91ae617" title="Max size of comment (description) (includes NULL terminator)">SCE_SCREENSHOT_MAX_GAME_COMMENT_SIZE</a>    = (<a class="code" href="screenshot_8h.html#ac848b03e3025232a2ba79febd1437de9a3a61bd44c60e7728d0c9b91c7ff7de60" title="Max length of comment (description)">SCE_SCREENSHOT_MAX_GAME_COMMENT_LEN</a>*4) 
-<a name="l00043"></a>00043 };
+<a name="l00037"></a><a class="code" href="screenshot_8h.html#ac848b03e3025232a2ba79febd1437de9a64e039c2b4d9a00a7133c67b0fae04f8">00037</a>     <a class="code" href="screenshot_8h.html#ac848b03e3025232a2ba79febd1437de9a64e039c2b4d9a00a7133c67b0fae04f8" title="Max size of path strings (includes device name and NULL terminator)">SCE_SCREENSHOT_MAX_FS_PATH</a>  = 1024,
+<a name="l00038"></a>00038 
+<a name="l00040"></a><a class="code" href="screenshot_8h.html#ac848b03e3025232a2ba79febd1437de9ab511e5470152d2813beaedaf0f08ebd9">00040</a>     <a class="code" href="screenshot_8h.html#ac848b03e3025232a2ba79febd1437de9ab511e5470152d2813beaedaf0f08ebd9" title="Max length of photo title.">SCE_SCREENSHOT_MAX_PHOTO_TITLE_LEN</a>  = 64,
+<a name="l00041"></a>00041 
+<a name="l00043"></a><a class="code" href="screenshot_8h.html#ac848b03e3025232a2ba79febd1437de9a00892a6b890a4adc559069771e4f9f7a">00043</a>     <a class="code" href="screenshot_8h.html#ac848b03e3025232a2ba79febd1437de9a00892a6b890a4adc559069771e4f9f7a" title="Max size of photo title (includes NULL terminater)">SCE_SCREENSHOT_MAX_PHOTO_TITLE_SIZE</a> = (<a class="code" href="screenshot_8h.html#ac848b03e3025232a2ba79febd1437de9ab511e5470152d2813beaedaf0f08ebd9" title="Max length of photo title.">SCE_SCREENSHOT_MAX_PHOTO_TITLE_LEN</a> * 4),
 <a name="l00044"></a>00044 
-<a name="l00045"></a><a class="code" href="structScreenshotParam.html">00045</a> <span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structScreenshotParam.html">ScreenshotParam</a> {
-<a name="l00046"></a><a class="code" href="structScreenshotParam.html#a90b64ebba7c7a28fb41dcd8275ce79ee">00046</a>     <span class="keyword">const</span> int8_t *<a class="code" href="structScreenshotParam.html#a90b64ebba7c7a28fb41dcd8275ce79ee" title="Photo title.">photoTitle</a>; 
-<a name="l00047"></a><a class="code" href="structScreenshotParam.html#af170bff293f60b155f5f0f10f60651d1">00047</a>     <span class="keyword">const</span> int8_t *<a class="code" href="structScreenshotParam.html#af170bff293f60b155f5f0f10f60651d1" title="Game title.">gameTitle</a>;  
-<a name="l00048"></a><a class="code" href="structScreenshotParam.html#a77c1f69c6c436aa5d9cc8f9e7e2634ea">00048</a>     <span class="keyword">const</span> int8_t *<a class="code" href="structScreenshotParam.html#a77c1f69c6c436aa5d9cc8f9e7e2634ea" title="Game description.">gameComment</a>;  
-<a name="l00049"></a><a class="code" href="structScreenshotParam.html#acc024bb5f979b441ddea00f6762648de">00049</a>     <span class="keywordtype">void</span> *<a class="code" href="structScreenshotParam.html#acc024bb5f979b441ddea00f6762648de" title="Reserved range (Must be NULL)">reserved</a>; 
-<a name="l00050"></a>00050 };
+<a name="l00045"></a>00045 
+<a name="l00047"></a><a class="code" href="screenshot_8h.html#ac848b03e3025232a2ba79febd1437de9a7df34ea74699b5b217dcfebb1856eccf">00047</a>     <a class="code" href="screenshot_8h.html#ac848b03e3025232a2ba79febd1437de9a7df34ea74699b5b217dcfebb1856eccf" title="Max length of game title.">SCE_SCREENSHOT_MAX_GAME_TITLE_LEN</a>   = 64,
+<a name="l00048"></a>00048 
+<a name="l00050"></a><a class="code" href="screenshot_8h.html#ac848b03e3025232a2ba79febd1437de9a763ee2c5803f533fcab590b3cec7e40e">00050</a>     <a class="code" href="screenshot_8h.html#ac848b03e3025232a2ba79febd1437de9a763ee2c5803f533fcab590b3cec7e40e" title="Max size of game title (includes NUL terminator)">SCE_SCREENSHOT_MAX_GAME_TITLE_SIZE</a>  = (<a class="code" href="screenshot_8h.html#ac848b03e3025232a2ba79febd1437de9a7df34ea74699b5b217dcfebb1856eccf" title="Max length of game title.">SCE_SCREENSHOT_MAX_GAME_TITLE_LEN</a> * 4),
 <a name="l00051"></a>00051 
-<a name="l00052"></a>00052 int32_t <a class="code" href="screenshot_8h.html#a4fc84fa86b6af27d0dc1f637e65fab1f" title="Set screenshot params.">sceScreenshotSetParam</a>(<span class="keyword">const</span> <a class="code" href="structScreenshotParam.html">ScreenshotParam</a> *param); 
-<a name="l00053"></a>00053 
-<a name="l00054"></a>00054 int32_t <a class="code" href="screenshot_8h.html#aa39ca709df232c94aa974197c4ec0bb2" title="Set overlay image.">sceScreenshotOverlayImage</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *filepath, <span class="keywordtype">int</span> offsetX, <span class="keywordtype">int</span> offsetY); 
-<a name="l00055"></a>00055 
-<a name="l00056"></a>00056 int32_t <a class="code" href="screenshot_8h.html#ac78c1602cfcf5049ef1ee73038ff24c0" title="Disable screenshot.">sceScreenshotDisable</a>(<span class="keywordtype">void</span>); 
-<a name="l00057"></a>00057 
-<a name="l00058"></a>00058 int32_t <a class="code" href="screenshot_8h.html#ac8283451475e6a4741eb17327860200f" title="Enable screnshot.">sceScreenshotEnable</a>(<span class="keywordtype">void</span>); 
-<a name="l00059"></a>00059 
-<a name="l00060"></a>00060 <span class="preprocessor">#endif</span>
+<a name="l00053"></a><a class="code" href="screenshot_8h.html#ac848b03e3025232a2ba79febd1437de9a3a61bd44c60e7728d0c9b91c7ff7de60">00053</a>     <a class="code" href="screenshot_8h.html#ac848b03e3025232a2ba79febd1437de9a3a61bd44c60e7728d0c9b91c7ff7de60" title="Max length of comment (description)">SCE_SCREENSHOT_MAX_GAME_COMMENT_LEN</a> = 128,
+<a name="l00054"></a>00054 
+<a name="l00056"></a><a class="code" href="screenshot_8h.html#ac848b03e3025232a2ba79febd1437de9ac8c059d8fa8ec1d6237391c5f91ae617">00056</a>     <a class="code" href="screenshot_8h.html#ac848b03e3025232a2ba79febd1437de9ac8c059d8fa8ec1d6237391c5f91ae617" title="Max size of comment (description) (includes NUL terminator)">SCE_SCREENSHOT_MAX_GAME_COMMENT_SIZE</a>    = (<a class="code" href="screenshot_8h.html#ac848b03e3025232a2ba79febd1437de9a3a61bd44c60e7728d0c9b91c7ff7de60" title="Max length of comment (description)">SCE_SCREENSHOT_MAX_GAME_COMMENT_LEN</a> * 4)
+<a name="l00057"></a>00057 };
+<a name="l00058"></a>00058 
+<a name="l00059"></a><a class="code" href="structScreenshotParam.html">00059</a> <span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structScreenshotParam.html">ScreenshotParam</a> {
+<a name="l00060"></a><a class="code" href="structScreenshotParam.html#ae15f7e1d9f31e5a63b156199e9a2bc29">00060</a>     <span class="keyword">const</span> SceWChar32 *<a class="code" href="structScreenshotParam.html#ae15f7e1d9f31e5a63b156199e9a2bc29" title="Photo title.">photoTitle</a>; 
+<a name="l00061"></a><a class="code" href="structScreenshotParam.html#a3415dbc1fccc79c98b667bb6ea5b22d2">00061</a>     <span class="keyword">const</span> SceWChar32 *<a class="code" href="structScreenshotParam.html#a3415dbc1fccc79c98b667bb6ea5b22d2" title="Game title.">gameTitle</a>;  
+<a name="l00062"></a><a class="code" href="structScreenshotParam.html#a6ae967f563ed15317539a093a7ad6409">00062</a>     <span class="keyword">const</span> SceWChar32 *<a class="code" href="structScreenshotParam.html#a6ae967f563ed15317539a093a7ad6409" title="Game description.">gameComment</a>;  
+<a name="l00063"></a><a class="code" href="structScreenshotParam.html#acc024bb5f979b441ddea00f6762648de">00063</a>     <span class="keywordtype">void</span> *<a class="code" href="structScreenshotParam.html#acc024bb5f979b441ddea00f6762648de" title="Reserved range (Must be NULL)">reserved</a>; 
+<a name="l00064"></a>00064 };
+<a name="l00065"></a>00065 
+<a name="l00067"></a>00067 <span class="keywordtype">int</span> <a class="code" href="screenshot_8h.html#a6f8d456f0c7ff5fcfa7f0c097860c8f3" title="Set screenshot params.">sceScreenshotSetParam</a>(<span class="keyword">const</span> <a class="code" href="structScreenshotParam.html">ScreenshotParam</a> *param);
+<a name="l00068"></a>00068 
+<a name="l00070"></a>00070 <span class="keywordtype">int</span> <a class="code" href="screenshot_8h.html#aa70b42e17e77e121f0af8dfe59c59023" title="Set overlay image.">sceScreenshotOverlayImage</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *filepath, <span class="keywordtype">int</span> offsetX, <span class="keywordtype">int</span> offsetY);
+<a name="l00071"></a>00071 
+<a name="l00073"></a>00073 <span class="keywordtype">int</span> <a class="code" href="screenshot_8h.html#a0237c8cfaaacdb869c9cb048c70bf388" title="Disable screenshot.">sceScreenshotDisable</a>(<span class="keywordtype">void</span>);
+<a name="l00074"></a>00074 
+<a name="l00076"></a>00076 <span class="keywordtype">int</span> <a class="code" href="screenshot_8h.html#a50b0b82394ce9bb6dd039fdc65aafe67" title="Enable screnshot.">sceScreenshotEnable</a>(<span class="keywordtype">void</span>);
+<a name="l00077"></a>00077 
+<a name="l00078"></a>00078 <span class="preprocessor">#endif</span>
 </pre></div></div><!-- contents -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
@@ -138,7 +145,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jun 20 2015 02:41:24 for PSP2SDK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jun 20 2015 02:51:07 for PSP2SDK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

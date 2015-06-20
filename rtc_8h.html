@@ -28,7 +28,7 @@
   
   <td style="padding-left: 0.5em;">
    <div id="projectname">PSP2SDK
-   &#160;<span id="projectnumber">dirty-1425557</span>
+   &#160;<span id="projectnumber">dirty-b9938a4</span>
    </div>
    <div id="projectbrief">An open-sourced SDK for PSP2</div>
   </td>
@@ -87,7 +87,15 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <p>Header file which defines RTC variables and functions.  
 <a href="#details">More...</a></p>
-
+<div class="textblock"><code>#include &lt;stdint.h&gt;</code><br/>
+</div><div class="textblock"><div class="dynheader">
+Include dependency graph for rtc.h:</div>
+<div class="dyncontent">
+<div class="center"><img src="rtc_8h__incl.png" border="0" usemap="#include_2psp2_2rtc_8h" alt=""/></div>
+<map name="include_2psp2_2rtc_8h" id="include_2psp2_2rtc_8h">
+</map>
+</div>
+</div>
 <p><a href="rtc_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="nested-classes"></a>
@@ -116,16 +124,16 @@ Enumerations</h2></td></tr>
 Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa41be655d0b43a25cb8c41d6ee00f893"></a><!-- doxytag: member="rtc.h::sceRtcGetTickResolution" ref="aa41be655d0b43a25cb8c41d6ee00f893" args="()" -->
 unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>sceRtcGetTickResolution</b> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a34e1da8cfd9d7f19fd34548a340bf3c6"></a><!-- doxytag: member="rtc.h::sceRtcGetCurrentTick" ref="a34e1da8cfd9d7f19fd34548a340bf3c6" args="(u64 *tick)" -->
-int&#160;</td><td class="memItemRight" valign="bottom"><b>sceRtcGetCurrentTick</b> (u64 *tick)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae55afc5a671bd52dd249df9b615d7f8a"></a><!-- doxytag: member="rtc.h::sceRtcGetCurrentTick" ref="ae55afc5a671bd52dd249df9b615d7f8a" args="(uint64_t *tick)" -->
+int&#160;</td><td class="memItemRight" valign="bottom"><b>sceRtcGetCurrentTick</b> (uint64_t *tick)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0f4cc7b104894702d6baf64c48e6cfcb"></a><!-- doxytag: member="rtc.h::sceRtcGetCurrentClock" ref="a0f4cc7b104894702d6baf64c48e6cfcb" args="(SceRtcTime *time, int tz)" -->
 int&#160;</td><td class="memItemRight" valign="bottom"><b>sceRtcGetCurrentClock</b> (<a class="el" href="structSceRtcTime.html">SceRtcTime</a> *time, int tz)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a90435db1e6b5bd5444480d25568aa575"></a><!-- doxytag: member="rtc.h::sceRtcGetCurrentClockLocalTime" ref="a90435db1e6b5bd5444480d25568aa575" args="(SceRtcTime *time)" -->
 int&#160;</td><td class="memItemRight" valign="bottom"><b>sceRtcGetCurrentClockLocalTime</b> (<a class="el" href="structSceRtcTime.html">SceRtcTime</a> *time)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a84b02b415b6a3eb1d661938acd1e8379"></a><!-- doxytag: member="rtc.h::sceRtcConvertUtcToLocalTime" ref="a84b02b415b6a3eb1d661938acd1e8379" args="(const u64 *tickUTC, u64 *tickLocal)" -->
-int&#160;</td><td class="memItemRight" valign="bottom"><b>sceRtcConvertUtcToLocalTime</b> (const u64 *tickUTC, u64 *tickLocal)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a89e3664d5e2600178bfe34b22f5376bc"></a><!-- doxytag: member="rtc.h::sceRtcConvertLocalTimeToUTC" ref="a89e3664d5e2600178bfe34b22f5376bc" args="(const u64 *tickLocal, u64 *tickUTC)" -->
-int&#160;</td><td class="memItemRight" valign="bottom"><b>sceRtcConvertLocalTimeToUTC</b> (const u64 *tickLocal, u64 *tickUTC)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a23e83e2f51714c1ab30ed7d1ada37dd0"></a><!-- doxytag: member="rtc.h::sceRtcConvertUtcToLocalTime" ref="a23e83e2f51714c1ab30ed7d1ada37dd0" args="(const uint64_t *tickUTC, uint64_t *tickLocal)" -->
+int&#160;</td><td class="memItemRight" valign="bottom"><b>sceRtcConvertUtcToLocalTime</b> (const uint64_t *tickUTC, uint64_t *tickLocal)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8373e6286592678b2c523040bd80aa18"></a><!-- doxytag: member="rtc.h::sceRtcConvertLocalTimeToUTC" ref="a8373e6286592678b2c523040bd80aa18" args="(const uint64_t *tickLocal, uint64_t *tickUTC)" -->
+int&#160;</td><td class="memItemRight" valign="bottom"><b>sceRtcConvertLocalTimeToUTC</b> (const uint64_t *tickLocal, uint64_t *tickUTC)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aae0a06c9ac031e9a8706d9184d4606b0"></a><!-- doxytag: member="rtc.h::sceRtcIsLeapYear" ref="aae0a06c9ac031e9a8706d9184d4606b0" args="(int year)" -->
 int&#160;</td><td class="memItemRight" valign="bottom"><b>sceRtcIsLeapYear</b> (int year)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9eb2e86514ab1a5625022278e3689fea"></a><!-- doxytag: member="rtc.h::sceRtcGetDaysInMonth" ref="a9eb2e86514ab1a5625022278e3689fea" args="(int year, int month)" -->
@@ -134,30 +142,30 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>sceRtcGetDaysInMonth</
 int&#160;</td><td class="memItemRight" valign="bottom"><b>sceRtcGetDayOfWeek</b> (int year, int month, int day)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afb2c7d740ee9be449b9715fd1500c9db"></a><!-- doxytag: member="rtc.h::sceRtcCheckValid" ref="afb2c7d740ee9be449b9715fd1500c9db" args="(const SceRtcTime *date)" -->
 int&#160;</td><td class="memItemRight" valign="bottom"><b>sceRtcCheckValid</b> (const <a class="el" href="structSceRtcTime.html">SceRtcTime</a> *date)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a51e27bfea16b321f319953704926e05f"></a><!-- doxytag: member="rtc.h::sceRtcSetTick" ref="a51e27bfea16b321f319953704926e05f" args="(SceRtcTime *date, const u64 *tick)" -->
-int&#160;</td><td class="memItemRight" valign="bottom"><b>sceRtcSetTick</b> (<a class="el" href="structSceRtcTime.html">SceRtcTime</a> *date, const u64 *tick)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af6ebb73ec65e95a6aadc38ce5c55838b"></a><!-- doxytag: member="rtc.h::sceRtcGetTick" ref="af6ebb73ec65e95a6aadc38ce5c55838b" args="(const SceRtcTime *date, u64 *tick)" -->
-int&#160;</td><td class="memItemRight" valign="bottom"><b>sceRtcGetTick</b> (const <a class="el" href="structSceRtcTime.html">SceRtcTime</a> *date, u64 *tick)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a55fea8a74be58b369e003c1fab4f8382"></a><!-- doxytag: member="rtc.h::sceRtcCompareTick" ref="a55fea8a74be58b369e003c1fab4f8382" args="(const u64 *tick1, const u64 *tick2)" -->
-int&#160;</td><td class="memItemRight" valign="bottom"><b>sceRtcCompareTick</b> (const u64 *tick1, const u64 *tick2)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6f8731ff7605bae9e8c24ff651fd4be8"></a><!-- doxytag: member="rtc.h::sceRtcTickAddTicks" ref="a6f8731ff7605bae9e8c24ff651fd4be8" args="(u64 *destTick, const u64 *srcTick, u64 numTicks)" -->
-int&#160;</td><td class="memItemRight" valign="bottom"><b>sceRtcTickAddTicks</b> (u64 *destTick, const u64 *srcTick, u64 numTicks)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad8119e6ca0c3886756036d05aad283f1"></a><!-- doxytag: member="rtc.h::sceRtcTickAddMicroseconds" ref="ad8119e6ca0c3886756036d05aad283f1" args="(u64 *destTick, const u64 *srcTick, u64 numMS)" -->
-int&#160;</td><td class="memItemRight" valign="bottom"><b>sceRtcTickAddMicroseconds</b> (u64 *destTick, const u64 *srcTick, u64 numMS)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0d927b47867a3d7cdc599fe58a9f4d73"></a><!-- doxytag: member="rtc.h::sceRtcTickAddSeconds" ref="a0d927b47867a3d7cdc599fe58a9f4d73" args="(u64 *destTick, const u64 *srcTick, u64 numSecs)" -->
-int&#160;</td><td class="memItemRight" valign="bottom"><b>sceRtcTickAddSeconds</b> (u64 *destTick, const u64 *srcTick, u64 numSecs)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0edeaef9fb0b3bc0a53208459bdfb087"></a><!-- doxytag: member="rtc.h::sceRtcTickAddMinutes" ref="a0edeaef9fb0b3bc0a53208459bdfb087" args="(u64 *destTick, const u64 *srcTick, u64 numMins)" -->
-int&#160;</td><td class="memItemRight" valign="bottom"><b>sceRtcTickAddMinutes</b> (u64 *destTick, const u64 *srcTick, u64 numMins)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0e2709295f7a986b6cf3eed60fbb20ff"></a><!-- doxytag: member="rtc.h::sceRtcTickAddHours" ref="a0e2709295f7a986b6cf3eed60fbb20ff" args="(u64 *destTick, const u64 *srcTick, int numHours)" -->
-int&#160;</td><td class="memItemRight" valign="bottom"><b>sceRtcTickAddHours</b> (u64 *destTick, const u64 *srcTick, int numHours)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab757bff474f691067df156eca90c4b69"></a><!-- doxytag: member="rtc.h::sceRtcTickAddDays" ref="ab757bff474f691067df156eca90c4b69" args="(u64 *destTick, const u64 *srcTick, int numDays)" -->
-int&#160;</td><td class="memItemRight" valign="bottom"><b>sceRtcTickAddDays</b> (u64 *destTick, const u64 *srcTick, int numDays)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad415f7c710b1618918d488049daac5c5"></a><!-- doxytag: member="rtc.h::sceRtcTickAddWeeks" ref="ad415f7c710b1618918d488049daac5c5" args="(u64 *destTick, const u64 *srcTick, int numWeeks)" -->
-int&#160;</td><td class="memItemRight" valign="bottom"><b>sceRtcTickAddWeeks</b> (u64 *destTick, const u64 *srcTick, int numWeeks)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a77a7784d625607745c5f456ae3c8d72f"></a><!-- doxytag: member="rtc.h::sceRtcTickAddMonths" ref="a77a7784d625607745c5f456ae3c8d72f" args="(u64 *destTick, const u64 *srcTick, int numMonths)" -->
-int&#160;</td><td class="memItemRight" valign="bottom"><b>sceRtcTickAddMonths</b> (u64 *destTick, const u64 *srcTick, int numMonths)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aedba6c44f6a7db247b714a6f39ece3b0"></a><!-- doxytag: member="rtc.h::sceRtcTickAddYears" ref="aedba6c44f6a7db247b714a6f39ece3b0" args="(u64 *destTick, const u64 *srcTick, int numYears)" -->
-int&#160;</td><td class="memItemRight" valign="bottom"><b>sceRtcTickAddYears</b> (u64 *destTick, const u64 *srcTick, int numYears)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4715a0da8f3d38b81541d1022f7ae93f"></a><!-- doxytag: member="rtc.h::sceRtcSetTick" ref="a4715a0da8f3d38b81541d1022f7ae93f" args="(SceRtcTime *date, const uint64_t *tick)" -->
+int&#160;</td><td class="memItemRight" valign="bottom"><b>sceRtcSetTick</b> (<a class="el" href="structSceRtcTime.html">SceRtcTime</a> *date, const uint64_t *tick)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac50094d68a1cf8ab403a3b4cbb24adf3"></a><!-- doxytag: member="rtc.h::sceRtcGetTick" ref="ac50094d68a1cf8ab403a3b4cbb24adf3" args="(const SceRtcTime *date, uint64_t *tick)" -->
+int&#160;</td><td class="memItemRight" valign="bottom"><b>sceRtcGetTick</b> (const <a class="el" href="structSceRtcTime.html">SceRtcTime</a> *date, uint64_t *tick)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a60457aa0ac13b811bef66bbf06b2b704"></a><!-- doxytag: member="rtc.h::sceRtcCompareTick" ref="a60457aa0ac13b811bef66bbf06b2b704" args="(const uint64_t *tick1, const uint64_t *tick2)" -->
+int&#160;</td><td class="memItemRight" valign="bottom"><b>sceRtcCompareTick</b> (const uint64_t *tick1, const uint64_t *tick2)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae4dde8b28d2671dbb2b9fb044e8333a7"></a><!-- doxytag: member="rtc.h::sceRtcTickAddTicks" ref="ae4dde8b28d2671dbb2b9fb044e8333a7" args="(uint64_t *destTick, const uint64_t *srcTick, uint64_t numTicks)" -->
+int&#160;</td><td class="memItemRight" valign="bottom"><b>sceRtcTickAddTicks</b> (uint64_t *destTick, const uint64_t *srcTick, uint64_t numTicks)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa747e5302532792a0a2db6fd6ecbaad6"></a><!-- doxytag: member="rtc.h::sceRtcTickAddMicroseconds" ref="aa747e5302532792a0a2db6fd6ecbaad6" args="(uint64_t *destTick, const uint64_t *srcTick, uint64_t numMS)" -->
+int&#160;</td><td class="memItemRight" valign="bottom"><b>sceRtcTickAddMicroseconds</b> (uint64_t *destTick, const uint64_t *srcTick, uint64_t numMS)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad83700a47c94916e9e69ec4273183699"></a><!-- doxytag: member="rtc.h::sceRtcTickAddSeconds" ref="ad83700a47c94916e9e69ec4273183699" args="(uint64_t *destTick, const uint64_t *srcTick, uint64_t numSecs)" -->
+int&#160;</td><td class="memItemRight" valign="bottom"><b>sceRtcTickAddSeconds</b> (uint64_t *destTick, const uint64_t *srcTick, uint64_t numSecs)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6221febda94f3b899206ba50f558a629"></a><!-- doxytag: member="rtc.h::sceRtcTickAddMinutes" ref="a6221febda94f3b899206ba50f558a629" args="(uint64_t *destTick, const uint64_t *srcTick, uint64_t numMins)" -->
+int&#160;</td><td class="memItemRight" valign="bottom"><b>sceRtcTickAddMinutes</b> (uint64_t *destTick, const uint64_t *srcTick, uint64_t numMins)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab71aaa123f638965dfbd213fd20e55bf"></a><!-- doxytag: member="rtc.h::sceRtcTickAddHours" ref="ab71aaa123f638965dfbd213fd20e55bf" args="(uint64_t *destTick, const uint64_t *srcTick, int numHours)" -->
+int&#160;</td><td class="memItemRight" valign="bottom"><b>sceRtcTickAddHours</b> (uint64_t *destTick, const uint64_t *srcTick, int numHours)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a414c5d32c7631a3ddcaa29d0d34560e4"></a><!-- doxytag: member="rtc.h::sceRtcTickAddDays" ref="a414c5d32c7631a3ddcaa29d0d34560e4" args="(uint64_t *destTick, const uint64_t *srcTick, int numDays)" -->
+int&#160;</td><td class="memItemRight" valign="bottom"><b>sceRtcTickAddDays</b> (uint64_t *destTick, const uint64_t *srcTick, int numDays)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abae1b9d605d9139598cbef0b9d8f7816"></a><!-- doxytag: member="rtc.h::sceRtcTickAddWeeks" ref="abae1b9d605d9139598cbef0b9d8f7816" args="(uint64_t *destTick, const uint64_t *srcTick, int numWeeks)" -->
+int&#160;</td><td class="memItemRight" valign="bottom"><b>sceRtcTickAddWeeks</b> (uint64_t *destTick, const uint64_t *srcTick, int numWeeks)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3c18ec5c2ebccfa5e13a1558223de3fc"></a><!-- doxytag: member="rtc.h::sceRtcTickAddMonths" ref="a3c18ec5c2ebccfa5e13a1558223de3fc" args="(uint64_t *destTick, const uint64_t *srcTick, int numMonths)" -->
+int&#160;</td><td class="memItemRight" valign="bottom"><b>sceRtcTickAddMonths</b> (uint64_t *destTick, const uint64_t *srcTick, int numMonths)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a74b20f0ee4c980c278986076553a6183"></a><!-- doxytag: member="rtc.h::sceRtcTickAddYears" ref="a74b20f0ee4c980c278986076553a6183" args="(uint64_t *destTick, const uint64_t *srcTick, int numYears)" -->
+int&#160;</td><td class="memItemRight" valign="bottom"><b>sceRtcTickAddYears</b> (uint64_t *destTick, const uint64_t *srcTick, int numYears)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0d9c86573d30ae777f29683df83aec84"></a><!-- doxytag: member="rtc.h::sceRtcSetTime_t" ref="a0d9c86573d30ae777f29683df83aec84" args="(SceRtcTime *date, const time_t time)" -->
 int&#160;</td><td class="memItemRight" valign="bottom"><b>sceRtcSetTime_t</b> (<a class="el" href="structSceRtcTime.html">SceRtcTime</a> *date, const time_t time)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9af07bb8742e2aa908ddbbfdf5c80c14"></a><!-- doxytag: member="rtc.h::sceRtcGetTime_t" ref="a9af07bb8742e2aa908ddbbfdf5c80c14" args="(const SceRtcTime *date, time_t *time)" -->
@@ -166,22 +174,22 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>sceRtcGetTime_t</b> (c
 int&#160;</td><td class="memItemRight" valign="bottom"><b>sceRtcSetDosTime</b> (<a class="el" href="structSceRtcTime.html">SceRtcTime</a> *date, unsigned int dosTime)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae1788328c7bc3b6cc56562d215522aab"></a><!-- doxytag: member="rtc.h::sceRtcGetDosTime" ref="ae1788328c7bc3b6cc56562d215522aab" args="(SceRtcTime *date, unsigned int dosTime)" -->
 int&#160;</td><td class="memItemRight" valign="bottom"><b>sceRtcGetDosTime</b> (<a class="el" href="structSceRtcTime.html">SceRtcTime</a> *date, unsigned int dosTime)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adad58f6b6110dca1ece68ae153215e5b"></a><!-- doxytag: member="rtc.h::sceRtcSetWin32FileTime" ref="adad58f6b6110dca1ece68ae153215e5b" args="(SceRtcTime *date, u64 *win32Time)" -->
-int&#160;</td><td class="memItemRight" valign="bottom"><b>sceRtcSetWin32FileTime</b> (<a class="el" href="structSceRtcTime.html">SceRtcTime</a> *date, u64 *win32Time)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af059f85d65301f7abd8e9f99079ffb90"></a><!-- doxytag: member="rtc.h::sceRtcGetWin32FileTime" ref="af059f85d65301f7abd8e9f99079ffb90" args="(SceRtcTime *date, u64 *win32Time)" -->
-int&#160;</td><td class="memItemRight" valign="bottom"><b>sceRtcGetWin32FileTime</b> (<a class="el" href="structSceRtcTime.html">SceRtcTime</a> *date, u64 *win32Time)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9c9ccdf1392f750c96a8a9d00d0eba25"></a><!-- doxytag: member="rtc.h::sceRtcParseDateTime" ref="a9c9ccdf1392f750c96a8a9d00d0eba25" args="(u64 *destTick, const char *dateString)" -->
-int&#160;</td><td class="memItemRight" valign="bottom"><b>sceRtcParseDateTime</b> (u64 *destTick, const char *dateString)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a32461421d159186b7234e4c1fe70347a"></a><!-- doxytag: member="rtc.h::sceRtcFormatRFC2822" ref="a32461421d159186b7234e4c1fe70347a" args="(char *pszDateTime, const u64 *pUtc, int iTimeZoneMinutes)" -->
-int&#160;</td><td class="memItemRight" valign="bottom"><b>sceRtcFormatRFC2822</b> (char *pszDateTime, const u64 *pUtc, int iTimeZoneMinutes)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8121f9441468b1ee2207ea501a90e8df"></a><!-- doxytag: member="rtc.h::sceRtcFormatRFC2822LocalTime" ref="a8121f9441468b1ee2207ea501a90e8df" args="(char *pszDateTime, const u64 *pUtc)" -->
-int&#160;</td><td class="memItemRight" valign="bottom"><b>sceRtcFormatRFC2822LocalTime</b> (char *pszDateTime, const u64 *pUtc)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a829d7d5aa444c4a5df6b6d1001a61c55"></a><!-- doxytag: member="rtc.h::sceRtcFormatRFC3339" ref="a829d7d5aa444c4a5df6b6d1001a61c55" args="(char *pszDateTime, const u64 *pUtc, int iTimeZoneMinutes)" -->
-int&#160;</td><td class="memItemRight" valign="bottom"><b>sceRtcFormatRFC3339</b> (char *pszDateTime, const u64 *pUtc, int iTimeZoneMinutes)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4b7cd28d94148fe896bf29d054033da8"></a><!-- doxytag: member="rtc.h::sceRtcFormatRFC3339LocalTime" ref="a4b7cd28d94148fe896bf29d054033da8" args="(char *pszDateTime, const u64 *pUtc)" -->
-int&#160;</td><td class="memItemRight" valign="bottom"><b>sceRtcFormatRFC3339LocalTime</b> (char *pszDateTime, const u64 *pUtc)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7e5652a5565d0bce0e55d586007befe0"></a><!-- doxytag: member="rtc.h::sceRtcParseRFC3339" ref="a7e5652a5565d0bce0e55d586007befe0" args="(u64 *pUtc, const char *pszDateTime)" -->
-int&#160;</td><td class="memItemRight" valign="bottom"><b>sceRtcParseRFC3339</b> (u64 *pUtc, const char *pszDateTime)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a76edb4dbb4ecadfd6fc93588498fc973"></a><!-- doxytag: member="rtc.h::sceRtcSetWin32FileTime" ref="a76edb4dbb4ecadfd6fc93588498fc973" args="(SceRtcTime *date, uint64_t *win32Time)" -->
+int&#160;</td><td class="memItemRight" valign="bottom"><b>sceRtcSetWin32FileTime</b> (<a class="el" href="structSceRtcTime.html">SceRtcTime</a> *date, uint64_t *win32Time)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a10506a5d3badcd454701e6329178dccd"></a><!-- doxytag: member="rtc.h::sceRtcGetWin32FileTime" ref="a10506a5d3badcd454701e6329178dccd" args="(SceRtcTime *date, uint64_t *win32Time)" -->
+int&#160;</td><td class="memItemRight" valign="bottom"><b>sceRtcGetWin32FileTime</b> (<a class="el" href="structSceRtcTime.html">SceRtcTime</a> *date, uint64_t *win32Time)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab54ee675b3ca101d366e7a924c768611"></a><!-- doxytag: member="rtc.h::sceRtcParseDateTime" ref="ab54ee675b3ca101d366e7a924c768611" args="(uint64_t *destTick, const char *dateString)" -->
+int&#160;</td><td class="memItemRight" valign="bottom"><b>sceRtcParseDateTime</b> (uint64_t *destTick, const char *dateString)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afb79dd6ff930d0be72deed1cb9fadeea"></a><!-- doxytag: member="rtc.h::sceRtcFormatRFC2822" ref="afb79dd6ff930d0be72deed1cb9fadeea" args="(char *pszDateTime, const uint64_t *pUtc, int iTimeZoneMinutes)" -->
+int&#160;</td><td class="memItemRight" valign="bottom"><b>sceRtcFormatRFC2822</b> (char *pszDateTime, const uint64_t *pUtc, int iTimeZoneMinutes)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abae9ec070072d77a0645c0fdef91f0f7"></a><!-- doxytag: member="rtc.h::sceRtcFormatRFC2822LocalTime" ref="abae9ec070072d77a0645c0fdef91f0f7" args="(char *pszDateTime, const uint64_t *pUtc)" -->
+int&#160;</td><td class="memItemRight" valign="bottom"><b>sceRtcFormatRFC2822LocalTime</b> (char *pszDateTime, const uint64_t *pUtc)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3106be160cd6ed9d6545077cfb7858b8"></a><!-- doxytag: member="rtc.h::sceRtcFormatRFC3339" ref="a3106be160cd6ed9d6545077cfb7858b8" args="(char *pszDateTime, const uint64_t *pUtc, int iTimeZoneMinutes)" -->
+int&#160;</td><td class="memItemRight" valign="bottom"><b>sceRtcFormatRFC3339</b> (char *pszDateTime, const uint64_t *pUtc, int iTimeZoneMinutes)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac007c4c09b4ec6a464b83c529e28ed50"></a><!-- doxytag: member="rtc.h::sceRtcFormatRFC3339LocalTime" ref="ac007c4c09b4ec6a464b83c529e28ed50" args="(char *pszDateTime, const uint64_t *pUtc)" -->
+int&#160;</td><td class="memItemRight" valign="bottom"><b>sceRtcFormatRFC3339LocalTime</b> (char *pszDateTime, const uint64_t *pUtc)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2274c755915cb56933dbf185480ae0c1"></a><!-- doxytag: member="rtc.h::sceRtcParseRFC3339" ref="a2274c755915cb56933dbf185480ae0c1" args="(uint64_t *pUtc, const char *pszDateTime)" -->
+int&#160;</td><td class="memItemRight" valign="bottom"><b>sceRtcParseRFC3339</b> (uint64_t *pUtc, const char *pszDateTime)</td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
 <div class="textblock"><p>Header file which defines RTC variables and functions. </p>
@@ -207,7 +215,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>sceRtcParseRFC3339</b>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jun 20 2015 02:41:24 for PSP2SDK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jun 20 2015 02:51:07 for PSP2SDK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>
