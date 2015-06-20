@@ -1,8 +1,8 @@
 var searchData=
 [
   ['emptyparam',['emptyParam',['../structSceAppUtilSaveDataSlot.html#a579eae0cbdf9beb992506f24d78858ef',1,'SceAppUtilSaveDataSlot']]],
-  ['encoderversion',['encoderVersion',['../structSceAudioencOptInfoCelp.html#a7f277f8050909f474a7cb14729b0af89',1,'SceAudioencOptInfoCelp']]],
-  ['excitationmode',['excitationMode',['../structSceAudioencInfoCelp.html#a8765d5240cb8e5664f385a3ebea81013',1,'SceAudioencInfoCelp']]],
+  ['encoderversion',['encoderVersion',['../structSceAudioencOptInfoCelp.html#a9e68b409a66ebebbb6f951e74a4fee36',1,'SceAudioencOptInfoCelp']]],
+  ['excitationmode',['excitationMode',['../structSceAudioencInfoCelp.html#afd9b4cbdc47b221217c7f99b6d562d1a',1,'SceAudioencInfoCelp']]],
   ['exidxbtm',['exidxBtm',['../struct__sceModuleInfo.html#afe44bf0d43904bdaada295984057947b',1,'_sceModuleInfo']]],
   ['exidxtop',['exidxTop',['../struct__sceModuleInfo.html#a4d8bd020395e16003bf18d2d73d468a7',1,'_sceModuleInfo']]],
   ['expbtm',['expBtm',['../struct__sceModuleInfo.html#a81937fc0de6230d0f97110c585bdd2a6',1,'_sceModuleInfo']]],

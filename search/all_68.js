@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['handle',['handle',['../structSceAudioencCtrl.html#a6152f55dada9d3b033a6b1728beb1a4e',1,'SceAudioencCtrl']]],
+  ['handle',['handle',['../structSceAudioencCtrl.html#addb3588f2f5628c9957131de455c0f02',1,'SceAudioencCtrl']]],
   ['header',['header',['../structSceAudioencOptInfoCelp.html#ad0352b837f2cd1b3d51f472b76f7464e',1,'SceAudioencOptInfoCelp']]],
-  ['headersize',['headerSize',['../structSceAudioencOptInfoCelp.html#a0d0fd6c25ee9a916f329fd9034a59623',1,'SceAudioencOptInfoCelp']]],
+  ['headersize',['headerSize',['../structSceAudioencOptInfoCelp.html#a3087182f030eb83483ba95ef0543a4f7',1,'SceAudioencOptInfoCelp']]],
   ['height',['height',['../structSceDisplayFrameBuf.html#acf6c5759f48d231bd31415cbe552ca3d',1,'SceDisplayFrameBuf']]]
 ];
