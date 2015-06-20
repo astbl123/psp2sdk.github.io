@@ -38,5 +38,8 @@ var searchData=
   ['psp2_5fsystem_5fparam_5fid_5fusername',['PSP2_SYSTEM_PARAM_ID_USERNAME',['../system__param_8h.html#a0411cd49bb5b71852cecd93bcbf0ca2da163aaba199d9e6ec2a4d26e1e239da1b',1,'system_param.h']]],
   ['psp2_5fsystem_5fparam_5flang_5fchinese_5fs',['PSP2_SYSTEM_PARAM_LANG_CHINESE_S',['../system__param_8h.html#abed82baf7f470b522273a3e37c24c600a577486277acfc993a02aa32b5aa59927',1,'system_param.h']]],
   ['psp2_5fsystem_5fparam_5flang_5fchinese_5ft',['PSP2_SYSTEM_PARAM_LANG_CHINESE_T',['../system__param_8h.html#abed82baf7f470b522273a3e37c24c600a9bec03d1014a8068efebdd5fea553b59',1,'system_param.h']]],
-  ['psp2_5fsystem_5fparam_5flang_5fpolish_5fbr',['PSP2_SYSTEM_PARAM_LANG_POLISH_BR',['../system__param_8h.html#abed82baf7f470b522273a3e37c24c600ac6a268519ca99113418075143339beed',1,'system_param.h']]]
+  ['psp2_5fsystem_5fparam_5flang_5fpolish_5fbr',['PSP2_SYSTEM_PARAM_LANG_POLISH_BR',['../system__param_8h.html#abed82baf7f470b522273a3e37c24c600ac6a268519ca99113418075143339beed',1,'system_param.h']]],
+  ['psp2_5ftouch_5fport_5fback',['PSP2_TOUCH_PORT_BACK',['../touch_8h.html#ac36f475ca5b446f4fde4c9b90bec77c8ae0ad0396a3451ddfc49770b930ea1266',1,'touch.h']]],
+  ['psp2_5ftouch_5fport_5ffront',['PSP2_TOUCH_PORT_FRONT',['../touch_8h.html#ac36f475ca5b446f4fde4c9b90bec77c8aeb4a00022ff3fadcf803275f295152da',1,'touch.h']]],
+  ['psp2_5ftouch_5fport_5fmax_5fnum',['PSP2_TOUCH_PORT_MAX_NUM',['../touch_8h.html#ac36f475ca5b446f4fde4c9b90bec77c8accd72b65f98589a3cfe230ad348f4a1a',1,'touch.h']]]
 ];

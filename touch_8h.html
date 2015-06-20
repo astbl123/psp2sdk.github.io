@@ -28,7 +28,7 @@
   
   <td style="padding-left: 0.5em;">
    <div id="projectname">PSP2SDK
-   &#160;<span id="projectnumber">dirty-9ab6d19</span>
+   &#160;<span id="projectnumber">dirty-96aba4e</span>
    </div>
    <div id="projectbrief">An open-sourced SDK for PSP2</div>
   </td>
@@ -89,12 +89,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <p>Header file which defines touch related variables and functions.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;<a class="el" href="types_8h_source.html">psp2/types.h</a>&gt;</code><br/>
+<code>#include &lt;stdint.h&gt;</code><br/>
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for touch.h:</div>
 <div class="dyncontent">
 <div class="center"><img src="touch_8h__incl.png" border="0" usemap="#include_2psp2_2touch_8h" alt=""/></div>
 <map name="include_2psp2_2touch_8h" id="include_2psp2_2touch_8h">
-<area shape="rect" id="node3" href="types_8h.html" title="Header file which defines unique variable types." alt="" coords="37,83,133,112"/></map>
+<area shape="rect" id="node3" href="types_8h.html" title="Header file which defines unique variable types." alt="" coords="5,83,101,112"/></map>
 </div>
 </div>
 <p><a href="touch_8h_source.html">Go to the source code of this file.</a></p>
@@ -106,15 +107,6 @@ Classes</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSceTouchData.html">SceTouchData</a></td></tr>
 <tr><td colspan="2"><h2><a name="define-members"></a>
 Defines</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a817ad8e11d8e85df204f3456f609ffed"></a><!-- doxytag: member="touch.h::PSP2_TOUCH_PORT_FRONT" ref="a817ad8e11d8e85df204f3456f609ffed" args="" -->
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="touch_8h.html#a817ad8e11d8e85df204f3456f609ffed">PSP2_TOUCH_PORT_FRONT</a>&#160;&#160;&#160;0x0</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Front touch panel id. <br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0c293533d67fa5bc8e5c524c253a6dbe"></a><!-- doxytag: member="touch.h::PSP2_TOUCH_PORT_BACK" ref="a0c293533d67fa5bc8e5c524c253a6dbe" args="" -->
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="touch_8h.html#a0c293533d67fa5bc8e5c524c253a6dbe">PSP2_TOUCH_PORT_BACK</a>&#160;&#160;&#160;0x1</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Back touch panel id. <br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a189ee363351243faca036a0074e6693d"></a><!-- doxytag: member="touch.h::PSP2_TOUCH_PORT_MAX_NUM" ref="a189ee363351243faca036a0074e6693d" args="" -->
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="touch_8h.html#a189ee363351243faca036a0074e6693d">PSP2_TOUCH_PORT_MAX_NUM</a>&#160;&#160;&#160;2</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of touch panels. <br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af6eee0f3f47462bb44774da9e5f1a844"></a><!-- doxytag: member="touch.h::PSP2_TOUCH_MAX_REPORT" ref="af6eee0f3f47462bb44774da9e5f1a844" args="" -->
 #define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="touch_8h.html#af6eee0f3f47462bb44774da9e5f1a844">PSP2_TOUCH_MAX_REPORT</a>&#160;&#160;&#160;6</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">???? 6 on front | 4 on back <br/></td></tr>
@@ -138,16 +130,20 @@ Enumerations</h2></td></tr>
 <b>SCE_TOUCH_ERROR_PRIV_REQUIRED</b> =  0x80350002, 
 <b>SCE_TOUCH_ERROR_FATAL</b> =  0x803500ff
  }</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="touch_8h.html#ac36f475ca5b446f4fde4c9b90bec77c8aeb4a00022ff3fadcf803275f295152da">PSP2_TOUCH_PORT_FRONT</a>, 
+<a class="el" href="touch_8h.html#ac36f475ca5b446f4fde4c9b90bec77c8ae0ad0396a3451ddfc49770b930ea1266">PSP2_TOUCH_PORT_BACK</a>, 
+<a class="el" href="touch_8h.html#ac36f475ca5b446f4fde4c9b90bec77c8accd72b65f98589a3cfe230ad348f4a1a">PSP2_TOUCH_PORT_MAX_NUM</a>
+ }</td></tr>
 <tr><td colspan="2"><h2><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="touch_8h.html#a340c623686f9fe73e0113c529f6f095b">sceTouchGetPanelInfo</a> (uint32_t port, <a class="el" href="structSceTouchPanelInfo.html">SceTouchPanelInfo</a> *pPanelInfo)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="touch_8h.html#af6051e03398859e734b60acf4a109953">sceTouchRead</a> (uint32_t port, <a class="el" href="structSceTouchData.html">SceTouchData</a> *pData, uint32_t nBufs)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="touch_8h.html#ae23bb869649f3c8172cafed43625718c">sceTouchSetSamplingState</a> (uint32_t port, uint32_t state)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="touch_8h.html#a59d83ea71eb9ee9d62b296b584dec4d2">sceTouchGetSamplingState</a> (uint32_t port, uint32_t *pState)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="touch_8h.html#a5f3d4d5c729ea1bfc2ffa84d4107f336">sceTouchDisableTouchForce</a> (uint32_t port)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="touch_8h.html#a9dafd419365b1f3447d4a538c23e07e0">sceTouchEnableTouchForce</a> (uint32_t port)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab77ca2105741cde0fc868b23f2166b04"></a><!-- doxytag: member="touch.h::sceTouchPeek" ref="ab77ca2105741cde0fc868b23f2166b04" args="(uint32_t port, SceTouchData *pData, uint32_t nBufs)" -->
-int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>sceTouchPeek</b> (uint32_t port, <a class="el" href="structSceTouchData.html">SceTouchData</a> *pData, uint32_t nBufs)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="touch_8h.html#ad8177f01cab08dc6176dfbb9aa7df7a1">sceTouchGetPanelInfo</a> (unsigned int port, <a class="el" href="structSceTouchPanelInfo.html">SceTouchPanelInfo</a> *pPanelInfo)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="touch_8h.html#a77b96ccf5e81f079f20e047a9baf576a">sceTouchRead</a> (unsigned int port, <a class="el" href="structSceTouchData.html">SceTouchData</a> *pData, uint32_t nBufs)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="touch_8h.html#a44db9589fab77bf506e2fa1f9b45afd1">sceTouchSetSamplingState</a> (unsigned int port, unsigned int state)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="touch_8h.html#a80accb418f43f29fc6dd71536a0ddc15">sceTouchGetSamplingState</a> (unsigned int port, unsigned int *pState)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="touch_8h.html#a1908ddde473626795f79de5313a11849">sceTouchDisableTouchForce</a> (unsigned int port)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="touch_8h.html#a36378e02af2ef2356a73059b04efac7b">sceTouchEnableTouchForce</a> (unsigned int port)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a45feb7458cad6e0b57e7b4749b5486e8"></a><!-- doxytag: member="touch.h::sceTouchPeek" ref="a45feb7458cad6e0b57e7b4749b5486e8" args="(unsigned int port, SceTouchData *pData, unsigned int nBufs)" -->
+int&#160;</td><td class="memItemRight" valign="bottom"><b>sceTouchPeek</b> (unsigned int port, <a class="el" href="structSceTouchData.html">SceTouchData</a> *pData, unsigned int nBufs)</td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
 <div class="textblock"><p>Header file which defines touch related variables and functions. </p>
@@ -155,15 +151,42 @@ int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>sceTouchPeek</b> (
 <p>This library is free software: you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.</p>
 <p>This library is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License for more details.</p>
 <p>You should have received a copy of the GNU Lesser General Public License along with this program. If not, see &lt;<a href="http://www.gnu.org/licenses/">http://www.gnu.org/licenses/</a>&gt;. </p>
-</div><hr/><h2>Function Documentation</h2>
-<a class="anchor" id="a5f3d4d5c729ea1bfc2ffa84d4107f336"></a><!-- doxytag: member="touch.h::sceTouchDisableTouchForce" ref="a5f3d4d5c729ea1bfc2ffa84d4107f336" args="(uint32_t port)" -->
+</div><hr/><h2>Enumeration Type Documentation</h2>
+<a class="anchor" id="ac36f475ca5b446f4fde4c9b90bec77c8"></a><!-- doxytag: member="touch.h::@12" ref="ac36f475ca5b446f4fde4c9b90bec77c8" args="" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int32_t <a class="el" href="touch_8h.html#a5f3d4d5c729ea1bfc2ffa84d4107f336">sceTouchDisableTouchForce</a> </td>
+          <td class="memname">anonymous enum</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<dl><dt><b>Enumerator: </b></dt><dd><table border="0" cellspacing="2" cellpadding="0">
+<tr><td valign="top"><em><a class="anchor" id="ac36f475ca5b446f4fde4c9b90bec77c8aeb4a00022ff3fadcf803275f295152da"></a><!-- doxytag: member="PSP2_TOUCH_PORT_FRONT" ref="ac36f475ca5b446f4fde4c9b90bec77c8aeb4a00022ff3fadcf803275f295152da" args="" -->PSP2_TOUCH_PORT_FRONT</em>&nbsp;</td><td>
+<p>Front touch panel id. </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="ac36f475ca5b446f4fde4c9b90bec77c8ae0ad0396a3451ddfc49770b930ea1266"></a><!-- doxytag: member="PSP2_TOUCH_PORT_BACK" ref="ac36f475ca5b446f4fde4c9b90bec77c8ae0ad0396a3451ddfc49770b930ea1266" args="" -->PSP2_TOUCH_PORT_BACK</em>&nbsp;</td><td>
+<p>Back touch panel id. </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="ac36f475ca5b446f4fde4c9b90bec77c8accd72b65f98589a3cfe230ad348f4a1a"></a><!-- doxytag: member="PSP2_TOUCH_PORT_MAX_NUM" ref="ac36f475ca5b446f4fde4c9b90bec77c8accd72b65f98589a3cfe230ad348f4a1a" args="" -->PSP2_TOUCH_PORT_MAX_NUM</em>&nbsp;</td><td>
+<p>Number of touch panels. </p>
+</td></tr>
+</table>
+</dd>
+</dl>
+
+</div>
+</div>
+<hr/><h2>Function Documentation</h2>
+<a class="anchor" id="a1908ddde473626795f79de5313a11849"></a><!-- doxytag: member="touch.h::sceTouchDisableTouchForce" ref="a1908ddde473626795f79de5313a11849" args="(unsigned int port)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="touch_8h.html#a1908ddde473626795f79de5313a11849">sceTouchDisableTouchForce</a> </td>
           <td>(</td>
-          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramtype">unsigned int&#160;</td>
           <td class="paramname"><em>port</em></td><td>)</td>
           <td></td>
         </tr>
@@ -180,14 +203,14 @@ int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>sceTouchPeek</b> (
 
 </div>
 </div>
-<a class="anchor" id="a9dafd419365b1f3447d4a538c23e07e0"></a><!-- doxytag: member="touch.h::sceTouchEnableTouchForce" ref="a9dafd419365b1f3447d4a538c23e07e0" args="(uint32_t port)" -->
+<a class="anchor" id="a36378e02af2ef2356a73059b04efac7b"></a><!-- doxytag: member="touch.h::sceTouchEnableTouchForce" ref="a36378e02af2ef2356a73059b04efac7b" args="(unsigned int port)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int32_t <a class="el" href="touch_8h.html#a9dafd419365b1f3447d4a538c23e07e0">sceTouchEnableTouchForce</a> </td>
+          <td class="memname">int <a class="el" href="touch_8h.html#a36378e02af2ef2356a73059b04efac7b">sceTouchEnableTouchForce</a> </td>
           <td>(</td>
-          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramtype">unsigned int&#160;</td>
           <td class="paramname"><em>port</em></td><td>)</td>
           <td></td>
         </tr>
@@ -204,14 +227,14 @@ int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>sceTouchPeek</b> (
 
 </div>
 </div>
-<a class="anchor" id="a340c623686f9fe73e0113c529f6f095b"></a><!-- doxytag: member="touch.h::sceTouchGetPanelInfo" ref="a340c623686f9fe73e0113c529f6f095b" args="(uint32_t port, SceTouchPanelInfo *pPanelInfo)" -->
+<a class="anchor" id="ad8177f01cab08dc6176dfbb9aa7df7a1"></a><!-- doxytag: member="touch.h::sceTouchGetPanelInfo" ref="ad8177f01cab08dc6176dfbb9aa7df7a1" args="(unsigned int port, SceTouchPanelInfo *pPanelInfo)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int32_t <a class="el" href="touch_8h.html#a340c623686f9fe73e0113c529f6f095b">sceTouchGetPanelInfo</a> </td>
+          <td class="memname">int <a class="el" href="touch_8h.html#ad8177f01cab08dc6176dfbb9aa7df7a1">sceTouchGetPanelInfo</a> </td>
           <td>(</td>
-          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramtype">unsigned int&#160;</td>
           <td class="paramname"><em>port</em>, </td>
         </tr>
         <tr>
@@ -239,20 +262,20 @@ int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>sceTouchPeek</b> (
 
 </div>
 </div>
-<a class="anchor" id="a59d83ea71eb9ee9d62b296b584dec4d2"></a><!-- doxytag: member="touch.h::sceTouchGetSamplingState" ref="a59d83ea71eb9ee9d62b296b584dec4d2" args="(uint32_t port, uint32_t *pState)" -->
+<a class="anchor" id="a80accb418f43f29fc6dd71536a0ddc15"></a><!-- doxytag: member="touch.h::sceTouchGetSamplingState" ref="a80accb418f43f29fc6dd71536a0ddc15" args="(unsigned int port, unsigned int *pState)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int32_t <a class="el" href="touch_8h.html#a59d83ea71eb9ee9d62b296b584dec4d2">sceTouchGetSamplingState</a> </td>
+          <td class="memname">int <a class="el" href="touch_8h.html#a80accb418f43f29fc6dd71536a0ddc15">sceTouchGetSamplingState</a> </td>
           <td>(</td>
-          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramtype">unsigned int&#160;</td>
           <td class="paramname"><em>port</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint32_t *&#160;</td>
+          <td class="paramtype">unsigned int *&#160;</td>
           <td class="paramname"><em>pState</em>&#160;</td>
         </tr>
         <tr>
@@ -274,14 +297,14 @@ int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>sceTouchPeek</b> (
 
 </div>
 </div>
-<a class="anchor" id="af6051e03398859e734b60acf4a109953"></a><!-- doxytag: member="touch.h::sceTouchRead" ref="af6051e03398859e734b60acf4a109953" args="(uint32_t port, SceTouchData *pData, uint32_t nBufs)" -->
+<a class="anchor" id="a77b96ccf5e81f079f20e047a9baf576a"></a><!-- doxytag: member="touch.h::sceTouchRead" ref="a77b96ccf5e81f079f20e047a9baf576a" args="(unsigned int port, SceTouchData *pData, uint32_t nBufs)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int32_t <a class="el" href="touch_8h.html#af6051e03398859e734b60acf4a109953">sceTouchRead</a> </td>
+          <td class="memname">int <a class="el" href="touch_8h.html#a77b96ccf5e81f079f20e047a9baf576a">sceTouchRead</a> </td>
           <td>(</td>
-          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramtype">unsigned int&#160;</td>
           <td class="paramname"><em>port</em>, </td>
         </tr>
         <tr>
@@ -315,20 +338,20 @@ int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>sceTouchPeek</b> (
 
 </div>
 </div>
-<a class="anchor" id="ae23bb869649f3c8172cafed43625718c"></a><!-- doxytag: member="touch.h::sceTouchSetSamplingState" ref="ae23bb869649f3c8172cafed43625718c" args="(uint32_t port, uint32_t state)" -->
+<a class="anchor" id="a44db9589fab77bf506e2fa1f9b45afd1"></a><!-- doxytag: member="touch.h::sceTouchSetSamplingState" ref="a44db9589fab77bf506e2fa1f9b45afd1" args="(unsigned int port, unsigned int state)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int32_t <a class="el" href="touch_8h.html#ae23bb869649f3c8172cafed43625718c">sceTouchSetSamplingState</a> </td>
+          <td class="memname">int <a class="el" href="touch_8h.html#a44db9589fab77bf506e2fa1f9b45afd1">sceTouchSetSamplingState</a> </td>
           <td>(</td>
-          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramtype">unsigned int&#160;</td>
           <td class="paramname"><em>port</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramtype">unsigned int&#160;</td>
           <td class="paramname"><em>state</em>&#160;</td>
         </tr>
         <tr>
@@ -368,7 +391,7 @@ int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>sceTouchPeek</b> (
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jun 20 2015 03:04:34 for PSP2SDK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jun 20 2015 03:13:21 for PSP2SDK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>
