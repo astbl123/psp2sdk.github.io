@@ -2,7 +2,6 @@ var searchData=
 [
   ['emptyparam',['emptyParam',['../structSceAppUtilSaveDataSlot.html#a579eae0cbdf9beb992506f24d78858ef',1,'SceAppUtilSaveDataSlot']]],
   ['encoderversion',['encoderVersion',['../structSceAudioencOptInfoCelp.html#a9e68b409a66ebebbb6f951e74a4fee36',1,'SceAudioencOptInfoCelp']]],
-  ['eneterrorcodes',['ENetErrorCodes',['../net_8h.html#af1cfa04d12e17d5474460bc061ba2f43',1,'net.h']]],
   ['error_2eh',['error.h',['../error_8h.html',1,'']]],
   ['excitationmode',['excitationMode',['../structSceAudioencInfoCelp.html#afd9b4cbdc47b221217c7f99b6d562d1a',1,'SceAudioencInfoCelp']]],
   ['exidxbtm',['exidxBtm',['../struct__sceModuleInfo.html#afe44bf0d43904bdaada295984057947b',1,'_sceModuleInfo']]],
