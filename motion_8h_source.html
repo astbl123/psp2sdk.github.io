@@ -28,7 +28,7 @@
   
   <td style="padding-left: 0.5em;">
    <div id="projectname">PSP2SDK
-   &#160;<span id="projectnumber">dirty-a9a9ef2</span>
+   &#160;<span id="projectnumber">dirty-f70b031</span>
    </div>
    <div id="projectbrief">An open-sourced SDK for PSP2</div>
   </td>
@@ -80,58 +80,59 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 <a href="motion_8h.html">Go to the documentation of this file.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 
-<a name="l00021"></a>00021 <span class="preprocessor">#ifndef _PSP2_MOTION_</span>
-<a name="l00022"></a>00022 <span class="preprocessor"></span><span class="preprocessor">#define _PSP2_MOTION_</span>
+<a name="l00021"></a>00021 <span class="preprocessor">#ifndef _PSP2_MOTION_H_</span>
+<a name="l00022"></a>00022 <span class="preprocessor"></span><span class="preprocessor">#define _PSP2_MOTION_H_</span>
 <a name="l00023"></a>00023 <span class="preprocessor"></span>
 <a name="l00024"></a>00024 <span class="preprocessor">#include &lt;<a class="code" href="types_8h.html" title="Header file which defines unique variable types.">psp2/types.h</a>&gt;</span>
-<a name="l00025"></a>00025 
-<a name="l00026"></a>00026 <span class="comment">/* struct */</span>
-<a name="l00027"></a>00027 
-<a name="l00028"></a><a class="code" href="structSceMotionState.html">00028</a> <span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structSceMotionState.html">SceMotionState</a> {
-<a name="l00029"></a>00029     <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> timestamp;
-<a name="l00030"></a>00030     <a class="code" href="structSceFVector3.html">SceFVector3</a> acceleration;
-<a name="l00031"></a>00031     <a class="code" href="structSceFVector3.html">SceFVector3</a> angularVelocity;
-<a name="l00032"></a>00032     <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> reserve1[12];
-<a name="l00033"></a>00033     <a class="code" href="structSceFQuaternion.html">SceFQuaternion</a> deviceQuat;
-<a name="l00034"></a>00034     <a class="code" href="structSceUMatrix4.html">SceUMatrix4</a> rotationMatrix;
-<a name="l00035"></a>00035     <a class="code" href="structSceUMatrix4.html">SceUMatrix4</a> nedMatrix;
-<a name="l00036"></a>00036     <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> reserve2[4];
-<a name="l00037"></a>00037     <a class="code" href="structSceFVector3.html">SceFVector3</a> basicOrientation;
-<a name="l00038"></a>00038     SceULong64 hostTimestamp;
-<a name="l00039"></a>00039     <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> reserve3[40];
-<a name="l00040"></a>00040 } <a class="code" href="structSceMotionState.html">SceMotionState</a>;
-<a name="l00041"></a>00041 
-<a name="l00042"></a><a class="code" href="structSceMotionSensorState.html">00042</a> <span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structSceMotionSensorState.html">SceMotionSensorState</a> {
-<a name="l00043"></a>00043     <a class="code" href="structSceFVector3.html">SceFVector3</a> accelerometer;
-<a name="l00044"></a>00044     <a class="code" href="structSceFVector3.html">SceFVector3</a> gyro;
-<a name="l00045"></a>00045     <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> reserve1[12];
-<a name="l00046"></a>00046     <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> timestamp;
-<a name="l00047"></a>00047     <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> counter;
-<a name="l00048"></a>00048     <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> reserve2[4];
-<a name="l00049"></a>00049     SceULong64 hostTimestamp;
-<a name="l00050"></a>00050     <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> reserve3[8];
-<a name="l00051"></a>00051 } <a class="code" href="structSceMotionSensorState.html">SceMotionSensorState</a>;
-<a name="l00052"></a>00052 
-<a name="l00053"></a>00053 <span class="comment">/* prototypes */</span>
-<a name="l00054"></a>00054 
-<a name="l00055"></a>00055 <span class="keywordtype">int</span> sceMotionGetState(<a class="code" href="structSceMotionState.html">SceMotionState</a> *motionState);
-<a name="l00056"></a>00056 <span class="keywordtype">int</span> sceMotionGetSensorState(<a class="code" href="structSceMotionSensorState.html">SceMotionSensorState</a> *sensorState, <span class="keywordtype">int</span> numRecords);
-<a name="l00057"></a>00057 <span class="keywordtype">int</span> sceMotionGetBasicOrientation(<a class="code" href="structSceFVector3.html">SceFVector3</a> *basicOrientation);
-<a name="l00058"></a>00058 <span class="keywordtype">int</span> sceMotionRotateYaw(<span class="keywordtype">float</span> radians);
-<a name="l00059"></a>00059 <span class="keywordtype">int</span> sceMotionGetTiltCorrection();
-<a name="l00060"></a>00060 <span class="keywordtype">int</span> sceMotionSetTiltCorrection(<span class="keywordtype">int</span> setValue);
-<a name="l00061"></a>00061 <span class="keywordtype">int</span> sceMotionGetDeadband();
-<a name="l00062"></a>00062 <span class="keywordtype">int</span> sceMotionSetDeadband(<span class="keywordtype">int</span> setValue);
-<a name="l00063"></a>00063 <span class="keywordtype">int</span> sceMotionSetAngleThreshold(<span class="keywordtype">float</span> angle);
-<a name="l00064"></a>00064 <span class="keywordtype">float</span> sceMotionGetAngleThreshold();
-<a name="l00065"></a>00065 <span class="keywordtype">int</span> sceMotionReset();
-<a name="l00066"></a>00066 <span class="keywordtype">int</span> sceMotionMagnetometerOn();
-<a name="l00067"></a>00067 <span class="keywordtype">int</span> sceMotionMagnetometerOff();
-<a name="l00068"></a>00068 <span class="keywordtype">int</span> sceMotionGetMagnetometerState();
-<a name="l00069"></a>00069 <span class="keywordtype">int</span> sceMotionStartSampling();
-<a name="l00070"></a>00070 <span class="keywordtype">int</span> sceMotionStopSampling();
-<a name="l00071"></a>00071 
-<a name="l00072"></a>00072 <span class="preprocessor">#endif</span>
+<a name="l00025"></a>00025 <span class="preprocessor">#include &lt;stdint.h&gt;</span>
+<a name="l00026"></a>00026 
+<a name="l00027"></a>00027 <span class="comment">/* struct */</span>
+<a name="l00028"></a>00028 
+<a name="l00029"></a><a class="code" href="structSceMotionState.html">00029</a> <span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structSceMotionState.html">SceMotionState</a> {
+<a name="l00030"></a>00030     <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> timestamp;
+<a name="l00031"></a>00031     <a class="code" href="structSceFVector3.html">SceFVector3</a> acceleration;
+<a name="l00032"></a>00032     <a class="code" href="structSceFVector3.html">SceFVector3</a> angularVelocity;
+<a name="l00033"></a>00033     uint8_t reserved1[12];
+<a name="l00034"></a>00034     <a class="code" href="structSceFQuaternion.html">SceFQuaternion</a> deviceQuat;
+<a name="l00035"></a>00035     <a class="code" href="structSceUMatrix4.html">SceUMatrix4</a> rotationMatrix;
+<a name="l00036"></a>00036     <a class="code" href="structSceUMatrix4.html">SceUMatrix4</a> nedMatrix;
+<a name="l00037"></a>00037     uint32_t reserved2;
+<a name="l00038"></a>00038     <a class="code" href="structSceFVector3.html">SceFVector3</a> basicOrientation;
+<a name="l00039"></a>00039     SceULong64 hostTimestamp;
+<a name="l00040"></a>00040     uint8_t reserved[40];
+<a name="l00041"></a>00041 } <a class="code" href="structSceMotionState.html">SceMotionState</a>;
+<a name="l00042"></a>00042 
+<a name="l00043"></a><a class="code" href="structSceMotionSensorState.html">00043</a> <span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structSceMotionSensorState.html">SceMotionSensorState</a> {
+<a name="l00044"></a>00044     <a class="code" href="structSceFVector3.html">SceFVector3</a> accelerometer;
+<a name="l00045"></a>00045     <a class="code" href="structSceFVector3.html">SceFVector3</a> gyro;
+<a name="l00046"></a>00046     uint8_t reserved1[12];
+<a name="l00047"></a>00047     <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> timestamp;
+<a name="l00048"></a>00048     <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> counter;
+<a name="l00049"></a>00049     uint32_t reserved2;
+<a name="l00050"></a>00050     SceULong64 hostTimestamp;
+<a name="l00051"></a>00051     uint8_t reserved3[8];
+<a name="l00052"></a>00052 } <a class="code" href="structSceMotionSensorState.html">SceMotionSensorState</a>;
+<a name="l00053"></a>00053 
+<a name="l00054"></a>00054 <span class="comment">/* prototypes */</span>
+<a name="l00055"></a>00055 
+<a name="l00056"></a>00056 <span class="keywordtype">int</span> sceMotionGetState(<a class="code" href="structSceMotionState.html">SceMotionState</a> *motionState);
+<a name="l00057"></a>00057 <span class="keywordtype">int</span> sceMotionGetSensorState(<a class="code" href="structSceMotionSensorState.html">SceMotionSensorState</a> *sensorState, <span class="keywordtype">int</span> numRecords);
+<a name="l00058"></a>00058 <span class="keywordtype">int</span> sceMotionGetBasicOrientation(<a class="code" href="structSceFVector3.html">SceFVector3</a> *basicOrientation);
+<a name="l00059"></a>00059 <span class="keywordtype">int</span> sceMotionRotateYaw(<span class="keywordtype">float</span> radians);
+<a name="l00060"></a>00060 <span class="keywordtype">int</span> sceMotionGetTiltCorrection(<span class="keywordtype">void</span>);
+<a name="l00061"></a>00061 <span class="keywordtype">int</span> sceMotionSetTiltCorrection(<span class="keywordtype">int</span> setValue);
+<a name="l00062"></a>00062 <span class="keywordtype">int</span> sceMotionGetDeadband(<span class="keywordtype">void</span>);
+<a name="l00063"></a>00063 <span class="keywordtype">int</span> sceMotionSetDeadband(<span class="keywordtype">int</span> setValue);
+<a name="l00064"></a>00064 <span class="keywordtype">int</span> sceMotionSetAngleThreshold(<span class="keywordtype">float</span> angle);
+<a name="l00065"></a>00065 <span class="keywordtype">float</span> sceMotionGetAngleThreshold(<span class="keywordtype">void</span>);
+<a name="l00066"></a>00066 <span class="keywordtype">int</span> sceMotionReset(<span class="keywordtype">void</span>);
+<a name="l00067"></a>00067 <span class="keywordtype">int</span> sceMotionMagnetometerOn(<span class="keywordtype">void</span>);
+<a name="l00068"></a>00068 <span class="keywordtype">int</span> sceMotionMagnetometerOff(<span class="keywordtype">void</span>);
+<a name="l00069"></a>00069 <span class="keywordtype">int</span> sceMotionGetMagnetometerState(<span class="keywordtype">void</span>);
+<a name="l00070"></a>00070 <span class="keywordtype">int</span> sceMotionStartSampling(<span class="keywordtype">void</span>);
+<a name="l00071"></a>00071 <span class="keywordtype">int</span> sceMotionStopSampling(<span class="keywordtype">void</span>);
+<a name="l00072"></a>00072 
+<a name="l00073"></a>00073 <span class="preprocessor">#endif</span>
 </pre></div></div><!-- contents -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
@@ -150,7 +151,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jun 20 2015 02:29:17 for PSP2SDK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jun 20 2015 02:35:34 for PSP2SDK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

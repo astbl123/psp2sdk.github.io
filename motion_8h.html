@@ -28,7 +28,7 @@
   
   <td style="padding-left: 0.5em;">
    <div id="projectname">PSP2SDK
-   &#160;<span id="projectnumber">dirty-a9a9ef2</span>
+   &#160;<span id="projectnumber">dirty-f70b031</span>
    </div>
    <div id="projectbrief">An open-sourced SDK for PSP2</div>
   </td>
@@ -87,12 +87,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <p>Header file which defines motion variables and functions.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;<a class="el" href="types_8h_source.html">psp2/types.h</a>&gt;</code><br/>
+<code>#include &lt;stdint.h&gt;</code><br/>
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for motion.h:</div>
 <div class="dyncontent">
 <div class="center"><img src="motion_8h__incl.png" border="0" usemap="#include_2psp2_2motion_8h" alt=""/></div>
 <map name="include_2psp2_2motion_8h" id="include_2psp2_2motion_8h">
-<area shape="rect" id="node3" href="types_8h.html" title="Header file which defines unique variable types." alt="" coords="37,83,133,112"/></map>
+<area shape="rect" id="node3" href="types_8h.html" title="Header file which defines unique variable types." alt="" coords="5,83,101,112"/></map>
 </div>
 </div>
 <p><a href="motion_8h_source.html">Go to the source code of this file.</a></p>
@@ -117,30 +118,30 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>sceMotionGetSensorStat
 int&#160;</td><td class="memItemRight" valign="bottom"><b>sceMotionGetBasicOrientation</b> (<a class="el" href="structSceFVector3.html">SceFVector3</a> *basicOrientation)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2c1d6101fded892991ea92d000c5d44f"></a><!-- doxytag: member="motion.h::sceMotionRotateYaw" ref="a2c1d6101fded892991ea92d000c5d44f" args="(float radians)" -->
 int&#160;</td><td class="memItemRight" valign="bottom"><b>sceMotionRotateYaw</b> (float radians)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a74d174fc8c1130e2ffad2b1e9685096d"></a><!-- doxytag: member="motion.h::sceMotionGetTiltCorrection" ref="a74d174fc8c1130e2ffad2b1e9685096d" args="()" -->
-int&#160;</td><td class="memItemRight" valign="bottom"><b>sceMotionGetTiltCorrection</b> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2af514773753de05f377605a9579f373"></a><!-- doxytag: member="motion.h::sceMotionGetTiltCorrection" ref="a2af514773753de05f377605a9579f373" args="(void)" -->
+int&#160;</td><td class="memItemRight" valign="bottom"><b>sceMotionGetTiltCorrection</b> (void)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adea31e55ccfc5cf7231631cf45db7d3a"></a><!-- doxytag: member="motion.h::sceMotionSetTiltCorrection" ref="adea31e55ccfc5cf7231631cf45db7d3a" args="(int setValue)" -->
 int&#160;</td><td class="memItemRight" valign="bottom"><b>sceMotionSetTiltCorrection</b> (int setValue)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3d53120b7a49844614e29e1199f6b21e"></a><!-- doxytag: member="motion.h::sceMotionGetDeadband" ref="a3d53120b7a49844614e29e1199f6b21e" args="()" -->
-int&#160;</td><td class="memItemRight" valign="bottom"><b>sceMotionGetDeadband</b> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad8c396d3273762c12f15af81e15e00af"></a><!-- doxytag: member="motion.h::sceMotionGetDeadband" ref="ad8c396d3273762c12f15af81e15e00af" args="(void)" -->
+int&#160;</td><td class="memItemRight" valign="bottom"><b>sceMotionGetDeadband</b> (void)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae250729dbff628479cf1efcf5303467e"></a><!-- doxytag: member="motion.h::sceMotionSetDeadband" ref="ae250729dbff628479cf1efcf5303467e" args="(int setValue)" -->
 int&#160;</td><td class="memItemRight" valign="bottom"><b>sceMotionSetDeadband</b> (int setValue)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a72f7c6b564bea499b31ba5f5471f381f"></a><!-- doxytag: member="motion.h::sceMotionSetAngleThreshold" ref="a72f7c6b564bea499b31ba5f5471f381f" args="(float angle)" -->
 int&#160;</td><td class="memItemRight" valign="bottom"><b>sceMotionSetAngleThreshold</b> (float angle)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="accdf159825f9941be6d6bc244d02165a"></a><!-- doxytag: member="motion.h::sceMotionGetAngleThreshold" ref="accdf159825f9941be6d6bc244d02165a" args="()" -->
-float&#160;</td><td class="memItemRight" valign="bottom"><b>sceMotionGetAngleThreshold</b> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abc0845e99dc7a5b58e00e705f70e25f0"></a><!-- doxytag: member="motion.h::sceMotionReset" ref="abc0845e99dc7a5b58e00e705f70e25f0" args="()" -->
-int&#160;</td><td class="memItemRight" valign="bottom"><b>sceMotionReset</b> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac69a0359d440e4f520ad53ffc2ec6bb6"></a><!-- doxytag: member="motion.h::sceMotionMagnetometerOn" ref="ac69a0359d440e4f520ad53ffc2ec6bb6" args="()" -->
-int&#160;</td><td class="memItemRight" valign="bottom"><b>sceMotionMagnetometerOn</b> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a78318a42aec991c78dbd67d396d42563"></a><!-- doxytag: member="motion.h::sceMotionMagnetometerOff" ref="a78318a42aec991c78dbd67d396d42563" args="()" -->
-int&#160;</td><td class="memItemRight" valign="bottom"><b>sceMotionMagnetometerOff</b> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ade0a2f9c3eb796af6cd1042b9673f63e"></a><!-- doxytag: member="motion.h::sceMotionGetMagnetometerState" ref="ade0a2f9c3eb796af6cd1042b9673f63e" args="()" -->
-int&#160;</td><td class="memItemRight" valign="bottom"><b>sceMotionGetMagnetometerState</b> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1ac135ff33166fcb3ae4a3ce9f890396"></a><!-- doxytag: member="motion.h::sceMotionStartSampling" ref="a1ac135ff33166fcb3ae4a3ce9f890396" args="()" -->
-int&#160;</td><td class="memItemRight" valign="bottom"><b>sceMotionStartSampling</b> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a04cb1672091a1ba043cb14ba1588e4d7"></a><!-- doxytag: member="motion.h::sceMotionStopSampling" ref="a04cb1672091a1ba043cb14ba1588e4d7" args="()" -->
-int&#160;</td><td class="memItemRight" valign="bottom"><b>sceMotionStopSampling</b> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="affd8fbf514cade06daf4323d0b1b852c"></a><!-- doxytag: member="motion.h::sceMotionGetAngleThreshold" ref="affd8fbf514cade06daf4323d0b1b852c" args="(void)" -->
+float&#160;</td><td class="memItemRight" valign="bottom"><b>sceMotionGetAngleThreshold</b> (void)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af046a33390520ae2275e76d9ecb1feb2"></a><!-- doxytag: member="motion.h::sceMotionReset" ref="af046a33390520ae2275e76d9ecb1feb2" args="(void)" -->
+int&#160;</td><td class="memItemRight" valign="bottom"><b>sceMotionReset</b> (void)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2015af9fe1d43b1de450ba6a7f9b7ac8"></a><!-- doxytag: member="motion.h::sceMotionMagnetometerOn" ref="a2015af9fe1d43b1de450ba6a7f9b7ac8" args="(void)" -->
+int&#160;</td><td class="memItemRight" valign="bottom"><b>sceMotionMagnetometerOn</b> (void)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad51ffc9432116e069a748aeaf7c03193"></a><!-- doxytag: member="motion.h::sceMotionMagnetometerOff" ref="ad51ffc9432116e069a748aeaf7c03193" args="(void)" -->
+int&#160;</td><td class="memItemRight" valign="bottom"><b>sceMotionMagnetometerOff</b> (void)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3387646a1bacba7f8603ccd567aee949"></a><!-- doxytag: member="motion.h::sceMotionGetMagnetometerState" ref="a3387646a1bacba7f8603ccd567aee949" args="(void)" -->
+int&#160;</td><td class="memItemRight" valign="bottom"><b>sceMotionGetMagnetometerState</b> (void)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab4b684147d6117fe4301bd1e1fb462da"></a><!-- doxytag: member="motion.h::sceMotionStartSampling" ref="ab4b684147d6117fe4301bd1e1fb462da" args="(void)" -->
+int&#160;</td><td class="memItemRight" valign="bottom"><b>sceMotionStartSampling</b> (void)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa790e15855bf15a26f80debc10a79d63"></a><!-- doxytag: member="motion.h::sceMotionStopSampling" ref="aa790e15855bf15a26f80debc10a79d63" args="(void)" -->
+int&#160;</td><td class="memItemRight" valign="bottom"><b>sceMotionStopSampling</b> (void)</td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
 <div class="textblock"><p>Header file which defines motion variables and functions. </p>
@@ -166,7 +167,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>sceMotionStopSampling<
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jun 20 2015 02:29:17 for PSP2SDK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jun 20 2015 02:35:34 for PSP2SDK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>
