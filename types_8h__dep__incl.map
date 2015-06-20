@@ -2,17 +2,16 @@
 <area shape="rect" id="node3" href="$appmgr_8h.html" title="Header file which defines control related variables and functions." alt="" coords="5,83,157,112"/>
 <area shape="rect" id="node5" href="$apputil_8h_source.html" title="include/psp2/apputil.h" alt="" coords="181,83,328,112"/>
 <area shape="rect" id="node7" href="$audioenc_8h.html" title="Header file which defines encoding audio library related variables and functions." alt="" coords="352,83,515,112"/>
-<area shape="rect" id="node9" href="$audioout_8h.html" title="Header file which defines output audio related variables and functions." alt="" coords="539,83,696,112"/>
-<area shape="rect" id="node11" href="$camera_8h.html" title="Header file which defines camera related variables and functions." alt="" coords="720,83,872,112"/>
-<area shape="rect" id="node13" href="$ctrl_8h.html" title="Header file which defines control related variables and functions." alt="" coords="896,83,1024,112"/>
-<area shape="rect" id="node15" href="$display_8h.html" title="Header file which defines display related variables and functions." alt="" coords="1048,83,1197,112"/>
-<area shape="rect" id="node17" href="$gxm_8h.html" title="Header file which defines GXM variables and functions." alt="" coords="1221,83,1355,112"/>
-<area shape="rect" id="node19" href="$processmgr_8h.html" title="Header file which defines processes related variables and functions." alt="" coords="1379,83,1595,112"/>
-<area shape="rect" id="node21" href="$threadmgr_8h.html" title="Header file related to thread management." alt="" coords="1619,83,1824,112"/>
-<area shape="rect" id="node23" href="$moduleinfo_8h.html" title="Header file related to module information definitions." alt="" coords="1848,83,2021,112"/>
-<area shape="rect" id="node25" href="$motion_8h.html" title="Header file which defines motion variables and functions." alt="" coords="2045,83,2195,112"/>
-<area shape="rect" id="node27" href="$pgf_8h.html" title="Header file which defines font (PGF) variables and functions." alt="" coords="2219,83,2347,112"/>
-<area shape="rect" id="node29" href="$screenshot_8h.html" title="Header file which defines output audio related variables and functions." alt="" coords="2371,83,2544,112"/>
-<area shape="rect" id="node31" href="$system__param_8h.html" title="Header file which defines output audio related variables and functions." alt="" coords="2568,83,2763,112"/>
-<area shape="rect" id="node33" href="$touch_8h.html" title="Header file which defines touch related variables and functions." alt="" coords="2787,83,2928,112"/>
+<area shape="rect" id="node9" href="$camera_8h.html" title="Header file which defines camera related variables and functions." alt="" coords="539,83,691,112"/>
+<area shape="rect" id="node11" href="$ctrl_8h.html" title="Header file which defines control related variables and functions." alt="" coords="715,83,843,112"/>
+<area shape="rect" id="node13" href="$display_8h.html" title="Header file which defines display related variables and functions." alt="" coords="867,83,1016,112"/>
+<area shape="rect" id="node15" href="$gxm_8h.html" title="Header file which defines GXM variables and functions." alt="" coords="1040,83,1173,112"/>
+<area shape="rect" id="node17" href="$processmgr_8h.html" title="Header file which defines processes related variables and functions." alt="" coords="1197,83,1413,112"/>
+<area shape="rect" id="node19" href="$threadmgr_8h.html" title="Header file related to thread management." alt="" coords="1437,83,1643,112"/>
+<area shape="rect" id="node21" href="$moduleinfo_8h.html" title="Header file related to module information definitions." alt="" coords="1667,83,1840,112"/>
+<area shape="rect" id="node23" href="$motion_8h.html" title="Header file which defines motion variables and functions." alt="" coords="1864,83,2013,112"/>
+<area shape="rect" id="node25" href="$pgf_8h.html" title="Header file which defines font (PGF) variables and functions." alt="" coords="2037,83,2165,112"/>
+<area shape="rect" id="node27" href="$screenshot_8h.html" title="Header file which defines output audio related variables and functions." alt="" coords="2189,83,2363,112"/>
+<area shape="rect" id="node29" href="$system__param_8h.html" title="Header file which defines output audio related variables and functions." alt="" coords="2387,83,2581,112"/>
+<area shape="rect" id="node31" href="$touch_8h.html" title="Header file which defines touch related variables and functions." alt="" coords="2605,83,2747,112"/>
 </map>

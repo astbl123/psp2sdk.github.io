@@ -28,7 +28,7 @@
   
   <td style="padding-left: 0.5em;">
    <div id="projectname">PSP2SDK
-   &#160;<span id="projectnumber">dirty-1cf2184</span>
+   &#160;<span id="projectnumber">dirty-826d965</span>
    </div>
    <div id="projectbrief">An open-sourced SDK for PSP2</div>
   </td>
@@ -87,12 +87,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <p>Header file which defines camera related variables and functions.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;<a class="el" href="types_8h_source.html">psp2/types.h</a>&gt;</code><br/>
+<code>#include &lt;stdint.h&gt;</code><br/>
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for camera.h:</div>
 <div class="dyncontent">
 <div class="center"><img src="camera_8h__incl.png" border="0" usemap="#include_2psp2_2camera_8h" alt=""/></div>
 <map name="include_2psp2_2camera_8h" id="include_2psp2_2camera_8h">
-<area shape="rect" id="node3" href="types_8h.html" title="Header file which defines unique variable types." alt="" coords="37,83,133,112"/></map>
+<area shape="rect" id="node3" href="types_8h.html" title="Header file which defines unique variable types." alt="" coords="5,83,101,112"/></map>
 </div>
 </div>
 <p><a href="camera_8h_source.html">Go to the source code of this file.</a></p>
@@ -126,84 +127,84 @@ Enumerations</h2></td></tr>
  }</td></tr>
 <tr><td colspan="2"><h2><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aca6d2b3166c2eb6595803b1835eb4608"></a><!-- doxytag: member="camera.h::sceCameraOpen" ref="aca6d2b3166c2eb6595803b1835eb4608" args="(int32_t devnum, SceCameraInfo *pInfo)" -->
-int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>sceCameraOpen</b> (int32_t devnum, <a class="el" href="structSceCameraInfo.html">SceCameraInfo</a> *pInfo)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a70d8316d0ec8c26915b75a652fb3a5ab"></a><!-- doxytag: member="camera.h::sceCameraClose" ref="a70d8316d0ec8c26915b75a652fb3a5ab" args="(int32_t devnum)" -->
-int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>sceCameraClose</b> (int32_t devnum)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4b5489ae4e0882179301f9f2b749688c"></a><!-- doxytag: member="camera.h::sceCameraStart" ref="a4b5489ae4e0882179301f9f2b749688c" args="(int32_t devnum)" -->
-int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>sceCameraStart</b> (int32_t devnum)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afe636a3564333ce52142a339a362a263"></a><!-- doxytag: member="camera.h::sceCameraStop" ref="afe636a3564333ce52142a339a362a263" args="(int32_t devnum)" -->
-int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>sceCameraStop</b> (int32_t devnum)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6bd0e51bc00b68d2ba069a71efe51231"></a><!-- doxytag: member="camera.h::sceCameraRead" ref="a6bd0e51bc00b68d2ba069a71efe51231" args="(int32_t devnum, SceCameraRead *pRead)" -->
-int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>sceCameraRead</b> (int32_t devnum, <a class="el" href="structSceCameraRead.html">SceCameraRead</a> *pRead)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a48ed64748ef0d6daf576ef14a0bb7f79"></a><!-- doxytag: member="camera.h::sceCameraIsActive" ref="a48ed64748ef0d6daf576ef14a0bb7f79" args="(int32_t devnum)" -->
-int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>sceCameraIsActive</b> (int32_t devnum)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae09ca875a27bc015cb243f98c288f40c"></a><!-- doxytag: member="camera.h::sceCameraGetSaturation" ref="ae09ca875a27bc015cb243f98c288f40c" args="(int32_t devnum, int32_t *pLevel)" -->
-int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>sceCameraGetSaturation</b> (int32_t devnum, int32_t *pLevel)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4374c6b30bc1e65d52e61dd97cc9949c"></a><!-- doxytag: member="camera.h::sceCameraSetSaturation" ref="a4374c6b30bc1e65d52e61dd97cc9949c" args="(int32_t devnum, int32_t level)" -->
-int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>sceCameraSetSaturation</b> (int32_t devnum, int32_t level)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a140af1062df7c8b7bef3027bfc684c48"></a><!-- doxytag: member="camera.h::sceCameraGetBrightness" ref="a140af1062df7c8b7bef3027bfc684c48" args="(int32_t devnum, int32_t *pLevel)" -->
-int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>sceCameraGetBrightness</b> (int32_t devnum, int32_t *pLevel)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af006aa805ebdf4ec9951f5ed61a300c5"></a><!-- doxytag: member="camera.h::sceCameraSetBrightness" ref="af006aa805ebdf4ec9951f5ed61a300c5" args="(int32_t devnum, int32_t level)" -->
-int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>sceCameraSetBrightness</b> (int32_t devnum, int32_t level)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5d9d1f8768c59435a16a592b0b4dc33e"></a><!-- doxytag: member="camera.h::sceCameraGetContrast" ref="a5d9d1f8768c59435a16a592b0b4dc33e" args="(int32_t devnum, int32_t *pLevel)" -->
-int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>sceCameraGetContrast</b> (int32_t devnum, int32_t *pLevel)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a03b427ecafe3e3b9ca5aa45d7bdb58e6"></a><!-- doxytag: member="camera.h::sceCameraSetContrast" ref="a03b427ecafe3e3b9ca5aa45d7bdb58e6" args="(int32_t devnum, int32_t level)" -->
-int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>sceCameraSetContrast</b> (int32_t devnum, int32_t level)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a13d64c0bbcec8bfd37c78eb7e0b02909"></a><!-- doxytag: member="camera.h::sceCameraGetSharpness" ref="a13d64c0bbcec8bfd37c78eb7e0b02909" args="(int32_t devnum, int32_t *pLevel)" -->
-int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>sceCameraGetSharpness</b> (int32_t devnum, int32_t *pLevel)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa5aad2af7d089a09085f998579ee7c64"></a><!-- doxytag: member="camera.h::sceCameraSetSharpness" ref="aa5aad2af7d089a09085f998579ee7c64" args="(int32_t devnum, int32_t level)" -->
-int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>sceCameraSetSharpness</b> (int32_t devnum, int32_t level)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aade6afa91dbd2c75a9a635bb035873fe"></a><!-- doxytag: member="camera.h::sceCameraGetReverse" ref="aade6afa91dbd2c75a9a635bb035873fe" args="(int32_t devnum, int32_t *pMode)" -->
-int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>sceCameraGetReverse</b> (int32_t devnum, int32_t *pMode)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab9a8b5fdeead9d672b1bff3185c661d3"></a><!-- doxytag: member="camera.h::sceCameraSetReverse" ref="ab9a8b5fdeead9d672b1bff3185c661d3" args="(int32_t devnum, int32_t mode)" -->
-int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>sceCameraSetReverse</b> (int32_t devnum, int32_t mode)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afdfa48e9b7ae1416370b847108589fb7"></a><!-- doxytag: member="camera.h::sceCameraGetEffect" ref="afdfa48e9b7ae1416370b847108589fb7" args="(int32_t devnum, int32_t *pMode)" -->
-int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>sceCameraGetEffect</b> (int32_t devnum, int32_t *pMode)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad9fdd66e02b58bdbc1d32808f4d8e221"></a><!-- doxytag: member="camera.h::sceCameraSetEffect" ref="ad9fdd66e02b58bdbc1d32808f4d8e221" args="(int32_t devnum, int32_t mode)" -->
-int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>sceCameraSetEffect</b> (int32_t devnum, int32_t mode)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa400999cfba5710cc2d9c47cc79e4782"></a><!-- doxytag: member="camera.h::sceCameraGetEV" ref="aa400999cfba5710cc2d9c47cc79e4782" args="(int32_t devnum, int32_t *pLevel)" -->
-int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>sceCameraGetEV</b> (int32_t devnum, int32_t *pLevel)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a72e7badf57d16016e7bd8402704163d8"></a><!-- doxytag: member="camera.h::sceCameraSetEV" ref="a72e7badf57d16016e7bd8402704163d8" args="(int32_t devnum, int32_t level)" -->
-int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>sceCameraSetEV</b> (int32_t devnum, int32_t level)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad72134023630002d3afe0fe152cf099e"></a><!-- doxytag: member="camera.h::sceCameraGetZoom" ref="ad72134023630002d3afe0fe152cf099e" args="(int32_t devnum, int32_t *pLevel)" -->
-int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>sceCameraGetZoom</b> (int32_t devnum, int32_t *pLevel)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6249d012573f25849fd80f2637ed5a4e"></a><!-- doxytag: member="camera.h::sceCameraSetZoom" ref="a6249d012573f25849fd80f2637ed5a4e" args="(int32_t devnum, int32_t level)" -->
-int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>sceCameraSetZoom</b> (int32_t devnum, int32_t level)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5ed473c0ec9d277c9cc8a5fb9659b126"></a><!-- doxytag: member="camera.h::sceCameraGetAntiFlicker" ref="a5ed473c0ec9d277c9cc8a5fb9659b126" args="(int32_t devnum, int32_t *pMode)" -->
-int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>sceCameraGetAntiFlicker</b> (int32_t devnum, int32_t *pMode)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac15db725368c7bb134d3d7accb84830a"></a><!-- doxytag: member="camera.h::sceCameraSetAntiFlicker" ref="ac15db725368c7bb134d3d7accb84830a" args="(int32_t devnum, int32_t mode)" -->
-int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>sceCameraSetAntiFlicker</b> (int32_t devnum, int32_t mode)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1d95c9831a14f388ca0c74ab8ce45cd0"></a><!-- doxytag: member="camera.h::sceCameraGetISO" ref="a1d95c9831a14f388ca0c74ab8ce45cd0" args="(int32_t devnum, int32_t *pMode)" -->
-int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>sceCameraGetISO</b> (int32_t devnum, int32_t *pMode)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adf0008afacf4693733ef076894896709"></a><!-- doxytag: member="camera.h::sceCameraSetISO" ref="adf0008afacf4693733ef076894896709" args="(int32_t devnum, int32_t mode)" -->
-int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>sceCameraSetISO</b> (int32_t devnum, int32_t mode)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aba8cd89309e54428c43cb7fea1db4f16"></a><!-- doxytag: member="camera.h::sceCameraGetGain" ref="aba8cd89309e54428c43cb7fea1db4f16" args="(int32_t devnum, int32_t *pMode)" -->
-int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>sceCameraGetGain</b> (int32_t devnum, int32_t *pMode)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a74b00de71f9de1c0330f4ac99a2b6689"></a><!-- doxytag: member="camera.h::sceCameraSetGain" ref="a74b00de71f9de1c0330f4ac99a2b6689" args="(int32_t devnum, int32_t mode)" -->
-int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>sceCameraSetGain</b> (int32_t devnum, int32_t mode)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a180654265cc74c4f8bffba1b24495644"></a><!-- doxytag: member="camera.h::sceCameraGetWhiteBalance" ref="a180654265cc74c4f8bffba1b24495644" args="(int32_t devnum, int32_t *pMode)" -->
-int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>sceCameraGetWhiteBalance</b> (int32_t devnum, int32_t *pMode)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afdfef39717780ae8c1838e68d58977ab"></a><!-- doxytag: member="camera.h::sceCameraSetWhiteBalance" ref="afdfef39717780ae8c1838e68d58977ab" args="(int32_t devnum, int32_t mode)" -->
-int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>sceCameraSetWhiteBalance</b> (int32_t devnum, int32_t mode)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a048ba0fe20f098070eca4d48668c1572"></a><!-- doxytag: member="camera.h::sceCameraGetBacklight" ref="a048ba0fe20f098070eca4d48668c1572" args="(int32_t devnum, int32_t *pMode)" -->
-int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>sceCameraGetBacklight</b> (int32_t devnum, int32_t *pMode)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac0c86c13bec4946d79353d725ab79be8"></a><!-- doxytag: member="camera.h::sceCameraSetBacklight" ref="ac0c86c13bec4946d79353d725ab79be8" args="(int32_t devnum, int32_t mode)" -->
-int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>sceCameraSetBacklight</b> (int32_t devnum, int32_t mode)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a881678981ed5a1024abd592fdb18d848"></a><!-- doxytag: member="camera.h::sceCameraGetNightmode" ref="a881678981ed5a1024abd592fdb18d848" args="(int32_t devnum, int32_t *pMode)" -->
-int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>sceCameraGetNightmode</b> (int32_t devnum, int32_t *pMode)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5a29b8d44d721522fc9d8b505e19f5e2"></a><!-- doxytag: member="camera.h::sceCameraSetNightmode" ref="a5a29b8d44d721522fc9d8b505e19f5e2" args="(int32_t devnum, int32_t mode)" -->
-int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>sceCameraSetNightmode</b> (int32_t devnum, int32_t mode)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa51699f6f90e366da8e4e5630a8c9e52"></a><!-- doxytag: member="camera.h::sceCameraGetExposureCeiling" ref="aa51699f6f90e366da8e4e5630a8c9e52" args="(int32_t devnum, int32_t *pMode)" -->
-int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>sceCameraGetExposureCeiling</b> (int32_t devnum, int32_t *pMode)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a07d8596495717bdff55c1a678cfb31b7"></a><!-- doxytag: member="camera.h::sceCameraSetExposureCeiling" ref="a07d8596495717bdff55c1a678cfb31b7" args="(int32_t devnum, int32_t mode)" -->
-int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>sceCameraSetExposureCeiling</b> (int32_t devnum, int32_t mode)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a172ce8f489de155027290bf9c495a27a"></a><!-- doxytag: member="camera.h::sceCameraGetAutoControlHold" ref="a172ce8f489de155027290bf9c495a27a" args="(int32_t devnum, int32_t *pMode)" -->
-int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>sceCameraGetAutoControlHold</b> (int32_t devnum, int32_t *pMode)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a20e542461a20e42061307a2ca66c1859"></a><!-- doxytag: member="camera.h::sceCameraSetAutoControlHold" ref="a20e542461a20e42061307a2ca66c1859" args="(int32_t devnum, int32_t mode)" -->
-int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>sceCameraSetAutoControlHold</b> (int32_t devnum, int32_t mode)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a26fbf8f7817c02bca2d36b8445c9525f"></a><!-- doxytag: member="camera.h::sceCameraGetDeviceLocation" ref="a26fbf8f7817c02bca2d36b8445c9525f" args="(int32_t devnum, SceFVector3 *pLocation)" -->
-int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>sceCameraGetDeviceLocation</b> (int32_t devnum, <a class="el" href="structSceFVector3.html">SceFVector3</a> *pLocation)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa37d9cdb92004d6dfd4339145fa25fa5"></a><!-- doxytag: member="camera.h::sceCameraOpen" ref="aa37d9cdb92004d6dfd4339145fa25fa5" args="(int devnum, SceCameraInfo *pInfo)" -->
+int&#160;</td><td class="memItemRight" valign="bottom"><b>sceCameraOpen</b> (int devnum, <a class="el" href="structSceCameraInfo.html">SceCameraInfo</a> *pInfo)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acd40aface688fb979afa5098db9859c1"></a><!-- doxytag: member="camera.h::sceCameraClose" ref="acd40aface688fb979afa5098db9859c1" args="(int devnum)" -->
+int&#160;</td><td class="memItemRight" valign="bottom"><b>sceCameraClose</b> (int devnum)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab90fa215f3233656773ba28d3306fa0d"></a><!-- doxytag: member="camera.h::sceCameraStart" ref="ab90fa215f3233656773ba28d3306fa0d" args="(int devnum)" -->
+int&#160;</td><td class="memItemRight" valign="bottom"><b>sceCameraStart</b> (int devnum)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2a1eb3fbdb67a2df6b435a617b0ad112"></a><!-- doxytag: member="camera.h::sceCameraStop" ref="a2a1eb3fbdb67a2df6b435a617b0ad112" args="(int devnum)" -->
+int&#160;</td><td class="memItemRight" valign="bottom"><b>sceCameraStop</b> (int devnum)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7b613e8ab9c8f3b6e8cb6562e654ce48"></a><!-- doxytag: member="camera.h::sceCameraRead" ref="a7b613e8ab9c8f3b6e8cb6562e654ce48" args="(int devnum, SceCameraRead *pRead)" -->
+int&#160;</td><td class="memItemRight" valign="bottom"><b>sceCameraRead</b> (int devnum, <a class="el" href="structSceCameraRead.html">SceCameraRead</a> *pRead)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad4b4297a3961711c540884e50be3b72a"></a><!-- doxytag: member="camera.h::sceCameraIsActive" ref="ad4b4297a3961711c540884e50be3b72a" args="(int devnum)" -->
+int&#160;</td><td class="memItemRight" valign="bottom"><b>sceCameraIsActive</b> (int devnum)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6d0be6de97ad369724406a92ae30679b"></a><!-- doxytag: member="camera.h::sceCameraGetSaturation" ref="a6d0be6de97ad369724406a92ae30679b" args="(int devnum, int *pLevel)" -->
+int&#160;</td><td class="memItemRight" valign="bottom"><b>sceCameraGetSaturation</b> (int devnum, int *pLevel)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a556585cbd4793171ea3f28569e0ff5ac"></a><!-- doxytag: member="camera.h::sceCameraSetSaturation" ref="a556585cbd4793171ea3f28569e0ff5ac" args="(int devnum, int level)" -->
+int&#160;</td><td class="memItemRight" valign="bottom"><b>sceCameraSetSaturation</b> (int devnum, int level)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8ea82c20ead5a700afed66e0af89968f"></a><!-- doxytag: member="camera.h::sceCameraGetBrightness" ref="a8ea82c20ead5a700afed66e0af89968f" args="(int devnum, int *pLevel)" -->
+int&#160;</td><td class="memItemRight" valign="bottom"><b>sceCameraGetBrightness</b> (int devnum, int *pLevel)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae044b216ea1355ab8e48d08a231bbd72"></a><!-- doxytag: member="camera.h::sceCameraSetBrightness" ref="ae044b216ea1355ab8e48d08a231bbd72" args="(int devnum, int level)" -->
+int&#160;</td><td class="memItemRight" valign="bottom"><b>sceCameraSetBrightness</b> (int devnum, int level)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4a79d159e8cda014eaee604985d9a88e"></a><!-- doxytag: member="camera.h::sceCameraGetContrast" ref="a4a79d159e8cda014eaee604985d9a88e" args="(int devnum, int *pLevel)" -->
+int&#160;</td><td class="memItemRight" valign="bottom"><b>sceCameraGetContrast</b> (int devnum, int *pLevel)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aba4e3cc0a11fd0b590f06d0344b16350"></a><!-- doxytag: member="camera.h::sceCameraSetContrast" ref="aba4e3cc0a11fd0b590f06d0344b16350" args="(int devnum, int level)" -->
+int&#160;</td><td class="memItemRight" valign="bottom"><b>sceCameraSetContrast</b> (int devnum, int level)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a12005dde3cfe8520282d1dc591681dec"></a><!-- doxytag: member="camera.h::sceCameraGetSharpness" ref="a12005dde3cfe8520282d1dc591681dec" args="(int devnum, int *pLevel)" -->
+int&#160;</td><td class="memItemRight" valign="bottom"><b>sceCameraGetSharpness</b> (int devnum, int *pLevel)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1e07ae3df169af3f1e2d0b38fbf9357f"></a><!-- doxytag: member="camera.h::sceCameraSetSharpness" ref="a1e07ae3df169af3f1e2d0b38fbf9357f" args="(int devnum, int level)" -->
+int&#160;</td><td class="memItemRight" valign="bottom"><b>sceCameraSetSharpness</b> (int devnum, int level)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acf946102513ae362816b490da728d834"></a><!-- doxytag: member="camera.h::sceCameraGetReverse" ref="acf946102513ae362816b490da728d834" args="(int devnum, int *pMode)" -->
+int&#160;</td><td class="memItemRight" valign="bottom"><b>sceCameraGetReverse</b> (int devnum, int *pMode)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab5fb912cfed2f5fee76d1ddb14d134bf"></a><!-- doxytag: member="camera.h::sceCameraSetReverse" ref="ab5fb912cfed2f5fee76d1ddb14d134bf" args="(int devnum, int mode)" -->
+int&#160;</td><td class="memItemRight" valign="bottom"><b>sceCameraSetReverse</b> (int devnum, int mode)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a03e227229ef71ffc7e4c388829ff8599"></a><!-- doxytag: member="camera.h::sceCameraGetEffect" ref="a03e227229ef71ffc7e4c388829ff8599" args="(int devnum, int *pMode)" -->
+int&#160;</td><td class="memItemRight" valign="bottom"><b>sceCameraGetEffect</b> (int devnum, int *pMode)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa861ce81576370ff20f0c8100050adad"></a><!-- doxytag: member="camera.h::sceCameraSetEffect" ref="aa861ce81576370ff20f0c8100050adad" args="(int devnum, int mode)" -->
+int&#160;</td><td class="memItemRight" valign="bottom"><b>sceCameraSetEffect</b> (int devnum, int mode)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a237173e3a7358fba3745ab57f3c8e13f"></a><!-- doxytag: member="camera.h::sceCameraGetEV" ref="a237173e3a7358fba3745ab57f3c8e13f" args="(int devnum, int *pLevel)" -->
+int&#160;</td><td class="memItemRight" valign="bottom"><b>sceCameraGetEV</b> (int devnum, int *pLevel)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a089f889c84329f24b5ccfaecd4f6eb0d"></a><!-- doxytag: member="camera.h::sceCameraSetEV" ref="a089f889c84329f24b5ccfaecd4f6eb0d" args="(int devnum, int level)" -->
+int&#160;</td><td class="memItemRight" valign="bottom"><b>sceCameraSetEV</b> (int devnum, int level)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae6fc12d08d5d2df5966d23f6d35df562"></a><!-- doxytag: member="camera.h::sceCameraGetZoom" ref="ae6fc12d08d5d2df5966d23f6d35df562" args="(int devnum, int *pLevel)" -->
+int&#160;</td><td class="memItemRight" valign="bottom"><b>sceCameraGetZoom</b> (int devnum, int *pLevel)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af5fc84c12cc331693dec099b6a8db380"></a><!-- doxytag: member="camera.h::sceCameraSetZoom" ref="af5fc84c12cc331693dec099b6a8db380" args="(int devnum, int level)" -->
+int&#160;</td><td class="memItemRight" valign="bottom"><b>sceCameraSetZoom</b> (int devnum, int level)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1d80130d09f7621879a0059663ef54f5"></a><!-- doxytag: member="camera.h::sceCameraGetAntiFlicker" ref="a1d80130d09f7621879a0059663ef54f5" args="(int devnum, int *pMode)" -->
+int&#160;</td><td class="memItemRight" valign="bottom"><b>sceCameraGetAntiFlicker</b> (int devnum, int *pMode)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa7608fc1c98660635a06401fe7a35d22"></a><!-- doxytag: member="camera.h::sceCameraSetAntiFlicker" ref="aa7608fc1c98660635a06401fe7a35d22" args="(int devnum, int mode)" -->
+int&#160;</td><td class="memItemRight" valign="bottom"><b>sceCameraSetAntiFlicker</b> (int devnum, int mode)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae4346929409fe91ff4d03a6356a4ff7e"></a><!-- doxytag: member="camera.h::sceCameraGetISO" ref="ae4346929409fe91ff4d03a6356a4ff7e" args="(int devnum, int *pMode)" -->
+int&#160;</td><td class="memItemRight" valign="bottom"><b>sceCameraGetISO</b> (int devnum, int *pMode)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac4656cd309e555f7de29cd5014a18271"></a><!-- doxytag: member="camera.h::sceCameraSetISO" ref="ac4656cd309e555f7de29cd5014a18271" args="(int devnum, int mode)" -->
+int&#160;</td><td class="memItemRight" valign="bottom"><b>sceCameraSetISO</b> (int devnum, int mode)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3acb32213613f26c6115fe69f08a2598"></a><!-- doxytag: member="camera.h::sceCameraGetGain" ref="a3acb32213613f26c6115fe69f08a2598" args="(int devnum, int *pMode)" -->
+int&#160;</td><td class="memItemRight" valign="bottom"><b>sceCameraGetGain</b> (int devnum, int *pMode)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9cb542dc5ca044e766d1df3f5c1c1282"></a><!-- doxytag: member="camera.h::sceCameraSetGain" ref="a9cb542dc5ca044e766d1df3f5c1c1282" args="(int devnum, int mode)" -->
+int&#160;</td><td class="memItemRight" valign="bottom"><b>sceCameraSetGain</b> (int devnum, int mode)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a361f19b3a660c4b55c1a9fbf93b23cc1"></a><!-- doxytag: member="camera.h::sceCameraGetWhiteBalance" ref="a361f19b3a660c4b55c1a9fbf93b23cc1" args="(int devnum, int *pMode)" -->
+int&#160;</td><td class="memItemRight" valign="bottom"><b>sceCameraGetWhiteBalance</b> (int devnum, int *pMode)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acd94da9cb7be9becc951fbc044369fbc"></a><!-- doxytag: member="camera.h::sceCameraSetWhiteBalance" ref="acd94da9cb7be9becc951fbc044369fbc" args="(int devnum, int mode)" -->
+int&#160;</td><td class="memItemRight" valign="bottom"><b>sceCameraSetWhiteBalance</b> (int devnum, int mode)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a411e585fa1951bf4a3af9e1aad276c83"></a><!-- doxytag: member="camera.h::sceCameraGetBacklight" ref="a411e585fa1951bf4a3af9e1aad276c83" args="(int devnum, int *pMode)" -->
+int&#160;</td><td class="memItemRight" valign="bottom"><b>sceCameraGetBacklight</b> (int devnum, int *pMode)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac5fc6c31a6f29fcc85c5c0aba946fcae"></a><!-- doxytag: member="camera.h::sceCameraSetBacklight" ref="ac5fc6c31a6f29fcc85c5c0aba946fcae" args="(int devnum, int mode)" -->
+int&#160;</td><td class="memItemRight" valign="bottom"><b>sceCameraSetBacklight</b> (int devnum, int mode)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acf292f9db847282a282af656ed13aa5c"></a><!-- doxytag: member="camera.h::sceCameraGetNightmode" ref="acf292f9db847282a282af656ed13aa5c" args="(int devnum, int *pMode)" -->
+int&#160;</td><td class="memItemRight" valign="bottom"><b>sceCameraGetNightmode</b> (int devnum, int *pMode)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a09ba5c21b31e2b722624e895431c4615"></a><!-- doxytag: member="camera.h::sceCameraSetNightmode" ref="a09ba5c21b31e2b722624e895431c4615" args="(int devnum, int mode)" -->
+int&#160;</td><td class="memItemRight" valign="bottom"><b>sceCameraSetNightmode</b> (int devnum, int mode)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9b4dde34441ed50194136e744f7306ac"></a><!-- doxytag: member="camera.h::sceCameraGetExposureCeiling" ref="a9b4dde34441ed50194136e744f7306ac" args="(int devnum, int *pMode)" -->
+int&#160;</td><td class="memItemRight" valign="bottom"><b>sceCameraGetExposureCeiling</b> (int devnum, int *pMode)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a93e59b6f8466480658afbd1058c8c155"></a><!-- doxytag: member="camera.h::sceCameraSetExposureCeiling" ref="a93e59b6f8466480658afbd1058c8c155" args="(int devnum, int mode)" -->
+int&#160;</td><td class="memItemRight" valign="bottom"><b>sceCameraSetExposureCeiling</b> (int devnum, int mode)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3eb27f29e6ea41ac4ca77f1f3ecc415b"></a><!-- doxytag: member="camera.h::sceCameraGetAutoControlHold" ref="a3eb27f29e6ea41ac4ca77f1f3ecc415b" args="(int devnum, int *pMode)" -->
+int&#160;</td><td class="memItemRight" valign="bottom"><b>sceCameraGetAutoControlHold</b> (int devnum, int *pMode)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afb123a6b5adef3c6d7d3206f0919c112"></a><!-- doxytag: member="camera.h::sceCameraSetAutoControlHold" ref="afb123a6b5adef3c6d7d3206f0919c112" args="(int devnum, int mode)" -->
+int&#160;</td><td class="memItemRight" valign="bottom"><b>sceCameraSetAutoControlHold</b> (int devnum, int mode)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3491a774a22ca3c11cef3f41ceb0c435"></a><!-- doxytag: member="camera.h::sceCameraGetDeviceLocation" ref="a3491a774a22ca3c11cef3f41ceb0c435" args="(int devnum, SceFVector3 *pLocation)" -->
+int&#160;</td><td class="memItemRight" valign="bottom"><b>sceCameraGetDeviceLocation</b> (int devnum, <a class="el" href="structSceFVector3.html">SceFVector3</a> *pLocation)</td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
 <div class="textblock"><p>Header file which defines camera related variables and functions. </p>
@@ -229,7 +230,7 @@ int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>sceCameraGetDevice
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jun 20 2015 01:17:45 for PSP2SDK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jun 20 2015 01:27:08 for PSP2SDK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>
