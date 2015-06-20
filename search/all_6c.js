@@ -4,6 +4,6 @@ var searchData=
   ['libneterrorcodes',['libnetErrorCodes',['../net_8h.html#a3a0aa28664329bfb01004ffc46c1269b',1,'net.h']]],
   ['loadcore_2eh',['loadcore.h',['../loadcore_8h.html',1,'']]],
   ['low',['low',['../union__SceKernelSysClock.html#a7a727c1d1ff32862cfb924764367452f',1,'_SceKernelSysClock']]],
-  ['lx',['Lx',['../structSceCtrlData.html#a303de117f8ad5c5ff0839f7e7f9f4b9e',1,'SceCtrlData']]],
-  ['ly',['Ly',['../structSceCtrlData.html#adaaf55560bc3aa51cd744fcb4d1bb424',1,'SceCtrlData']]]
+  ['lx',['lx',['../structSceCtrlData.html#a011de3553dbdbbdf1e5715a8c3cc1e52',1,'SceCtrlData']]],
+  ['ly',['ly',['../structSceCtrlData.html#a2215a093b05324b55888ecd40a7f00ee',1,'SceCtrlData']]]
 ];
