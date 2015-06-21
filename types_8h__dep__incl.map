@@ -11,6 +11,7 @@
 <area shape="rect" id="node21" href="$motion_8h.html" title="Header file which defines motion variables and functions." alt="" coords="1712,83,1861,112"/>
 <area shape="rect" id="node23" href="$pgf_8h.html" title="Header file which defines font (PGF) variables and functions." alt="" coords="1885,83,2013,112"/>
 <area shape="rect" id="node25" href="$power_8h.html" title="Header file which defines power variables and functions." alt="" coords="2037,83,2181,112"/>
-<area shape="rect" id="node27" href="$screenshot_8h.html" title="Header file which defines output audio related variables and functions." alt="" coords="2205,83,2379,112"/>
-<area shape="rect" id="node29" href="$touch_8h.html" title="Header file which defines touch related variables and functions." alt="" coords="2403,83,2544,112"/>
+<area shape="rect" id="node27" href="$rtc_8h.html" title="Header file which defines RTC variables and functions." alt="" coords="2205,83,2331,112"/>
+<area shape="rect" id="node29" href="$screenshot_8h.html" title="Header file which defines output audio related variables and functions." alt="" coords="2355,83,2528,112"/>
+<area shape="rect" id="node31" href="$touch_8h.html" title="Header file which defines touch related variables and functions." alt="" coords="2552,83,2693,112"/>
 </map>

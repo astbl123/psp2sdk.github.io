@@ -28,7 +28,7 @@
   
   <td style="padding-left: 0.5em;">
    <div id="projectname">PSP2SDK
-   &#160;<span id="projectnumber">dirty-cf2f393</span>
+   &#160;<span id="projectnumber">dirty-5dd0cbf</span>
    </div>
    <div id="projectbrief">The free SDK for PSP2</div>
   </td>
@@ -163,6 +163,8 @@ SceGxmColorSwizzle1Mode&#160;</td><td class="memItemRight" valign="bottom"><b>Sc
 typedef enum SceGxmColorBaseFormat&#160;</td><td class="memItemRight" valign="bottom"><b>SceGxmColorBaseFormat</b></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af95f4497fe581d739b515bfa79c96f6d"></a><!-- doxytag: member="gxm.h::SceGxmColorFormat" ref="af95f4497fe581d739b515bfa79c96f6d" args="" -->
 typedef enum SceGxmColorFormat&#160;</td><td class="memItemRight" valign="bottom"><b>SceGxmColorFormat</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a67a00a4e972bfe98ae9644b4d78c727c"></a><!-- doxytag: member="gxm.h::SceGxmColorSurfaceType" ref="a67a00a4e972bfe98ae9644b4d78c727c" args="" -->
+typedef enum SceGxmColorSurfaceType&#160;</td><td class="memItemRight" valign="bottom"><b>SceGxmColorSurfaceType</b></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a27be08293b56532cad9d1bfb2bb286a1"></a><!-- doxytag: member="gxm.h::SceGxmColorSurfaceGammaMode" ref="a27be08293b56532cad9d1bfb2bb286a1" args="" -->
 typedef enum <br class="typebreak"/>
 SceGxmColorSurfaceGammaMode&#160;</td><td class="memItemRight" valign="bottom"><b>SceGxmColorSurfaceGammaMode</b></td></tr>
@@ -258,12 +260,16 @@ SceGxmVisibilityTestMode&#160;</td><td class="memItemRight" valign="bottom"><b>S
 typedef enum SceGxmVisibilityTestOp&#160;</td><td class="memItemRight" valign="bottom"><b>SceGxmVisibilityTestOp</b></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acb9d89c3e5c0170e1d667853466798c8"></a><!-- doxytag: member="gxm.h::SceGxmBlendFunc" ref="acb9d89c3e5c0170e1d667853466798c8" args="" -->
 typedef enum SceGxmBlendFunc&#160;</td><td class="memItemRight" valign="bottom"><b>SceGxmBlendFunc</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aab666d8e6c376a3e6d9640a746e7c1a0"></a><!-- doxytag: member="gxm.h::SceGxmBlendFactor" ref="aab666d8e6c376a3e6d9640a746e7c1a0" args="" -->
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9280ada3b8f6f104a57346f385163935"></a><!-- doxytag: member="gxm.h::SceGxmBlendFactor" ref="a9280ada3b8f6f104a57346f385163935" args="" -->
 typedef enum SceGxmBlendFactor&#160;</td><td class="memItemRight" valign="bottom"><b>SceGxmBlendFactor</b></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad0863fe9014c430c74b0aad3e2a81355"></a><!-- doxytag: member="gxm.h::SceGxmColorMask" ref="ad0863fe9014c430c74b0aad3e2a81355" args="" -->
 typedef enum SceGxmColorMask&#160;</td><td class="memItemRight" valign="bottom"><b>SceGxmColorMask</b></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abe7af3987000ba394bd8d120ddfe4a01"></a><!-- doxytag: member="gxm.h::SceGxmBlendInfo" ref="abe7af3987000ba394bd8d120ddfe4a01" args="" -->
 typedef struct <a class="el" href="structSceGxmBlendInfo.html">SceGxmBlendInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><b>SceGxmBlendInfo</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a86954c790bd835ebc36b96e3b4304ad0"></a><!-- doxytag: member="gxm.h::SceGxmRenderTarget" ref="a86954c790bd835ebc36b96e3b4304ad0" args="" -->
+typedef struct SceGxmRenderTarget&#160;</td><td class="memItemRight" valign="bottom"><b>SceGxmRenderTarget</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af364fed7cd6e00d6db2437ad20f5d922"></a><!-- doxytag: member="gxm.h::SceGxmSyncObject" ref="af364fed7cd6e00d6db2437ad20f5d922" args="" -->
+typedef struct SceGxmSyncObject&#160;</td><td class="memItemRight" valign="bottom"><b>SceGxmSyncObject</b></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a86de465519ddbffc846088be11c8d0dc"></a><!-- doxytag: member="gxm.h::SceGxmVertexAttribute" ref="a86de465519ddbffc846088be11c8d0dc" args="" -->
 typedef struct <br class="typebreak"/>
 <a class="el" href="structSceGxmVertexAttribute.html">SceGxmVertexAttribute</a>&#160;</td><td class="memItemRight" valign="bottom"><b>SceGxmVertexAttribute</b></td></tr>
@@ -283,8 +289,15 @@ typedef struct <br class="typebreak"/>
 typedef struct <a class="el" href="structSceGxmNotification.html">SceGxmNotification</a>&#160;</td><td class="memItemRight" valign="bottom"><b>SceGxmNotification</b></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aab7a5b658f730b0a90ea825469eb4fc6"></a><!-- doxytag: member="gxm.h::SceGxmValidRegion" ref="aab7a5b658f730b0a90ea825469eb4fc6" args="" -->
 typedef struct <a class="el" href="structSceGxmValidRegion.html">SceGxmValidRegion</a>&#160;</td><td class="memItemRight" valign="bottom"><b>SceGxmValidRegion</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4748093ba608ed9e4a3ea5abdb3a4f4b"></a><!-- doxytag: member="gxm.h::SceGxmContext" ref="a4748093ba608ed9e4a3ea5abdb3a4f4b" args="" -->
+typedef struct SceGxmContext&#160;</td><td class="memItemRight" valign="bottom"><b>SceGxmContext</b></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6bbf7ce358e6ab1c2ea4612417c379ff"></a><!-- doxytag: member="gxm.h::SceGxmContextParams" ref="a6bbf7ce358e6ab1c2ea4612417c379ff" args="" -->
 typedef struct <a class="el" href="structSceGxmContextParams.html">SceGxmContextParams</a>&#160;</td><td class="memItemRight" valign="bottom"><b>SceGxmContextParams</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9615920a106fd664aac450eb5df2226e"></a><!-- doxytag: member="gxm.h::SceGxmVertexProgram" ref="a9615920a106fd664aac450eb5df2226e" args="" -->
+typedef struct SceGxmVertexProgram&#160;</td><td class="memItemRight" valign="bottom"><b>SceGxmVertexProgram</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3b99e1aa1e7405bdfb4e74b231ab9945"></a><!-- doxytag: member="gxm.h::SceGxmFragmentProgram" ref="a3b99e1aa1e7405bdfb4e74b231ab9945" args="" -->
+typedef struct <br class="typebreak"/>
+SceGxmFragmentProgram&#160;</td><td class="memItemRight" valign="bottom"><b>SceGxmFragmentProgram</b></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa93174a2e00853b041bbe9289b748e06"></a><!-- doxytag: member="gxm.h::SceGxmPrecomputedVertexState" ref="aa93174a2e00853b041bbe9289b748e06" args="" -->
 typedef struct <br class="typebreak"/>
 <a class="el" href="structSceGxmPrecomputedVertexState.html">SceGxmPrecomputedVertexState</a>&#160;</td><td class="memItemRight" valign="bottom"><b>SceGxmPrecomputedVertexState</b></td></tr>
@@ -294,6 +307,11 @@ typedef struct <br class="typebreak"/>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a01a31535079c258359061baf76ea95e2"></a><!-- doxytag: member="gxm.h::SceGxmPrecomputedDraw" ref="a01a31535079c258359061baf76ea95e2" args="" -->
 typedef struct <br class="typebreak"/>
 <a class="el" href="structSceGxmPrecomputedDraw.html">SceGxmPrecomputedDraw</a>&#160;</td><td class="memItemRight" valign="bottom"><b>SceGxmPrecomputedDraw</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a77ff3089c329da8717f071ac193c364e"></a><!-- doxytag: member="gxm.h::SceGxmProgram" ref="a77ff3089c329da8717f071ac193c364e" args="" -->
+typedef struct SceGxmProgram&#160;</td><td class="memItemRight" valign="bottom"><b>SceGxmProgram</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad75e76914bb0b50fa3ff44126947d1f7"></a><!-- doxytag: member="gxm.h::SceGxmProgramParameter" ref="ad75e76914bb0b50fa3ff44126947d1f7" args="" -->
+typedef struct <br class="typebreak"/>
+SceGxmProgramParameter&#160;</td><td class="memItemRight" valign="bottom"><b>SceGxmProgramParameter</b></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9c38f499e386772c257e0b4722cecb33"></a><!-- doxytag: member="gxm.h::SceGxmProgramType" ref="a9c38f499e386772c257e0b4722cecb33" args="" -->
 typedef enum SceGxmProgramType&#160;</td><td class="memItemRight" valign="bottom"><b>SceGxmProgramType</b></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6a47eaaf5f2827f8855d37cf00a9d4e7"></a><!-- doxytag: member="gxm.h::SceGxmParameterCategory" ref="a6a47eaaf5f2827f8855d37cf00a9d4e7" args="" -->
@@ -304,6 +322,11 @@ typedef enum SceGxmParameterType&#160;</td><td class="memItemRight" valign="bott
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a985a07db7e3cc60f96f7fa453672175d"></a><!-- doxytag: member="gxm.h::SceGxmParameterSemantic" ref="a985a07db7e3cc60f96f7fa453672175d" args="" -->
 typedef enum <br class="typebreak"/>
 SceGxmParameterSemantic&#160;</td><td class="memItemRight" valign="bottom"><b>SceGxmParameterSemantic</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9c443f5556a9eb50f08b4462ba050d6a"></a><!-- doxytag: member="gxm.h::SceGxmShaderPatcher" ref="a9c443f5556a9eb50f08b4462ba050d6a" args="" -->
+typedef struct SceGxmShaderPatcher&#160;</td><td class="memItemRight" valign="bottom"><b>SceGxmShaderPatcher</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5fe1bbd56484755e10a1d2c1eecfc614"></a><!-- doxytag: member="gxm.h::SceGxmRegisteredProgram" ref="a5fe1bbd56484755e10a1d2c1eecfc614" args="" -->
+typedef struct <br class="typebreak"/>
+SceGxmRegisteredProgram&#160;</td><td class="memItemRight" valign="bottom"><b>SceGxmRegisteredProgram</b></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ada9559a890f93c7c8558a874e39e101b"></a><!-- doxytag: member="gxm.h::SceGxmShaderPatcherId" ref="ada9559a890f93c7c8558a874e39e101b" args="" -->
 typedef SceGxmRegisteredProgram *&#160;</td><td class="memItemRight" valign="bottom"><b>SceGxmShaderPatcherId</b></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a76b0194a3f785e32795be1d63785ff72"></a><!-- doxytag: member="gxm.h::SceGxmShaderPatcherHostAllocCallback" ref="a76b0194a3f785e32795be1d63785ff72" args=")(void *userData, SceSize size)" -->
@@ -1369,8 +1392,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>sceGxmDraw</b> (SceGxm
 int&#160;</td><td class="memItemRight" valign="bottom"><b>sceGxmDrawInstanced</b> (SceGxmContext *context, SceGxmPrimitiveType primType, SceGxmIndexFormat indexType, const void *indexData, unsigned int indexCount, unsigned int indexWrap)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a65de92a3080ddbd5a39e8912184b430b"></a><!-- doxytag: member="gxm.h::sceGxmSetVisibilityBuffer" ref="a65de92a3080ddbd5a39e8912184b430b" args="(SceGxmContext *context, void *bufferBase, unsigned int stridePerCore)" -->
 int&#160;</td><td class="memItemRight" valign="bottom"><b>sceGxmSetVisibilityBuffer</b> (SceGxmContext *context, void *bufferBase, unsigned int stridePerCore)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a152c9ad0be2c8abce7a16c9f6268d77e"></a><!-- doxytag: member="gxm.h::sceGxmBeginScene" ref="a152c9ad0be2c8abce7a16c9f6268d77e" args="(SceGxmContext *context, unsigned int flags, const SceGxmRenderTarget &gt;renderTarget, const SceGxmValidRegion *validRegion, SceGxmSyncObject *vertexSyncObject, SceGxmSyncObject *fragmentSyncObject, const SceGxmColorSurface *colorSurface, const SceGxmDepthStencilSurface *depthStencil)" -->
-int&#160;</td><td class="memItemRight" valign="bottom"><b>sceGxmBeginScene</b> (SceGxmContext *context, unsigned int flags, const SceGxmRenderTarget &gt;renderTarget, const <a class="el" href="structSceGxmValidRegion.html">SceGxmValidRegion</a> *validRegion, SceGxmSyncObject *vertexSyncObject, SceGxmSyncObject *fragmentSyncObject, const <a class="el" href="structSceGxmColorSurface.html">SceGxmColorSurface</a> *colorSurface, const <a class="el" href="structSceGxmDepthStencilSurface.html">SceGxmDepthStencilSurface</a> *depthStencil)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7fe719294bcc85c7f408753c853009a9"></a><!-- doxytag: member="gxm.h::sceGxmBeginScene" ref="a7fe719294bcc85c7f408753c853009a9" args="(SceGxmContext *context, unsigned int flags, const SceGxmRenderTarget *renderTarget, const SceGxmValidRegion *validRegion, SceGxmSyncObject *vertexSyncObject, SceGxmSyncObject *fragmentSyncObject, const SceGxmColorSurface *colorSurface, const SceGxmDepthStencilSurface *depthStencil)" -->
+int&#160;</td><td class="memItemRight" valign="bottom"><b>sceGxmBeginScene</b> (SceGxmContext *context, unsigned int flags, const SceGxmRenderTarget *renderTarget, const <a class="el" href="structSceGxmValidRegion.html">SceGxmValidRegion</a> *validRegion, SceGxmSyncObject *vertexSyncObject, SceGxmSyncObject *fragmentSyncObject, const <a class="el" href="structSceGxmColorSurface.html">SceGxmColorSurface</a> *colorSurface, const <a class="el" href="structSceGxmDepthStencilSurface.html">SceGxmDepthStencilSurface</a> *depthStencil)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a80e2c1ff3f25c0760a05eb37e7737c59"></a><!-- doxytag: member="gxm.h::sceGxmMidSceneFlush" ref="a80e2c1ff3f25c0760a05eb37e7737c59" args="(SceGxmContext *context, unsigned int flags, SceGxmSyncObject *vertexSyncObject, const SceGxmNotification *vertexNotification)" -->
 int&#160;</td><td class="memItemRight" valign="bottom"><b>sceGxmMidSceneFlush</b> (SceGxmContext *context, unsigned int flags, SceGxmSyncObject *vertexSyncObject, const <a class="el" href="structSceGxmNotification.html">SceGxmNotification</a> *vertexNotification)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acbb98c8712e03470cd2437b2c20159ec"></a><!-- doxytag: member="gxm.h::sceGxmEndScene" ref="acbb98c8712e03470cd2437b2c20159ec" args="(SceGxmContext *context, const SceGxmNotification *vertexNotification, const SceGxmNotification *fragmentNotification)" -->
@@ -1729,9 +1752,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>sceGxmSetUniformDataF<
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
 <div class="textblock"><p>Header file which defines GXM variables and functions. </p>
 <p>Copyright (C) 2015 PSP2SDK Project</p>
-<p>This library is free software: you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.</p>
-<p>This library is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License for more details.</p>
-<p>You should have received a copy of the GNU Lesser General Public License along with this program. If not, see &lt;<a href="http://www.gnu.org/licenses/">http://www.gnu.org/licenses/</a>&gt;. </p>
+<p>This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0. If a copy of the MPL was not distributed with this file, You can obtain one at <a href="http://mozilla.org/MPL/2.0/">http://mozilla.org/MPL/2.0/</a>. </p>
 </div></div><!-- contents -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
@@ -1750,7 +1771,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>sceGxmSetUniformDataF<
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jun 21 2015 13:19:16 for PSP2SDK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Jun 21 2015 14:25:09 for PSP2SDK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

@@ -28,7 +28,7 @@
   
   <td style="padding-left: 0.5em;">
    <div id="projectname">PSP2SDK
-   &#160;<span id="projectnumber">dirty-cf2f393</span>
+   &#160;<span id="projectnumber">dirty-5dd0cbf</span>
    </div>
    <div id="projectbrief">The free SDK for PSP2</div>
   </td>
@@ -78,6 +78,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="summary">
 <a href="#nested-classes">Data Structures</a> &#124;
 <a href="#define-members">Defines</a> &#124;
+<a href="#typedef-members">Typedefs</a> &#124;
 <a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
@@ -131,6 +132,18 @@ Defines</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afbc6e98c4ff8139f2e55dbe689c7a0fe"></a><!-- doxytag: member="audioenc.h::PSP2_AUDIOENC_CELP_SAMPLING_RATE_8KHZ" ref="afbc6e98c4ff8139f2e55dbe689c7a0fe" args="" -->
 #define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="audioenc_8h.html#afbc6e98c4ff8139f2e55dbe689c7a0fe">PSP2_AUDIOENC_CELP_SAMPLING_RATE_8KHZ</a>&#160;&#160;&#160;(8000)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">CELP encoder default sampling rate. <br/></td></tr>
+<tr><td colspan="2"><h2><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef struct <br class="typebreak"/>
+<a class="el" href="structSceAudioencInitStreamParam.html">SceAudioencInitStreamParam</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="audioenc_8h.html#a993c48a7c97f619f71bbdb81784baec2">SceAudioencInitStreamParam</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structSceAudioencInfoCelp.html">SceAudioencInfoCelp</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="audioenc_8h.html#a048a565bd58223e7aa67a38b167a82b0">SceAudioencInfoCelp</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef struct <br class="typebreak"/>
+<a class="el" href="structSceAudioencOptInfoCelp.html">SceAudioencOptInfoCelp</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="audioenc_8h.html#a66216da9f8621336d6543d20c5d5e9ef">SceAudioencOptInfoCelp</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef union <a class="el" href="unionSceAudioencInitParam.html">SceAudioencInitParam</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="audioenc_8h.html#a53d8c26d03f0280f11ed6aa0578447bb">SceAudioencInitParam</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef union <a class="el" href="unionSceAudioencInfo.html">SceAudioencInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="audioenc_8h.html#a3327e5653778e3b5fcc25dc1a5d2def2">SceAudioencInfo</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef union <a class="el" href="unionSceAudioencOptInfo.html">SceAudioencOptInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="audioenc_8h.html#a597f1ea25e1e50c14da34fca26b96063">SceAudioencOptInfo</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a288ffb28bbcc284b8940d6180330092e"></a><!-- doxytag: member="audioenc.h::SceAudioencCtrl" ref="a288ffb28bbcc284b8940d6180330092e" args="" -->
+typedef struct <a class="el" href="structSceAudioencCtrl.html">SceAudioencCtrl</a>&#160;</td><td class="memItemRight" valign="bottom"><b>SceAudioencCtrl</b></td></tr>
 <tr><td colspan="2"><h2><a name="enum-members"></a>
 Enumerations</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br/>
@@ -183,10 +196,93 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>sceAudioencGetInternal
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
 <div class="textblock"><p>Header file which defines encoding audio library related variables and functions. </p>
 <p>Copyright (C) 2015 PSP2SDK Project</p>
-<p>This library is free software: you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.</p>
-<p>This library is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License for more details.</p>
-<p>You should have received a copy of the GNU Lesser General Public License along with this program. If not, see &lt;<a href="http://www.gnu.org/licenses/">http://www.gnu.org/licenses/</a>&gt;. </p>
-</div></div><!-- contents -->
+<p>This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0. If a copy of the MPL was not distributed with this file, You can obtain one at <a href="http://mozilla.org/MPL/2.0/">http://mozilla.org/MPL/2.0/</a>. </p>
+</div><hr/><h2>Typedef Documentation</h2>
+<a class="anchor" id="a3327e5653778e3b5fcc25dc1a5d2def2"></a><!-- doxytag: member="audioenc.h::SceAudioencInfo" ref="a3327e5653778e3b5fcc25dc1a5d2def2" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef union <a class="el" href="unionSceAudioencInfo.html">SceAudioencInfo</a>  <a class="el" href="unionSceAudioencInfo.html">SceAudioencInfo</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Audio encoder info </p>
+
+</div>
+</div>
+<a class="anchor" id="a048a565bd58223e7aa67a38b167a82b0"></a><!-- doxytag: member="audioenc.h::SceAudioencInfoCelp" ref="a048a565bd58223e7aa67a38b167a82b0" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="structSceAudioencInfoCelp.html">SceAudioencInfoCelp</a>  <a class="el" href="structSceAudioencInfoCelp.html">SceAudioencInfoCelp</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Information structure for CELP </p>
+
+</div>
+</div>
+<a class="anchor" id="a53d8c26d03f0280f11ed6aa0578447bb"></a><!-- doxytag: member="audioenc.h::SceAudioencInitParam" ref="a53d8c26d03f0280f11ed6aa0578447bb" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef union <a class="el" href="unionSceAudioencInitParam.html">SceAudioencInitParam</a>  <a class="el" href="unionSceAudioencInitParam.html">SceAudioencInitParam</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Initialization structure to pass as argument to ::sceAudioencInitLibrary </p>
+
+</div>
+</div>
+<a class="anchor" id="a993c48a7c97f619f71bbdb81784baec2"></a><!-- doxytag: member="audioenc.h::SceAudioencInitStreamParam" ref="a993c48a7c97f619f71bbdb81784baec2" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="structSceAudioencInitStreamParam.html">SceAudioencInitStreamParam</a>  <a class="el" href="structSceAudioencInitStreamParam.html">SceAudioencInitStreamParam</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Initialization structure to provide to <a class="el" href="unionSceAudioencInitParam.html">SceAudioencInitParam</a> </p>
+
+</div>
+</div>
+<a class="anchor" id="a597f1ea25e1e50c14da34fca26b96063"></a><!-- doxytag: member="audioenc.h::SceAudioencOptInfo" ref="a597f1ea25e1e50c14da34fca26b96063" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef union <a class="el" href="unionSceAudioencOptInfo.html">SceAudioencOptInfo</a>  <a class="el" href="unionSceAudioencOptInfo.html">SceAudioencOptInfo</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Audio encoder optional info </p>
+
+</div>
+</div>
+<a class="anchor" id="a66216da9f8621336d6543d20c5d5e9ef"></a><!-- doxytag: member="audioenc.h::SceAudioencOptInfoCelp" ref="a66216da9f8621336d6543d20c5d5e9ef" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="structSceAudioencOptInfoCelp.html">SceAudioencOptInfoCelp</a>  <a class="el" href="structSceAudioencOptInfoCelp.html">SceAudioencOptInfoCelp</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Optional information structure for CELP </p>
+
+</div>
+</div>
+</div><!-- contents -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -204,7 +300,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>sceAudioencGetInternal
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jun 21 2015 13:19:16 for PSP2SDK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Jun 21 2015 14:25:09 for PSP2SDK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

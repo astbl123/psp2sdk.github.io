@@ -28,7 +28,7 @@
   
   <td style="padding-left: 0.5em;">
    <div id="projectname">PSP2SDK
-   &#160;<span id="projectnumber">dirty-cf2f393</span>
+   &#160;<span id="projectnumber">dirty-5dd0cbf</span>
    </div>
    <div id="projectbrief">The free SDK for PSP2</div>
   </td>
@@ -80,81 +80,81 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 <a href="touch_8h.html">Go to the documentation of this file.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 
-<a name="l00021"></a>00021 <span class="preprocessor">#ifndef _PSP2_TOUCH_H_</span>
-<a name="l00022"></a>00022 <span class="preprocessor"></span><span class="preprocessor">#define _PSP2_TOUCH_H_</span>
-<a name="l00023"></a>00023 <span class="preprocessor"></span>
-<a name="l00024"></a>00024 <span class="preprocessor">#include &lt;<a class="code" href="types_8h.html" title="Header file which defines unique variable types.">psp2/types.h</a>&gt;</span>
-<a name="l00025"></a>00025 <span class="preprocessor">#include &lt;stdint.h&gt;</span>
-<a name="l00026"></a>00026 
-<a name="l00027"></a>00027 <span class="keyword">enum</span> {
-<a name="l00028"></a>00028     SCE_TOUCH_ERROR_INVALID_ARG = 0x80350001,
-<a name="l00029"></a>00029     SCE_TOUCH_ERROR_PRIV_REQUIRED   = 0x80350002,
-<a name="l00030"></a>00030     SCE_TOUCH_ERROR_FATAL   = 0x803500ff
-<a name="l00031"></a>00031 };
-<a name="l00032"></a>00032 
-<a name="l00033"></a><a class="code" href="structSceTouchPanelInfo.html">00033</a> <span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structSceTouchPanelInfo.html">SceTouchPanelInfo</a> {
-<a name="l00034"></a><a class="code" href="structSceTouchPanelInfo.html#ad20e30b35b3190de3adec46564357043">00034</a>     int16_t <a class="code" href="structSceTouchPanelInfo.html#ad20e30b35b3190de3adec46564357043" title="Min active area X position.">minAaX</a>; 
-<a name="l00035"></a><a class="code" href="structSceTouchPanelInfo.html#af14690de7904ff650bec0f1f7ac344ea">00035</a>     int16_t <a class="code" href="structSceTouchPanelInfo.html#af14690de7904ff650bec0f1f7ac344ea" title="Min active area Y position.">minAaY</a>; 
-<a name="l00036"></a><a class="code" href="structSceTouchPanelInfo.html#a3f2e5ec889bc01eb8776d8b9c7b0a44b">00036</a>     int16_t <a class="code" href="structSceTouchPanelInfo.html#a3f2e5ec889bc01eb8776d8b9c7b0a44b" title="Max active area X position.">maxAaX</a>; 
-<a name="l00037"></a><a class="code" href="structSceTouchPanelInfo.html#af1d89af3be4db078f607b7d70d11b11b">00037</a>     int16_t <a class="code" href="structSceTouchPanelInfo.html#af1d89af3be4db078f607b7d70d11b11b" title="Max active area Y position.">maxAaY</a>; 
-<a name="l00038"></a><a class="code" href="structSceTouchPanelInfo.html#a4f93cf4aa93c1d4480fa3f0458162bd4">00038</a>     int16_t <a class="code" href="structSceTouchPanelInfo.html#a4f93cf4aa93c1d4480fa3f0458162bd4" title="Min display X position.">minDispX</a>;   
-<a name="l00039"></a><a class="code" href="structSceTouchPanelInfo.html#ab91a0c9d8666dbecd9380f5f4dd04595">00039</a>     int16_t <a class="code" href="structSceTouchPanelInfo.html#ab91a0c9d8666dbecd9380f5f4dd04595" title="Min display Y position.">minDispY</a>;   
-<a name="l00040"></a><a class="code" href="structSceTouchPanelInfo.html#ad2da55d1a021405ede3afd07d6a6946f">00040</a>     int16_t <a class="code" href="structSceTouchPanelInfo.html#ad2da55d1a021405ede3afd07d6a6946f" title="Max display X position.">maxDispX</a>;   
-<a name="l00041"></a><a class="code" href="structSceTouchPanelInfo.html#a49a5a1f2e484f711a53eaddbeebff8b6">00041</a>     int16_t <a class="code" href="structSceTouchPanelInfo.html#a49a5a1f2e484f711a53eaddbeebff8b6" title="Max display Y position.">maxDispY</a>;   
-<a name="l00042"></a><a class="code" href="structSceTouchPanelInfo.html#a33cc25a965ad7868300969788cd7abce">00042</a>     uint8_t <a class="code" href="structSceTouchPanelInfo.html#a33cc25a965ad7868300969788cd7abce" title="Min touch force value.">minForce</a>;   
-<a name="l00043"></a><a class="code" href="structSceTouchPanelInfo.html#a5737d4cc952c3b379fd98512ff5e0aa0">00043</a>     uint8_t <a class="code" href="structSceTouchPanelInfo.html#a5737d4cc952c3b379fd98512ff5e0aa0" title="Max touch force value.">maxForce</a>;   
-<a name="l00044"></a><a class="code" href="structSceTouchPanelInfo.html#abbf3a6f9437273e34896556542e926a9">00044</a>     uint8_t <a class="code" href="structSceTouchPanelInfo.html#abbf3a6f9437273e34896556542e926a9" title="Reserved.">reserved</a>[30];   
-<a name="l00045"></a>00045 } <a class="code" href="structSceTouchPanelInfo.html">SceTouchPanelInfo</a>;
+<a name="l00012"></a>00012 <span class="preprocessor">#ifndef _PSP2_TOUCH_H_</span>
+<a name="l00013"></a>00013 <span class="preprocessor"></span><span class="preprocessor">#define _PSP2_TOUCH_H_</span>
+<a name="l00014"></a>00014 <span class="preprocessor"></span>
+<a name="l00015"></a>00015 <span class="preprocessor">#include &lt;<a class="code" href="types_8h.html" title="Header file which defines unique variable types.">psp2/types.h</a>&gt;</span>
+<a name="l00016"></a>00016 <span class="preprocessor">#include &lt;stdint.h&gt;</span>
+<a name="l00017"></a>00017 
+<a name="l00018"></a>00018 <span class="keyword">enum</span> {
+<a name="l00019"></a>00019     SCE_TOUCH_ERROR_INVALID_ARG = 0x80350001,
+<a name="l00020"></a>00020     SCE_TOUCH_ERROR_PRIV_REQUIRED   = 0x80350002,
+<a name="l00021"></a>00021     SCE_TOUCH_ERROR_FATAL   = 0x803500ff
+<a name="l00022"></a>00022 };
+<a name="l00023"></a>00023 
+<a name="l00024"></a><a class="code" href="structSceTouchPanelInfo.html">00024</a> <span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structSceTouchPanelInfo.html">SceTouchPanelInfo</a> {
+<a name="l00025"></a><a class="code" href="structSceTouchPanelInfo.html#ad20e30b35b3190de3adec46564357043">00025</a>     int16_t <a class="code" href="structSceTouchPanelInfo.html#ad20e30b35b3190de3adec46564357043" title="Min active area X position.">minAaX</a>; 
+<a name="l00026"></a><a class="code" href="structSceTouchPanelInfo.html#af14690de7904ff650bec0f1f7ac344ea">00026</a>     int16_t <a class="code" href="structSceTouchPanelInfo.html#af14690de7904ff650bec0f1f7ac344ea" title="Min active area Y position.">minAaY</a>; 
+<a name="l00027"></a><a class="code" href="structSceTouchPanelInfo.html#a3f2e5ec889bc01eb8776d8b9c7b0a44b">00027</a>     int16_t <a class="code" href="structSceTouchPanelInfo.html#a3f2e5ec889bc01eb8776d8b9c7b0a44b" title="Max active area X position.">maxAaX</a>; 
+<a name="l00028"></a><a class="code" href="structSceTouchPanelInfo.html#af1d89af3be4db078f607b7d70d11b11b">00028</a>     int16_t <a class="code" href="structSceTouchPanelInfo.html#af1d89af3be4db078f607b7d70d11b11b" title="Max active area Y position.">maxAaY</a>; 
+<a name="l00029"></a><a class="code" href="structSceTouchPanelInfo.html#a4f93cf4aa93c1d4480fa3f0458162bd4">00029</a>     int16_t <a class="code" href="structSceTouchPanelInfo.html#a4f93cf4aa93c1d4480fa3f0458162bd4" title="Min display X position.">minDispX</a>;   
+<a name="l00030"></a><a class="code" href="structSceTouchPanelInfo.html#ab91a0c9d8666dbecd9380f5f4dd04595">00030</a>     int16_t <a class="code" href="structSceTouchPanelInfo.html#ab91a0c9d8666dbecd9380f5f4dd04595" title="Min display Y position.">minDispY</a>;   
+<a name="l00031"></a><a class="code" href="structSceTouchPanelInfo.html#ad2da55d1a021405ede3afd07d6a6946f">00031</a>     int16_t <a class="code" href="structSceTouchPanelInfo.html#ad2da55d1a021405ede3afd07d6a6946f" title="Max display X position.">maxDispX</a>;   
+<a name="l00032"></a><a class="code" href="structSceTouchPanelInfo.html#a49a5a1f2e484f711a53eaddbeebff8b6">00032</a>     int16_t <a class="code" href="structSceTouchPanelInfo.html#a49a5a1f2e484f711a53eaddbeebff8b6" title="Max display Y position.">maxDispY</a>;   
+<a name="l00033"></a><a class="code" href="structSceTouchPanelInfo.html#a33cc25a965ad7868300969788cd7abce">00033</a>     uint8_t <a class="code" href="structSceTouchPanelInfo.html#a33cc25a965ad7868300969788cd7abce" title="Min touch force value.">minForce</a>;   
+<a name="l00034"></a><a class="code" href="structSceTouchPanelInfo.html#a5737d4cc952c3b379fd98512ff5e0aa0">00034</a>     uint8_t <a class="code" href="structSceTouchPanelInfo.html#a5737d4cc952c3b379fd98512ff5e0aa0" title="Max touch force value.">maxForce</a>;   
+<a name="l00035"></a><a class="code" href="structSceTouchPanelInfo.html#abbf3a6f9437273e34896556542e926a9">00035</a>     uint8_t <a class="code" href="structSceTouchPanelInfo.html#abbf3a6f9437273e34896556542e926a9" title="Reserved.">reserved</a>[30];   
+<a name="l00036"></a>00036 } <a class="code" href="structSceTouchPanelInfo.html">SceTouchPanelInfo</a>;
+<a name="l00037"></a>00037 
+<a name="l00038"></a><a class="code" href="structSceTouchReport.html">00038</a> <span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structSceTouchReport.html">SceTouchReport</a> {
+<a name="l00039"></a><a class="code" href="structSceTouchReport.html#a21d3e274610654d584b2f5bf0b393064">00039</a>     uint8_t <a class="code" href="structSceTouchReport.html#a21d3e274610654d584b2f5bf0b393064" title="Touch ID.">id</a>; 
+<a name="l00040"></a><a class="code" href="structSceTouchReport.html#ae7fe244651c93495741ba1202017862e">00040</a>     uint8_t <a class="code" href="structSceTouchReport.html#ae7fe244651c93495741ba1202017862e" title="Touch force.">force</a>;  
+<a name="l00041"></a><a class="code" href="structSceTouchReport.html#a85b77708cd7e1240bc71b7d47984ad10">00041</a>     int16_t <a class="code" href="structSceTouchReport.html#a85b77708cd7e1240bc71b7d47984ad10" title="X position.">x</a>;  
+<a name="l00042"></a><a class="code" href="structSceTouchReport.html#a28544fb327e6932ad1f3ea4c41b953dd">00042</a>     int16_t <a class="code" href="structSceTouchReport.html#a28544fb327e6932ad1f3ea4c41b953dd" title="Y position.">y</a>;  
+<a name="l00043"></a><a class="code" href="structSceTouchReport.html#a57885f725cfad621ec39dba381a2d116">00043</a>     uint8_t <a class="code" href="structSceTouchReport.html#a57885f725cfad621ec39dba381a2d116" title="Reserved.">reserved</a>[8];    
+<a name="l00044"></a><a class="code" href="structSceTouchReport.html#ae0343997c374d90c8396712f3287b05f">00044</a>     uint16_t <a class="code" href="structSceTouchReport.html#ae0343997c374d90c8396712f3287b05f" title="Information of this touch.">info</a>;  
+<a name="l00045"></a>00045 } <a class="code" href="structSceTouchReport.html">SceTouchReport</a>;
 <a name="l00046"></a>00046 
-<a name="l00047"></a><a class="code" href="structSceTouchReport.html">00047</a> <span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structSceTouchReport.html">SceTouchReport</a> {
-<a name="l00048"></a><a class="code" href="structSceTouchReport.html#a21d3e274610654d584b2f5bf0b393064">00048</a>     uint8_t <a class="code" href="structSceTouchReport.html#a21d3e274610654d584b2f5bf0b393064" title="Touch ID.">id</a>; 
-<a name="l00049"></a><a class="code" href="structSceTouchReport.html#ae7fe244651c93495741ba1202017862e">00049</a>     uint8_t <a class="code" href="structSceTouchReport.html#ae7fe244651c93495741ba1202017862e" title="Touch force.">force</a>;  
-<a name="l00050"></a><a class="code" href="structSceTouchReport.html#a85b77708cd7e1240bc71b7d47984ad10">00050</a>     int16_t <a class="code" href="structSceTouchReport.html#a85b77708cd7e1240bc71b7d47984ad10" title="X position.">x</a>;  
-<a name="l00051"></a><a class="code" href="structSceTouchReport.html#a28544fb327e6932ad1f3ea4c41b953dd">00051</a>     int16_t <a class="code" href="structSceTouchReport.html#a28544fb327e6932ad1f3ea4c41b953dd" title="Y position.">y</a>;  
-<a name="l00052"></a><a class="code" href="structSceTouchReport.html#a57885f725cfad621ec39dba381a2d116">00052</a>     uint8_t <a class="code" href="structSceTouchReport.html#a57885f725cfad621ec39dba381a2d116" title="Reserved.">reserved</a>[8];    
-<a name="l00053"></a><a class="code" href="structSceTouchReport.html#ae0343997c374d90c8396712f3287b05f">00053</a>     uint16_t <a class="code" href="structSceTouchReport.html#ae0343997c374d90c8396712f3287b05f" title="Information of this touch.">info</a>;  
-<a name="l00054"></a>00054 } <a class="code" href="structSceTouchReport.html">SceTouchReport</a>;
-<a name="l00055"></a>00055 
-<a name="l00056"></a><a class="code" href="structSceTouchData.html">00056</a> <span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structSceTouchData.html">SceTouchData</a> {
-<a name="l00057"></a><a class="code" href="structSceTouchData.html#aa4aa82d8b1976207adc4324ff9fa1dac">00057</a>     uint64_t <a class="code" href="structSceTouchData.html#aa4aa82d8b1976207adc4324ff9fa1dac" title="Data timestamp.">timeStamp</a>; 
-<a name="l00058"></a><a class="code" href="structSceTouchData.html#a847eff3516f17bce461c1b506b6f3a28">00058</a>     <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="structSceTouchData.html#a847eff3516f17bce461c1b506b6f3a28" title="Unused.">status</a>;    
-<a name="l00059"></a><a class="code" href="structSceTouchData.html#a7f3b7a5d75ce861b57cbf111b1ee2136">00059</a>     <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="structSceTouchData.html#a7f3b7a5d75ce861b57cbf111b1ee2136" title="Number of touch reports.">reportNum</a>; 
-<a name="l00060"></a><a class="code" href="structSceTouchData.html#a966d466790eb193cffb84863cfddb9d6">00060</a>     <a class="code" href="structSceTouchReport.html">SceTouchReport</a> <a class="code" href="structSceTouchData.html#a966d466790eb193cffb84863cfddb9d6" title="Touch reports.">report</a>[8];   
-<a name="l00061"></a>00061 } <a class="code" href="structSceTouchData.html">SceTouchData</a>;
-<a name="l00062"></a>00062 
-<a name="l00063"></a>00063 <span class="keyword">enum</span> {
-<a name="l00064"></a><a class="code" href="touch_8h.html#a2970898e8a43ce21e1cc510d49f1b89daeb4a00022ff3fadcf803275f295152da">00064</a>     <a class="code" href="touch_8h.html#a2970898e8a43ce21e1cc510d49f1b89daeb4a00022ff3fadcf803275f295152da" title="Front touch panel id.">PSP2_TOUCH_PORT_FRONT</a>,  
-<a name="l00065"></a><a class="code" href="touch_8h.html#a2970898e8a43ce21e1cc510d49f1b89dae0ad0396a3451ddfc49770b930ea1266">00065</a>     <a class="code" href="touch_8h.html#a2970898e8a43ce21e1cc510d49f1b89dae0ad0396a3451ddfc49770b930ea1266" title="Back touch panel id.">PSP2_TOUCH_PORT_BACK</a>,   
-<a name="l00066"></a>00066 
-<a name="l00067"></a><a class="code" href="touch_8h.html#a2970898e8a43ce21e1cc510d49f1b89daccd72b65f98589a3cfe230ad348f4a1a">00067</a>     <a class="code" href="touch_8h.html#a2970898e8a43ce21e1cc510d49f1b89daccd72b65f98589a3cfe230ad348f4a1a" title="Number of touch panels.">PSP2_TOUCH_PORT_MAX_NUM</a> 
-<a name="l00068"></a>00068 };
-<a name="l00069"></a>00069 
-<a name="l00070"></a><a class="code" href="touch_8h.html#af6eee0f3f47462bb44774da9e5f1a844">00070</a> <span class="preprocessor">#define PSP2_TOUCH_MAX_REPORT 6 //!&lt; ???? 6 on front | 4 on back</span>
-<a name="l00071"></a><a class="code" href="touch_8h.html#ac9d8905a24e83af819e094b949223c3e">00071</a> <span class="preprocessor"></span><span class="preprocessor">#define PSP2_TOUCH_SAMPLING_STATE_START -1  //!&lt; not found</span>
-<a name="l00072"></a><a class="code" href="touch_8h.html#acdc7207f3749082b8981f87d4901dab4">00072</a> <span class="preprocessor"></span><span class="preprocessor">#define PSP2_TOUCH_SAMPLING_STATE_STOP -1   //!&lt; not found</span>
-<a name="l00073"></a>00073 <span class="preprocessor"></span>
-<a name="l00080"></a>00080 <span class="keywordtype">int</span> <a class="code" href="touch_8h.html#ad8177f01cab08dc6176dfbb9aa7df7a1">sceTouchGetPanelInfo</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> port, <a class="code" href="structSceTouchPanelInfo.html">SceTouchPanelInfo</a> *pPanelInfo);
-<a name="l00081"></a>00081 
-<a name="l00088"></a>00088 <span class="keywordtype">int</span> <a class="code" href="touch_8h.html#a77b96ccf5e81f079f20e047a9baf576a">sceTouchRead</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> port, <a class="code" href="structSceTouchData.html">SceTouchData</a> *pData, uint32_t nBufs);
-<a name="l00089"></a>00089 
-<a name="l00096"></a>00096 <span class="keywordtype">int</span> <a class="code" href="touch_8h.html#a44db9589fab77bf506e2fa1f9b45afd1">sceTouchSetSamplingState</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> port, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> state);
-<a name="l00097"></a>00097 
-<a name="l00104"></a>00104 <span class="keywordtype">int</span> <a class="code" href="touch_8h.html#a80accb418f43f29fc6dd71536a0ddc15">sceTouchGetSamplingState</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> port, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> *pState);
-<a name="l00105"></a>00105 
-<a name="l00112"></a>00112 <span class="keywordtype">int</span> <a class="code" href="touch_8h.html#a1908ddde473626795f79de5313a11849">sceTouchDisableTouchForce</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> port);
-<a name="l00113"></a>00113 
-<a name="l00120"></a>00120 <span class="keywordtype">int</span> <a class="code" href="touch_8h.html#a36378e02af2ef2356a73059b04efac7b">sceTouchEnableTouchForce</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> port);
+<a name="l00047"></a><a class="code" href="structSceTouchData.html">00047</a> <span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structSceTouchData.html">SceTouchData</a> {
+<a name="l00048"></a><a class="code" href="structSceTouchData.html#aa4aa82d8b1976207adc4324ff9fa1dac">00048</a>     uint64_t <a class="code" href="structSceTouchData.html#aa4aa82d8b1976207adc4324ff9fa1dac" title="Data timestamp.">timeStamp</a>; 
+<a name="l00049"></a><a class="code" href="structSceTouchData.html#a847eff3516f17bce461c1b506b6f3a28">00049</a>     <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="structSceTouchData.html#a847eff3516f17bce461c1b506b6f3a28" title="Unused.">status</a>;    
+<a name="l00050"></a><a class="code" href="structSceTouchData.html#a7f3b7a5d75ce861b57cbf111b1ee2136">00050</a>     <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="structSceTouchData.html#a7f3b7a5d75ce861b57cbf111b1ee2136" title="Number of touch reports.">reportNum</a>; 
+<a name="l00051"></a><a class="code" href="structSceTouchData.html#a966d466790eb193cffb84863cfddb9d6">00051</a>     <a class="code" href="structSceTouchReport.html">SceTouchReport</a> <a class="code" href="structSceTouchData.html#a966d466790eb193cffb84863cfddb9d6" title="Touch reports.">report</a>[8];   
+<a name="l00052"></a>00052 } <a class="code" href="structSceTouchData.html">SceTouchData</a>;
+<a name="l00053"></a>00053 
+<a name="l00054"></a>00054 <span class="keyword">enum</span> {
+<a name="l00055"></a><a class="code" href="touch_8h.html#a2970898e8a43ce21e1cc510d49f1b89daeb4a00022ff3fadcf803275f295152da">00055</a>     <a class="code" href="touch_8h.html#a2970898e8a43ce21e1cc510d49f1b89daeb4a00022ff3fadcf803275f295152da" title="Front touch panel id.">PSP2_TOUCH_PORT_FRONT</a>,  
+<a name="l00056"></a><a class="code" href="touch_8h.html#a2970898e8a43ce21e1cc510d49f1b89dae0ad0396a3451ddfc49770b930ea1266">00056</a>     <a class="code" href="touch_8h.html#a2970898e8a43ce21e1cc510d49f1b89dae0ad0396a3451ddfc49770b930ea1266" title="Back touch panel id.">PSP2_TOUCH_PORT_BACK</a>,   
+<a name="l00057"></a>00057 
+<a name="l00058"></a><a class="code" href="touch_8h.html#a2970898e8a43ce21e1cc510d49f1b89daccd72b65f98589a3cfe230ad348f4a1a">00058</a>     <a class="code" href="touch_8h.html#a2970898e8a43ce21e1cc510d49f1b89daccd72b65f98589a3cfe230ad348f4a1a" title="Number of touch panels.">PSP2_TOUCH_PORT_MAX_NUM</a> 
+<a name="l00059"></a>00059 };
+<a name="l00060"></a>00060 
+<a name="l00061"></a><a class="code" href="touch_8h.html#af6eee0f3f47462bb44774da9e5f1a844">00061</a> <span class="preprocessor">#define PSP2_TOUCH_MAX_REPORT 6 //!&lt; ???? 6 on front | 4 on back</span>
+<a name="l00062"></a><a class="code" href="touch_8h.html#ac9d8905a24e83af819e094b949223c3e">00062</a> <span class="preprocessor"></span><span class="preprocessor">#define PSP2_TOUCH_SAMPLING_STATE_START -1  //!&lt; not found</span>
+<a name="l00063"></a><a class="code" href="touch_8h.html#acdc7207f3749082b8981f87d4901dab4">00063</a> <span class="preprocessor"></span><span class="preprocessor">#define PSP2_TOUCH_SAMPLING_STATE_STOP -1   //!&lt; not found</span>
+<a name="l00064"></a>00064 <span class="preprocessor"></span>
+<a name="l00071"></a>00071 <span class="keywordtype">int</span> <a class="code" href="touch_8h.html#ad8177f01cab08dc6176dfbb9aa7df7a1">sceTouchGetPanelInfo</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> port, <a class="code" href="structSceTouchPanelInfo.html">SceTouchPanelInfo</a> *pPanelInfo);
+<a name="l00072"></a>00072 
+<a name="l00079"></a>00079 <span class="keywordtype">int</span> <a class="code" href="touch_8h.html#a77b96ccf5e81f079f20e047a9baf576a">sceTouchRead</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> port, <a class="code" href="structSceTouchData.html">SceTouchData</a> *pData, uint32_t nBufs);
+<a name="l00080"></a>00080 
+<a name="l00087"></a>00087 <span class="keywordtype">int</span> <a class="code" href="touch_8h.html#a44db9589fab77bf506e2fa1f9b45afd1">sceTouchSetSamplingState</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> port, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> state);
+<a name="l00088"></a>00088 
+<a name="l00095"></a>00095 <span class="keywordtype">int</span> <a class="code" href="touch_8h.html#a80accb418f43f29fc6dd71536a0ddc15">sceTouchGetSamplingState</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> port, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> *pState);
+<a name="l00096"></a>00096 
+<a name="l00103"></a>00103 <span class="keywordtype">int</span> <a class="code" href="touch_8h.html#a1908ddde473626795f79de5313a11849">sceTouchDisableTouchForce</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> port);
+<a name="l00104"></a>00104 
+<a name="l00111"></a>00111 <span class="keywordtype">int</span> <a class="code" href="touch_8h.html#a36378e02af2ef2356a73059b04efac7b">sceTouchEnableTouchForce</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> port);
+<a name="l00112"></a>00112 
+<a name="l00113"></a>00113 <span class="comment">/***</span>
+<a name="l00114"></a>00114 <span class="comment"> * Get touch data (Polling)</span>
+<a name="l00115"></a>00115 <span class="comment"> *</span>
+<a name="l00116"></a>00116 <span class="comment"> * @param[in]   port    port number.</span>
+<a name="l00117"></a>00117 <span class="comment"> * @param[out]  pData   Buffer to receive touch data.</span>
+<a name="l00118"></a>00118 <span class="comment"> * @param[in]   nBufs   Number of buffers to receive touch data.</span>
+<a name="l00119"></a>00119 <span class="comment"> */</span>
+<a name="l00120"></a>00120 <span class="keywordtype">int</span> sceTouchPeek(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> port, <a class="code" href="structSceTouchData.html">SceTouchData</a> *pData, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> nBufs);
 <a name="l00121"></a>00121 
-<a name="l00122"></a>00122 <span class="comment">/***</span>
-<a name="l00123"></a>00123 <span class="comment"> * Get touch data (Polling)</span>
-<a name="l00124"></a>00124 <span class="comment"> *</span>
-<a name="l00125"></a>00125 <span class="comment"> * @param[in]   port    port number.</span>
-<a name="l00126"></a>00126 <span class="comment"> * @param[out]  pData   Buffer to receive touch data.</span>
-<a name="l00127"></a>00127 <span class="comment"> * @param[in]   nBufs   Number of buffers to receive touch data.</span>
-<a name="l00128"></a>00128 <span class="comment"> */</span>
-<a name="l00129"></a>00129 <span class="keywordtype">int</span> sceTouchPeek(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> port, <a class="code" href="structSceTouchData.html">SceTouchData</a> *pData, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> nBufs);
-<a name="l00130"></a>00130 
-<a name="l00131"></a>00131 <span class="preprocessor">#endif</span>
+<a name="l00122"></a>00122 <span class="preprocessor">#endif</span>
 </pre></div></div><!-- contents -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
@@ -173,7 +173,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jun 21 2015 13:19:16 for PSP2SDK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Jun 21 2015 14:25:09 for PSP2SDK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

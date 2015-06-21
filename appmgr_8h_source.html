@@ -28,7 +28,7 @@
   
   <td style="padding-left: 0.5em;">
    <div id="projectname">PSP2SDK
-   &#160;<span id="projectnumber">dirty-cf2f393</span>
+   &#160;<span id="projectnumber">dirty-5dd0cbf</span>
    </div>
    <div id="projectbrief">The free SDK for PSP2</div>
   </td>
@@ -80,72 +80,75 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 <a href="appmgr_8h.html">Go to the documentation of this file.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 
-<a name="l00021"></a>00021 <span class="preprocessor">#ifndef _PSP2_APPMGR_H_</span>
-<a name="l00022"></a>00022 <span class="preprocessor"></span><span class="preprocessor">#define _PSP2_APPMGR_H_</span>
-<a name="l00023"></a>00023 <span class="preprocessor"></span>
-<a name="l00024"></a>00024 <span class="preprocessor">#include &lt;<a class="code" href="types_8h.html" title="Header file which defines unique variable types.">psp2/types.h</a>&gt;</span>
-<a name="l00025"></a>00025 
-<a name="l00026"></a>00026 <span class="keyword">enum</span> {
-<a name="l00028"></a><a class="code" href="appmgr_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba806b6249641eed6e3b99fe9a9036c983">00028</a>     <a class="code" href="appmgr_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba806b6249641eed6e3b99fe9a9036c983" title="Busy.">SCE_APPMGR_ERROR_BUSY</a>   = 0x80802000,
+<a name="l00012"></a>00012 <span class="preprocessor">#ifndef _PSP2_APPMGR_H_</span>
+<a name="l00013"></a>00013 <span class="preprocessor"></span><span class="preprocessor">#define _PSP2_APPMGR_H_</span>
+<a name="l00014"></a>00014 <span class="preprocessor"></span>
+<a name="l00015"></a>00015 <span class="preprocessor">#include &lt;<a class="code" href="types_8h.html" title="Header file which defines unique variable types.">psp2/types.h</a>&gt;</span>
+<a name="l00016"></a>00016 
+<a name="l00017"></a>00017 <span class="keyword">enum</span> {
+<a name="l00019"></a><a class="code" href="appmgr_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba806b6249641eed6e3b99fe9a9036c983">00019</a>     <a class="code" href="appmgr_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba806b6249641eed6e3b99fe9a9036c983" title="Busy.">SCE_APPMGR_ERROR_BUSY</a>           = 0x80802000,
+<a name="l00020"></a>00020 
+<a name="l00022"></a><a class="code" href="appmgr_8h.html#a06fc87d81c62e9abb8790b6e5713c55bafc6444441584cd3bb221c6dbd58b353d">00022</a>     <a class="code" href="appmgr_8h.html#a06fc87d81c62e9abb8790b6e5713c55bafc6444441584cd3bb221c6dbd58b353d" title="Invalid state.">SCE_APPMGR_ERROR_STATE</a>          = 0x80802013,
+<a name="l00023"></a>00023 
+<a name="l00025"></a><a class="code" href="appmgr_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba3e88f785f699bd45efd239ed2b4f4e38">00025</a>     <a class="code" href="appmgr_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba3e88f785f699bd45efd239ed2b4f4e38" title="NULL pointer.">SCE_APPMGR_ERROR_NULL_POINTER</a>       = 0x80802016,
+<a name="l00026"></a>00026 
+<a name="l00028"></a><a class="code" href="appmgr_8h.html#a06fc87d81c62e9abb8790b6e5713c55bac704cf756ac0c7fc05aa0d20bf5d7082">00028</a>     <a class="code" href="appmgr_8h.html#a06fc87d81c62e9abb8790b6e5713c55bac704cf756ac0c7fc05aa0d20bf5d7082" title="Invalid self path.">SCE_APPMGR_ERROR_INVALID</a>        = 0x8080201a,
 <a name="l00029"></a>00029 
-<a name="l00031"></a><a class="code" href="appmgr_8h.html#a06fc87d81c62e9abb8790b6e5713c55bafc6444441584cd3bb221c6dbd58b353d">00031</a>     <a class="code" href="appmgr_8h.html#a06fc87d81c62e9abb8790b6e5713c55bafc6444441584cd3bb221c6dbd58b353d" title="Invalid state.">SCE_APPMGR_ERROR_STATE</a>  = 0x80802013,
+<a name="l00031"></a><a class="code" href="appmgr_8h.html#a06fc87d81c62e9abb8790b6e5713c55baf867515f2ab516d22bed1df741e1a290">00031</a>     <a class="code" href="appmgr_8h.html#a06fc87d81c62e9abb8790b6e5713c55baf867515f2ab516d22bed1df741e1a290" title="argv is too long">SCE_APPMGR_ERROR_INVALID_SELF_PATH</a>  = 0x8080201e,
 <a name="l00032"></a>00032 
-<a name="l00034"></a><a class="code" href="appmgr_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba3e88f785f699bd45efd239ed2b4f4e38">00034</a>     <a class="code" href="appmgr_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba3e88f785f699bd45efd239ed2b4f4e38" title="NULL pointer.">SCE_APPMGR_ERROR_NULL_POINTER</a>   = 0x80802016,
-<a name="l00035"></a>00035 
-<a name="l00037"></a><a class="code" href="appmgr_8h.html#a06fc87d81c62e9abb8790b6e5713c55bac704cf756ac0c7fc05aa0d20bf5d7082">00037</a>     <a class="code" href="appmgr_8h.html#a06fc87d81c62e9abb8790b6e5713c55bac704cf756ac0c7fc05aa0d20bf5d7082" title="Invalid self path.">SCE_APPMGR_ERROR_INVALID</a>    = 0x8080201a,
-<a name="l00038"></a>00038 
-<a name="l00040"></a><a class="code" href="appmgr_8h.html#a06fc87d81c62e9abb8790b6e5713c55baf867515f2ab516d22bed1df741e1a290">00040</a>     <a class="code" href="appmgr_8h.html#a06fc87d81c62e9abb8790b6e5713c55baf867515f2ab516d22bed1df741e1a290" title="argv is too long">SCE_APPMGR_ERROR_INVALID_SELF_PATH</a>  = 0x8080201e,
-<a name="l00041"></a>00041 
-<a name="l00043"></a>00043     SCE_APPMGR_ERROR_TOO_LONG_ARGV  = 0x8080201d
-<a name="l00044"></a>00044 };
-<a name="l00045"></a>00045 
-<a name="l00046"></a>00046 <span class="keyword">enum</span> {
-<a name="l00047"></a>00047     SCE_APPMGR_SYSTEMEVENT_ON_RESUME    = 0x10000003,
-<a name="l00048"></a>00048     SCE_APPMGR_SYSTEMEVENT_ON_STORE_PURCHASE    = 0x10000004,
-<a name="l00049"></a>00049     SCE_APPMGR_SYSTEMEVENT_ON_NP_MESSAGE_ARRIVED    = 0x10000005,
-<a name="l00050"></a>00050     SCE_APPMGR_SYSTEMEVENT_ON_STORE_REDEMPTION  = 0x10000006,
-<a name="l00051"></a>00051 };
-<a name="l00052"></a>00052 
-<a name="l00053"></a>00053 <span class="keyword">enum</span> {
-<a name="l00054"></a>00054     SCE_APPMGR_INFOBAR_VISIBILITY_INVISIBLE = 0,
-<a name="l00055"></a>00055     SCE_APPMGR_INFOBAR_VISIBILITY_VISIBLE   = 1
-<a name="l00056"></a>00056 };
-<a name="l00057"></a>00057 
-<a name="l00058"></a>00058 <span class="keyword">enum</span> {
-<a name="l00059"></a>00059     SCE_APPMGR_INFOBAR_COLOR_BLACK  = 0,
-<a name="l00060"></a>00060     SCE_APPMGR_INFOBAR_COLOR_WHITE  = 1
-<a name="l00061"></a>00061 };
-<a name="l00062"></a>00062 
-<a name="l00063"></a>00063 <span class="keyword">enum</span> {
-<a name="l00064"></a>00064     SCE_APPMGR_INFOBAR_TRANSPARENCY_OPAQUE  = 0,
-<a name="l00065"></a>00065     SCE_APPMGR_INFOBAR_TRANSPARENCY_TRANSLUCENT = 1
-<a name="l00066"></a>00066 };
-<a name="l00067"></a>00067 
-<a name="l00068"></a><a class="code" href="structSceAppMgrSystemEvent.html">00068</a> <span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structSceAppMgrSystemEvent.html">SceAppMgrSystemEvent</a> {
-<a name="l00069"></a>00069     <span class="keywordtype">int</span> systemEvent;
-<a name="l00070"></a>00070     uint8_t reserved[60];
-<a name="l00071"></a>00071 };
-<a name="l00072"></a>00072 
-<a name="l00073"></a>00073 <span class="preprocessor">#define SCE_APPMGR_MAX_APP_NAME_LENGTH  (31)</span>
-<a name="l00074"></a>00074 <span class="preprocessor"></span>
-<a name="l00075"></a>00075 <span class="keywordtype">int</span> _sceAppMgrGetAppState(SceAppMgrAppState *appState, uint32_t len, uint32_t version);
-<a name="l00076"></a>00076 
-<a name="l00083"></a>00083 <span class="keywordtype">int</span> <a class="code" href="appmgr_8h.html#a617d75eda9590b8b2666acadd58b6fa1">sceAppMgrRecieveSystemEvent</a>(<a class="code" href="structSceAppMgrSystemEvent.html">SceAppMgrSystemEvent</a> *systemEvent);
+<a name="l00034"></a>00034     SCE_APPMGR_ERROR_TOO_LONG_ARGV      = 0x8080201d
+<a name="l00035"></a>00035 };
+<a name="l00036"></a>00036 
+<a name="l00037"></a>00037 <span class="keyword">enum</span> {
+<a name="l00038"></a>00038     SCE_APPMGR_SYSTEMEVENT_ON_RESUME        = 0x10000003,
+<a name="l00039"></a>00039     SCE_APPMGR_SYSTEMEVENT_ON_STORE_PURCHASE    = 0x10000004,
+<a name="l00040"></a>00040     SCE_APPMGR_SYSTEMEVENT_ON_NP_MESSAGE_ARRIVED    = 0x10000005,
+<a name="l00041"></a>00041     SCE_APPMGR_SYSTEMEVENT_ON_STORE_REDEMPTION  = 0x10000006,
+<a name="l00042"></a>00042 };
+<a name="l00043"></a>00043 
+<a name="l00044"></a>00044 <span class="keyword">enum</span> {
+<a name="l00045"></a>00045     SCE_APPMGR_INFOBAR_VISIBILITY_INVISIBLE = 0,
+<a name="l00046"></a>00046     SCE_APPMGR_INFOBAR_VISIBILITY_VISIBLE   = 1
+<a name="l00047"></a>00047 };
+<a name="l00048"></a>00048 
+<a name="l00049"></a>00049 <span class="keyword">enum</span> {
+<a name="l00050"></a>00050     SCE_APPMGR_INFOBAR_COLOR_BLACK  = 0,
+<a name="l00051"></a>00051     SCE_APPMGR_INFOBAR_COLOR_WHITE  = 1
+<a name="l00052"></a>00052 };
+<a name="l00053"></a>00053 
+<a name="l00054"></a>00054 <span class="keyword">enum</span> {
+<a name="l00055"></a>00055     SCE_APPMGR_INFOBAR_TRANSPARENCY_OPAQUE  = 0,
+<a name="l00056"></a>00056     SCE_APPMGR_INFOBAR_TRANSPARENCY_TRANSLUCENT = 1
+<a name="l00057"></a>00057 };
+<a name="l00058"></a>00058 
+<a name="l00059"></a><a class="code" href="structSceAppMgrSystemEvent.html">00059</a> <span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structSceAppMgrSystemEvent.html">SceAppMgrSystemEvent</a> {
+<a name="l00060"></a>00060     <span class="keywordtype">int</span> systemEvent;
+<a name="l00061"></a>00061     uint8_t reserved[60];
+<a name="l00062"></a>00062 } <a class="code" href="structSceAppMgrSystemEvent.html">SceAppMgrSystemEvent</a>;
+<a name="l00063"></a>00063 
+<a name="l00064"></a>00064 <span class="keyword">typedef</span> <span class="keyword">struct </span>SceAppMgrAppState SceAppMgrAppState; <span class="comment">// Missing struct</span>
+<a name="l00065"></a>00065 <span class="keyword">typedef</span> <span class="keyword">struct </span>SceAppMgrExecOptParam SceAppMgrExecOptParam; <span class="comment">// Missing struct</span>
+<a name="l00066"></a>00066 
+<a name="l00067"></a>00067 <span class="preprocessor">#define SCE_APPMGR_MAX_APP_NAME_LENGTH  (31)</span>
+<a name="l00068"></a>00068 <span class="preprocessor"></span>
+<a name="l00069"></a>00069 <span class="keywordtype">int</span> _sceAppMgrGetAppState(SceAppMgrAppState *appState, uint32_t len, uint32_t version);
+<a name="l00070"></a>00070 
+<a name="l00077"></a>00077 <span class="keywordtype">int</span> <a class="code" href="appmgr_8h.html#a617d75eda9590b8b2666acadd58b6fa1">sceAppMgrRecieveSystemEvent</a>(<a class="code" href="structSceAppMgrSystemEvent.html">SceAppMgrSystemEvent</a> *systemEvent);
+<a name="l00078"></a>00078 
+<a name="l00080"></a>00080 <span class="keywordtype">int</span> <a class="code" href="appmgr_8h.html#a4128e9d22cadd7263e8bd9364e01f846" title="Obtains the BGM port, even when it is not in front.">sceAppMgrAcquireBgmPort</a>(<span class="keywordtype">void</span>);
+<a name="l00081"></a>00081 
+<a name="l00083"></a>00083 <span class="keywordtype">int</span> <a class="code" href="appmgr_8h.html#a57e55396a9cc33ab9dc5f2a5bf566315" title="Release acquired BGM port.">sceAppMgrReleaseBgmPort</a>(<span class="keywordtype">void</span>);
 <a name="l00084"></a>00084 
-<a name="l00086"></a>00086 <span class="keywordtype">int</span> <a class="code" href="appmgr_8h.html#a4128e9d22cadd7263e8bd9364e01f846" title="Obtains the BGM port, even when it is not in front.">sceAppMgrAcquireBgmPort</a>(<span class="keywordtype">void</span>);
+<a name="l00086"></a>00086 <span class="keywordtype">int</span> <a class="code" href="appmgr_8h.html#a703fd52e350cf06140a391cb9ac66a10" title="Set infobar state.">sceAppMgrSetInfobarState</a>(<span class="keywordtype">int</span> visibility, <span class="keywordtype">int</span> color, <span class="keywordtype">int</span> transparency);
 <a name="l00087"></a>00087 
-<a name="l00089"></a>00089 <span class="keywordtype">int</span> <a class="code" href="appmgr_8h.html#a57e55396a9cc33ab9dc5f2a5bf566315" title="Release acquired BGM port.">sceAppMgrReleaseBgmPort</a>(<span class="keywordtype">void</span>);
-<a name="l00090"></a>00090 
-<a name="l00092"></a>00092 <span class="keywordtype">int</span> <a class="code" href="appmgr_8h.html#a703fd52e350cf06140a391cb9ac66a10" title="Set infobar state.">sceAppMgrSetInfobarState</a>(<span class="keywordtype">int</span> visibility, <span class="keywordtype">int</span> color, <span class="keywordtype">int</span> transparency);
-<a name="l00093"></a>00093 
-<a name="l00094"></a><a class="code" href="structsceAppMgrLoadExecOptParam.html">00094</a> <span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structsceAppMgrLoadExecOptParam.html">sceAppMgrLoadExecOptParam</a> {
-<a name="l00095"></a>00095     <span class="keywordtype">int</span> reserved[256 / 4];
-<a name="l00096"></a>00096 };
-<a name="l00097"></a>00097 
-<a name="l00098"></a>00098 <span class="keywordtype">int</span> sceAppMgrLoadExec(<span class="keyword">const</span> <span class="keywordtype">char</span> *appPath, <span class="keywordtype">char</span> * <span class="keyword">const</span> argv[],
-<a name="l00099"></a>00099     <span class="keyword">const</span> SceAppMgrExecOptParam *optParam);
-<a name="l00100"></a>00100 
-<a name="l00101"></a>00101 <span class="preprocessor">#endif</span>
+<a name="l00088"></a><a class="code" href="structsceAppMgrLoadExecOptParam.html">00088</a> <span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structsceAppMgrLoadExecOptParam.html">sceAppMgrLoadExecOptParam</a> {
+<a name="l00089"></a>00089     <span class="keywordtype">int</span> reserved[256 / 4];
+<a name="l00090"></a>00090 };
+<a name="l00091"></a>00091 
+<a name="l00092"></a>00092 <span class="keywordtype">int</span> sceAppMgrLoadExec(<span class="keyword">const</span> <span class="keywordtype">char</span> *appPath, <span class="keywordtype">char</span> * <span class="keyword">const</span> argv[],
+<a name="l00093"></a>00093     <span class="keyword">const</span> SceAppMgrExecOptParam *optParam);
+<a name="l00094"></a>00094 
+<a name="l00095"></a>00095 <span class="preprocessor">#endif</span>
 </pre></div></div><!-- contents -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
@@ -164,7 +167,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jun 21 2015 13:19:16 for PSP2SDK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Jun 21 2015 14:25:09 for PSP2SDK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>
