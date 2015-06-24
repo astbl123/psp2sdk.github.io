@@ -7,6 +7,7 @@ var searchData=
   ['maxessize',['maxEsSize',['../structSceAudioencCtrl.html#a4c293eb54fa86b33faf6c3e847de9b28',1,'SceAudioencCtrl']]],
   ['maxforce',['maxForce',['../structSceTouchPanelInfo.html#a5737d4cc952c3b379fd98512ff5e0aa0',1,'SceTouchPanelInfo']]],
   ['maxpcmsize',['maxPcmSize',['../structSceAudioencCtrl.html#acefe9130ad8a1da665a8a9b79c04acbb',1,'SceAudioencCtrl']]],
+  ['memorymgr_2eh',['memorymgr.h',['../memorymgr_8h.html',1,'']]],
   ['minaax',['minAaX',['../structSceTouchPanelInfo.html#ad20e30b35b3190de3adec46564357043',1,'SceTouchPanelInfo']]],
   ['minaay',['minAaY',['../structSceTouchPanelInfo.html#af14690de7904ff650bec0f1f7ac344ea',1,'SceTouchPanelInfo']]],
   ['mindispx',['minDispX',['../structSceTouchPanelInfo.html#a4f93cf4aa93c1d4480fa3f0458162bd4',1,'SceTouchPanelInfo']]],
