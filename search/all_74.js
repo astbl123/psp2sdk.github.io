@@ -1,7 +1,7 @@
 var searchData=
 [
   ['threadmgr_2eh',['threadmgr.h',['../threadmgr_8h.html',1,'']]],
-  ['timestamp',['timeStamp',['../structSceCtrlData.html#a6f20b96f3126eafe364fb087ac00099d',1,'SceCtrlData::timeStamp()'],['../structSceTouchData.html#aa4aa82d8b1976207adc4324ff9fa1dac',1,'SceTouchData::timeStamp()']]],
+  ['timestamp',['timeStamp',['../structSceCtrlData.html#a985099b0cd12cdf65aa37e380b0cdbd9',1,'SceCtrlData::timeStamp()'],['../structSceTouchData.html#aa4aa82d8b1976207adc4324ff9fa1dac',1,'SceTouchData::timeStamp()']]],
   ['title',['title',['../structSceAppUtilSaveDataSlotEmptyParam.html#a054883368a5b65ecc573a5a6a9e2e460',1,'SceAppUtilSaveDataSlotEmptyParam::title()'],['../structSceAppUtilSaveDataSlotParam.html#a2441849841afb440d18863f6f5513a93',1,'SceAppUtilSaveDataSlotParam::title()']]],
   ['totalstreams',['totalStreams',['../structSceAudioencInitStreamParam.html#a829d2c82e8adc3ca62ed756e7d9caca1',1,'SceAudioencInitStreamParam']]],
   ['touch_2eh',['touch.h',['../touch_8h.html',1,'']]],
