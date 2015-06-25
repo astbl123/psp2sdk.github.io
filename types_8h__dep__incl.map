@@ -12,12 +12,10 @@
 <area shape="rect" id="node25" href="$threadmgr_8h.html" title="Header file related to thread management." alt="" coords="1877,83,2083,112"/>
 <area shape="rect" id="node27" href="$moduleinfo_8h.html" title="Header file related to module information definitions." alt="" coords="2107,83,2280,112"/>
 <area shape="rect" id="node29" href="$motion_8h.html" title="Header file which defines motion variables and functions." alt="" coords="2304,83,2453,112"/>
-<area shape="rect" id="node31" href="$net_8h.html" title="Header file related to net." alt="" coords="2477,83,2627,112"/>
-<area shape="rect" id="node35" href="$pgf_8h.html" title="Header file which defines font (PGF) variables and functions." alt="" coords="2651,83,2779,112"/>
-<area shape="rect" id="node37" href="$power_8h.html" title="Header file which defines power variables and functions." alt="" coords="2803,83,2947,112"/>
-<area shape="rect" id="node39" href="$rtc_8h.html" title="Header file which defines RTC variables and functions." alt="" coords="2971,83,3096,112"/>
-<area shape="rect" id="node41" href="$screenshot_8h.html" title="Header file which defines output audio related variables and functions." alt="" coords="3120,83,3293,112"/>
-<area shape="rect" id="node43" href="$touch_8h.html" title="Header file which defines touch related variables and functions." alt="" coords="3317,83,3459,112"/>
+<area shape="rect" id="node31" href="$pgf_8h.html" title="Header file which defines font (PGF) variables and functions." alt="" coords="2477,83,2605,112"/>
+<area shape="rect" id="node33" href="$power_8h.html" title="Header file which defines power variables and functions." alt="" coords="2629,83,2773,112"/>
+<area shape="rect" id="node35" href="$rtc_8h.html" title="Header file which defines RTC variables and functions." alt="" coords="2797,83,2923,112"/>
+<area shape="rect" id="node37" href="$screenshot_8h.html" title="Header file which defines output audio related variables and functions." alt="" coords="2947,83,3120,112"/>
+<area shape="rect" id="node39" href="$touch_8h.html" title="Header file which defines touch related variables and functions." alt="" coords="3144,83,3285,112"/>
 <area shape="rect" id="node15" href="$gxt_8h.html" title="Header file which defines GXT variables and functions." alt="" coords="891,160,1019,189"/>
-<area shape="rect" id="node33" href="$netctl_8h.html" title="Header file related to net control." alt="" coords="2471,160,2633,189"/>
 </map>
