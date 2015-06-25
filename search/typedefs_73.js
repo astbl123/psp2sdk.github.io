@@ -20,7 +20,7 @@ var searchData=
   ['scekernelmutexoptparam',['SceKernelMutexOptParam',['../threadmgr_8h.html#a49efecafe3539bbf691f22ab084626c4',1,'threadmgr.h']]],
   ['scekernelsemainfo',['SceKernelSemaInfo',['../threadmgr_8h.html#a4892da0b27346f1cbcadb457c0caff74',1,'threadmgr.h']]],
   ['scekernelsemaoptparam',['SceKernelSemaOptParam',['../threadmgr_8h.html#a002dcc4254fbf8d35ed623c4ae825f6b',1,'threadmgr.h']]],
-  ['scekernelsysclock',['SceKernelSysClock',['../threadmgr_8h.html#ad8c7afb7acb6c1eac30641956deb4d66',1,'threadmgr.h']]],
+  ['scekernelsysclock',['SceKernelSysClock',['../threadmgr_8h.html#af51ef41af830ba6422cc9c5106fb68b8',1,'threadmgr.h']]],
   ['scekernelthreadinfo',['SceKernelThreadInfo',['../threadmgr_8h.html#a8d3294c88e55bf6f86cebcfceb11f51d',1,'threadmgr.h']]],
   ['scekernelthreadoptparam',['SceKernelThreadOptParam',['../threadmgr_8h.html#a1f0fa4f9a81c3b2226dcbfd7556fc555',1,'threadmgr.h']]],
   ['scekernelthreadrunstatus',['SceKernelThreadRunStatus',['../threadmgr_8h.html#a06088e39af2244f232868fabf47e1d97',1,'threadmgr.h']]],

@@ -79,7 +79,6 @@ var searchData=
   ['scekernelmutexoptparam',['SceKernelMutexOptParam',['../structSceKernelMutexOptParam.html',1,'']]],
   ['scekernelsemainfo',['SceKernelSemaInfo',['../structSceKernelSemaInfo.html',1,'']]],
   ['scekernelsemaoptparam',['SceKernelSemaOptParam',['../structSceKernelSemaOptParam.html',1,'']]],
-  ['scekernelsysclock',['SceKernelSysClock',['../structSceKernelSysClock.html',1,'']]],
   ['scekernelsysteminfo',['SceKernelSystemInfo',['../structSceKernelSystemInfo.html',1,'']]],
   ['scekernelthreadinfo',['SceKernelThreadInfo',['../structSceKernelThreadInfo.html',1,'']]],
   ['scekernelthreadoptparam',['SceKernelThreadOptParam',['../structSceKernelThreadOptParam.html',1,'']]],

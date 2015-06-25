@@ -233,7 +233,7 @@ var searchData=
   ['scekernelseteventflag',['sceKernelSetEventFlag',['../threadmgr_8h.html#a5afb3a756d7bf79e4bc7f2ad16b4dcfe',1,'threadmgr.h']]],
   ['scekernelsignalsema',['sceKernelSignalSema',['../threadmgr_8h.html#ab81b0362839d7f9cbdcbf64305e7e603',1,'threadmgr.h']]],
   ['scekernelstartthread',['sceKernelStartThread',['../threadmgr_8h.html#aa3b54986929bad87d48b5c4d11b8678e',1,'threadmgr.h']]],
-  ['scekernelsysclock',['SceKernelSysClock',['../structSceKernelSysClock.html',1,'SceKernelSysClock'],['../threadmgr_8h.html#ad8c7afb7acb6c1eac30641956deb4d66',1,'SceKernelSysClock():&#160;threadmgr.h']]],
+  ['scekernelsysclock',['SceKernelSysClock',['../threadmgr_8h.html#af51ef41af830ba6422cc9c5106fb68b8',1,'threadmgr.h']]],
   ['scekernelsysteminfo',['SceKernelSystemInfo',['../structSceKernelSystemInfo.html',1,'']]],
   ['scekernelthreadinfo',['SceKernelThreadInfo',['../structSceKernelThreadInfo.html',1,'SceKernelThreadInfo'],['../threadmgr_8h.html#a8d3294c88e55bf6f86cebcfceb11f51d',1,'SceKernelThreadInfo():&#160;threadmgr.h']]],
   ['scekernelthreadoptparam',['SceKernelThreadOptParam',['../structSceKernelThreadOptParam.html',1,'SceKernelThreadOptParam'],['../threadmgr_8h.html#a1f0fa4f9a81c3b2226dcbfd7556fc555',1,'SceKernelThreadOptParam():&#160;threadmgr.h']]],
@@ -327,7 +327,7 @@ var searchData=
   ['strlen',['strlen',['../structSceAppUtilWebBrowserParam.html#a240d9fa0246190394422c45a1c5ed352',1,'SceAppUtilWebBrowserParam']]],
   ['subtitle',['subTitle',['../structSceAppUtilSaveDataSlotParam.html#a9f6719584d48a06848947fa70695431e',1,'SceAppUtilSaveDataSlotParam']]],
   ['system_5fparam_2eh',['system_param.h',['../system__param_8h.html',1,'']]],
-  ['system_5fparam_5ftime_5fformat_5f12hr',['SYSTEM_PARAM_TIME_FORMAT_12HR',['../system__param_8h.html#a1fb9092bcdeada2d206bdc74afbbe122a3227b9831d0718c363fd01a157b15079',1,'system_param.h']]],
-  ['system_5fparam_5ftime_5fformat_5f24hr',['SYSTEM_PARAM_TIME_FORMAT_24HR',['../system__param_8h.html#a1fb9092bcdeada2d206bdc74afbbe122a32e61897f9445faa46d48f1024b477e9',1,'system_param.h']]],
+  ['system_5fparam_5ftime_5fformat_5f12hr',['SYSTEM_PARAM_TIME_FORMAT_12HR',['../system__param_8h.html#a157d5577a5b2f5986037d0d09c7dc77da3227b9831d0718c363fd01a157b15079',1,'system_param.h']]],
+  ['system_5fparam_5ftime_5fformat_5f24hr',['SYSTEM_PARAM_TIME_FORMAT_24HR',['../system__param_8h.html#a157d5577a5b2f5986037d0d09c7dc77da32e61897f9445faa46d48f1024b477e9',1,'system_param.h']]],
   ['system_5fparam_5fusername_5fmaxsize',['SYSTEM_PARAM_USERNAME_MAXSIZE',['../system__param_8h.html#afe89fee47bf2613bd85bbd335fadcbec',1,'system_param.h']]]
 ];
