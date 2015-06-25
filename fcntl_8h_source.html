@@ -30,7 +30,7 @@
   
   <td style="padding-left: 0.5em;">
    <div id="projectname">PSP2SDK
-   &#160;<span id="projectnumber">dirty-60c0fd6</span>
+   &#160;<span id="projectnumber">dirty-ae2d493</span>
    </div>
    <div id="projectbrief">The free SDK for PSP2</div>
   </td>
@@ -88,22 +88,22 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00015"></a>00015 <span class="comment">/* Note: Not all of these sceIoOpen() flags are not compatible with the</span>
 <a name="l00016"></a>00016 <span class="comment">   open() flags found in sys/unistd.h. */</span>
 <a name="l00017"></a>00017 <span class="keyword">enum</span> {
-<a name="l00018"></a>00018     SCE_O_RDONLY    = 0x0001,
-<a name="l00019"></a>00019     SCE_O_WRONLY    = 0x0002,
-<a name="l00020"></a>00020     SCE_O_RDWR  = (PSP2_O_RDONLY | PSP2_O_WRONLY),
-<a name="l00021"></a>00021     SCE_O_NBLOCK    = 0x0004,
-<a name="l00022"></a>00022     SCE_O_DIROPEN   = 0x0008,  <span class="comment">// Internal use for dopen</span>
-<a name="l00023"></a>00023     SCE_O_APPEND    = 0x0100,
-<a name="l00024"></a>00024     SCE_O_CREAT = 0x0200,
-<a name="l00025"></a>00025     SCE_O_TRUNC = 0x0400,
-<a name="l00026"></a>00026     SCE_O_EXCL  = 0x0800,
-<a name="l00027"></a>00027     SCE_O_NOWAIT    = 0x8000
+<a name="l00018"></a>00018     PSP2_O_RDONLY   = 0x0001,
+<a name="l00019"></a>00019     PSP2_O_WRONLY   = 0x0002,
+<a name="l00020"></a>00020     PSP2_O_RDWR     = (PSP2_O_RDONLY | PSP2_O_WRONLY),
+<a name="l00021"></a>00021     PSP2_O_NBLOCK   = 0x0004,
+<a name="l00022"></a>00022     PSP2_O_DIROPEN  = 0x0008,  <span class="comment">// Internal use for dopen</span>
+<a name="l00023"></a>00023     PSP2_O_APPEND   = 0x0100,
+<a name="l00024"></a>00024     PSP2_O_CREAT    = 0x0200,
+<a name="l00025"></a>00025     PSP2_O_TRUNC    = 0x0400,
+<a name="l00026"></a>00026     PSP2_O_EXCL     = 0x0800,
+<a name="l00027"></a>00027     PSP2_O_NOWAIT   = 0x8000
 <a name="l00028"></a>00028 };
 <a name="l00029"></a>00029 
 <a name="l00030"></a>00030 <span class="keyword">enum</span> {
-<a name="l00031"></a>00031     SCE_SEEK_SET,
-<a name="l00032"></a>00032     SCE_SEEK_CUR,
-<a name="l00033"></a>00033     SCE_SEEK_END
+<a name="l00031"></a>00031     PSP2_SEEK_SET,
+<a name="l00032"></a>00032     PSP2_SEEK_CUR,
+<a name="l00033"></a>00033     PSP2_SEEK_END
 <a name="l00034"></a>00034 };
 <a name="l00035"></a>00035 
 <a name="l00057"></a>00057 <a class="code" href="types_8h.html#a9c036549fd8cfd554ba3aa26a397b663" title="UIDs are used to describe many different kernel objects.">SceUID</a> <a class="code" href="fcntl_8h.html#a88dc53eaa661c18698ff606859f69ec8">sceIoOpen</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *file, <span class="keywordtype">int</span> flags, <a class="code" href="types_8h.html#ad563fb9897e927ac60a231ba16859629" title="Mode for I/O functions.">SceMode</a> mode);
@@ -171,7 +171,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jun 25 2015 17:43:06 for PSP2SDK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jun 25 2015 17:52:15 for PSP2SDK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>
