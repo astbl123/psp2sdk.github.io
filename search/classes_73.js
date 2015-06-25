@@ -62,6 +62,8 @@ var searchData=
   ['sceimatrix2',['SceIMatrix2',['../structSceIMatrix2.html',1,'']]],
   ['sceimatrix3',['SceIMatrix3',['../structSceIMatrix3.html',1,'']]],
   ['sceimatrix4',['SceIMatrix4',['../structSceIMatrix4.html',1,'']]],
+  ['sceiodirent',['SceIoDirent',['../structSceIoDirent.html',1,'']]],
+  ['sceiostat',['SceIoStat',['../structSceIoStat.html',1,'']]],
   ['sceivector2',['SceIVector2',['../structSceIVector2.html',1,'']]],
   ['sceivector3',['SceIVector3',['../structSceIVector3.html',1,'']]],
   ['sceivector4',['SceIVector4',['../structSceIVector4.html',1,'']]],
