@@ -1,6 +1,9 @@
 var searchData=
 [
+  ['threadid',['threadId',['../structSceKernelCallbackInfo.html#a30c183d7fa234de1fce25b2ea3a3f10a',1,'SceKernelCallbackInfo']]],
   ['threadmgr_2eh',['threadmgr.h',['../threadmgr_8h.html',1,'']]],
+  ['threadpreemptcount',['threadPreemptCount',['../structSceKernelThreadInfo.html#a1e3ab6232be9f798357ccdf1c01e3b7c',1,'SceKernelThreadInfo']]],
+  ['threadreleasecount',['threadReleaseCount',['../structSceKernelThreadInfo.html#a1454001f02a7466066ad143ba7941308',1,'SceKernelThreadInfo']]],
   ['timestamp',['timeStamp',['../structSceCtrlData.html#a985099b0cd12cdf65aa37e380b0cdbd9',1,'SceCtrlData::timeStamp()'],['../structSceTouchData.html#aa4aa82d8b1976207adc4324ff9fa1dac',1,'SceTouchData::timeStamp()']]],
   ['title',['title',['../structSceAppUtilSaveDataSlotEmptyParam.html#a054883368a5b65ecc573a5a6a9e2e460',1,'SceAppUtilSaveDataSlotEmptyParam::title()'],['../structSceAppUtilSaveDataSlotParam.html#a2441849841afb440d18863f6f5513a93',1,'SceAppUtilSaveDataSlotParam::title()']]],
   ['totalstreams',['totalStreams',['../structSceAudioencInitStreamParam.html#a829d2c82e8adc3ca62ed756e7d9caca1',1,'SceAudioencInitStreamParam']]],

@@ -7,5 +7,9 @@ var searchData=
   ['impbtm',['impBtm',['../struct__sceModuleInfo.html#a72f4bcc5cd4b0355d63981e5c862aef8',1,'_sceModuleInfo']]],
   ['imptop',['impTop',['../struct__sceModuleInfo.html#ab4ccad698bea49f9de85c43e0d1fa99a',1,'_sceModuleInfo']]],
   ['info',['info',['../structSceTouchReport.html#ae0343997c374d90c8396712f3287b05f',1,'SceTouchReport']]],
-  ['inputpcmsize',['inputPcmSize',['../structSceAudioencCtrl.html#aff2833cf4249b601249d23437a78c5a4',1,'SceAudioencCtrl']]]
+  ['initcount',['initCount',['../structSceKernelSemaInfo.html#adfd8c09ff32bf0047269054e9d032c87',1,'SceKernelSemaInfo::initCount()'],['../structSceKernelMutexInfo.html#acb357f408aa6ec60103b8ac4d6381fe6',1,'SceKernelMutexInfo::initCount()']]],
+  ['initcpuaffinitymask',['initCpuAffinityMask',['../structSceKernelThreadInfo.html#a6768fb899917a948529958afef5d9e5f',1,'SceKernelThreadInfo']]],
+  ['initpriority',['initPriority',['../structSceKernelThreadInfo.html#aca89b4d1d6e9c6a5b932a510b41c899a',1,'SceKernelThreadInfo']]],
+  ['inputpcmsize',['inputPcmSize',['../structSceAudioencCtrl.html#aff2833cf4249b601249d23437a78c5a4',1,'SceAudioencCtrl']]],
+  ['intrpreemptcount',['intrPreemptCount',['../structSceKernelThreadInfo.html#a6aca98c6db3c1f55abb43588f98ea548',1,'SceKernelThreadInfo']]]
 ];
