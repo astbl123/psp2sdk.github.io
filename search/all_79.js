@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['y',['y',['../structSceTouchReport.html#a28544fb327e6932ad1f3ea4c41b953dd',1,'SceTouchReport']]]
+  ['y',['y',['../structSceTouchReport.html#a72e9b8c423a88e7916611fdc5adbf8e8',1,'SceTouchReport']]]
 ];

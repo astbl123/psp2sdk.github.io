@@ -30,7 +30,7 @@
   
   <td style="padding-left: 0.5em;">
    <div id="projectname">PSP2SDK
-   &#160;<span id="projectnumber">dirty-5fe57c1</span>
+   &#160;<span id="projectnumber">dirty-fb3c16e</span>
    </div>
    <div id="projectbrief">The free SDK for PSP2</div>
   </td>
@@ -87,74 +87,82 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00014"></a>00014 <span class="preprocessor"></span>
 <a name="l00015"></a>00015 <span class="preprocessor">#include &lt;<a class="code" href="types_8h.html" title="Header file which defines unique variable types.">psp2/types.h</a>&gt;</span>
 <a name="l00016"></a>00016 
-<a name="l00018"></a>00018 <span class="keyword">enum</span> {
-<a name="l00020"></a><a class="code" href="stat_8h.html#a5d76b81b0ad4c19007a781d4edb8181fad0c96fa99a47b3c27a6a40df50b4ede3">00020</a>     <a class="code" href="stat_8h.html#a5d76b81b0ad4c19007a781d4edb8181fad0c96fa99a47b3c27a6a40df50b4ede3">PSP2_S_IFMT</a>     = 0xF000,
-<a name="l00022"></a><a class="code" href="stat_8h.html#a5d76b81b0ad4c19007a781d4edb8181fa4edf9135ed67c578a6e65f5bb47db6e4">00022</a>     <a class="code" href="stat_8h.html#a5d76b81b0ad4c19007a781d4edb8181fa4edf9135ed67c578a6e65f5bb47db6e4">PSP2_S_IFLNK</a>        = 0x4000,
-<a name="l00024"></a><a class="code" href="stat_8h.html#a5d76b81b0ad4c19007a781d4edb8181fa6612a5724afea15214af43cb3e09bd97">00024</a>     <a class="code" href="stat_8h.html#a5d76b81b0ad4c19007a781d4edb8181fa6612a5724afea15214af43cb3e09bd97">PSP2_S_IFDIR</a>        = 0x1000,
-<a name="l00026"></a><a class="code" href="stat_8h.html#a5d76b81b0ad4c19007a781d4edb8181fa71d55566acf43c7144abf3c92ad5caac">00026</a>     <a class="code" href="stat_8h.html#a5d76b81b0ad4c19007a781d4edb8181fa71d55566acf43c7144abf3c92ad5caac">PSP2_S_IFREG</a>        = 0x2000,
-<a name="l00027"></a>00027 
-<a name="l00029"></a><a class="code" href="stat_8h.html#a5d76b81b0ad4c19007a781d4edb8181fa7c83a7f808d57f12c7ada0598aa6049f">00029</a>     <a class="code" href="stat_8h.html#a5d76b81b0ad4c19007a781d4edb8181fa7c83a7f808d57f12c7ada0598aa6049f">PSP2_S_ISUID</a>        = 0x0800,
-<a name="l00031"></a><a class="code" href="stat_8h.html#a5d76b81b0ad4c19007a781d4edb8181faa8404cb579a44f0b1b81cf8f4c6cf557">00031</a>     <a class="code" href="stat_8h.html#a5d76b81b0ad4c19007a781d4edb8181faa8404cb579a44f0b1b81cf8f4c6cf557">PSP2_S_ISGID</a>        = 0x0400,
-<a name="l00033"></a><a class="code" href="stat_8h.html#a5d76b81b0ad4c19007a781d4edb8181fa8a4e65bbce11f18b5d7e986db0426c9b">00033</a>     <a class="code" href="stat_8h.html#a5d76b81b0ad4c19007a781d4edb8181fa8a4e65bbce11f18b5d7e986db0426c9b">PSP2_S_ISVTX</a>        = 0x0200,
-<a name="l00034"></a>00034 
-<a name="l00036"></a><a class="code" href="stat_8h.html#a5d76b81b0ad4c19007a781d4edb8181fadcb8d8daa7c36aa03f9eab2096fca4f1">00036</a>     <a class="code" href="stat_8h.html#a5d76b81b0ad4c19007a781d4edb8181fadcb8d8daa7c36aa03f9eab2096fca4f1">PSP2_S_IRWXU</a>        = 0x01C0,
-<a name="l00038"></a><a class="code" href="stat_8h.html#a5d76b81b0ad4c19007a781d4edb8181fa01e94ba2033e40c564176322e207f353">00038</a>     <a class="code" href="stat_8h.html#a5d76b81b0ad4c19007a781d4edb8181fa01e94ba2033e40c564176322e207f353">PSP2_S_IRUSR</a>        = 0x0100,
-<a name="l00040"></a><a class="code" href="stat_8h.html#a5d76b81b0ad4c19007a781d4edb8181faf0a45bfcffb157bdf35baea133dc96d8">00040</a>     <a class="code" href="stat_8h.html#a5d76b81b0ad4c19007a781d4edb8181faf0a45bfcffb157bdf35baea133dc96d8">PSP2_S_IWUSR</a>        = 0x0080,
-<a name="l00042"></a><a class="code" href="stat_8h.html#a5d76b81b0ad4c19007a781d4edb8181fab2a502686eae600a175b2ca0f7116b2c">00042</a>     <a class="code" href="stat_8h.html#a5d76b81b0ad4c19007a781d4edb8181fab2a502686eae600a175b2ca0f7116b2c">PSP2_S_IXUSR</a>        = 0x0040,
-<a name="l00043"></a>00043 
-<a name="l00045"></a><a class="code" href="stat_8h.html#a5d76b81b0ad4c19007a781d4edb8181fa3ebd889aa93a97cccba396068da6720e">00045</a>     <a class="code" href="stat_8h.html#a5d76b81b0ad4c19007a781d4edb8181fa3ebd889aa93a97cccba396068da6720e">PSP2_S_IRWXG</a>        = 0x0038,
-<a name="l00047"></a><a class="code" href="stat_8h.html#a5d76b81b0ad4c19007a781d4edb8181fac1d89c4039f15c1be7815fd164b368f7">00047</a>     <a class="code" href="stat_8h.html#a5d76b81b0ad4c19007a781d4edb8181fac1d89c4039f15c1be7815fd164b368f7">PSP2_S_IRGRP</a>        = 0x0020,
-<a name="l00049"></a><a class="code" href="stat_8h.html#a5d76b81b0ad4c19007a781d4edb8181fa4874291f62a42cb095644debec0f4ed1">00049</a>     <a class="code" href="stat_8h.html#a5d76b81b0ad4c19007a781d4edb8181fa4874291f62a42cb095644debec0f4ed1">PSP2_S_IWGRP</a>        = 0x0010,
-<a name="l00051"></a><a class="code" href="stat_8h.html#a5d76b81b0ad4c19007a781d4edb8181fac54501d58fd1e7b12b322d6bce632dfc">00051</a>     <a class="code" href="stat_8h.html#a5d76b81b0ad4c19007a781d4edb8181fac54501d58fd1e7b12b322d6bce632dfc">PSP2_S_IXGRP</a>        = 0x0008,
-<a name="l00052"></a>00052 
-<a name="l00054"></a><a class="code" href="stat_8h.html#a5d76b81b0ad4c19007a781d4edb8181fa8eff07b38658e7dfd488472b323f0a85">00054</a>     <a class="code" href="stat_8h.html#a5d76b81b0ad4c19007a781d4edb8181fa8eff07b38658e7dfd488472b323f0a85">PSP2_S_IRWXO</a>        = 0x0007,
-<a name="l00056"></a><a class="code" href="stat_8h.html#a5d76b81b0ad4c19007a781d4edb8181fa318d4a66e0bb676e339e0694e2917989">00056</a>     <a class="code" href="stat_8h.html#a5d76b81b0ad4c19007a781d4edb8181fa318d4a66e0bb676e339e0694e2917989">PSP2_S_IROTH</a>        = 0x0004,
-<a name="l00058"></a><a class="code" href="stat_8h.html#a5d76b81b0ad4c19007a781d4edb8181fa6bfe0f418e53d6918f20c8e7b92d4bed">00058</a>     <a class="code" href="stat_8h.html#a5d76b81b0ad4c19007a781d4edb8181fa6bfe0f418e53d6918f20c8e7b92d4bed">PSP2_S_IWOTH</a>        = 0x0002,
-<a name="l00060"></a><a class="code" href="stat_8h.html#a5d76b81b0ad4c19007a781d4edb8181fa9ee679ff3204b1f7b463b8c3163e5825">00060</a>     <a class="code" href="stat_8h.html#a5d76b81b0ad4c19007a781d4edb8181fa9ee679ff3204b1f7b463b8c3163e5825">PSP2_S_IXOTH</a>        = 0x0001,
-<a name="l00061"></a>00061 };
-<a name="l00062"></a>00062 
-<a name="l00063"></a>00063 <span class="comment">// File mode checking macros</span>
-<a name="l00064"></a>00064 <span class="preprocessor">#define PSP2_S_ISLNK(m) (((m) &amp; PSP2_S_IFMT) == PSP2_S_IFLNK)</span>
-<a name="l00065"></a>00065 <span class="preprocessor"></span><span class="preprocessor">#define PSP2_S_ISREG(m) (((m) &amp; PSP2_S_IFMT) == PSP2_S_IFREG)</span>
-<a name="l00066"></a>00066 <span class="preprocessor"></span><span class="preprocessor">#define PSP2_S_ISDIR(m) (((m) &amp; PSP2_S_IFMT) == PSP2_S_IFDIR)</span>
-<a name="l00067"></a>00067 <span class="preprocessor"></span>
-<a name="l00069"></a>00069 <span class="keyword">enum</span> {
-<a name="l00071"></a><a class="code" href="stat_8h.html#aac34dfe6c6b73b43a4656c9dce041034a0f6cf0f8f988bb16f2afdf9dce47040c">00071</a>     <a class="code" href="stat_8h.html#aac34dfe6c6b73b43a4656c9dce041034a0f6cf0f8f988bb16f2afdf9dce47040c">PSP2_SO_IFMT</a>             = 0x0038,               <span class="comment">// Format mask</span>
-<a name="l00073"></a><a class="code" href="stat_8h.html#aac34dfe6c6b73b43a4656c9dce041034a31b4f462ceee8b7097c342d0b5687b8f">00073</a> <span class="comment"></span>    <a class="code" href="stat_8h.html#aac34dfe6c6b73b43a4656c9dce041034a31b4f462ceee8b7097c342d0b5687b8f">PSP2_SO_IFLNK</a>            = 0x0008,               <span class="comment">// Symbolic link</span>
-<a name="l00075"></a><a class="code" href="stat_8h.html#aac34dfe6c6b73b43a4656c9dce041034a2b3013471077141533aba8adfdf97e6f">00075</a> <span class="comment"></span>    <a class="code" href="stat_8h.html#aac34dfe6c6b73b43a4656c9dce041034a2b3013471077141533aba8adfdf97e6f">PSP2_SO_IFDIR</a>            = 0x0010,               <span class="comment">// Directory</span>
-<a name="l00077"></a><a class="code" href="stat_8h.html#aac34dfe6c6b73b43a4656c9dce041034a716431bfc06b6ae2519f0c2ebc26cf37">00077</a> <span class="comment"></span>    <a class="code" href="stat_8h.html#aac34dfe6c6b73b43a4656c9dce041034a716431bfc06b6ae2519f0c2ebc26cf37">PSP2_SO_IFREG</a>            = 0x0020,               <span class="comment">// Regular file</span>
-<a name="l00078"></a>00078 
-<a name="l00080"></a><a class="code" href="stat_8h.html#aac34dfe6c6b73b43a4656c9dce041034abbe6a0ab4bdd489c60c147dd5a5640dc">00080</a>     <a class="code" href="stat_8h.html#aac34dfe6c6b73b43a4656c9dce041034abbe6a0ab4bdd489c60c147dd5a5640dc">PSP2_SO_IROTH</a>            = 0x0004,               <span class="comment">// read</span>
-<a name="l00082"></a><a class="code" href="stat_8h.html#aac34dfe6c6b73b43a4656c9dce041034a15b43fb88557b3663e55391fe8430e60">00082</a> <span class="comment"></span>    <a class="code" href="stat_8h.html#aac34dfe6c6b73b43a4656c9dce041034a15b43fb88557b3663e55391fe8430e60">PSP2_SO_IWOTH</a>            = 0x0002,               <span class="comment">// write</span>
-<a name="l00084"></a><a class="code" href="stat_8h.html#aac34dfe6c6b73b43a4656c9dce041034ab7de7a7f3c14253dea3a97beb8ccbec7">00084</a> <span class="comment"></span>    <a class="code" href="stat_8h.html#aac34dfe6c6b73b43a4656c9dce041034ab7de7a7f3c14253dea3a97beb8ccbec7">PSP2_SO_IXOTH</a>            = 0x0001,               <span class="comment">// execute</span>
-<a name="l00085"></a>00085 };
-<a name="l00086"></a>00086 
-<a name="l00087"></a>00087 <span class="comment">// File mode checking macros</span>
-<a name="l00088"></a>00088 <span class="preprocessor">#define PSP2_SO_ISLNK(m)    (((m) &amp; PSP2_SO_IFMT) == PSP2_SO_IFLNK)</span>
-<a name="l00089"></a>00089 <span class="preprocessor"></span><span class="preprocessor">#define PSP2_SO_ISREG(m)    (((m) &amp; PSP2_SO_IFMT) == PSP2_SO_IFREG)</span>
-<a name="l00090"></a>00090 <span class="preprocessor"></span><span class="preprocessor">#define PSP2_SO_ISDIR(m)    (((m) &amp; PSP2_SO_IFMT) == PSP2_SO_IFDIR)</span>
-<a name="l00091"></a>00091 <span class="preprocessor"></span>
-<a name="l00093"></a><a class="code" href="structSceIoStat.html">00093</a> <span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structSceIoStat.html">SceIoStat</a> {
-<a name="l00094"></a>00094     <a class="code" href="types_8h.html#ad563fb9897e927ac60a231ba16859629" title="Mode for I/O functions.">SceMode</a> st_mode;
-<a name="l00095"></a>00095     <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>    st_attr;
-<a name="l00097"></a><a class="code" href="structSceIoStat.html#a67a3e4e86264a440da54204caeeafb16">00097</a>     <a class="code" href="types_8h.html#ac20a0c334ac3c41e9a7b295e31f6b111" title="Offset type.">SceOff</a>  <a class="code" href="structSceIoStat.html#a67a3e4e86264a440da54204caeeafb16">st_size</a>;
-<a name="l00099"></a><a class="code" href="structSceIoStat.html#aa05df6c104b75d64411e07b73e3c92a8">00099</a>     <a class="code" href="structSceDateTime.html">SceDateTime</a> <a class="code" href="structSceIoStat.html#aa05df6c104b75d64411e07b73e3c92a8">st_ctime</a>;
-<a name="l00101"></a><a class="code" href="structSceIoStat.html#aa4fdf932210dbb1abf8b171732efe946">00101</a>     <a class="code" href="structSceDateTime.html">SceDateTime</a> <a class="code" href="structSceIoStat.html#aa4fdf932210dbb1abf8b171732efe946">st_atime</a>;
-<a name="l00103"></a><a class="code" href="structSceIoStat.html#a3c15df236ec4703d958ab0d8fdbd1ba3">00103</a>     <a class="code" href="structSceDateTime.html">SceDateTime</a> <a class="code" href="structSceIoStat.html#a3c15df236ec4703d958ab0d8fdbd1ba3">st_mtime</a>;
-<a name="l00105"></a><a class="code" href="structSceIoStat.html#af7b69aca53d97b66ebebfa7d2c7309a8">00105</a>     <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>    <a class="code" href="structSceIoStat.html#af7b69aca53d97b66ebebfa7d2c7309a8">st_private</a>[6];
-<a name="l00106"></a>00106 } <a class="code" href="stat_8h.html#a9d962bc205e61c1a2580799c855bcc4f">SceIoStat</a>;
-<a name="l00107"></a>00107 
-<a name="l00115"></a>00115 <span class="keywordtype">int</span> <a class="code" href="stat_8h.html#ae05d18e89cc4baa82de5ce6aa14e7e95">sceIoMkdir</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *dir, <a class="code" href="types_8h.html#ad563fb9897e927ac60a231ba16859629" title="Mode for I/O functions.">SceMode</a> mode);
-<a name="l00116"></a>00116 
-<a name="l00123"></a>00123 <span class="keywordtype">int</span> <a class="code" href="stat_8h.html#a98e7df109a5a86ba764cd9e534626d16">sceIoRmdir</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *path);
-<a name="l00124"></a>00124 
-<a name="l00131"></a>00131 <span class="keywordtype">int</span> <a class="code" href="stat_8h.html#a7f07e12c4eec503340746a30eaff8a6d">sceIoChdir</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *path);
-<a name="l00132"></a>00132 
-<a name="l00141"></a>00141 <span class="keywordtype">int</span> <a class="code" href="stat_8h.html#a4e3afddc6b738ae99872eb74eb70a509">sceIoGetstat</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *file, <a class="code" href="structSceIoStat.html">SceIoStat</a> *stat);
-<a name="l00142"></a>00142 
-<a name="l00152"></a>00152 <span class="keywordtype">int</span> <a class="code" href="stat_8h.html#a89361a511354826e6ac54ff587368e33">sceIoChstat</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *file, <a class="code" href="structSceIoStat.html">SceIoStat</a> *stat, <span class="keywordtype">int</span> bits);
-<a name="l00153"></a>00153 
-<a name="l00154"></a>00154 <span class="preprocessor">#endif</span>
+<a name="l00017"></a>00017 <span class="preprocessor">#ifdef __cplusplus</span>
+<a name="l00018"></a>00018 <span class="preprocessor"></span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {
+<a name="l00019"></a>00019 <span class="preprocessor">#endif</span>
+<a name="l00020"></a>00020 <span class="preprocessor"></span>
+<a name="l00022"></a>00022 <span class="keyword">enum</span> {
+<a name="l00024"></a><a class="code" href="stat_8h.html#a5d76b81b0ad4c19007a781d4edb8181fad0c96fa99a47b3c27a6a40df50b4ede3">00024</a>     <a class="code" href="stat_8h.html#a5d76b81b0ad4c19007a781d4edb8181fad0c96fa99a47b3c27a6a40df50b4ede3">PSP2_S_IFMT</a>     = 0xF000,
+<a name="l00026"></a><a class="code" href="stat_8h.html#a5d76b81b0ad4c19007a781d4edb8181fa4edf9135ed67c578a6e65f5bb47db6e4">00026</a>     <a class="code" href="stat_8h.html#a5d76b81b0ad4c19007a781d4edb8181fa4edf9135ed67c578a6e65f5bb47db6e4">PSP2_S_IFLNK</a>        = 0x4000,
+<a name="l00028"></a><a class="code" href="stat_8h.html#a5d76b81b0ad4c19007a781d4edb8181fa6612a5724afea15214af43cb3e09bd97">00028</a>     <a class="code" href="stat_8h.html#a5d76b81b0ad4c19007a781d4edb8181fa6612a5724afea15214af43cb3e09bd97">PSP2_S_IFDIR</a>        = 0x1000,
+<a name="l00030"></a><a class="code" href="stat_8h.html#a5d76b81b0ad4c19007a781d4edb8181fa71d55566acf43c7144abf3c92ad5caac">00030</a>     <a class="code" href="stat_8h.html#a5d76b81b0ad4c19007a781d4edb8181fa71d55566acf43c7144abf3c92ad5caac">PSP2_S_IFREG</a>        = 0x2000,
+<a name="l00031"></a>00031 
+<a name="l00033"></a><a class="code" href="stat_8h.html#a5d76b81b0ad4c19007a781d4edb8181fa7c83a7f808d57f12c7ada0598aa6049f">00033</a>     <a class="code" href="stat_8h.html#a5d76b81b0ad4c19007a781d4edb8181fa7c83a7f808d57f12c7ada0598aa6049f">PSP2_S_ISUID</a>        = 0x0800,
+<a name="l00035"></a><a class="code" href="stat_8h.html#a5d76b81b0ad4c19007a781d4edb8181faa8404cb579a44f0b1b81cf8f4c6cf557">00035</a>     <a class="code" href="stat_8h.html#a5d76b81b0ad4c19007a781d4edb8181faa8404cb579a44f0b1b81cf8f4c6cf557">PSP2_S_ISGID</a>        = 0x0400,
+<a name="l00037"></a><a class="code" href="stat_8h.html#a5d76b81b0ad4c19007a781d4edb8181fa8a4e65bbce11f18b5d7e986db0426c9b">00037</a>     <a class="code" href="stat_8h.html#a5d76b81b0ad4c19007a781d4edb8181fa8a4e65bbce11f18b5d7e986db0426c9b">PSP2_S_ISVTX</a>        = 0x0200,
+<a name="l00038"></a>00038 
+<a name="l00040"></a><a class="code" href="stat_8h.html#a5d76b81b0ad4c19007a781d4edb8181fadcb8d8daa7c36aa03f9eab2096fca4f1">00040</a>     <a class="code" href="stat_8h.html#a5d76b81b0ad4c19007a781d4edb8181fadcb8d8daa7c36aa03f9eab2096fca4f1">PSP2_S_IRWXU</a>        = 0x01C0,
+<a name="l00042"></a><a class="code" href="stat_8h.html#a5d76b81b0ad4c19007a781d4edb8181fa01e94ba2033e40c564176322e207f353">00042</a>     <a class="code" href="stat_8h.html#a5d76b81b0ad4c19007a781d4edb8181fa01e94ba2033e40c564176322e207f353">PSP2_S_IRUSR</a>        = 0x0100,
+<a name="l00044"></a><a class="code" href="stat_8h.html#a5d76b81b0ad4c19007a781d4edb8181faf0a45bfcffb157bdf35baea133dc96d8">00044</a>     <a class="code" href="stat_8h.html#a5d76b81b0ad4c19007a781d4edb8181faf0a45bfcffb157bdf35baea133dc96d8">PSP2_S_IWUSR</a>        = 0x0080,
+<a name="l00046"></a><a class="code" href="stat_8h.html#a5d76b81b0ad4c19007a781d4edb8181fab2a502686eae600a175b2ca0f7116b2c">00046</a>     <a class="code" href="stat_8h.html#a5d76b81b0ad4c19007a781d4edb8181fab2a502686eae600a175b2ca0f7116b2c">PSP2_S_IXUSR</a>        = 0x0040,
+<a name="l00047"></a>00047 
+<a name="l00049"></a><a class="code" href="stat_8h.html#a5d76b81b0ad4c19007a781d4edb8181fa3ebd889aa93a97cccba396068da6720e">00049</a>     <a class="code" href="stat_8h.html#a5d76b81b0ad4c19007a781d4edb8181fa3ebd889aa93a97cccba396068da6720e">PSP2_S_IRWXG</a>        = 0x0038,
+<a name="l00051"></a><a class="code" href="stat_8h.html#a5d76b81b0ad4c19007a781d4edb8181fac1d89c4039f15c1be7815fd164b368f7">00051</a>     <a class="code" href="stat_8h.html#a5d76b81b0ad4c19007a781d4edb8181fac1d89c4039f15c1be7815fd164b368f7">PSP2_S_IRGRP</a>        = 0x0020,
+<a name="l00053"></a><a class="code" href="stat_8h.html#a5d76b81b0ad4c19007a781d4edb8181fa4874291f62a42cb095644debec0f4ed1">00053</a>     <a class="code" href="stat_8h.html#a5d76b81b0ad4c19007a781d4edb8181fa4874291f62a42cb095644debec0f4ed1">PSP2_S_IWGRP</a>        = 0x0010,
+<a name="l00055"></a><a class="code" href="stat_8h.html#a5d76b81b0ad4c19007a781d4edb8181fac54501d58fd1e7b12b322d6bce632dfc">00055</a>     <a class="code" href="stat_8h.html#a5d76b81b0ad4c19007a781d4edb8181fac54501d58fd1e7b12b322d6bce632dfc">PSP2_S_IXGRP</a>        = 0x0008,
+<a name="l00056"></a>00056 
+<a name="l00058"></a><a class="code" href="stat_8h.html#a5d76b81b0ad4c19007a781d4edb8181fa8eff07b38658e7dfd488472b323f0a85">00058</a>     <a class="code" href="stat_8h.html#a5d76b81b0ad4c19007a781d4edb8181fa8eff07b38658e7dfd488472b323f0a85">PSP2_S_IRWXO</a>        = 0x0007,
+<a name="l00060"></a><a class="code" href="stat_8h.html#a5d76b81b0ad4c19007a781d4edb8181fa318d4a66e0bb676e339e0694e2917989">00060</a>     <a class="code" href="stat_8h.html#a5d76b81b0ad4c19007a781d4edb8181fa318d4a66e0bb676e339e0694e2917989">PSP2_S_IROTH</a>        = 0x0004,
+<a name="l00062"></a><a class="code" href="stat_8h.html#a5d76b81b0ad4c19007a781d4edb8181fa6bfe0f418e53d6918f20c8e7b92d4bed">00062</a>     <a class="code" href="stat_8h.html#a5d76b81b0ad4c19007a781d4edb8181fa6bfe0f418e53d6918f20c8e7b92d4bed">PSP2_S_IWOTH</a>        = 0x0002,
+<a name="l00064"></a><a class="code" href="stat_8h.html#a5d76b81b0ad4c19007a781d4edb8181fa9ee679ff3204b1f7b463b8c3163e5825">00064</a>     <a class="code" href="stat_8h.html#a5d76b81b0ad4c19007a781d4edb8181fa9ee679ff3204b1f7b463b8c3163e5825">PSP2_S_IXOTH</a>        = 0x0001,
+<a name="l00065"></a>00065 };
+<a name="l00066"></a>00066 
+<a name="l00067"></a>00067 <span class="comment">// File mode checking macros</span>
+<a name="l00068"></a>00068 <span class="preprocessor">#define PSP2_S_ISLNK(m) (((m) &amp; PSP2_S_IFMT) == PSP2_S_IFLNK)</span>
+<a name="l00069"></a>00069 <span class="preprocessor"></span><span class="preprocessor">#define PSP2_S_ISREG(m) (((m) &amp; PSP2_S_IFMT) == PSP2_S_IFREG)</span>
+<a name="l00070"></a>00070 <span class="preprocessor"></span><span class="preprocessor">#define PSP2_S_ISDIR(m) (((m) &amp; PSP2_S_IFMT) == PSP2_S_IFDIR)</span>
+<a name="l00071"></a>00071 <span class="preprocessor"></span>
+<a name="l00073"></a>00073 <span class="keyword">enum</span> {
+<a name="l00075"></a><a class="code" href="stat_8h.html#aac34dfe6c6b73b43a4656c9dce041034a0f6cf0f8f988bb16f2afdf9dce47040c">00075</a>     <a class="code" href="stat_8h.html#aac34dfe6c6b73b43a4656c9dce041034a0f6cf0f8f988bb16f2afdf9dce47040c">PSP2_SO_IFMT</a>             = 0x0038,               <span class="comment">// Format mask</span>
+<a name="l00077"></a><a class="code" href="stat_8h.html#aac34dfe6c6b73b43a4656c9dce041034a31b4f462ceee8b7097c342d0b5687b8f">00077</a> <span class="comment"></span>    <a class="code" href="stat_8h.html#aac34dfe6c6b73b43a4656c9dce041034a31b4f462ceee8b7097c342d0b5687b8f">PSP2_SO_IFLNK</a>            = 0x0008,               <span class="comment">// Symbolic link</span>
+<a name="l00079"></a><a class="code" href="stat_8h.html#aac34dfe6c6b73b43a4656c9dce041034a2b3013471077141533aba8adfdf97e6f">00079</a> <span class="comment"></span>    <a class="code" href="stat_8h.html#aac34dfe6c6b73b43a4656c9dce041034a2b3013471077141533aba8adfdf97e6f">PSP2_SO_IFDIR</a>            = 0x0010,               <span class="comment">// Directory</span>
+<a name="l00081"></a><a class="code" href="stat_8h.html#aac34dfe6c6b73b43a4656c9dce041034a716431bfc06b6ae2519f0c2ebc26cf37">00081</a> <span class="comment"></span>    <a class="code" href="stat_8h.html#aac34dfe6c6b73b43a4656c9dce041034a716431bfc06b6ae2519f0c2ebc26cf37">PSP2_SO_IFREG</a>            = 0x0020,               <span class="comment">// Regular file</span>
+<a name="l00082"></a>00082 
+<a name="l00084"></a><a class="code" href="stat_8h.html#aac34dfe6c6b73b43a4656c9dce041034abbe6a0ab4bdd489c60c147dd5a5640dc">00084</a>     <a class="code" href="stat_8h.html#aac34dfe6c6b73b43a4656c9dce041034abbe6a0ab4bdd489c60c147dd5a5640dc">PSP2_SO_IROTH</a>            = 0x0004,               <span class="comment">// read</span>
+<a name="l00086"></a><a class="code" href="stat_8h.html#aac34dfe6c6b73b43a4656c9dce041034a15b43fb88557b3663e55391fe8430e60">00086</a> <span class="comment"></span>    <a class="code" href="stat_8h.html#aac34dfe6c6b73b43a4656c9dce041034a15b43fb88557b3663e55391fe8430e60">PSP2_SO_IWOTH</a>            = 0x0002,               <span class="comment">// write</span>
+<a name="l00088"></a><a class="code" href="stat_8h.html#aac34dfe6c6b73b43a4656c9dce041034ab7de7a7f3c14253dea3a97beb8ccbec7">00088</a> <span class="comment"></span>    <a class="code" href="stat_8h.html#aac34dfe6c6b73b43a4656c9dce041034ab7de7a7f3c14253dea3a97beb8ccbec7">PSP2_SO_IXOTH</a>            = 0x0001,               <span class="comment">// execute</span>
+<a name="l00089"></a>00089 };
+<a name="l00090"></a>00090 
+<a name="l00091"></a>00091 <span class="comment">// File mode checking macros</span>
+<a name="l00092"></a>00092 <span class="preprocessor">#define PSP2_SO_ISLNK(m)    (((m) &amp; PSP2_SO_IFMT) == PSP2_SO_IFLNK)</span>
+<a name="l00093"></a>00093 <span class="preprocessor"></span><span class="preprocessor">#define PSP2_SO_ISREG(m)    (((m) &amp; PSP2_SO_IFMT) == PSP2_SO_IFREG)</span>
+<a name="l00094"></a>00094 <span class="preprocessor"></span><span class="preprocessor">#define PSP2_SO_ISDIR(m)    (((m) &amp; PSP2_SO_IFMT) == PSP2_SO_IFDIR)</span>
+<a name="l00095"></a>00095 <span class="preprocessor"></span>
+<a name="l00097"></a><a class="code" href="structSceIoStat.html">00097</a> <span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structSceIoStat.html">SceIoStat</a> {
+<a name="l00098"></a>00098     <a class="code" href="types_8h.html#ad563fb9897e927ac60a231ba16859629" title="Mode for I/O functions.">SceMode</a> st_mode;
+<a name="l00099"></a>00099     <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>    st_attr;
+<a name="l00101"></a><a class="code" href="structSceIoStat.html#a67a3e4e86264a440da54204caeeafb16">00101</a>     <a class="code" href="types_8h.html#ac20a0c334ac3c41e9a7b295e31f6b111" title="Offset type.">SceOff</a>  <a class="code" href="structSceIoStat.html#a67a3e4e86264a440da54204caeeafb16">st_size</a>;
+<a name="l00103"></a><a class="code" href="structSceIoStat.html#aa05df6c104b75d64411e07b73e3c92a8">00103</a>     <a class="code" href="structSceDateTime.html">SceDateTime</a> <a class="code" href="structSceIoStat.html#aa05df6c104b75d64411e07b73e3c92a8">st_ctime</a>;
+<a name="l00105"></a><a class="code" href="structSceIoStat.html#aa4fdf932210dbb1abf8b171732efe946">00105</a>     <a class="code" href="structSceDateTime.html">SceDateTime</a> <a class="code" href="structSceIoStat.html#aa4fdf932210dbb1abf8b171732efe946">st_atime</a>;
+<a name="l00107"></a><a class="code" href="structSceIoStat.html#a3c15df236ec4703d958ab0d8fdbd1ba3">00107</a>     <a class="code" href="structSceDateTime.html">SceDateTime</a> <a class="code" href="structSceIoStat.html#a3c15df236ec4703d958ab0d8fdbd1ba3">st_mtime</a>;
+<a name="l00109"></a><a class="code" href="structSceIoStat.html#af7b69aca53d97b66ebebfa7d2c7309a8">00109</a>     <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>    <a class="code" href="structSceIoStat.html#af7b69aca53d97b66ebebfa7d2c7309a8">st_private</a>[6];
+<a name="l00110"></a>00110 } <a class="code" href="stat_8h.html#a9d962bc205e61c1a2580799c855bcc4f">SceIoStat</a>;
+<a name="l00111"></a>00111 
+<a name="l00119"></a>00119 <span class="keywordtype">int</span> <a class="code" href="stat_8h.html#ae05d18e89cc4baa82de5ce6aa14e7e95">sceIoMkdir</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *dir, <a class="code" href="types_8h.html#ad563fb9897e927ac60a231ba16859629" title="Mode for I/O functions.">SceMode</a> mode);
+<a name="l00120"></a>00120 
+<a name="l00127"></a>00127 <span class="keywordtype">int</span> <a class="code" href="stat_8h.html#a98e7df109a5a86ba764cd9e534626d16">sceIoRmdir</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *path);
+<a name="l00128"></a>00128 
+<a name="l00135"></a>00135 <span class="keywordtype">int</span> <a class="code" href="stat_8h.html#a7f07e12c4eec503340746a30eaff8a6d">sceIoChdir</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *path);
+<a name="l00136"></a>00136 
+<a name="l00145"></a>00145 <span class="keywordtype">int</span> <a class="code" href="stat_8h.html#a4e3afddc6b738ae99872eb74eb70a509">sceIoGetstat</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *file, <a class="code" href="structSceIoStat.html">SceIoStat</a> *stat);
+<a name="l00146"></a>00146 
+<a name="l00156"></a>00156 <span class="keywordtype">int</span> <a class="code" href="stat_8h.html#a89361a511354826e6ac54ff587368e33">sceIoChstat</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *file, <a class="code" href="structSceIoStat.html">SceIoStat</a> *stat, <span class="keywordtype">int</span> bits);
+<a name="l00157"></a>00157 
+<a name="l00158"></a>00158 <span class="preprocessor">#ifdef __cplusplus</span>
+<a name="l00159"></a>00159 <span class="preprocessor"></span>}
+<a name="l00160"></a>00160 <span class="preprocessor">#endif</span>
+<a name="l00161"></a>00161 <span class="preprocessor"></span>
+<a name="l00162"></a>00162 <span class="preprocessor">#endif </span><span class="comment">/* _PSP2_IO_STAT_H_ */</span>
 </pre></div></div><!-- contents -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
@@ -173,7 +181,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jun 27 2015 00:09:19 for PSP2SDK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jul 3 2015 23:42:33 for PSP2SDK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

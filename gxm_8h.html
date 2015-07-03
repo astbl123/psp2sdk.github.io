@@ -30,7 +30,7 @@
   
   <td style="padding-left: 0.5em;">
    <div id="projectname">PSP2SDK
-   &#160;<span id="projectnumber">dirty-5fe57c1</span>
+   &#160;<span id="projectnumber">dirty-fb3c16e</span>
    </div>
    <div id="projectbrief">The free SDK for PSP2</div>
   </td>
@@ -117,6 +117,7 @@ Data Structures</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSceGxmColorSurface.html">SceGxmColorSurface</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSceGxmDepthStencilSurface.html">SceGxmDepthStencilSurface</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSceGxmAuxiliarySurface.html">SceGxmAuxiliarySurface</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents an auxiliary surface.  <a href="structSceGxmAuxiliarySurface.html#details">More...</a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSceGxmNotification.html">SceGxmNotification</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSceGxmValidRegion.html">SceGxmValidRegion</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSceGxmContextParams.html">SceGxmContextParams</a></td></tr>
@@ -296,7 +297,8 @@ typedef struct <br class="typebreak"/>
 <a class="el" href="structSceGxmDepthStencilSurface.html">SceGxmDepthStencilSurface</a>&#160;</td><td class="memItemRight" valign="bottom"><b>SceGxmDepthStencilSurface</b></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a71ac74df641021950f078f012f066058"></a><!-- doxytag: member="gxm.h::SceGxmAuxiliarySurface" ref="a71ac74df641021950f078f012f066058" args="" -->
 typedef struct <br class="typebreak"/>
-<a class="el" href="structSceGxmAuxiliarySurface.html">SceGxmAuxiliarySurface</a>&#160;</td><td class="memItemRight" valign="bottom"><b>SceGxmAuxiliarySurface</b></td></tr>
+<a class="el" href="structSceGxmAuxiliarySurface.html">SceGxmAuxiliarySurface</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gxm_8h.html#a71ac74df641021950f078f012f066058">SceGxmAuxiliarySurface</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents an auxiliary surface. <br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5ecc5520d4d5657edbc09a64b20cfae8"></a><!-- doxytag: member="gxm.h::SceGxmNotification" ref="a5ecc5520d4d5657edbc09a64b20cfae8" args="" -->
 typedef struct <a class="el" href="structSceGxmNotification.html">SceGxmNotification</a>&#160;</td><td class="memItemRight" valign="bottom"><b>SceGxmNotification</b></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aab7a5b658f730b0a90ea825469eb4fc6"></a><!-- doxytag: member="gxm.h::SceGxmValidRegion" ref="aab7a5b658f730b0a90ea825469eb4fc6" args="" -->
@@ -1757,8 +1759,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>sceGxmGetRenderTargetM
 int&#160;</td><td class="memItemRight" valign="bottom"><b>sceGxmCreateRenderTarget</b> (const <a class="el" href="structSceGxmRenderTargetParams.html">SceGxmRenderTargetParams</a> *params, SceGxmRenderTarget **renderTarget)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afd79dc31cd3d4e1eb040c73458f42592"></a><!-- doxytag: member="gxm.h::sceGxmRenderTargetGetHostMem" ref="afd79dc31cd3d4e1eb040c73458f42592" args="(const SceGxmRenderTarget *renderTarget, void **hostMem)" -->
 int&#160;</td><td class="memItemRight" valign="bottom"><b>sceGxmRenderTargetGetHostMem</b> (const SceGxmRenderTarget *renderTarget, void **hostMem)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1b28e69b2599112097f01a223c2a742c"></a><!-- doxytag: member="gxm.h::sceGxmRenderTargetGetDriverMemBlock" ref="a1b28e69b2599112097f01a223c2a742c" args="(const SceGxmRenderTarget *renderTarget, int *driverMemBlock)" -->
-int&#160;</td><td class="memItemRight" valign="bottom"><b>sceGxmRenderTargetGetDriverMemBlock</b> (const SceGxmRenderTarget *renderTarget, int *driverMemBlock)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af2a8ff437a862a01417d9762cd19d865"></a><!-- doxytag: member="gxm.h::sceGxmRenderTargetGetDriverMemBlock" ref="af2a8ff437a862a01417d9762cd19d865" args="(const SceGxmRenderTarget *renderTarget, SceUID *driverMemBlock)" -->
+int&#160;</td><td class="memItemRight" valign="bottom"><b>sceGxmRenderTargetGetDriverMemBlock</b> (const SceGxmRenderTarget *renderTarget, <a class="el" href="types_8h.html#a9c036549fd8cfd554ba3aa26a397b663">SceUID</a> *driverMemBlock)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a725302f5052ab2968dd3d6777f324897"></a><!-- doxytag: member="gxm.h::sceGxmDestroyRenderTarget" ref="a725302f5052ab2968dd3d6777f324897" args="(SceGxmRenderTarget *renderTarget)" -->
 int&#160;</td><td class="memItemRight" valign="bottom"><b>sceGxmDestroyRenderTarget</b> (SceGxmRenderTarget *renderTarget)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a056dfffe5cdbf51035becf28b8166421"></a><!-- doxytag: member="gxm.h::sceGxmSetUniformDataF" ref="a056dfffe5cdbf51035becf28b8166421" args="(void *uniformBuffer, const SceGxmProgramParameter *parameter, unsigned int componentOffset, unsigned int componentCount, const float *sourceData)" -->
@@ -1786,7 +1788,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>sceGxmSetUniformDataF<
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jun 27 2015 00:09:19 for PSP2SDK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jul 3 2015 23:42:33 for PSP2SDK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

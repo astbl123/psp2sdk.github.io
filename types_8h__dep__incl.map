@@ -16,6 +16,7 @@
 <area shape="rect" id="node35" href="$power_8h.html" title="Header file which defines power variables and functions." alt="" coords="2312,83,2456,112"/>
 <area shape="rect" id="node37" href="$rtc_8h.html" title="Header file which defines RTC variables and functions." alt="" coords="2480,83,2605,112"/>
 <area shape="rect" id="node39" href="$screenshot_8h.html" title="Header file which defines output audio related variables and functions." alt="" coords="2629,83,2803,112"/>
-<area shape="rect" id="node41" href="$touch_8h.html" title="Header file which defines touch related variables and functions." alt="" coords="2827,83,2968,112"/>
+<area shape="rect" id="node41" href="$sysmodule_8h.html" title="Header file which defines system modules related variables and functions." alt="" coords="2827,83,3000,112"/>
+<area shape="rect" id="node43" href="$touch_8h.html" title="Header file which defines touch related variables and functions." alt="" coords="3024,83,3165,112"/>
 <area shape="rect" id="node15" href="$gxt_8h.html" title="Header file which defines GXT variables and functions." alt="" coords="891,160,1019,189"/>
 </map>

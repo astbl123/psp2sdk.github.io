@@ -13,8 +13,5 @@ var searchData=
   ['psp2_5faudioenc_5fword_5flength_5f16bits',['PSP2_AUDIOENC_WORD_LENGTH_16BITS',['../audioenc_8h.html#a96811185e3e8e2bbabd81903dfd68876',1,'audioenc.h']]],
   ['psp2_5fkernel_5fprocess_5fid_5fself',['PSP2_KERNEL_PROCESS_ID_SELF',['../types_8h.html#abe2774c2df129b620776af325b05a261',1,'types.h']]],
   ['psp2_5fmodule_5finfo',['PSP2_MODULE_INFO',['../moduleinfo_8h.html#ae6ba384c7cae9475fabd23a327b3c27a',1,'moduleinfo.h']]],
-  ['psp2_5ftouch_5fmax_5freport',['PSP2_TOUCH_MAX_REPORT',['../touch_8h.html#af6eee0f3f47462bb44774da9e5f1a844',1,'touch.h']]],
-  ['psp2_5ftouch_5fsampling_5fstate_5fstart',['PSP2_TOUCH_SAMPLING_STATE_START',['../touch_8h.html#ac9d8905a24e83af819e094b949223c3e',1,'touch.h']]],
-  ['psp2_5ftouch_5fsampling_5fstate_5fstop',['PSP2_TOUCH_SAMPLING_STATE_STOP',['../touch_8h.html#acdc7207f3749082b8981f87d4901dab4',1,'touch.h']]],
   ['psp2_5fuid_5fnamelen',['PSP2_UID_NAMELEN',['../types_8h.html#a6c17e118671e31f11c694bdcec94a8c0',1,'types.h']]]
 ];

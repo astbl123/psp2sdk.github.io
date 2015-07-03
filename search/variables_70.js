@@ -1,6 +1,7 @@
 var searchData=
 [
-  ['pad',['pad',['../structSceAppUtilSaveDataSaveItem.html#ae7c50031574e2c5201022ffe38620b31',1,'SceAppUtilSaveDataSaveItem']]],
+  ['pad',['pad',['../structSceAppUtilSaveDataSaveItem.html#ae7c50031574e2c5201022ffe38620b31',1,'SceAppUtilSaveDataSaveItem::pad()'],['../structSceGxtHeader.html#a14e12fc1cc8117775be90486d564dc94',1,'SceGxtHeader::pad()']]],
+  ['paletteindex',['paletteIndex',['../structSceGxtTextureInfo.html#a47e0ff16339e41f1fd99e4bf61d7c2df',1,'SceGxtTextureInfo']]],
   ['phototitle',['photoTitle',['../structScreenshotParam.html#ae15f7e1d9f31e5a63b156199e9a2bc29',1,'ScreenshotParam']]],
   ['pinfo',['pInfo',['../structSceAudioencCtrl.html#a2543c1de30788261b42ece3d232ac00b',1,'SceAudioencCtrl']]],
   ['pinputpcm',['pInputPcm',['../structSceAudioencCtrl.html#a136ce6a1b5a71d438b2c8dc6125af1be',1,'SceAudioencCtrl']]],

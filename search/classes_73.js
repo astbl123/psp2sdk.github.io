@@ -59,6 +59,8 @@ var searchData=
   ['scegxmvalidregion',['SceGxmValidRegion',['../structSceGxmValidRegion.html',1,'']]],
   ['scegxmvertexattribute',['SceGxmVertexAttribute',['../structSceGxmVertexAttribute.html',1,'']]],
   ['scegxmvertexstream',['SceGxmVertexStream',['../structSceGxmVertexStream.html',1,'']]],
+  ['scegxtheader',['SceGxtHeader',['../structSceGxtHeader.html',1,'']]],
+  ['scegxttextureinfo',['SceGxtTextureInfo',['../structSceGxtTextureInfo.html',1,'']]],
   ['scehttpmemorypoolstats',['SceHttpMemoryPoolStats',['../structSceHttpMemoryPoolStats.html',1,'']]],
   ['scehttpscalist',['SceHttpsCaList',['../structSceHttpsCaList.html',1,'']]],
   ['scehttpsdata',['SceHttpsData',['../structSceHttpsData.html',1,'']]],
