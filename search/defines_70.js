@@ -13,6 +13,5 @@ var searchData=
   ['psp2_5faudioenc_5fword_5flength_5f16bits',['PSP2_AUDIOENC_WORD_LENGTH_16BITS',['../audioenc_8h.html#a96811185e3e8e2bbabd81903dfd68876',1,'audioenc.h']]],
   ['psp2_5fkernel_5fprocess_5fid_5fself',['PSP2_KERNEL_PROCESS_ID_SELF',['../types_8h.html#abe2774c2df129b620776af325b05a261',1,'types.h']]],
   ['psp2_5fmodule_5finfo',['PSP2_MODULE_INFO',['../moduleinfo_8h.html#ae6ba384c7cae9475fabd23a327b3c27a',1,'moduleinfo.h']]],
-  ['psp2_5fsystem_5fparam_5fusername_5fmaxsize',['PSP2_SYSTEM_PARAM_USERNAME_MAXSIZE',['../system__param_8h.html#a05f8bf9b04420f8d83fdb0f5a590525b',1,'system_param.h']]],
   ['psp2_5fuid_5fnamelen',['PSP2_UID_NAMELEN',['../types_8h.html#a6c17e118671e31f11c694bdcec94a8c0',1,'types.h']]]
 ];
