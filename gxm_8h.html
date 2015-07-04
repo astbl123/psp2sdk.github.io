@@ -30,7 +30,7 @@
   
   <td style="padding-left: 0.5em;">
    <div id="projectname">PSP2SDK
-   &#160;<span id="projectnumber">dirty-0d0c3cf</span>
+   &#160;<span id="projectnumber">dirty-7d04afb</span>
    </div>
    <div id="projectbrief">The free SDK for PSP2</div>
   </td>
@@ -189,6 +189,9 @@ typedef enum <br class="typebreak"/>
 SceGxmOutputRegisterFormat&#160;</td><td class="memItemRight" valign="bottom"><b>SceGxmOutputRegisterFormat</b></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a91094e584e791b59097f5ac705fc0744"></a><!-- doxytag: member="gxm.h::SceGxmMultisampleMode" ref="a91094e584e791b59097f5ac705fc0744" args="" -->
 typedef enum SceGxmMultisampleMode&#160;</td><td class="memItemRight" valign="bottom"><b>SceGxmMultisampleMode</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0a4f266df32d8bda9b37344868216921"></a><!-- doxytag: member="gxm.h::SceGxmTextureAlignmentMode" ref="a0a4f266df32d8bda9b37344868216921" args="" -->
+typedef enum <br class="typebreak"/>
+SceGxmTextureAlignmentMode&#160;</td><td class="memItemRight" valign="bottom"><b>SceGxmTextureAlignmentMode</b></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a257aba44d0f96fccc629850e1f7bc1fa"></a><!-- doxytag: member="gxm.h::SceGxmTextureSwizzle4Mode" ref="a257aba44d0f96fccc629850e1f7bc1fa" args="" -->
 typedef enum <br class="typebreak"/>
 SceGxmTextureSwizzle4Mode&#160;</td><td class="memItemRight" valign="bottom"><b>SceGxmTextureSwizzle4Mode</b></td></tr>
@@ -673,6 +676,8 @@ Enumerations</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><b>SceGxmMultisampleMode</b> { <b>SCE_GXM_MULTISAMPLE_NONE</b>, 
 <b>SCE_GXM_MULTISAMPLE_2X</b>, 
 <b>SCE_GXM_MULTISAMPLE_4X</b>
+ }</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><b>SceGxmTextureAlignmentMode</b> { <b>SCE_GXM_TEXTURE_ALIGNMENT</b>
  }</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><b>SceGxmTextureSwizzle4Mode</b> { <br/>
 &#160;&#160;<b>SCE_GXM_TEXTURE_SWIZZLE4_ABGR</b> =  0x00000000u, 
@@ -1265,13 +1270,12 @@ Enumerations</h2></td></tr>
 <br/>
  }</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br/>
-&#160;&#160;<b>SCE_GXM_MINIMUM_CONTEXT_HOST_MEM_SIZE</b> =  (2 * 1024), 
-<b>SCE_GXM_DEFAULT_PARAMETER_BUFFER_SIZE</b> =  (16 * 1024 * 1024), 
+&#160;&#160;<b>SCE_GXM_MINIMUM_CONTEXT_HOST_MEM_SIZE</b> =  2048, 
 <b>SCE_GXM_DEFAULT_VDM_RING_BUFFER_SIZE</b> =  (128 * 1024), 
 <b>SCE_GXM_DEFAULT_VERTEX_RING_BUFFER_SIZE</b> =  (2 * 1024 * 1024), 
+<b>SCE_GXM_DEFAULT_FRAGMENT_RING_BUFFER_SIZE</b> =  (512 * 1024), 
 <br/>
-&#160;&#160;<b>SCE_GXM_DEFAULT_FRAGMENT_RING_BUFFER_SIZE</b> =  (512 * 1024), 
-<b>SCE_GXM_DEFAULT_FRAGMENT_USSE_RING_BUFFER_SIZE</b> =  (16 * 1024)
+&#160;&#160;<b>SCE_GXM_DEFAULT_FRAGMENT_USSE_RING_BUFFER_SIZE</b> =  (16 * 1024)
 <br/>
  }</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <b>SCE_GXM_PRECOMPUTED_VERTEX_STATE_WORD_COUNT</b> =  7, 
@@ -1286,16 +1290,6 @@ Enumerations</h2></td></tr>
 <br/>
 &#160;&#160;<b>SCE_GXM_MAX_AUXILIARY_SURFACES</b> =  3
 <br/>
- }</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <b>SCE_GXM_TILE_SHIFTX</b> =  5U, 
-<b>SCE_GXM_TILE_SHIFTY</b> =  5U, 
-<b>SCE_GXM_TILE_SIZEX</b> =  (1U &lt;&lt; SCE_GXM_TILE_SHIFTX), 
-<b>SCE_GXM_TILE_SIZEY</b> =  (1U &lt;&lt; SCE_GXM_TILE_SHIFTY)
- }</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <b>SCE_GXM_COLOR_SURFACE_ALIGNMENT</b> =  4U, 
-<b>SCE_GXM_TEXTURE_ALIGNMENT</b> =  16U, 
-<b>SCE_GXM_DEPTHSTENCIL_SURFACE_ALIGNMENT</b> =  16U, 
-<b>SCE_GXM_PALETTE_ALIGNMENT</b> =  64U
  }</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><b>SceGxmProgramType</b> { <b>SCE_GXM_VERTEX_PROGRAM</b>, 
 <b>SCE_GXM_FRAGMENT_PROGRAM</b>
@@ -1794,7 +1788,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>sceGxmSetUniformDataF<
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jul 4 2015 10:09:16 for PSP2SDK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jul 4 2015 10:33:05 for PSP2SDK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>
