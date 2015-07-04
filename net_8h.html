@@ -30,7 +30,7 @@
   
   <td style="padding-left: 0.5em;">
    <div id="projectname">PSP2SDK
-   &#160;<span id="projectnumber">dirty-7d04afb</span>
+   &#160;<span id="projectnumber">dirty-a9791f2</span>
    </div>
    <div id="projectbrief">The free SDK for PSP2</div>
   </td>
@@ -239,7 +239,7 @@ typedef union <a class="el" href="unionSceNetIcmpHeaderUnion.html">SceNetIcmpHea
 typedef struct <a class="el" href="structSceNetIcmpHeader.html">SceNetIcmpHeader</a>&#160;</td><td class="memItemRight" valign="bottom"><b>SceNetIcmpHeader</b></td></tr>
 <tr><td colspan="2"><h2><a name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="net_8h.html#a3bc5cdcff6691a73a0a8a57cc4e49419">NetErrorCodes</a> { <br/>
+<tr><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br/>
 &#160;&#160;<b>PSP2_NET_ERROR_EPERM</b> =  0x80410101, 
 <b>PSP2_NET_ERROR_ENOENT</b> =  0x80410102, 
 <b>PSP2_NET_ERROR_ESRCH</b> =  0x80410103, 
@@ -388,7 +388,7 @@ Enumerations</h2></td></tr>
 &#160;&#160;<b>PSP2_NET_ERROR_RESOLVER_EALIGNMENT</b> =  0x804101EA
 <br/>
  }</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="net_8h.html#af1cfa04d12e17d5474460bc061ba2f43">ENetErrorCodes</a> { <br/>
+<tr><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br/>
 &#160;&#160;<b>PSP2_NET_EPERM</b> =  1, 
 <b>PSP2_NET_ENOENT</b> =  2, 
 <b>PSP2_NET_ESRCH</b> =  3, 
@@ -510,7 +510,7 @@ Enumerations</h2></td></tr>
 <b>PSP2_NET_ERESUME</b> =  162
 <br/>
  }</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="net_8h.html#a3a0aa28664329bfb01004ffc46c1269b">libnetErrorCodes</a> { <br/>
+<tr><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br/>
 &#160;&#160;<b>PSP2_NET_ENOTINIT</b> =  200, 
 <b>PSP2_NET_ENOLIBMEM</b>, 
 <b>PSP2_NET_ETLS</b>, 
@@ -520,7 +520,7 @@ Enumerations</h2></td></tr>
 <b>PSP2_NET_ERETURN</b>
 <br/>
  }</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="net_8h.html#ae8493a93ae9c178f0254d0ca9abb03f3">NetResolverErrorCodes</a> { <br/>
+<tr><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br/>
 &#160;&#160;<b>PSP2_NET_RESOLVER_EINTERNAL</b> =  220, 
 <b>PSP2_NET_RESOLVER_EBUSY</b>, 
 <b>PSP2_NET_RESOLVER_ENOSPACE</b>, 
@@ -541,12 +541,12 @@ Enumerations</h2></td></tr>
 <b>PSP2_NET_RESOLVER_EALIGNMENT</b>
 <br/>
  }</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="net_8h.html#ab120e8ee25899103e01060ced4469a34">NetDumpFlags</a> { <b>PSP2_NET_DUMP_PEEK</b> =  0x00000010, 
+<tr><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <b>PSP2_NET_DUMP_PEEK</b> =  0x00000010, 
 <b>PSP2_NET_DUMP_DONTWAIT</b> =  0x00000020, 
 <b>PSP2_NET_DUMP_OVERFLOW</b> =  0x00000040, 
 <b>PSP2_NET_DUMP_ABORT_FLAG_PRESERVATION</b> =  0x00000001
  }</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="net_8h.html#ae9ea5228d63cb0d84acc761a378ea9c9">NetEpollEvents</a> { <br/>
+<tr><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br/>
 &#160;&#160;<b>PSP2_NET_EPOLLIN</b> =  0x00000001, 
 <b>PSP2_NET_EPOLLOUT</b> =  0x00000002, 
 <b>PSP2_NET_EPOLLERR</b> =  0x00000008, 
@@ -555,11 +555,11 @@ Enumerations</h2></td></tr>
 &#160;&#160;<b>PSP2_NET_EPOLLDESCID</b> =  0x00010000
 <br/>
  }</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="net_8h.html#aea44fbceecee30ac6b36964e70f21623">NetEpollControlFlags</a> { <b>PSP2_NET_EPOLL_CTL_ADD</b> =  1, 
+<tr><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <b>PSP2_NET_EPOLL_CTL_ADD</b> =  1, 
 <b>PSP2_NET_EPOLL_CTL_MOD</b>, 
 <b>PSP2_NET_EPOLL_CTL_DEL</b>
  }</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="net_8h.html#a2742379f51fc9763ca82ca7ff8a60b66">NetSockInfoStates</a> { <br/>
+<tr><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br/>
 &#160;&#160;<b>PSP2_NET_SOCKINFO_STATE_UNKNOWN</b>, 
 <b>PSP2_NET_SOCKINFO_STATE_CLOSED</b>, 
 <b>PSP2_NET_SOCKINFO_STATE_OPENED</b>, 
@@ -578,7 +578,7 @@ Enumerations</h2></td></tr>
 &#160;&#160;<b>PSP2_NET_SOCKINFO_STATE_TIME_WAIT</b>
 <br/>
  }</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="net_8h.html#a242003ddb79d91f96bbd74570e340570">NetSockInfoFlags</a> { <br/>
+<tr><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br/>
 &#160;&#160;<b>PSP2_NET_SOCKINFO_F_SELF</b> =  0x00000001, 
 <b>PSP2_NET_SOCKINFO_F_KERNEL</b> =  0x00000002, 
 <b>PSP2_NET_SOCKINFO_F_OTHERS</b> =  0x00000004, 
@@ -592,19 +592,19 @@ Enumerations</h2></td></tr>
 &#160;&#160;<b>PSP2_NET_SOCKINFO_F_ALL</b> =  0x001F0007
 <br/>
  }</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="net_8h.html#a2b79ed354328ea10ae08388896134f73">NetEmuFlags</a> { <b>PSP2_NET_EMULATION_FLAG_ETH0</b> =  1, 
+<tr><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <b>PSP2_NET_EMULATION_FLAG_ETH0</b> =  1, 
 <b>PSP2_NET_EMULATION_FLAG_WLAN0</b>
  }</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="net_8h.html#a289f3090d9780c287b3deb174a018ffd">NetResolverStartFlags</a> { <b>PSP2_NET_RESOLVER_ASYNC</b> =  0x00000001, 
+<tr><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <b>PSP2_NET_RESOLVER_ASYNC</b> =  0x00000001, 
 <b>PSP2_NET_RESOLVER_START_NTOA_DISABLE_IPADDRESS</b> =  0x00010000
  }</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="net_8h.html#a22f4184b7b7155642733a14982f2975e">NetResolverAbortFlags</a> { <b>PSP2_NET_RESOLVER_ABORT_FLAG_NTOA_PRESERVATION</b> =  0x00000001, 
+<tr><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <b>PSP2_NET_RESOLVER_ABORT_FLAG_NTOA_PRESERVATION</b> =  0x00000001, 
 <b>PSP2_NET_RESOLVER_ABORT_FLAG_ATON_PRESERVATION</b> =  0x00000002
  }</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="net_8h.html#aca7f40c470b27735e7139b926cf17bf7">NetSocketAbortFlags</a> { <b>PSP2_NET_SOCKET_ABORT_FLAG_RCV_PRESERVATION</b> =  0x00000001, 
+<tr><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <b>PSP2_NET_SOCKET_ABORT_FLAG_RCV_PRESERVATION</b> =  0x00000001, 
 <b>PSP2_NET_SOCKET_ABORT_FLAG_SND_PRESERVATION</b> =  0x00000002
  }</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="net_8h.html#a135d567fd43cf1ca7081ef7be3368a2a">NetProtocols</a> { <br/>
+<tr><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br/>
 &#160;&#160;<b>PSP2_NET_IPPROTO_IP</b> =  0, 
 <b>PSP2_NET_IPPROTO_ICMP</b> =  1, 
 <b>PSP2_NET_IPPROTO_IGMP</b> =  2, 
@@ -614,7 +614,7 @@ Enumerations</h2></td></tr>
 <b>PSP2_NET_SOL_SOCKET</b> =  0xffff
 <br/>
  }</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="net_8h.html#a97a1352caa2dc7830bad6de22d072dc9">NetSocketOptions</a> { <br/>
+<tr><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br/>
 &#160;&#160;<b>PSP2_NET_IP_HDRINCL</b> =  2, 
 <b>PSP2_NET_IP_TOS</b> =  3, 
 <b>PSP2_NET_IP_TTL</b> =  4, 
@@ -658,7 +658,7 @@ Enumerations</h2></td></tr>
 &#160;&#160;<b>PSP2_NET_SO_NAME</b> =  0x1102
 <br/>
  }</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="net_8h.html#a0c7bb098254039d37b71abc59b2cdd00">NetSocketTypes</a> { <br/>
+<tr><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br/>
 &#160;&#160;<b>PSP2_NET_SOCK_STREAM</b> =  1, 
 <b>PSP2_NET_SOCK_DGRAM</b> =  2, 
 <b>PSP2_NET_SOCK_RAW</b> =  3, 
@@ -667,7 +667,7 @@ Enumerations</h2></td></tr>
 &#160;&#160;<b>PSP2_NET_SOCK_STREAM_P2P</b> =  10
 <br/>
  }</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="net_8h.html#abd46da026eff065dabb424ffc14923c8">NetMsgFlags</a> { <br/>
+<tr><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br/>
 &#160;&#160;<b>PSP2_NET_MSG_PEEK</b> =  0x00000002, 
 <b>PSP2_NET_MSG_WAITALL</b> =  0x00000040, 
 <b>PSP2_NET_MSG_DONTWAIT</b> =  0x00000080, 
@@ -676,11 +676,11 @@ Enumerations</h2></td></tr>
 &#160;&#160;<b>PSP2_NET_MSG_USESIGNATURE</b> =  0x00000800
 <br/>
  }</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="net_8h.html#acc630fa31fe0f89edd94eab85fd39286">NetShutdownFlags</a> { <b>PSP2_NET_SHUT_RD</b>, 
+<tr><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <b>PSP2_NET_SHUT_RD</b>, 
 <b>PSP2_NET_SHUT_WR</b>, 
 <b>PSP2_NET_SHUT_RDWR</b>
  }</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="net_8h.html#aa6d8e15bc2d84d6e1d9f53e097c1af53">NetIcmpHeaderTypes</a> { <br/>
+<tr><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br/>
 &#160;&#160;<b>PSP2_NET_ICMP_TYPE_ECHO_REPLY</b> =  0, 
 <b>PSP2_NET_ICMP_TYPE_DEST_UNREACH</b> =  3, 
 <b>PSP2_NET_ICMP_TYPE_SOURCE_QUENCH</b> =  4, 
@@ -699,7 +699,7 @@ Enumerations</h2></td></tr>
 &#160;&#160;<b>PSP2_NET_ICMP_TYPE_ADDRESS_MASK_REPLY</b> =  18
 <br/>
  }</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="net_8h.html#aeee51d2699e820d5ebece8d7eb0bf77e">NetIcmpHeaderCodes</a> { <br/>
+<tr><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br/>
 &#160;&#160;<b>PSP2_NET_ICMP_CODE_DEST_UNREACH_NET_UNREACH</b> =  0, 
 <b>PSP2_NET_ICMP_CODE_DEST_UNREACH_HOST_UNREACH</b> =  1, 
 <b>PSP2_NET_ICMP_CODE_DEST_UNREACH_PROTO_UNREACH</b> =  2, 
@@ -842,96 +842,12 @@ unsigned short int&#160;</td><td class="memItemRight" valign="bottom"><b>sceNetN
 <p>Copyright (C) 2015 PSP2SDK Project</p>
 <p>This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0. If a copy of the MPL was not distributed with this file, You can obtain one at <a href="http://mozilla.org/MPL/2.0/">http://mozilla.org/MPL/2.0/</a>. </p>
 </div><hr/><h2>Enumeration Type Documentation</h2>
-<a class="anchor" id="af1cfa04d12e17d5474460bc061ba2f43"></a><!-- doxytag: member="net.h::ENetErrorCodes" ref="af1cfa04d12e17d5474460bc061ba2f43" args="" -->
+<a class="anchor" id="afa231099d07583c3ed0981e0bb665f55"></a><!-- doxytag: member="net.h::@41" ref="afa231099d07583c3ed0981e0bb665f55" args="" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">enum <a class="el" href="net_8h.html#af1cfa04d12e17d5474460bc061ba2f43">ENetErrorCodes</a></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-<p>Specific kernel and libnet error codes </p>
-
-</div>
-</div>
-<a class="anchor" id="a3a0aa28664329bfb01004ffc46c1269b"></a><!-- doxytag: member="net.h::libnetErrorCodes" ref="a3a0aa28664329bfb01004ffc46c1269b" args="" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="net_8h.html#a3a0aa28664329bfb01004ffc46c1269b">libnetErrorCodes</a></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-<p>libnet specific error codes </p>
-
-</div>
-</div>
-<a class="anchor" id="ab120e8ee25899103e01060ced4469a34"></a><!-- doxytag: member="net.h::NetDumpFlags" ref="ab120e8ee25899103e01060ced4469a34" args="" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="net_8h.html#ab120e8ee25899103e01060ced4469a34">NetDumpFlags</a></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-<p>Flags to specify as argument to sceNetDumpRead() </p>
-
-</div>
-</div>
-<a class="anchor" id="a2b79ed354328ea10ae08388896134f73"></a><!-- doxytag: member="net.h::NetEmuFlags" ref="a2b79ed354328ea10ae08388896134f73" args="" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="net_8h.html#a2b79ed354328ea10ae08388896134f73">NetEmuFlags</a></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-<p>Flags to specify as argument to sceNetEmulationGet() / sceNetEmulationSet() </p>
-
-</div>
-</div>
-<a class="anchor" id="aea44fbceecee30ac6b36964e70f21623"></a><!-- doxytag: member="net.h::NetEpollControlFlags" ref="aea44fbceecee30ac6b36964e70f21623" args="" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="net_8h.html#aea44fbceecee30ac6b36964e70f21623">NetEpollControlFlags</a></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-<p>Flags to specify as argument to sceNetEpollControl() </p>
-
-</div>
-</div>
-<a class="anchor" id="ae9ea5228d63cb0d84acc761a378ea9c9"></a><!-- doxytag: member="net.h::NetEpollEvents" ref="ae9ea5228d63cb0d84acc761a378ea9c9" args="" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="net_8h.html#ae9ea5228d63cb0d84acc761a378ea9c9">NetEpollEvents</a></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-<p>Events for <a class="el" href="structSceNetEpollEvent.html">SceNetEpollEvent</a> </p>
-
-</div>
-</div>
-<a class="anchor" id="a3bc5cdcff6691a73a0a8a57cc4e49419"></a><!-- doxytag: member="net.h::NetErrorCodes" ref="a3bc5cdcff6691a73a0a8a57cc4e49419" args="" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="net_8h.html#a3bc5cdcff6691a73a0a8a57cc4e49419">NetErrorCodes</a></td>
+          <td class="memname">anonymous enum</td>
         </tr>
       </table>
 </div>
@@ -940,82 +856,40 @@ unsigned short int&#160;</td><td class="memItemRight" valign="bottom"><b>sceNetN
 
 </div>
 </div>
-<a class="anchor" id="aeee51d2699e820d5ebece8d7eb0bf77e"></a><!-- doxytag: member="net.h::NetIcmpHeaderCodes" ref="aeee51d2699e820d5ebece8d7eb0bf77e" args="" -->
+<a class="anchor" id="a394b3903fbf00ba2b6243f60689a5a5f"></a><!-- doxytag: member="net.h::@42" ref="a394b3903fbf00ba2b6243f60689a5a5f" args="" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">enum <a class="el" href="net_8h.html#aeee51d2699e820d5ebece8d7eb0bf77e">NetIcmpHeaderCodes</a></td>
+          <td class="memname">anonymous enum</td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Codes to specify to <a class="el" href="structSceNetIcmpHeader.html">SceNetIcmpHeader</a> structure </p>
+<p>Specific kernel and libnet error codes </p>
 
 </div>
 </div>
-<a class="anchor" id="aa6d8e15bc2d84d6e1d9f53e097c1af53"></a><!-- doxytag: member="net.h::NetIcmpHeaderTypes" ref="aa6d8e15bc2d84d6e1d9f53e097c1af53" args="" -->
+<a class="anchor" id="ac205be2172292384dd687b5471a87edd"></a><!-- doxytag: member="net.h::@43" ref="ac205be2172292384dd687b5471a87edd" args="" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">enum <a class="el" href="net_8h.html#aa6d8e15bc2d84d6e1d9f53e097c1af53">NetIcmpHeaderTypes</a></td>
+          <td class="memname">anonymous enum</td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Types to specify to <a class="el" href="structSceNetIcmpHeader.html">SceNetIcmpHeader</a> structure </p>
+<p>libnet specific error codes </p>
 
 </div>
 </div>
-<a class="anchor" id="abd46da026eff065dabb424ffc14923c8"></a><!-- doxytag: member="net.h::NetMsgFlags" ref="abd46da026eff065dabb424ffc14923c8" args="" -->
+<a class="anchor" id="a157d5577a5b2f5986037d0d09c7dc77d"></a><!-- doxytag: member="net.h::@44" ref="a157d5577a5b2f5986037d0d09c7dc77d" args="" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">enum <a class="el" href="net_8h.html#abd46da026eff065dabb424ffc14923c8">NetMsgFlags</a></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-<p>MSG Flags </p>
-
-</div>
-</div>
-<a class="anchor" id="a135d567fd43cf1ca7081ef7be3368a2a"></a><!-- doxytag: member="net.h::NetProtocols" ref="a135d567fd43cf1ca7081ef7be3368a2a" args="" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="net_8h.html#a135d567fd43cf1ca7081ef7be3368a2a">NetProtocols</a></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-<p>Net Protocols </p>
-
-</div>
-</div>
-<a class="anchor" id="a22f4184b7b7155642733a14982f2975e"></a><!-- doxytag: member="net.h::NetResolverAbortFlags" ref="a22f4184b7b7155642733a14982f2975e" args="" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="net_8h.html#a22f4184b7b7155642733a14982f2975e">NetResolverAbortFlags</a></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-<p>Flags to specify as argument to sceNetResolverAbort() </p>
-
-</div>
-</div>
-<a class="anchor" id="ae8493a93ae9c178f0254d0ca9abb03f3"></a><!-- doxytag: member="net.h::NetResolverErrorCodes" ref="ae8493a93ae9c178f0254d0ca9abb03f3" args="" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="net_8h.html#ae8493a93ae9c178f0254d0ca9abb03f3">NetResolverErrorCodes</a></td>
+          <td class="memname">anonymous enum</td>
         </tr>
       </table>
 </div>
@@ -1024,82 +898,68 @@ unsigned short int&#160;</td><td class="memItemRight" valign="bottom"><b>sceNetN
 
 </div>
 </div>
-<a class="anchor" id="a289f3090d9780c287b3deb174a018ffd"></a><!-- doxytag: member="net.h::NetResolverStartFlags" ref="a289f3090d9780c287b3deb174a018ffd" args="" -->
+<a class="anchor" id="a1fb9092bcdeada2d206bdc74afbbe122"></a><!-- doxytag: member="net.h::@45" ref="a1fb9092bcdeada2d206bdc74afbbe122" args="" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">enum <a class="el" href="net_8h.html#a289f3090d9780c287b3deb174a018ffd">NetResolverStartFlags</a></td>
+          <td class="memname">anonymous enum</td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Flags to specify as argument to sceNetResolverStartNtoa() / sceNetResolverStartAton() </p>
+<p>Flags to specify as argument to sceNetDumpRead() </p>
 
 </div>
 </div>
-<a class="anchor" id="acc630fa31fe0f89edd94eab85fd39286"></a><!-- doxytag: member="net.h::NetShutdownFlags" ref="acc630fa31fe0f89edd94eab85fd39286" args="" -->
+<a class="anchor" id="a84627a72058502328269676b81780f89"></a><!-- doxytag: member="net.h::@46" ref="a84627a72058502328269676b81780f89" args="" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">enum <a class="el" href="net_8h.html#acc630fa31fe0f89edd94eab85fd39286">NetShutdownFlags</a></td>
+          <td class="memname">anonymous enum</td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Flags to specify as argument to sceNetShutdown() </p>
+<p>Events for <a class="el" href="structSceNetEpollEvent.html">SceNetEpollEvent</a> </p>
 
 </div>
 </div>
-<a class="anchor" id="aca7f40c470b27735e7139b926cf17bf7"></a><!-- doxytag: member="net.h::NetSocketAbortFlags" ref="aca7f40c470b27735e7139b926cf17bf7" args="" -->
+<a class="anchor" id="af3520ff6d43011872bab77edd27d4de3"></a><!-- doxytag: member="net.h::@47" ref="af3520ff6d43011872bab77edd27d4de3" args="" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">enum <a class="el" href="net_8h.html#aca7f40c470b27735e7139b926cf17bf7">NetSocketAbortFlags</a></td>
+          <td class="memname">anonymous enum</td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Flags to specify as argument to sceNetSocketAbort() </p>
+<p>Flags to specify as argument to sceNetEpollControl() </p>
 
 </div>
 </div>
-<a class="anchor" id="a97a1352caa2dc7830bad6de22d072dc9"></a><!-- doxytag: member="net.h::NetSocketOptions" ref="a97a1352caa2dc7830bad6de22d072dc9" args="" -->
+<a class="anchor" id="ae8a3b6a5d0d3244ed73924ab2421a0d0"></a><!-- doxytag: member="net.h::@48" ref="ae8a3b6a5d0d3244ed73924ab2421a0d0" args="" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">enum <a class="el" href="net_8h.html#a97a1352caa2dc7830bad6de22d072dc9">NetSocketOptions</a></td>
+          <td class="memname">anonymous enum</td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
-<p>Socket Options </p>
+<p>state for <a class="el" href="structSceNetSockInfo.html">SceNetSockInfo</a> structure </p>
 
 </div>
 </div>
-<a class="anchor" id="a0c7bb098254039d37b71abc59b2cdd00"></a><!-- doxytag: member="net.h::NetSocketTypes" ref="a0c7bb098254039d37b71abc59b2cdd00" args="" -->
+<a class="anchor" id="af715e26dfffd1f8de1c18449e2770cff"></a><!-- doxytag: member="net.h::@49" ref="af715e26dfffd1f8de1c18449e2770cff" args="" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">enum <a class="el" href="net_8h.html#a0c7bb098254039d37b71abc59b2cdd00">NetSocketTypes</a></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-<p>Socket types </p>
-
-</div>
-</div>
-<a class="anchor" id="a242003ddb79d91f96bbd74570e340570"></a><!-- doxytag: member="net.h::NetSockInfoFlags" ref="a242003ddb79d91f96bbd74570e340570" args="" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="net_8h.html#a242003ddb79d91f96bbd74570e340570">NetSockInfoFlags</a></td>
+          <td class="memname">anonymous enum</td>
         </tr>
       </table>
 </div>
@@ -1108,17 +968,157 @@ unsigned short int&#160;</td><td class="memItemRight" valign="bottom"><b>sceNetN
 
 </div>
 </div>
-<a class="anchor" id="a2742379f51fc9763ca82ca7ff8a60b66"></a><!-- doxytag: member="net.h::NetSockInfoStates" ref="a2742379f51fc9763ca82ca7ff8a60b66" args="" -->
+<a class="anchor" id="afb730582952b7ceec73d7dc9bf7bef39"></a><!-- doxytag: member="net.h::@50" ref="afb730582952b7ceec73d7dc9bf7bef39" args="" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">enum <a class="el" href="net_8h.html#a2742379f51fc9763ca82ca7ff8a60b66">NetSockInfoStates</a></td>
+          <td class="memname">anonymous enum</td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
-<p>state for <a class="el" href="structSceNetSockInfo.html">SceNetSockInfo</a> structure </p>
+<p>Flags to specify as argument to sceNetEmulationGet() / sceNetEmulationSet() </p>
+
+</div>
+</div>
+<a class="anchor" id="afccd240f973cf154952fb917c9209719"></a><!-- doxytag: member="net.h::@51" ref="afccd240f973cf154952fb917c9209719" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">anonymous enum</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Flags to specify as argument to sceNetResolverStartNtoa() / sceNetResolverStartAton() </p>
+
+</div>
+</div>
+<a class="anchor" id="a7cc2e4244ca368f68e5746185eda6c4a"></a><!-- doxytag: member="net.h::@52" ref="a7cc2e4244ca368f68e5746185eda6c4a" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">anonymous enum</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Flags to specify as argument to sceNetResolverAbort() </p>
+
+</div>
+</div>
+<a class="anchor" id="aedcf2109f459315e1a7f2af73ec9b603"></a><!-- doxytag: member="net.h::@53" ref="aedcf2109f459315e1a7f2af73ec9b603" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">anonymous enum</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Flags to specify as argument to sceNetSocketAbort() </p>
+
+</div>
+</div>
+<a class="anchor" id="a900dca9b26de42491763226e12dcd47b"></a><!-- doxytag: member="net.h::@54" ref="a900dca9b26de42491763226e12dcd47b" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">anonymous enum</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Net Protocols </p>
+
+</div>
+</div>
+<a class="anchor" id="a1be3860693af99a6c1da72580097294c"></a><!-- doxytag: member="net.h::@55" ref="a1be3860693af99a6c1da72580097294c" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">anonymous enum</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Socket Options </p>
+
+</div>
+</div>
+<a class="anchor" id="ac9420823bfeba78fce625fc105e3b01d"></a><!-- doxytag: member="net.h::@56" ref="ac9420823bfeba78fce625fc105e3b01d" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">anonymous enum</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Socket types </p>
+
+</div>
+</div>
+<a class="anchor" id="afa9be5679ab03d785820f2474c5ccc6e"></a><!-- doxytag: member="net.h::@57" ref="afa9be5679ab03d785820f2474c5ccc6e" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">anonymous enum</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>MSG Flags </p>
+
+</div>
+</div>
+<a class="anchor" id="ae6dceca96ec2c7a1b4aa211264a87ef6"></a><!-- doxytag: member="net.h::@58" ref="ae6dceca96ec2c7a1b4aa211264a87ef6" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">anonymous enum</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Flags to specify as argument to sceNetShutdown() </p>
+
+</div>
+</div>
+<a class="anchor" id="a56a0f36da7f9eaaf54bd05cc2bf49173"></a><!-- doxytag: member="net.h::@59" ref="a56a0f36da7f9eaaf54bd05cc2bf49173" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">anonymous enum</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Types to specify to <a class="el" href="structSceNetIcmpHeader.html">SceNetIcmpHeader</a> structure </p>
+
+</div>
+</div>
+<a class="anchor" id="aa156d1cebb38c8a65846c4d9c006012a"></a><!-- doxytag: member="net.h::@60" ref="aa156d1cebb38c8a65846c4d9c006012a" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">anonymous enum</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Codes to specify to <a class="el" href="structSceNetIcmpHeader.html">SceNetIcmpHeader</a> structure </p>
 
 </div>
 </div>
@@ -1140,7 +1140,7 @@ unsigned short int&#160;</td><td class="memItemRight" valign="bottom"><b>sceNetN
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jul 4 2015 10:33:05 for PSP2SDK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jul 4 2015 10:47:26 for PSP2SDK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>

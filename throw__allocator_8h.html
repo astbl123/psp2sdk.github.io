@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<title>PSP2SDK: Globals</title>
+<title>PSP2SDK: include/c++/ext/throw_allocator.h File Reference</title>
 
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
@@ -30,7 +30,7 @@
   
   <td style="padding-left: 0.5em;">
    <div id="projectname">PSP2SDK
-   &#160;<span id="projectnumber">dirty-7d04afb</span>
+   &#160;<span id="projectnumber">dirty-a9791f2</span>
    </div>
    <div id="projectbrief">The free SDK for PSP2</div>
   </td>
@@ -72,38 +72,83 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
-      <li class="current"><a href="globals.html"><span>Globals</span></a></li>
-    </ul>
-  </div>
-  <div id="navrow3" class="tabs2">
-    <ul class="tablist">
-      <li class="current"><a href="globals.html"><span>All</span></a></li>
-      <li><a href="globals_func.html"><span>Functions</span></a></li>
-      <li><a href="globals_type.html"><span>Typedefs</span></a></li>
-      <li><a href="globals_enum.html"><span>Enumerations</span></a></li>
-      <li><a href="globals_eval.html"><span>Enumerator</span></a></li>
-      <li><a href="globals_defs.html"><span>Defines</span></a></li>
-    </ul>
-  </div>
-  <div id="navrow4" class="tabs3">
-    <ul class="tablist">
-      <li><a href="globals.html#index_a"><span>a</span></a></li>
-      <li><a href="globals_0x65.html#index_e"><span>e</span></a></li>
-      <li class="current"><a href="globals_0x6c.html#index_l"><span>l</span></a></li>
-      <li><a href="globals_0x6e.html#index_n"><span>n</span></a></li>
-      <li><a href="globals_0x70.html#index_p"><span>p</span></a></li>
-      <li><a href="globals_0x73.html#index_s"><span>s</span></a></li>
+      <li><a href="globals.html"><span>Globals</span></a></li>
     </ul>
   </div>
 </div>
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Functions</a>  </div>
+  <div class="headertitle">
+<div class="title">include/c++/ext/throw_allocator.h File Reference</div>  </div>
+</div><!--header-->
 <div class="contents">
-<div class="textblock">Here is a list of all documented functions, variables, defines, enums, and typedefs with links to the documentation:</div>
+<div class="textblock"><code>#include &lt;cmath&gt;</code><br/>
+<code>#include &lt;ctime&gt;</code><br/>
+<code>#include &lt;map&gt;</code><br/>
+<code>#include &lt;string&gt;</code><br/>
+<code>#include &lt;ostream&gt;</code><br/>
+<code>#include &lt;stdexcept&gt;</code><br/>
+<code>#include &lt;utility&gt;</code><br/>
+<code>#include &lt;bits/functexcept.h&gt;</code><br/>
+<code>#include &lt;bits/move.h&gt;</code><br/>
+<code>#include &lt;tr1/functional&gt;</code><br/>
+<code>#include &lt;tr1/random&gt;</code><br/>
+</div><div class="textblock"><div class="dynheader">
+Include dependency graph for throw_allocator.h:</div>
+<div class="dyncontent">
+<div class="center"><img src="throw__allocator_8h__incl.png" border="0" usemap="#include_2c_09_09_2ext_2throw__allocator_8h" alt=""/></div>
+<map name="include_2c_09_09_2ext_2throw__allocator_8h" id="include_2c_09_09_2ext_2throw__allocator_8h">
+</map>
+</div>
+</div>
+<p><a href="throw__allocator_8h_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
+<tr><td colspan="2"><h2><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">namespace __gnu_cxx&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="throw__allocator_8h.html#a56fd5a6be7c55e53e3eb59de5aa1ab9b">_GLIBCXX_VISIBILITY</a> (default)</td></tr>
+</table>
+<hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
+<div class="textblock"><p>This file is a GNU extension to the Standard C++ Library.</p>
+<p>Contains two exception-generating types (throw_value, throw_allocator) intended to be used as value and allocator types while testing exception safety in templatized containers and algorithms. The allocator has additional log and debug features. The exception generated is of type forced_exception_error. </p>
+</div><hr/><h2>Function Documentation</h2>
+<a class="anchor" id="a56fd5a6be7c55e53e3eb59de5aa1ab9b"></a><!-- doxytag: member="throw_allocator.h::_GLIBCXX_VISIBILITY" ref="a56fd5a6be7c55e53e3eb59de5aa1ab9b" args="(default)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">namespace __gnu_cxx <a class="el" href="throw__allocator_8h.html#a56fd5a6be7c55e53e3eb59de5aa1ab9b">_GLIBCXX_VISIBILITY</a> </td>
+          <td>(</td>
+          <td class="paramtype">default&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Thown by exception safety machinery.</p>
+<p>Base class for checking address and label information about allocations. Create a std::map between the allocated address (void*) and a datum for annotations, which are a pair of numbers corresponding to label and allocated size.</p>
+<p>Base struct for condition policy.</p>
+<p>Requires a public member function with the signature void throw_conditionally()</p>
+<p>Base class for incremental control and throw.</p>
+<p>Never enter the condition.</p>
+<p>Always enter the condition.</p>
+<p>Enter the nth condition.</p>
+<p>Base class for random probability control and throw.</p>
+<p>Group condition.</p>
+<p>Never enter the condition.</p>
+<p>Always enter the condition.</p>
+<p>Class with exception generation control. Intended to be used as a value_type in templatized code.</p>
+<p>Note: Destructor not allowed to throw.</p>
+<p>Type throwing via limit condition.</p>
+<p>Type throwing via random condition.</p>
+<p>Allocator class with logging and exception generation control. Intended to be used as an allocator_type in templatized code.</p>
+<p>Note: Deallocate not allowed to throw.</p>
+<p>Allocator throwing via limit condition.</p>
+<p>Allocator throwing via random condition. </p>
 
-<h3><a class="anchor" id="index_l"></a>- l -</h3><ul>
-<li>libnetErrorCodes
-: <a class="el" href="net_8h.html#a3a0aa28664329bfb01004ffc46c1269b">net.h</a>
-</li>
-</ul>
+</div>
+</div>
 </div><!-- contents -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
@@ -122,7 +167,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jul 4 2015 10:33:05 for PSP2SDK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jul 4 2015 10:47:26 for PSP2SDK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>
