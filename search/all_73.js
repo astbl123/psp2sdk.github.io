@@ -24,10 +24,10 @@ var searchData=
   ['sce_5fscreenshot_5fmax_5fgame_5ftitle_5fsize',['SCE_SCREENSHOT_MAX_GAME_TITLE_SIZE',['../screenshot_8h.html#a34050bf1c57c822cda1a8f1026d2a4c7',1,'screenshot.h']]],
   ['sce_5fscreenshot_5fmax_5fphoto_5ftitle_5flen',['SCE_SCREENSHOT_MAX_PHOTO_TITLE_LEN',['../screenshot_8h.html#a51e07b7c8bca0b496b69a9b78d890689',1,'screenshot.h']]],
   ['sce_5fscreenshot_5fmax_5fphoto_5ftitle_5fsize',['SCE_SCREENSHOT_MAX_PHOTO_TITLE_SIZE',['../screenshot_8h.html#a62c7d7720e13d663b5b57e5a6f1044ff',1,'screenshot.h']]],
-  ['sce_5ftouch_5fmax_5freport',['SCE_TOUCH_MAX_REPORT',['../touch_8h.html#af3520ff6d43011872bab77edd27d4de3aa3e4b337c895c44be3754e0e532a96fb',1,'touch.h']]],
-  ['sce_5ftouch_5fport_5fback',['SCE_TOUCH_PORT_BACK',['../touch_8h.html#ae8a3b6a5d0d3244ed73924ab2421a0d0a2e861439acd3722f5c25f1a13e0b8758',1,'touch.h']]],
-  ['sce_5ftouch_5fport_5ffront',['SCE_TOUCH_PORT_FRONT',['../touch_8h.html#ae8a3b6a5d0d3244ed73924ab2421a0d0a0d2580e55567d3c921b1031a4684f6a7',1,'touch.h']]],
-  ['sce_5ftouch_5fport_5fmax_5fnum',['SCE_TOUCH_PORT_MAX_NUM',['../touch_8h.html#ae8a3b6a5d0d3244ed73924ab2421a0d0a60ab295a1586005154cf1c5bb888336f',1,'touch.h']]],
+  ['sce_5ftouch_5fmax_5freport',['SCE_TOUCH_MAX_REPORT',['../touch_8h.html#a109bfaad92bd6d348dab484aec11edbbaa3e4b337c895c44be3754e0e532a96fb',1,'touch.h']]],
+  ['sce_5ftouch_5fport_5fback',['SCE_TOUCH_PORT_BACK',['../touch_8h.html#a550cb4231d535863c55643bbd2d3c6baa2e861439acd3722f5c25f1a13e0b8758',1,'touch.h']]],
+  ['sce_5ftouch_5fport_5ffront',['SCE_TOUCH_PORT_FRONT',['../touch_8h.html#a550cb4231d535863c55643bbd2d3c6baa0d2580e55567d3c921b1031a4684f6a7',1,'touch.h']]],
+  ['sce_5ftouch_5fport_5fmax_5fnum',['SCE_TOUCH_PORT_MAX_NUM',['../touch_8h.html#a550cb4231d535863c55643bbd2d3c6baa60ab295a1586005154cf1c5bb888336f',1,'touch.h']]],
   ['sceappmgracquirebgmport',['sceAppMgrAcquireBgmPort',['../appmgr_8h.html#a4128e9d22cadd7263e8bd9364e01f846',1,'appmgr.h']]],
   ['sceappmgrloadexecoptparam',['sceAppMgrLoadExecOptParam',['../structsceAppMgrLoadExecOptParam.html',1,'']]],
   ['sceappmgrrecievesystemevent',['sceAppMgrRecieveSystemEvent',['../appmgr_8h.html#a617d75eda9590b8b2666acadd58b6fa1',1,'appmgr.h']]],
@@ -344,8 +344,5 @@ var searchData=
   ['strlen',['strlen',['../structSceAppUtilWebBrowserParam.html#a240d9fa0246190394422c45a1c5ed352',1,'SceAppUtilWebBrowserParam']]],
   ['subtitle',['subTitle',['../structSceAppUtilSaveDataSlotParam.html#a9f6719584d48a06848947fa70695431e',1,'SceAppUtilSaveDataSlotParam']]],
   ['sysmodule_2eh',['sysmodule.h',['../sysmodule_8h.html',1,'']]],
-  ['system_5fparam_2eh',['system_param.h',['../system__param_8h.html',1,'']]],
-  ['system_5fparam_5ftime_5fformat_5f12hr',['SYSTEM_PARAM_TIME_FORMAT_12HR',['../system__param_8h.html#a84627a72058502328269676b81780f89a3227b9831d0718c363fd01a157b15079',1,'system_param.h']]],
-  ['system_5fparam_5ftime_5fformat_5f24hr',['SYSTEM_PARAM_TIME_FORMAT_24HR',['../system__param_8h.html#a84627a72058502328269676b81780f89a32e61897f9445faa46d48f1024b477e9',1,'system_param.h']]],
-  ['system_5fparam_5fusername_5fmaxsize',['SYSTEM_PARAM_USERNAME_MAXSIZE',['../system__param_8h.html#afe89fee47bf2613bd85bbd335fadcbec',1,'system_param.h']]]
+  ['system_5fparam_2eh',['system_param.h',['../system__param_8h.html',1,'']]]
 ];

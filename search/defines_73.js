@@ -6,6 +6,5 @@ var searchData=
   ['sce_5fscreenshot_5fmax_5fgame_5ftitle_5flen',['SCE_SCREENSHOT_MAX_GAME_TITLE_LEN',['../screenshot_8h.html#aaed68a37f49266950b95ef9599c09cc8',1,'screenshot.h']]],
   ['sce_5fscreenshot_5fmax_5fgame_5ftitle_5fsize',['SCE_SCREENSHOT_MAX_GAME_TITLE_SIZE',['../screenshot_8h.html#a34050bf1c57c822cda1a8f1026d2a4c7',1,'screenshot.h']]],
   ['sce_5fscreenshot_5fmax_5fphoto_5ftitle_5flen',['SCE_SCREENSHOT_MAX_PHOTO_TITLE_LEN',['../screenshot_8h.html#a51e07b7c8bca0b496b69a9b78d890689',1,'screenshot.h']]],
-  ['sce_5fscreenshot_5fmax_5fphoto_5ftitle_5fsize',['SCE_SCREENSHOT_MAX_PHOTO_TITLE_SIZE',['../screenshot_8h.html#a62c7d7720e13d663b5b57e5a6f1044ff',1,'screenshot.h']]],
-  ['system_5fparam_5fusername_5fmaxsize',['SYSTEM_PARAM_USERNAME_MAXSIZE',['../system__param_8h.html#afe89fee47bf2613bd85bbd335fadcbec',1,'system_param.h']]]
+  ['sce_5fscreenshot_5fmax_5fphoto_5ftitle_5fsize',['SCE_SCREENSHOT_MAX_PHOTO_TITLE_SIZE',['../screenshot_8h.html#a62c7d7720e13d663b5b57e5a6f1044ff',1,'screenshot.h']]]
 ];

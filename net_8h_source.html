@@ -30,7 +30,7 @@
   
   <td style="padding-left: 0.5em;">
    <div id="projectname">PSP2SDK
-   &#160;<span id="projectnumber">dirty-fb3c16e</span>
+   &#160;<span id="projectnumber">dirty-a3ade28</span>
    </div>
    <div id="projectbrief">The free SDK for PSP2</div>
   </td>
@@ -89,7 +89,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00015"></a>00015 <span class="preprocessor"></span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {
 <a name="l00016"></a>00016 <span class="preprocessor">#endif</span>
 <a name="l00017"></a>00017 <span class="preprocessor"></span>
-<a name="l00019"></a><a class="code" href="net_8h.html#a3bc5cdcff6691a73a0a8a57cc4e49419">00019</a> <span class="keyword">enum</span> <a class="code" href="net_8h.html#a3bc5cdcff6691a73a0a8a57cc4e49419">NetErrorCodes</a> {
+<a name="l00019"></a>00019 <span class="keyword">enum</span> {
 <a name="l00020"></a>00020     PSP2_NET_ERROR_EPERM                    = 0x80410101,
 <a name="l00021"></a>00021     PSP2_NET_ERROR_ENOENT                   = 0x80410102,
 <a name="l00022"></a>00022     PSP2_NET_ERROR_ESRCH                    = 0x80410103,
@@ -209,7 +209,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00136"></a>00136     PSP2_NET_ERROR_RESOLVER_EALIGNMENT      = 0x804101EA
 <a name="l00137"></a>00137 };
 <a name="l00138"></a>00138 
-<a name="l00140"></a><a class="code" href="net_8h.html#af1cfa04d12e17d5474460bc061ba2f43">00140</a> <span class="keyword">enum</span> <a class="code" href="net_8h.html#af1cfa04d12e17d5474460bc061ba2f43">ENetErrorCodes</a> {
+<a name="l00140"></a>00140 <span class="keyword">enum</span> {
 <a name="l00141"></a>00141     PSP2_NET_EPERM              = 1,
 <a name="l00142"></a>00142     PSP2_NET_ENOENT             = 2,
 <a name="l00143"></a>00143     PSP2_NET_ESRCH              = 3,
@@ -309,7 +309,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00237"></a>00237 };
 <a name="l00238"></a>00238 
 <a name="l00239"></a>00239 
-<a name="l00241"></a><a class="code" href="net_8h.html#a3a0aa28664329bfb01004ffc46c1269b">00241</a> <span class="keyword">enum</span> <a class="code" href="net_8h.html#a3a0aa28664329bfb01004ffc46c1269b">libnetErrorCodes</a> {
+<a name="l00241"></a>00241 <span class="keyword">enum</span> {
 <a name="l00242"></a>00242     PSP2_NET_ENOTINIT   = 200,
 <a name="l00243"></a>00243     PSP2_NET_ENOLIBMEM,
 <a name="l00244"></a>00244     PSP2_NET_ETLS,
@@ -318,7 +318,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00247"></a>00247     PSP2_NET_ERETURN
 <a name="l00248"></a>00248 };
 <a name="l00249"></a>00249 
-<a name="l00251"></a><a class="code" href="net_8h.html#ae8493a93ae9c178f0254d0ca9abb03f3">00251</a> <span class="keyword">enum</span> <a class="code" href="net_8h.html#ae8493a93ae9c178f0254d0ca9abb03f3">NetResolverErrorCodes</a> {
+<a name="l00251"></a>00251 <span class="keyword">enum</span> {
 <a name="l00252"></a>00252     PSP2_NET_RESOLVER_EINTERNAL = 220,
 <a name="l00253"></a>00253     PSP2_NET_RESOLVER_EBUSY,
 <a name="l00254"></a>00254     PSP2_NET_RESOLVER_ENOSPACE,
@@ -336,14 +336,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00266"></a>00266     PSP2_NET_RESOLVER_EALIGNMENT
 <a name="l00267"></a>00267 };
 <a name="l00268"></a>00268 
-<a name="l00270"></a><a class="code" href="net_8h.html#ab120e8ee25899103e01060ced4469a34">00270</a> <span class="keyword">enum</span> <a class="code" href="net_8h.html#ab120e8ee25899103e01060ced4469a34">NetDumpFlags</a> {
+<a name="l00270"></a>00270 <span class="keyword">enum</span> {
 <a name="l00271"></a>00271     PSP2_NET_DUMP_PEEK                      = 0x00000010,
 <a name="l00272"></a>00272     PSP2_NET_DUMP_DONTWAIT                  = 0x00000020,
 <a name="l00273"></a>00273     PSP2_NET_DUMP_OVERFLOW                  = 0x00000040,
 <a name="l00274"></a>00274     PSP2_NET_DUMP_ABORT_FLAG_PRESERVATION   = 0x00000001
 <a name="l00275"></a>00275 };
 <a name="l00276"></a>00276 
-<a name="l00278"></a><a class="code" href="net_8h.html#ae9ea5228d63cb0d84acc761a378ea9c9">00278</a> <span class="keyword">enum</span> <a class="code" href="net_8h.html#ae9ea5228d63cb0d84acc761a378ea9c9">NetEpollEvents</a> {
+<a name="l00278"></a>00278 <span class="keyword">enum</span> {
 <a name="l00279"></a>00279     PSP2_NET_EPOLLIN        = 0x00000001,
 <a name="l00280"></a>00280     PSP2_NET_EPOLLOUT       = 0x00000002,
 <a name="l00281"></a>00281     PSP2_NET_EPOLLERR       = 0x00000008,
@@ -351,13 +351,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00283"></a>00283     PSP2_NET_EPOLLDESCID    = 0x00010000
 <a name="l00284"></a>00284 };
 <a name="l00285"></a>00285 
-<a name="l00287"></a><a class="code" href="net_8h.html#aea44fbceecee30ac6b36964e70f21623">00287</a> <span class="keyword">enum</span> <a class="code" href="net_8h.html#aea44fbceecee30ac6b36964e70f21623">NetEpollControlFlags</a> {
+<a name="l00287"></a>00287 <span class="keyword">enum</span> {
 <a name="l00288"></a>00288     PSP2_NET_EPOLL_CTL_ADD = 1,
 <a name="l00289"></a>00289     PSP2_NET_EPOLL_CTL_MOD,
 <a name="l00290"></a>00290     PSP2_NET_EPOLL_CTL_DEL
 <a name="l00291"></a>00291 };
 <a name="l00292"></a>00292 
-<a name="l00294"></a><a class="code" href="net_8h.html#a2742379f51fc9763ca82ca7ff8a60b66">00294</a> <span class="keyword">enum</span> <a class="code" href="net_8h.html#a2742379f51fc9763ca82ca7ff8a60b66">NetSockInfoStates</a> {
+<a name="l00294"></a>00294 <span class="keyword">enum</span> {
 <a name="l00295"></a>00295     PSP2_NET_SOCKINFO_STATE_UNKNOWN,
 <a name="l00296"></a>00296     PSP2_NET_SOCKINFO_STATE_CLOSED,
 <a name="l00297"></a>00297     PSP2_NET_SOCKINFO_STATE_OPENED,
@@ -373,7 +373,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00307"></a>00307     PSP2_NET_SOCKINFO_STATE_TIME_WAIT
 <a name="l00308"></a>00308 };
 <a name="l00309"></a>00309 
-<a name="l00311"></a><a class="code" href="net_8h.html#a242003ddb79d91f96bbd74570e340570">00311</a> <span class="keyword">enum</span> <a class="code" href="net_8h.html#a242003ddb79d91f96bbd74570e340570">NetSockInfoFlags</a> {
+<a name="l00311"></a>00311 <span class="keyword">enum</span> {
 <a name="l00312"></a>00312     PSP2_NET_SOCKINFO_F_SELF            = 0x00000001,
 <a name="l00313"></a>00313     PSP2_NET_SOCKINFO_F_KERNEL          = 0x00000002,
 <a name="l00314"></a>00314     PSP2_NET_SOCKINFO_F_OTHERS          = 0x00000004,
@@ -385,27 +385,27 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00320"></a>00320     PSP2_NET_SOCKINFO_F_ALL             = 0x001F0007
 <a name="l00321"></a>00321 };
 <a name="l00322"></a>00322 
-<a name="l00324"></a><a class="code" href="net_8h.html#a2b79ed354328ea10ae08388896134f73">00324</a> <span class="keyword">enum</span> <a class="code" href="net_8h.html#a2b79ed354328ea10ae08388896134f73">NetEmuFlags</a> {
+<a name="l00324"></a>00324 <span class="keyword">enum</span> {
 <a name="l00325"></a>00325     PSP2_NET_EMULATION_FLAG_ETH0    = 1,
 <a name="l00326"></a>00326     PSP2_NET_EMULATION_FLAG_WLAN0
 <a name="l00327"></a>00327 };
 <a name="l00328"></a>00328 
-<a name="l00330"></a><a class="code" href="net_8h.html#a289f3090d9780c287b3deb174a018ffd">00330</a> <span class="keyword">enum</span> <a class="code" href="net_8h.html#a289f3090d9780c287b3deb174a018ffd">NetResolverStartFlags</a> {
+<a name="l00330"></a>00330 <span class="keyword">enum</span> {
 <a name="l00331"></a>00331     PSP2_NET_RESOLVER_ASYNC                         = 0x00000001,
 <a name="l00332"></a>00332     PSP2_NET_RESOLVER_START_NTOA_DISABLE_IPADDRESS  = 0x00010000
 <a name="l00333"></a>00333 };
 <a name="l00334"></a>00334 
-<a name="l00336"></a><a class="code" href="net_8h.html#a22f4184b7b7155642733a14982f2975e">00336</a> <span class="keyword">enum</span> <a class="code" href="net_8h.html#a22f4184b7b7155642733a14982f2975e">NetResolverAbortFlags</a> {
+<a name="l00336"></a>00336 <span class="keyword">enum</span> {
 <a name="l00337"></a>00337     PSP2_NET_RESOLVER_ABORT_FLAG_NTOA_PRESERVATION  = 0x00000001,
 <a name="l00338"></a>00338     PSP2_NET_RESOLVER_ABORT_FLAG_ATON_PRESERVATION  = 0x00000002
 <a name="l00339"></a>00339 };
 <a name="l00340"></a>00340 
-<a name="l00342"></a><a class="code" href="net_8h.html#aca7f40c470b27735e7139b926cf17bf7">00342</a> <span class="keyword">enum</span> <a class="code" href="net_8h.html#aca7f40c470b27735e7139b926cf17bf7">NetSocketAbortFlags</a> {
+<a name="l00342"></a>00342 <span class="keyword">enum</span> {
 <a name="l00343"></a>00343     PSP2_NET_SOCKET_ABORT_FLAG_RCV_PRESERVATION = 0x00000001,
 <a name="l00344"></a>00344     PSP2_NET_SOCKET_ABORT_FLAG_SND_PRESERVATION = 0x00000002
 <a name="l00345"></a>00345 };
 <a name="l00346"></a>00346 
-<a name="l00348"></a><a class="code" href="net_8h.html#a135d567fd43cf1ca7081ef7be3368a2a">00348</a> <span class="keyword">enum</span> <a class="code" href="net_8h.html#a135d567fd43cf1ca7081ef7be3368a2a">NetProtocols</a> {
+<a name="l00348"></a>00348 <span class="keyword">enum</span> {
 <a name="l00349"></a>00349     PSP2_NET_IPPROTO_IP     = 0,
 <a name="l00350"></a>00350     PSP2_NET_IPPROTO_ICMP   = 1,
 <a name="l00351"></a>00351     PSP2_NET_IPPROTO_IGMP   = 2,
@@ -414,7 +414,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00354"></a>00354     PSP2_NET_SOL_SOCKET     = 0xffff
 <a name="l00355"></a>00355 };
 <a name="l00356"></a>00356 
-<a name="l00358"></a><a class="code" href="net_8h.html#a97a1352caa2dc7830bad6de22d072dc9">00358</a> <span class="keyword">enum</span> <a class="code" href="net_8h.html#a97a1352caa2dc7830bad6de22d072dc9">NetSocketOptions</a> {
+<a name="l00358"></a>00358 <span class="keyword">enum</span> {
 <a name="l00359"></a>00359     <span class="comment">/* IP */</span>
 <a name="l00360"></a>00360     PSP2_NET_IP_HDRINCL             = 2,
 <a name="l00361"></a>00361     PSP2_NET_IP_TOS                 = 3,
@@ -453,7 +453,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00394"></a>00394     PSP2_NET_SO_NAME                = 0x1102
 <a name="l00395"></a>00395 };
 <a name="l00396"></a>00396 
-<a name="l00398"></a><a class="code" href="net_8h.html#a0c7bb098254039d37b71abc59b2cdd00">00398</a> <span class="keyword">enum</span> <a class="code" href="net_8h.html#a0c7bb098254039d37b71abc59b2cdd00">NetSocketTypes</a> {
+<a name="l00398"></a>00398 <span class="keyword">enum</span> {
 <a name="l00399"></a>00399     PSP2_NET_SOCK_STREAM        = 1,
 <a name="l00400"></a>00400     PSP2_NET_SOCK_DGRAM         = 2,
 <a name="l00401"></a>00401     PSP2_NET_SOCK_RAW           = 3,
@@ -461,7 +461,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00403"></a>00403     PSP2_NET_SOCK_STREAM_P2P    = 10
 <a name="l00404"></a>00404 };
 <a name="l00405"></a>00405 
-<a name="l00407"></a><a class="code" href="net_8h.html#abd46da026eff065dabb424ffc14923c8">00407</a> <span class="keyword">enum</span> <a class="code" href="net_8h.html#abd46da026eff065dabb424ffc14923c8">NetMsgFlags</a> {
+<a name="l00407"></a>00407 <span class="keyword">enum</span> {
 <a name="l00408"></a>00408     PSP2_NET_MSG_PEEK           = 0x00000002,
 <a name="l00409"></a>00409     PSP2_NET_MSG_WAITALL        = 0x00000040,
 <a name="l00410"></a>00410     PSP2_NET_MSG_DONTWAIT       = 0x00000080,
@@ -469,13 +469,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00412"></a>00412     PSP2_NET_MSG_USESIGNATURE   = 0x00000800
 <a name="l00413"></a>00413 };
 <a name="l00414"></a>00414 
-<a name="l00416"></a><a class="code" href="net_8h.html#acc630fa31fe0f89edd94eab85fd39286">00416</a> <span class="keyword">enum</span> <a class="code" href="net_8h.html#acc630fa31fe0f89edd94eab85fd39286">NetShutdownFlags</a> {
+<a name="l00416"></a>00416 <span class="keyword">enum</span> {
 <a name="l00417"></a>00417     PSP2_NET_SHUT_RD,
 <a name="l00418"></a>00418     PSP2_NET_SHUT_WR,
 <a name="l00419"></a>00419     PSP2_NET_SHUT_RDWR
 <a name="l00420"></a>00420 };
 <a name="l00421"></a>00421 
-<a name="l00423"></a><a class="code" href="net_8h.html#aa6d8e15bc2d84d6e1d9f53e097c1af53">00423</a> <span class="keyword">enum</span> <a class="code" href="net_8h.html#aa6d8e15bc2d84d6e1d9f53e097c1af53">NetIcmpHeaderTypes</a> {
+<a name="l00423"></a>00423 <span class="keyword">enum</span> {
 <a name="l00424"></a>00424     PSP2_NET_ICMP_TYPE_ECHO_REPLY           = 0,
 <a name="l00425"></a>00425     PSP2_NET_ICMP_TYPE_DEST_UNREACH         = 3,
 <a name="l00426"></a>00426     PSP2_NET_ICMP_TYPE_SOURCE_QUENCH        = 4,
@@ -491,7 +491,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00436"></a>00436     PSP2_NET_ICMP_TYPE_ADDRESS_MASK_REPLY   = 18
 <a name="l00437"></a>00437 };
 <a name="l00438"></a>00438 
-<a name="l00440"></a><a class="code" href="net_8h.html#aeee51d2699e820d5ebece8d7eb0bf77e">00440</a> <span class="keyword">enum</span> <a class="code" href="net_8h.html#aeee51d2699e820d5ebece8d7eb0bf77e">NetIcmpHeaderCodes</a> {
+<a name="l00440"></a>00440 <span class="keyword">enum</span> {
 <a name="l00441"></a>00441     PSP2_NET_ICMP_CODE_DEST_UNREACH_NET_UNREACH             = 0,
 <a name="l00442"></a>00442     PSP2_NET_ICMP_CODE_DEST_UNREACH_HOST_UNREACH            = 1,
 <a name="l00443"></a>00443     PSP2_NET_ICMP_CODE_DEST_UNREACH_PROTO_UNREACH           = 2,
@@ -852,7 +852,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jul 3 2015 23:42:33 for PSP2SDK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jul 4 2015 00:03:46 for PSP2SDK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>
