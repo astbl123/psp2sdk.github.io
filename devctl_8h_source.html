@@ -30,7 +30,7 @@
   
   <td style="padding-left: 0.5em;">
    <div id="projectname">PSP2SDK
-   &#160;<span id="projectnumber">dirty-a9791f2</span>
+   &#160;<span id="projectnumber">dirty-19579fb</span>
    </div>
    <div id="projectbrief">The free SDK for PSP2</div>
   </td>
@@ -85,25 +85,27 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00012"></a>00012 <span class="preprocessor">#ifndef _PSP2_IO_DEVCTRL_H_</span>
 <a name="l00013"></a>00013 <span class="preprocessor"></span><span class="preprocessor">#define _PSP2_IO_DEVCTRL_H_</span>
 <a name="l00014"></a>00014 <span class="preprocessor"></span>
-<a name="l00015"></a>00015 <span class="preprocessor">#ifdef __cplusplus</span>
-<a name="l00016"></a>00016 <span class="preprocessor"></span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {
-<a name="l00017"></a>00017 <span class="preprocessor">#endif</span>
-<a name="l00018"></a>00018 <span class="preprocessor"></span>
-<a name="l00035"></a>00035 <span class="keywordtype">int</span> <a class="code" href="devctl_8h.html#aa2d114c652feb1e81b4e6ef1d3edc846">sceIoDevctl</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *dev, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> cmd, <span class="keywordtype">void</span> *indata, <span class="keywordtype">int</span> inlen, <span class="keywordtype">void</span> *outdata, <span class="keywordtype">int</span> outlen);
-<a name="l00036"></a>00036 
-<a name="l00054"></a>00054 <span class="keywordtype">int</span> <a class="code" href="devctl_8h.html#aa372b5342f993bac97475b110671d9e7">sceIoAssign</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *dev1, <span class="keyword">const</span> <span class="keywordtype">char</span> *dev2, <span class="keyword">const</span> <span class="keywordtype">char</span> *dev3, <span class="keywordtype">int</span> mode, <span class="keywordtype">void</span>* unk1, <span class="keywordtype">long</span> unk2);
-<a name="l00055"></a>00055 
-<a name="l00063"></a>00063 <span class="keywordtype">int</span> <a class="code" href="devctl_8h.html#a0d7732acd8a4229a3a256a63a4ee6efc">sceIoUnassign</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *dev);
-<a name="l00064"></a>00064 
-<a name="l00076"></a>00076 <span class="keywordtype">int</span> <a class="code" href="devctl_8h.html#ab2297b50c65edb09c2175f8f262c7f20">sceIoIoctl</a>(<a class="code" href="types_8h.html#a9c036549fd8cfd554ba3aa26a397b663" title="UIDs are used to describe many different kernel objects.">SceUID</a> fd, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> cmd, <span class="keywordtype">void</span> *indata, <span class="keywordtype">int</span> inlen, <span class="keywordtype">void</span> *outdata, <span class="keywordtype">int</span> outlen);
-<a name="l00077"></a>00077 
-<a name="l00089"></a>00089 <span class="keywordtype">int</span> <a class="code" href="devctl_8h.html#a71371e769022cfa0eac4fa7003c9c94a">sceIoIoctlAsync</a>(<a class="code" href="types_8h.html#a9c036549fd8cfd554ba3aa26a397b663" title="UIDs are used to describe many different kernel objects.">SceUID</a> fd, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> cmd, <span class="keywordtype">void</span> *indata, <span class="keywordtype">int</span> inlen, <span class="keywordtype">void</span> *outdata, <span class="keywordtype">int</span> outlen);
-<a name="l00090"></a>00090 
-<a name="l00091"></a>00091 <span class="preprocessor">#ifdef __cplusplus</span>
-<a name="l00092"></a>00092 <span class="preprocessor"></span>}
-<a name="l00093"></a>00093 <span class="preprocessor">#endif</span>
-<a name="l00094"></a>00094 <span class="preprocessor"></span>
-<a name="l00095"></a>00095 <span class="preprocessor">#endif </span><span class="comment">/* _PSP2_IO_DEVCTRL_H_ */</span>
+<a name="l00015"></a>00015 <span class="preprocessor">#include &lt;<a class="code" href="types_8h.html" title="Header file which defines unique variable types.">psp2/types.h</a>&gt;</span>
+<a name="l00016"></a>00016 
+<a name="l00017"></a>00017 <span class="preprocessor">#ifdef __cplusplus</span>
+<a name="l00018"></a>00018 <span class="preprocessor"></span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {
+<a name="l00019"></a>00019 <span class="preprocessor">#endif</span>
+<a name="l00020"></a>00020 <span class="preprocessor"></span>
+<a name="l00037"></a>00037 <span class="keywordtype">int</span> <a class="code" href="devctl_8h.html#aa2d114c652feb1e81b4e6ef1d3edc846">sceIoDevctl</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *dev, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> cmd, <span class="keywordtype">void</span> *indata, <span class="keywordtype">int</span> inlen, <span class="keywordtype">void</span> *outdata, <span class="keywordtype">int</span> outlen);
+<a name="l00038"></a>00038 
+<a name="l00056"></a>00056 <span class="keywordtype">int</span> <a class="code" href="devctl_8h.html#aa372b5342f993bac97475b110671d9e7">sceIoAssign</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *dev1, <span class="keyword">const</span> <span class="keywordtype">char</span> *dev2, <span class="keyword">const</span> <span class="keywordtype">char</span> *dev3, <span class="keywordtype">int</span> mode, <span class="keywordtype">void</span>* unk1, <span class="keywordtype">long</span> unk2);
+<a name="l00057"></a>00057 
+<a name="l00065"></a>00065 <span class="keywordtype">int</span> <a class="code" href="devctl_8h.html#a0d7732acd8a4229a3a256a63a4ee6efc">sceIoUnassign</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *dev);
+<a name="l00066"></a>00066 
+<a name="l00078"></a>00078 <span class="keywordtype">int</span> <a class="code" href="devctl_8h.html#ab2297b50c65edb09c2175f8f262c7f20">sceIoIoctl</a>(<a class="code" href="types_8h.html#a9c036549fd8cfd554ba3aa26a397b663" title="UIDs are used to describe many different kernel objects.">SceUID</a> fd, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> cmd, <span class="keywordtype">void</span> *indata, <span class="keywordtype">int</span> inlen, <span class="keywordtype">void</span> *outdata, <span class="keywordtype">int</span> outlen);
+<a name="l00079"></a>00079 
+<a name="l00091"></a>00091 <span class="keywordtype">int</span> <a class="code" href="devctl_8h.html#a71371e769022cfa0eac4fa7003c9c94a">sceIoIoctlAsync</a>(<a class="code" href="types_8h.html#a9c036549fd8cfd554ba3aa26a397b663" title="UIDs are used to describe many different kernel objects.">SceUID</a> fd, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> cmd, <span class="keywordtype">void</span> *indata, <span class="keywordtype">int</span> inlen, <span class="keywordtype">void</span> *outdata, <span class="keywordtype">int</span> outlen);
+<a name="l00092"></a>00092 
+<a name="l00093"></a>00093 <span class="preprocessor">#ifdef __cplusplus</span>
+<a name="l00094"></a>00094 <span class="preprocessor"></span>}
+<a name="l00095"></a>00095 <span class="preprocessor">#endif</span>
+<a name="l00096"></a>00096 <span class="preprocessor"></span>
+<a name="l00097"></a>00097 <span class="preprocessor">#endif </span><span class="comment">/* _PSP2_IO_DEVCTRL_H_ */</span>
 </pre></div></div><!-- contents -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
@@ -122,7 +124,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jul 4 2015 10:47:26 for PSP2SDK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Jul 5 2015 15:50:51 for PSP2SDK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>
