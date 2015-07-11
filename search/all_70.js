@@ -51,10 +51,10 @@ var searchData=
   ['psp2_5fevent_5fwaitclear',['PSP2_EVENT_WAITCLEAR',['../threadmgr_8h.html#a05660c836339ecf646cdeabd1e6fcb25a00cf2a747bdfd90fa9c095ae5547f8d2',1,'threadmgr.h']]],
   ['psp2_5fevent_5fwaitmultiple',['PSP2_EVENT_WAITMULTIPLE',['../threadmgr_8h.html#a85b09b4785006f1df2342e6e657eee90a8b3735bc8ae93ca4abc20507a4f1b9e6',1,'threadmgr.h']]],
   ['psp2_5fevent_5fwaitor',['PSP2_EVENT_WAITOR',['../threadmgr_8h.html#a05660c836339ecf646cdeabd1e6fcb25a56d3e2bad44c5d1182fb9eebbd56c934',1,'threadmgr.h']]],
-  ['psp2_5fkernel_5fpower_5ftick_5fdefault',['PSP2_KERNEL_POWER_TICK_DEFAULT',['../processmgr_8h.html#a77867ab4129f63159b37bca3b652a798ac7da191e06edfffda1003a27aad1b2c9',1,'processmgr.h']]],
-  ['psp2_5fkernel_5fpower_5ftick_5fdisable_5fauto_5fsuspend',['PSP2_KERNEL_POWER_TICK_DISABLE_AUTO_SUSPEND',['../processmgr_8h.html#a77867ab4129f63159b37bca3b652a798a3b5475a995f09ca3f6bfa9d61369d66c',1,'processmgr.h']]],
-  ['psp2_5fkernel_5fpower_5ftick_5fdisable_5foled_5fdimming',['PSP2_KERNEL_POWER_TICK_DISABLE_OLED_DIMMING',['../processmgr_8h.html#a77867ab4129f63159b37bca3b652a798a93d93c4245c9784f7768d2cb23f06d2c',1,'processmgr.h']]],
-  ['psp2_5fkernel_5fpower_5ftick_5fdisable_5foled_5foff',['PSP2_KERNEL_POWER_TICK_DISABLE_OLED_OFF',['../processmgr_8h.html#a77867ab4129f63159b37bca3b652a798a613c466a3f81b09e3a457524dfda4e44',1,'processmgr.h']]],
+  ['psp2_5fkernel_5fpower_5ftick_5fdefault',['PSP2_KERNEL_POWER_TICK_DEFAULT',['../processmgr_8h.html#a1f9aebf1de3ebbf4283a4dcf73308562ac7da191e06edfffda1003a27aad1b2c9',1,'processmgr.h']]],
+  ['psp2_5fkernel_5fpower_5ftick_5fdisable_5fauto_5fsuspend',['PSP2_KERNEL_POWER_TICK_DISABLE_AUTO_SUSPEND',['../processmgr_8h.html#a1f9aebf1de3ebbf4283a4dcf73308562a3b5475a995f09ca3f6bfa9d61369d66c',1,'processmgr.h']]],
+  ['psp2_5fkernel_5fpower_5ftick_5fdisable_5foled_5fdimming',['PSP2_KERNEL_POWER_TICK_DISABLE_OLED_DIMMING',['../processmgr_8h.html#a1f9aebf1de3ebbf4283a4dcf73308562a93d93c4245c9784f7768d2cb23f06d2c',1,'processmgr.h']]],
+  ['psp2_5fkernel_5fpower_5ftick_5fdisable_5foled_5foff',['PSP2_KERNEL_POWER_TICK_DISABLE_OLED_OFF',['../processmgr_8h.html#a1f9aebf1de3ebbf4283a4dcf73308562a613c466a3f81b09e3a457524dfda4e44',1,'processmgr.h']]],
   ['psp2_5fkernel_5fprocess_5fid_5fself',['PSP2_KERNEL_PROCESS_ID_SELF',['../types_8h.html#abe2774c2df129b620776af325b05a261',1,'types.h']]],
   ['psp2_5fmodule_5finfo',['PSP2_MODULE_INFO',['../moduleinfo_8h.html#ae6ba384c7cae9475fabd23a327b3c27a',1,'moduleinfo.h']]],
   ['psp2_5fs_5fifdir',['PSP2_S_IFDIR',['../stat_8h.html#a4790f45dcc812c1b00184a2edccdddf5a6612a5724afea15214af43cb3e09bd97',1,'stat.h']]],
@@ -100,5 +100,7 @@ var searchData=
   ['psp2_5fsystem_5fparam_5fusername_5fmaxsize',['PSP2_SYSTEM_PARAM_USERNAME_MAXSIZE',['../system__param_8h.html#a05f8bf9b04420f8d83fdb0f5a590525b',1,'system_param.h']]],
   ['psp2_5fuid_5fnamelen',['PSP2_UID_NAMELEN',['../types_8h.html#a6c17e118671e31f11c694bdcec94a8c0',1,'types.h']]],
   ['psp2eventflagattributes',['Psp2EventFlagAttributes',['../threadmgr_8h.html#a85b09b4785006f1df2342e6e657eee90',1,'Psp2EventFlagAttributes():&#160;threadmgr.h'],['../threadmgr_8h.html#a7f2c46eb43ce134c9a67262f0bf667a2',1,'Psp2EventFlagAttributes():&#160;threadmgr.h']]],
-  ['psp2eventflagwaittypes',['Psp2EventFlagWaitTypes',['../threadmgr_8h.html#a05660c836339ecf646cdeabd1e6fcb25',1,'Psp2EventFlagWaitTypes():&#160;threadmgr.h'],['../threadmgr_8h.html#a2768bb3a8ad5271935fecdb30bce34a7',1,'Psp2EventFlagWaitTypes():&#160;threadmgr.h']]]
+  ['psp2eventflagwaittypes',['Psp2EventFlagWaitTypes',['../threadmgr_8h.html#a05660c836339ecf646cdeabd1e6fcb25',1,'Psp2EventFlagWaitTypes():&#160;threadmgr.h'],['../threadmgr_8h.html#a2768bb3a8ad5271935fecdb30bce34a7',1,'Psp2EventFlagWaitTypes():&#160;threadmgr.h']]],
+  ['psp2loadedmoduleinfo',['Psp2LoadedModuleInfo',['../structPsp2LoadedModuleInfo.html',1,'']]],
+  ['psp2segmentinfo',['Psp2SegmentInfo',['../structPsp2SegmentInfo.html',1,'']]]
 ];

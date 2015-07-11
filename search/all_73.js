@@ -343,6 +343,7 @@ var searchData=
   ['stride',['stride',['../structSceGxmAuxiliarySurface.html#ad8efc5770bf569a9d6293ecca7364284',1,'SceGxmAuxiliarySurface']]],
   ['strlen',['strlen',['../structSceAppUtilWebBrowserParam.html#a240d9fa0246190394422c45a1c5ed352',1,'SceAppUtilWebBrowserParam']]],
   ['subtitle',['subTitle',['../structSceAppUtilSaveDataSlotParam.html#a9f6719584d48a06848947fa70695431e',1,'SceAppUtilSaveDataSlotParam']]],
+  ['sysmem_2eh',['sysmem.h',['../sysmem_8h.html',1,'']]],
   ['sysmodule_2eh',['sysmodule.h',['../sysmodule_8h.html',1,'']]],
   ['system_5fparam_2eh',['system_param.h',['../system__param_8h.html',1,'']]]
 ];
