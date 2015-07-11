@@ -30,7 +30,7 @@
   
   <td style="padding-left: 0.5em;">
    <div id="projectname">PSP2SDK
-   &#160;<span id="projectnumber">dirty-2d13639</span>
+   &#160;<span id="projectnumber">dirty-ac0877d</span>
    </div>
    <div id="projectbrief">The free SDK for PSP2</div>
   </td>
@@ -200,8 +200,8 @@ Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="threadmgr_8h.html#aa3b54986929bad87d48b5c4d11b8678e">sceKernelStartThread</a> (<a class="el" href="types_8h.html#a9c036549fd8cfd554ba3aa26a397b663">SceUID</a> thid, SceSize arglen, void *argp)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="threadmgr_8h.html#a3e4b74175f4aefa6bc6f410ac11a50c6">sceKernelExitThread</a> (int status)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="threadmgr_8h.html#a1d2c7c3946da4fa98b26ac755fcf3cd1">sceKernelExitDeleteThread</a> (int status)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="threadmgr_8h.html#aaf86416e6c601f8dcb92f66050066f10">sceKernelWaitThreadEnd</a> (<a class="el" href="types_8h.html#a9c036549fd8cfd554ba3aa26a397b663">SceUID</a> thid, SceUInt *timeout)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="threadmgr_8h.html#abba95470fda6fdb60aa17b58905e9698">sceKernelWaitThreadEndCB</a> (<a class="el" href="types_8h.html#a9c036549fd8cfd554ba3aa26a397b663">SceUID</a> thid, SceUInt *timeout)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="threadmgr_8h.html#a19814a4f541369333c78958e32c1dd0a">sceKernelWaitThreadEnd</a> (<a class="el" href="types_8h.html#a9c036549fd8cfd554ba3aa26a397b663">SceUID</a> thid, int stat, SceUInt *timeout)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="threadmgr_8h.html#a2eb491c2e9da379d1603f16120d28882">sceKernelWaitThreadEndCB</a> (<a class="el" href="types_8h.html#a9c036549fd8cfd554ba3aa26a397b663">SceUID</a> thid, int stat, SceUInt *timeout)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="threadmgr_8h.html#a76893a433dee550c0b7be52d807e62a8">sceKernelDelayThread</a> (SceUInt delay)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="threadmgr_8h.html#a7b51417e5999e727715379282cc2bf8b">sceKernelDelayThreadCB</a> (SceUInt delay)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="threadmgr_8h.html#af951d0cf8f791972e4b467e16042364c">sceKernelChangeCurrentThreadAttr</a> (int unknown, SceUInt attr)</td></tr>
@@ -2938,15 +2938,21 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="aaf86416e6c601f8dcb92f66050066f10"></a><!-- doxytag: member="threadmgr.h::sceKernelWaitThreadEnd" ref="aaf86416e6c601f8dcb92f66050066f10" args="(SceUID thid, SceUInt *timeout)" -->
+<a class="anchor" id="a19814a4f541369333c78958e32c1dd0a"></a><!-- doxytag: member="threadmgr.h::sceKernelWaitThreadEnd" ref="a19814a4f541369333c78958e32c1dd0a" args="(SceUID thid, int stat, SceUInt *timeout)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int <a class="el" href="threadmgr_8h.html#aaf86416e6c601f8dcb92f66050066f10">sceKernelWaitThreadEnd</a> </td>
+          <td class="memname">int <a class="el" href="threadmgr_8h.html#a19814a4f541369333c78958e32c1dd0a">sceKernelWaitThreadEnd</a> </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="types_8h.html#a9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
           <td class="paramname"><em>thid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>stat</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -2966,6 +2972,7 @@ Functions</h2></td></tr>
 <dl class="params"><dt><b>Parameters:</b></dt><dd>
   <table class="params">
     <tr><td class="paramname">thid</td><td>- Id of the thread to wait for. </td></tr>
+    <tr><td class="paramname">stat</td><td>- Exit status. </td></tr>
     <tr><td class="paramname">timeout</td><td>- Timeout in microseconds (assumed).</td></tr>
   </table>
   </dd>
@@ -2974,15 +2981,21 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="abba95470fda6fdb60aa17b58905e9698"></a><!-- doxytag: member="threadmgr.h::sceKernelWaitThreadEndCB" ref="abba95470fda6fdb60aa17b58905e9698" args="(SceUID thid, SceUInt *timeout)" -->
+<a class="anchor" id="a2eb491c2e9da379d1603f16120d28882"></a><!-- doxytag: member="threadmgr.h::sceKernelWaitThreadEndCB" ref="a2eb491c2e9da379d1603f16120d28882" args="(SceUID thid, int stat, SceUInt *timeout)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int <a class="el" href="threadmgr_8h.html#abba95470fda6fdb60aa17b58905e9698">sceKernelWaitThreadEndCB</a> </td>
+          <td class="memname">int <a class="el" href="threadmgr_8h.html#a2eb491c2e9da379d1603f16120d28882">sceKernelWaitThreadEndCB</a> </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="types_8h.html#a9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
           <td class="paramname"><em>thid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>stat</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -3002,6 +3015,7 @@ Functions</h2></td></tr>
 <dl class="params"><dt><b>Parameters:</b></dt><dd>
   <table class="params">
     <tr><td class="paramname">thid</td><td>- Id of the thread to wait for. </td></tr>
+    <tr><td class="paramname">stat</td><td>- Exit status. </td></tr>
     <tr><td class="paramname">timeout</td><td>- Timeout in microseconds (assumed).</td></tr>
   </table>
   </dd>
@@ -3028,7 +3042,7 @@ Functions</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jul 5 2015 23:42:31 for PSP2SDK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jul 11 2015 04:26:10 for PSP2SDK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>
