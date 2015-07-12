@@ -17,9 +17,10 @@
 <area shape="rect" id="node37" href="$motion_8h.html" title="Header file which defines motion variables and functions." alt="" coords="2557,83,2707,112"/>
 <area shape="rect" id="node39" href="$pgf_8h.html" title="Header file which defines font (PGF) variables and functions." alt="" coords="2731,83,2859,112"/>
 <area shape="rect" id="node41" href="$power_8h.html" title="Header file which defines power variables and functions." alt="" coords="2883,83,3027,112"/>
-<area shape="rect" id="node43" href="$rtc_8h.html" title="Header file which defines RTC variables and functions." alt="" coords="3051,83,3176,112"/>
-<area shape="rect" id="node45" href="$screenshot_8h.html" title="Header file which defines output audio related variables and functions." alt="" coords="3200,83,3373,112"/>
-<area shape="rect" id="node47" href="$sysmodule_8h.html" title="Header file which defines system modules related variables and functions." alt="" coords="3397,83,3571,112"/>
-<area shape="rect" id="node49" href="$touch_8h.html" title="Header file which defines touch related variables and functions." alt="" coords="3595,83,3736,112"/>
+<area shape="rect" id="node43" href="$pss_8h.html" title="Header file which defines functions of SceLibMonoBridge." alt="" coords="3051,83,3181,112"/>
+<area shape="rect" id="node45" href="$rtc_8h.html" title="Header file which defines RTC variables and functions." alt="" coords="3205,83,3331,112"/>
+<area shape="rect" id="node47" href="$screenshot_8h.html" title="Header file which defines output audio related variables and functions." alt="" coords="3355,83,3528,112"/>
+<area shape="rect" id="node49" href="$sysmodule_8h.html" title="Header file which defines system modules related variables and functions." alt="" coords="3552,83,3725,112"/>
+<area shape="rect" id="node51" href="$touch_8h.html" title="Header file which defines touch related variables and functions." alt="" coords="3749,83,3891,112"/>
 <area shape="rect" id="node15" href="$gxt_8h.html" title="Header file which defines GXT variables and functions." alt="" coords="891,160,1019,189"/>
 </map>
