@@ -30,7 +30,7 @@
   
   <td style="padding-left: 0.5em;">
    <div id="projectname">PSP2SDK
-   &#160;<span id="projectnumber">dirty-2b36cf3</span>
+   &#160;<span id="projectnumber">dirty-55b3a54</span>
    </div>
    <div id="projectbrief">The free SDK for PSP2</div>
   </td>
@@ -118,12 +118,20 @@ Enumerations</h2></td></tr>
 Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae782a77b690e73d974eefdd4e2b0729b"></a><!-- doxytag: member="sysmem.h::sceKernelAllocMemBlock" ref="ae782a77b690e73d974eefdd4e2b0729b" args="(const char *name, SceKernelMemBlockType type, int size, void *optp)" -->
 <a class="el" href="types_8h.html#a9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td><td class="memItemRight" valign="bottom"><b>sceKernelAllocMemBlock</b> (const char *name, SceKernelMemBlockType type, int size, void *optp)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7c04f15aa88ceef3cef573abc412db94"></a><!-- doxytag: member="sysmem.h::sceKernelAllocMemBlockForVM" ref="a7c04f15aa88ceef3cef573abc412db94" args="(const char *, SceSize)" -->
+<a class="el" href="types_8h.html#a9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td><td class="memItemRight" valign="bottom"><b>sceKernelAllocMemBlockForVM</b> (const char *, SceSize)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a938f751bb400cc057976e3239cbe88e4"></a><!-- doxytag: member="sysmem.h::sceKernelFreeMemBlock" ref="a938f751bb400cc057976e3239cbe88e4" args="(SceUID uid)" -->
 int&#160;</td><td class="memItemRight" valign="bottom"><b>sceKernelFreeMemBlock</b> (<a class="el" href="types_8h.html#a9c036549fd8cfd554ba3aa26a397b663">SceUID</a> uid)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac6e00c0382a016e86767445edc456d3e"></a><!-- doxytag: member="sysmem.h::sceKernelGetMemBlockBase" ref="ac6e00c0382a016e86767445edc456d3e" args="(SceUID uid, void **basep)" -->
 int&#160;</td><td class="memItemRight" valign="bottom"><b>sceKernelGetMemBlockBase</b> (<a class="el" href="types_8h.html#a9c036549fd8cfd554ba3aa26a397b663">SceUID</a> uid, void **basep)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="add5d7371bc11a45420d4738bb9ee42bc"></a><!-- doxytag: member="sysmem.h::sceKernelFindMemBlockByAddr" ref="add5d7371bc11a45420d4738bb9ee42bc" args="(const void *, int)" -->
 <a class="el" href="types_8h.html#a9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td><td class="memItemRight" valign="bottom"><b>sceKernelFindMemBlockByAddr</b> (const void *, int)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a40be1c17bd6193ee3c3d6241763f6355"></a><!-- doxytag: member="sysmem.h::sceKernelSyncVMDomain" ref="a40be1c17bd6193ee3c3d6241763f6355" args="(SceUID, void *, SceSize)" -->
+void&#160;</td><td class="memItemRight" valign="bottom"><b>sceKernelSyncVMDomain</b> (<a class="el" href="types_8h.html#a9c036549fd8cfd554ba3aa26a397b663">SceUID</a>, void *, SceSize)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7315438ef930e09be2819dc4ece72642"></a><!-- doxytag: member="sysmem.h::sceKernelOpenVMDomain" ref="a7315438ef930e09be2819dc4ece72642" args="()" -->
+void&#160;</td><td class="memItemRight" valign="bottom"><b>sceKernelOpenVMDomain</b> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4b18771919d97556bb25cff1c7dc6f27"></a><!-- doxytag: member="sysmem.h::sceKernelCloseVMDomain" ref="a4b18771919d97556bb25cff1c7dc6f27" args="()" -->
+void&#160;</td><td class="memItemRight" valign="bottom"><b>sceKernelCloseVMDomain</b> ()</td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
 <div class="textblock"><p>Header file which defines memory related variables and functions. </p>
@@ -147,7 +155,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>sceKernelGetMemBlockBa
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jul 12 2015 07:46:32 for PSP2SDK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jul 17 2015 01:56:49 for PSP2SDK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>
