@@ -9,18 +9,19 @@
 <area shape="rect" id="node19" href="$dirent_8h.html" title="Header file which describes the directory entry struct." alt="" coords="1304,160,1459,189"/>
 <area shape="rect" id="node21" href="$fcntl_8h.html" title="Header file which defines file control options." alt="" coords="1277,83,1427,112"/>
 <area shape="rect" id="node23" href="$stat_8h.html" title="Header file which describes file structures." alt="" coords="1451,83,1597,112"/>
-<area shape="rect" id="node26" href="$modulemgr_8h.html" title="Header file related to module management." alt="" coords="1621,83,1835,112"/>
-<area shape="rect" id="node28" href="$processmgr_8h.html" title="Header file which defines processes related variables and functions." alt="" coords="1944,160,2160,189"/>
-<area shape="rect" id="node30" href="$sysmem_8h.html" title="Header file which defines memory related variables and functions." alt="" coords="1909,83,2107,112"/>
-<area shape="rect" id="node32" href="$threadmgr_8h.html" title="Header file related to thread management." alt="" coords="2131,83,2336,112"/>
-<area shape="rect" id="node35" href="$moduleinfo_8h.html" title="Header file related to module information definitions." alt="" coords="2360,83,2533,112"/>
-<area shape="rect" id="node37" href="$motion_8h.html" title="Header file which defines motion variables and functions." alt="" coords="2557,83,2707,112"/>
-<area shape="rect" id="node39" href="$pgf_8h.html" title="Header file which defines font (PGF) variables and functions." alt="" coords="2731,83,2859,112"/>
-<area shape="rect" id="node41" href="$power_8h.html" title="Header file which defines power variables and functions." alt="" coords="2883,83,3027,112"/>
-<area shape="rect" id="node43" href="$pss_8h.html" title="Header file which defines functions of SceLibMonoBridge." alt="" coords="3051,83,3181,112"/>
-<area shape="rect" id="node45" href="$rtc_8h.html" title="Header file which defines RTC variables and functions." alt="" coords="3205,83,3331,112"/>
-<area shape="rect" id="node47" href="$screenshot_8h.html" title="Header file which defines output audio related variables and functions." alt="" coords="3355,83,3528,112"/>
-<area shape="rect" id="node49" href="$sysmodule_8h.html" title="Header file which defines system modules related variables and functions." alt="" coords="3552,83,3725,112"/>
-<area shape="rect" id="node51" href="$touch_8h.html" title="Header file which defines touch related variables and functions." alt="" coords="3749,83,3891,112"/>
+<area shape="rect" id="node26" href="$clib_8h.html" title="Header file which defines sceClib functions." alt="" coords="1621,83,1789,112"/>
+<area shape="rect" id="node28" href="$modulemgr_8h.html" title="Header file related to module management." alt="" coords="1813,83,2027,112"/>
+<area shape="rect" id="node30" href="$processmgr_8h.html" title="Header file which defines processes related variables and functions." alt="" coords="2136,160,2352,189"/>
+<area shape="rect" id="node32" href="$sysmem_8h.html" title="Header file which defines memory related variables and functions." alt="" coords="2101,83,2299,112"/>
+<area shape="rect" id="node34" href="$threadmgr_8h.html" title="Header file related to thread management." alt="" coords="2323,83,2528,112"/>
+<area shape="rect" id="node37" href="$moduleinfo_8h.html" title="Header file related to module information definitions." alt="" coords="2552,83,2725,112"/>
+<area shape="rect" id="node39" href="$motion_8h.html" title="Header file which defines motion variables and functions." alt="" coords="2749,83,2899,112"/>
+<area shape="rect" id="node41" href="$pgf_8h.html" title="Header file which defines font (PGF) variables and functions." alt="" coords="2923,83,3051,112"/>
+<area shape="rect" id="node43" href="$power_8h.html" title="Header file which defines power variables and functions." alt="" coords="3075,83,3219,112"/>
+<area shape="rect" id="node45" href="$pss_8h.html" title="Header file which defines functions of SceLibMonoBridge." alt="" coords="3243,83,3373,112"/>
+<area shape="rect" id="node47" href="$rtc_8h.html" title="Header file which defines RTC variables and functions." alt="" coords="3397,83,3523,112"/>
+<area shape="rect" id="node49" href="$screenshot_8h.html" title="Header file which defines output audio related variables and functions." alt="" coords="3547,83,3720,112"/>
+<area shape="rect" id="node51" href="$sysmodule_8h.html" title="Header file which defines system modules related variables and functions." alt="" coords="3744,83,3917,112"/>
+<area shape="rect" id="node53" href="$touch_8h.html" title="Header file which defines touch related variables and functions." alt="" coords="3941,83,4083,112"/>
 <area shape="rect" id="node15" href="$gxt_8h.html" title="Header file which defines GXT variables and functions." alt="" coords="891,160,1019,189"/>
 </map>

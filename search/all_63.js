@@ -4,6 +4,7 @@ var searchData=
   ['callbackid',['callbackId',['../structSceKernelCallbackInfo.html#ade16fb6b70292d817054187537a8b55c',1,'SceKernelCallbackInfo']]],
   ['camera_2eh',['camera.h',['../camera_8h.html',1,'']]],
   ['celp',['celp',['../unionSceAudioencInitParam.html#a29125ee4b1325da065c841ada1bde8df',1,'SceAudioencInitParam']]],
+  ['clib_2eh',['clib.h',['../clib_8h.html',1,'']]],
   ['colorformat',['colorFormat',['../structSceGxmAuxiliarySurface.html#ac9c35dd93c157754948fddc261b8b68a',1,'SceGxmAuxiliarySurface']]],
   ['common',['common',['../structSceKernelCallbackInfo.html#a16a6314cf9df4fc14ac355fca96937f3',1,'SceKernelCallbackInfo']]],
   ['controlwords',['controlWords',['../structSceGxtTextureInfo.html#ab6e256ae974dac491a639e0b8eacda40',1,'SceGxtTextureInfo']]],
