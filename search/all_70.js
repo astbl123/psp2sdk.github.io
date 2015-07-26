@@ -56,7 +56,6 @@ var searchData=
   ['psp2_5fkernel_5fpower_5ftick_5fdisable_5foled_5fdimming',['PSP2_KERNEL_POWER_TICK_DISABLE_OLED_DIMMING',['../processmgr_8h.html#a1f9aebf1de3ebbf4283a4dcf73308562a93d93c4245c9784f7768d2cb23f06d2c',1,'processmgr.h']]],
   ['psp2_5fkernel_5fpower_5ftick_5fdisable_5foled_5foff',['PSP2_KERNEL_POWER_TICK_DISABLE_OLED_OFF',['../processmgr_8h.html#a1f9aebf1de3ebbf4283a4dcf73308562a613c466a3f81b09e3a457524dfda4e44',1,'processmgr.h']]],
   ['psp2_5fkernel_5fprocess_5fid_5fself',['PSP2_KERNEL_PROCESS_ID_SELF',['../types_8h.html#abe2774c2df129b620776af325b05a261',1,'types.h']]],
-  ['psp2_5fmodule_5finfo',['PSP2_MODULE_INFO',['../moduleinfo_8h.html#ae6ba384c7cae9475fabd23a327b3c27a',1,'moduleinfo.h']]],
   ['psp2_5fs_5fifdir',['PSP2_S_IFDIR',['../stat_8h.html#a4790f45dcc812c1b00184a2edccdddf5a6612a5724afea15214af43cb3e09bd97',1,'stat.h']]],
   ['psp2_5fs_5fiflnk',['PSP2_S_IFLNK',['../stat_8h.html#a4790f45dcc812c1b00184a2edccdddf5a4edf9135ed67c578a6e65f5bb47db6e4',1,'stat.h']]],
   ['psp2_5fs_5fifmt',['PSP2_S_IFMT',['../stat_8h.html#a4790f45dcc812c1b00184a2edccdddf5ad0c96fa99a47b3c27a6a40df50b4ede3',1,'stat.h']]],
