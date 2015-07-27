@@ -30,7 +30,7 @@
   
   <td style="padding-left: 0.5em;">
    <div id="projectname">PSP2SDK
-   &#160;<span id="projectnumber">dirty-e2fd56a</span>
+   &#160;<span id="projectnumber">dirty-4c42693</span>
    </div>
    <div id="projectbrief">The free SDK for PSP2</div>
   </td>
@@ -153,7 +153,7 @@ typedef const <a class="el" href="struct__sceModuleInfo.html">_sceModuleInfo</a>
 <div class="memdoc">
 <b>Value:</b><div class="fragment"><pre class="fragment">__asm__ (<span class="stringliteral">&quot;.section .sceLib.stub, \&quot;a\&quot;, %progbits;&quot;</span>);   \
     SceModuleInfo module_info   \
-        __attribute__((section(<span class="stringliteral">&quot;.sceModuleInfo.rodata&quot;</span>)))   \
+        __attribute__((section(<span class="stringliteral">&quot;.sceModuleInfo.rodata&quot;</span>), used)) \
             = { attribute, version, module_name };
 </pre></div><p>Define module information</p>
 <dl class="params"><dt><b>Parameters:</b></dt><dd>
@@ -185,7 +185,7 @@ typedef const <a class="el" href="struct__sceModuleInfo.html">_sceModuleInfo</a>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jul 27 2015 13:43:46 for PSP2SDK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jul 27 2015 22:58:11 for PSP2SDK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>
