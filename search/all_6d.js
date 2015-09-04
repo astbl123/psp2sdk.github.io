@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['mallinfo',['mallinfo',['../structmallinfo.html',1,'']]],
   ['maxaax',['maxAaX',['../structSceTouchPanelInfo.html#a29ce7c241d0e5626d93b69af7862be0c',1,'SceTouchPanelInfo']]],
   ['maxaay',['maxAaY',['../structSceTouchPanelInfo.html#a19086a47239e3be5e16b58c32831468f',1,'SceTouchPanelInfo']]],
   ['maxcount',['maxCount',['../structSceKernelSemaInfo.html#ad5fafcca551c905a77ddfc090c8bc084',1,'SceKernelSemaInfo']]],

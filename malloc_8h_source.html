@@ -30,7 +30,7 @@
   
   <td style="padding-left: 0.5em;">
    <div id="projectname">PSP2SDK
-   &#160;<span id="projectnumber">dirty-1b2d51b</span>
+   &#160;<span id="projectnumber">dirty-f05a540</span>
    </div>
    <div id="projectbrief">The free SDK for PSP2</div>
   </td>
@@ -91,96 +91,39 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00008"></a>00008 <span class="comment"> * Modified for PSP2 by PSP2SDK Team</span>
 <a name="l00009"></a>00009 <span class="comment"> */</span>
 <a name="l00010"></a>00010 
-<a name="l00011"></a>00011 <span class="comment">/* malloc.h -- header file for memory routines.  */</span>
-<a name="l00012"></a>00012 
-<a name="l00013"></a>00013 <span class="preprocessor">#ifndef _INCLUDE_MALLOC_H_</span>
-<a name="l00014"></a>00014 <span class="preprocessor"></span><span class="preprocessor">#define _INCLUDE_MALLOC_H_</span>
-<a name="l00015"></a>00015 <span class="preprocessor"></span>
-<a name="l00016"></a>00016 <span class="preprocessor">#include &lt;_ansi.h&gt;</span>
-<a name="l00017"></a>00017 
-<a name="l00018"></a>00018 <span class="preprocessor">#define __need_size_t</span>
-<a name="l00019"></a>00019 <span class="preprocessor"></span><span class="preprocessor">#include &lt;stddef.h&gt;</span>
-<a name="l00020"></a>00020 
-<a name="l00021"></a>00021 <span class="comment">/* include any machine-specific extensions */</span>
-<a name="l00022"></a>00022 <span class="preprocessor">#include &lt;machine/malloc.h&gt;</span>
-<a name="l00023"></a>00023 
-<a name="l00024"></a>00024 <span class="preprocessor">#ifdef __cplusplus</span>
-<a name="l00025"></a>00025 <span class="preprocessor"></span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {
-<a name="l00026"></a>00026 <span class="preprocessor">#endif</span>
-<a name="l00027"></a>00027 <span class="preprocessor"></span>
-<a name="l00028"></a>00028 <span class="comment">/* This version of struct mallinfo must match the one in</span>
-<a name="l00029"></a>00029 <span class="comment">   libc/stdlib/mallocr.c.  */</span>
+<a name="l00011"></a>00011 <span class="preprocessor">#ifndef _MALLOC_H_</span>
+<a name="l00012"></a>00012 <span class="preprocessor"></span><span class="preprocessor">#define _MALLOC_H_</span>
+<a name="l00013"></a>00013 <span class="preprocessor"></span>
+<a name="l00014"></a>00014 <span class="preprocessor">#include &lt;_ansi.h&gt;</span>
+<a name="l00015"></a>00015 
+<a name="l00016"></a>00016 <span class="preprocessor">#define __need_size_t</span>
+<a name="l00017"></a>00017 <span class="preprocessor"></span><span class="preprocessor">#include &lt;stddef.h&gt;</span>
+<a name="l00018"></a>00018 
+<a name="l00019"></a>00019 <span class="preprocessor">#ifdef __cplusplus</span>
+<a name="l00020"></a>00020 <span class="preprocessor"></span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {
+<a name="l00021"></a>00021 <span class="preprocessor">#endif</span>
+<a name="l00022"></a>00022 <span class="preprocessor"></span>
+<a name="l00023"></a>00023 <span class="comment">/* The routines.  */</span>
+<a name="l00024"></a>00024 
+<a name="l00025"></a>00025 <span class="keyword">extern</span> _PTR malloc _PARAMS ((<span class="keywordtype">size_t</span>));
+<a name="l00026"></a>00026 
+<a name="l00027"></a>00027 <span class="keyword">extern</span> _VOID free _PARAMS ((_PTR));
+<a name="l00028"></a>00028 
+<a name="l00029"></a>00029 <span class="keyword">extern</span> _PTR realloc _PARAMS ((_PTR, <span class="keywordtype">size_t</span>));
 <a name="l00030"></a>00030 
-<a name="l00031"></a><a class="code" href="structmallinfo.html">00031</a> <span class="keyword">struct </span><a class="code" href="structmallinfo.html">mallinfo</a> {
-<a name="l00032"></a>00032   <span class="keywordtype">size_t</span> arena;    <span class="comment">/* total space allocated from system */</span>
-<a name="l00033"></a>00033   <span class="keywordtype">size_t</span> ordblks;  <span class="comment">/* number of non-inuse chunks */</span>
-<a name="l00034"></a>00034   <span class="keywordtype">size_t</span> smblks;   <span class="comment">/* unused -- always zero */</span>
-<a name="l00035"></a>00035   <span class="keywordtype">size_t</span> hblks;    <span class="comment">/* number of mmapped regions */</span>
-<a name="l00036"></a>00036   <span class="keywordtype">size_t</span> hblkhd;   <span class="comment">/* total space in mmapped regions */</span>
-<a name="l00037"></a>00037   <span class="keywordtype">size_t</span> usmblks;  <span class="comment">/* unused -- always zero */</span>
-<a name="l00038"></a>00038   <span class="keywordtype">size_t</span> fsmblks;  <span class="comment">/* unused -- always zero */</span>
-<a name="l00039"></a>00039   <span class="keywordtype">size_t</span> uordblks; <span class="comment">/* total allocated space */</span>
-<a name="l00040"></a>00040   <span class="keywordtype">size_t</span> fordblks; <span class="comment">/* total non-inuse space */</span>
-<a name="l00041"></a>00041   <span class="keywordtype">size_t</span> keepcost; <span class="comment">/* top-most, releasable (via malloc_trim) space */</span>
-<a name="l00042"></a>00042 };  
-<a name="l00043"></a>00043 
-<a name="l00044"></a>00044 <span class="comment">/* The routines.  */</span>
-<a name="l00045"></a>00045 
-<a name="l00046"></a>00046 <span class="keyword">extern</span> _PTR malloc _PARAMS ((<span class="keywordtype">size_t</span>));
-<a name="l00047"></a>00047 
-<a name="l00048"></a>00048 <span class="keyword">extern</span> _VOID free _PARAMS ((_PTR));
-<a name="l00049"></a>00049 
-<a name="l00050"></a>00050 <span class="keyword">extern</span> _PTR realloc _PARAMS ((_PTR, <span class="keywordtype">size_t</span>));
-<a name="l00051"></a>00051 
-<a name="l00052"></a>00052 <span class="keyword">extern</span> _PTR calloc _PARAMS ((<span class="keywordtype">size_t</span>, <span class="keywordtype">size_t</span>));
-<a name="l00053"></a>00053 
-<a name="l00054"></a>00054 <span class="keyword">extern</span> _PTR memalign _PARAMS ((<span class="keywordtype">size_t</span>, <span class="keywordtype">size_t</span>));
-<a name="l00055"></a>00055 
-<a name="l00056"></a>00056 <span class="keyword">extern</span> <span class="keyword">struct </span><a class="code" href="structmallinfo.html">mallinfo</a> <a class="code" href="structmallinfo.html">mallinfo</a> _PARAMS ((void));
-<a name="l00057"></a>00057 
-<a name="l00058"></a>00058 <span class="keyword">extern</span> <span class="keywordtype">void</span> malloc_stats _PARAMS ((<span class="keywordtype">void</span>));
-<a name="l00059"></a>00059 
-<a name="l00060"></a>00060 <span class="keyword">extern</span> <span class="keywordtype">int</span> mallopt _PARAMS ((<span class="keywordtype">int</span>, <span class="keywordtype">int</span>));
-<a name="l00061"></a>00061 
-<a name="l00062"></a>00062 <span class="keyword">extern</span> <span class="keywordtype">size_t</span> malloc_usable_size _PARAMS ((_PTR));
-<a name="l00063"></a>00063 
-<a name="l00064"></a>00064 <span class="comment">/* These aren&#39;t too useful on an embedded system, but we define them</span>
-<a name="l00065"></a>00065 <span class="comment">   anyhow.  */</span>
-<a name="l00066"></a>00066 
-<a name="l00067"></a>00067 <span class="keyword">extern</span> _PTR valloc _PARAMS ((<span class="keywordtype">size_t</span>));
-<a name="l00068"></a>00068 
-<a name="l00069"></a>00069 <span class="keyword">extern</span> _PTR pvalloc _PARAMS ((<span class="keywordtype">size_t</span>));
-<a name="l00070"></a>00070 
-<a name="l00071"></a>00071 <span class="keyword">extern</span> <span class="keywordtype">int</span> malloc_trim _PARAMS ((<span class="keywordtype">size_t</span>));
-<a name="l00072"></a>00072 
-<a name="l00073"></a>00073 <span class="comment">/* A compatibility routine for an earlier version of the allocator.  */</span>
-<a name="l00074"></a>00074 
-<a name="l00075"></a>00075 <span class="keyword">extern</span> _VOID mstats _PARAMS ((<span class="keywordtype">char</span> *));
-<a name="l00076"></a>00076 
-<a name="l00077"></a>00077 <span class="comment">/* SVID2/XPG mallopt options */</span>
-<a name="l00078"></a>00078 
-<a name="l00079"></a>00079 <span class="preprocessor">#define M_MXFAST  1    </span><span class="comment">/* UNUSED in this malloc */</span>
-<a name="l00080"></a>00080 <span class="preprocessor">#define M_NLBLKS  2    </span><span class="comment">/* UNUSED in this malloc */</span>
-<a name="l00081"></a>00081 <span class="preprocessor">#define M_GRAIN   3    </span><span class="comment">/* UNUSED in this malloc */</span>
-<a name="l00082"></a>00082 <span class="preprocessor">#define M_KEEP    4    </span><span class="comment">/* UNUSED in this malloc */</span>
-<a name="l00083"></a>00083 
-<a name="l00084"></a>00084 <span class="comment">/* mallopt options that actually do something */</span>
-<a name="l00085"></a>00085   
-<a name="l00086"></a>00086 <span class="preprocessor">#define M_TRIM_THRESHOLD    -1</span>
-<a name="l00087"></a>00087 <span class="preprocessor"></span><span class="preprocessor">#define M_TOP_PAD           -2</span>
-<a name="l00088"></a>00088 <span class="preprocessor"></span><span class="preprocessor">#define M_MMAP_THRESHOLD    -3 </span>
-<a name="l00089"></a>00089 <span class="preprocessor"></span><span class="preprocessor">#define M_MMAP_MAX          -4</span>
-<a name="l00090"></a>00090 <span class="preprocessor"></span>
-<a name="l00091"></a>00091 <span class="preprocessor">#ifndef __CYGWIN__</span>
-<a name="l00092"></a>00092 <span class="preprocessor"></span><span class="comment">/* Some systems provide this, so do too for compatibility.  */</span>
-<a name="l00093"></a>00093 <span class="keyword">extern</span> <span class="keywordtype">void</span> cfree _PARAMS ((_PTR));
-<a name="l00094"></a>00094 <span class="preprocessor">#endif </span><span class="comment">/* __CYGWIN__ */</span>
-<a name="l00095"></a>00095 
-<a name="l00096"></a>00096 <span class="preprocessor">#ifdef __cplusplus</span>
-<a name="l00097"></a>00097 <span class="preprocessor"></span>}
-<a name="l00098"></a>00098 <span class="preprocessor">#endif</span>
-<a name="l00099"></a>00099 <span class="preprocessor"></span>
-<a name="l00100"></a>00100 <span class="preprocessor">#endif </span><span class="comment">/* _INCLUDE_MALLOC_H_ */</span>
+<a name="l00031"></a>00031 <span class="keyword">extern</span> _PTR calloc _PARAMS ((<span class="keywordtype">size_t</span>, <span class="keywordtype">size_t</span>));
+<a name="l00032"></a>00032 
+<a name="l00033"></a>00033 <span class="keyword">extern</span> _PTR memalign _PARAMS ((<span class="keywordtype">size_t</span>, <span class="keywordtype">size_t</span>));
+<a name="l00034"></a>00034 
+<a name="l00035"></a>00035 <span class="keyword">extern</span> <span class="keywordtype">void</span> malloc_stats _PARAMS ((<span class="keywordtype">void</span>));
+<a name="l00036"></a>00036 
+<a name="l00037"></a>00037 <span class="keyword">extern</span> <span class="keywordtype">size_t</span> malloc_usable_size _PARAMS ((_PTR));
+<a name="l00038"></a>00038 
+<a name="l00039"></a>00039 <span class="preprocessor">#ifdef __cplusplus</span>
+<a name="l00040"></a>00040 <span class="preprocessor"></span>}
+<a name="l00041"></a>00041 <span class="preprocessor">#endif</span>
+<a name="l00042"></a>00042 <span class="preprocessor"></span>
+<a name="l00043"></a>00043 <span class="preprocessor">#endif</span>
 </pre></div></div><!-- contents -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
@@ -199,7 +142,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Aug 30 2015 05:45:59 for PSP2SDK by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Sep 4 2015 01:14:05 for PSP2SDK by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>
